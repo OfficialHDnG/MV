@@ -1,0 +1,3 @@
+﻿window.bannedKeyWords=[
+'ghs','</a>',
+];
