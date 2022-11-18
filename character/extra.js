@@ -1558,7 +1558,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 				forced:true,
 				trigger:{global:'phaseBeginStart'},
 				filter:function(event,player){
-					return player!=event.player&&!event.player._trueMe&&event.player.countMark('huoxin')>1;
+					return player!=event.player&&!event.player._trueMe&&event.player.countMark('huoxin')>0;
 				},
 				logTarget:'player',
 				skillAnimation:true,
@@ -1596,6 +1596,9 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					delete player._trueMe;
 				},
 			},
+
+
+
 			shiki_omusubi:{
 				audio:2,
 				trigger:{global:'roundStart'},
@@ -3250,6 +3253,91 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					}
 				}
 			},
+
+
+
+
+
+
+			guixinx:{
+				audio:2,
+				// alter:true,
+				trigger:{player:'damageEnd'},
+				check:function(event,player){
+					if(player.isTurnedOver()||event.num>1) return true;
+					var num=game.countPlayer(function(current){
+						if(current.countCards('he')&&current!=player&&get.attitude(player,current)<=0){
+							return true;
+						}
+						if(current.countCards('j')&&current!=player&&get.attitude(player,current)>0){
+							return true;
+						}
+					});
+					return num>=2;
+				},
+				content:function(){
+					"step 0"
+					var targets=game.filterPlayer();
+					targets.remove(player);
+					targets.sort(lib.sort.seat);
+					event.targets=targets;
+					event.count=1;
+					"step 1"
+					event.num=0;
+					player.line(targets,'green');
+					"step 2"
+					if(num<event.targets.length){
+						if(!get.is.altered('guixin')){
+							if(event.targets[num].countGainableCards(player,'hej')){
+								player.gainPlayerCard(event.targets[num],true,'hej');
+							}
+						}
+						else{
+							var hej=event.targets[num].getCards('hej')
+							if(hej.length){
+								var card=hej.randomGet();
+								player.gain(card,event.targets[num]);
+								if(get.position(card)=='h'){
+									event.targets[num].$giveAuto(card,player);
+								}
+								else{
+									event.targets[num].$give(card,player);
+								}
+							}
+						}
+						event.num++;
+						event.redo();
+					}
+					"step 3"
+					player.turnOver();
+					"step 4"
+					event.count--;
+					if(event.count){
+						player.chooseBool(get.prompt2('guixin'));
+					}
+					else{
+						event.finish();
+					}
+					"step 5"
+					if(event.count&&result.bool){
+						event.goto(1);
+					}
+				},
+				
+			},
+
+
+
+
+
+
+
+
+
+
+
+
+
 			qixing:{
 				audio:2,
 				unique:true,

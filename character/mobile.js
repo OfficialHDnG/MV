@@ -221,7 +221,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 						event.finish();
 						return;
 					}
-					event.showCards=get.cards(4);
+					event.showCards=get.cards(12);
 					game.cardsGotoOrdering(event.showCards);
 					player.showCards(event.showCards);
 					'step 1'
@@ -14572,7 +14572,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					}
 				}
 			},
-			kuangcaix:{
+			kuangcaiz:{
 				audio:2,
 				trigger:{player:'phaseUseBegin'},
 				filter:function(event,player){

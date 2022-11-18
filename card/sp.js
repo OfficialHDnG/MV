@@ -169,8 +169,9 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 							card.storage.fulei=1;
 						}
 						else{
-							card.storage.fulei++;
+							card.storage.fulei+=300;
 						}
+						//player.damage(card.storage.fulei,'thunder','nosource');
 						player.damage(card.storage.fulei,'thunder','nosource');
 					}
 					'step 1'
@@ -643,57 +644,7 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 			caomu_info:'出牌阶段，对一名其他角色使用。将【草木皆兵】放置于该角色的判定区里，若判定结果不为梅花：摸牌阶段，目标角色少摸一张牌；摸牌阶段结束时，与其距离为1的角色各摸一张牌',
 		},
 		list:[
-			["spade",1,"wanjian"],
-			["spade",2,"sha"],
-			["spade",3,"sha"],
-			["spade",4,"sha"],
-			["spade",5,"sha"],
-			["spade",6,"sha"],
-			["spade",7,"shan"],
-		          ["spade",8,"sha"],
-			["spade",9,"sha"],
-			["spade",10,"sha"],
-			["spade",11,"sha"],
-			["spade",12,"sha"],
-			["club",1,"sha"],
-			["club",2,"shan"],
-			["club",3,"sha"],
-			["club",4,"shan"],
-			["club",5,"sha"],
-			["club",6,"shan"],
-			["club",7,"sha"],
-			["club",8,"shan"],
-			["club",9,"sha"],
-			["club",10,"shan"],
-			["club",11,"sha"],
-			["club",12,"shan"],
-
-			["diamond",1,"shan"],
-			["diamond",2,"nanman"],
-			["diamond",3,"wanjian"],
-			["diamond",4,"sha"],
-			["diamond",5,"wanjian"],
-			["diamond",6,"nanman"],
-			["diamond",7,"wanjian"],
-			["diamond",8,"shan"],
-			["diamond",9,"wanjian"],
-			["diamond",10,"nanman"],
-			["diamond",11,"nanman"],
-			["diamond",12,"nanman"],
-
-			
-			["heart",1,"wanjian"],
-			["heart",2,"wanjian"],
-			["heart",3,"sha"],
-			["heart",4,"sha"],
-			["heart",5,"sha"],
-			["heart",6,"sha"],
-			["heart",7,"nanman"],
-			["heart",8,"shan"],
-			["heart",9,"shan"],
-			["heart",10,"shan"],
-			["heart",11,"wanjian"],
-			["heart",12,"wanjian"],
+		
 	
 		],
 	};

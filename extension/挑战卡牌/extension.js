@@ -1,6 +1,3 @@
-﻿////////////////////////////////////////////////////////////////
-///   Black NotePad - 5/2/2022 10:43:57 PM - Not activated   ///
-////////////////////////////////////////////////////////////////
 'use strict';
 game.import('play',function(lib,game,ui,get,ai,_status){
 	return {
@@ -10,15 +7,36 @@ game.import('play',function(lib,game,ui,get,ai,_status){
 				_status.coin=0;
 			}
 		},
-		arenaReady:function(){
+		arenaReady:function(game,gameconfig){
 			if(_status.video||_status.connectMode) return;
 			if(lib.config.mode!='chess'||get.config('chess_mode')!='leader'){
 				var str;
-				if(lib.config.coin_display_playpackconfig=='text'){
-						str='<span>CHAPTER </span><span>'+lib.config.coin+'</span>'
-				}
+			//	if(lib.config.coin_display_playpackconfig=='text'){
+
+				//ORIGINAL	if(lib.config.expe>=1){
+
+						if(lib.config.expe>=1){	
+				var r=7+(Math.floor(Math. sqrt(lib.config.lvr/777)));
+				var a=7+(Math.floor(Math. sqrt(lib.config.lva/777)));
+				var g=7+(Math.floor(Math. sqrt(lib.config.lvg/777)));
+				var x=7+(Math.floor(Math. sqrt(lib.config.lvx/777)));
+//str='<span>'+lib.config.expe+' Roars Lv.'+r+' · Airson Lv. '+ a +' · GoldenAge Lv. '+g+' · X Lv.' +x+' </span>'
+str='<span>Roars Lv.'+r+' · Airson Lv. '+ a +' · GoldenAge Lv. '+g+' · X Lv.' +x+' 번째 증언</span>'
+
+//if(lib.config.lvx>= &&lib.config.lvx<=){}
+//else {str='<span>Roars Lv.'+r+' · Airson Lv. '+ a +' · GoldenAge Lv. '+g+' · X Lv.' +x+' 번째 증언</span>'
+//}
+
+
+//str='<span>'+ lib.config.xtsu +' Roars Lv.'+r+' · Airson Lv. '+ a +' · GoldenAge Lv. '+g+' · X Lv.' +x+' </span>'
+	//str='<span>'+ lib.config.xtsu +' TSUNAMI '+ lib.config.rvol +' VOLCANO '+ lib.config.aede +' EDEN '+ lib.config.gjud +' JUDGMENT </span>'
+						
+					//str='<span>'+lib.config.expe+'</span><span> Words fioasdjfas;lfihas;jhasg;kjashgkas;jghsjk;aghsd</span>'
+					}
 				else{
-					str='<span style="position:absolute">📖 </span><span style="margin-left:22px;font-family:xinwei;line-height:10px">'+lib.config.coin+'</span>';
+					str='<span></span>'
+					//str='<span style="position:absolute">㉤</span><span style="margin-left:18px;font-family:xinwei;line-height:10px">'+lib.config.expe+'</span>';
+			
 				}
 				if(lib.config.coin_canvas_playpackconfig){
 					ui.window.classList.add('canvas_top');
@@ -33,21 +51,21 @@ game.import('play',function(lib,game,ui,get,ai,_status){
 				lib.setPopped(ui.coin,function(){
 					var uiintro=ui.create.dialog('hidden');
 					uiintro.classList.add('coin_menu')
-			
+					uiintro.add('WIN!');
 					uiintro.listen(function(e){
 						e.stopPropagation();
 					});
 					var clickBuy=function(){
-						if(this.innerHTML=='停止'){
+						if(this.innerHTML=='Pause'){
 							game.haveFun[this.name+'Stop']();
 						}
-						else if(this.innerHTML=='开始'){
+						else if(this.innerHTML=='Continue'){
 							game.haveFun[this.name]();
 						}
 						else if(this.innerHTML.indexOf('金')!=-1){
-							if(lib.config.coin>=this.content.cost){
+							if(lib.config.coin>=0){
 								this.content.bought=true;
-								game.changeCoin(-this.content.cost);
+								game.changeCoin(0);
 								game.haveFun[this.name]();
 								if(this.content.onbuy){
 									this.content.onbuy.call(this);
@@ -61,14 +79,14 @@ game.import('play',function(lib,game,ui,get,ai,_status){
 					};
 					for(var i in game.haveFun.list){
 						var item=game.haveFun.list[i];
-						uiintro.add('<div class="coin_buy">'+item.name+'<div class="menubutton">'+item.cost+'金</span></div></div>');
+						uiintro.add('<div class="coin_buy">'+item.name+'<div class="menubutton">Go</div></div>');
 						var buy=uiintro.content.lastChild.lastChild.lastChild;
 						if(lib.config.coin<item.cost&&!item.bought){
 							buy.classList.add('disabled');
 						}
 						if(item.bought){
 							if(item.running){
-								buy.innerHTML='停止';
+								buy.innerHTML='Pause';
 								if(item.control){
 									var node=item.control();
 									if(node){
@@ -77,7 +95,7 @@ game.import('play',function(lib,game,ui,get,ai,_status){
 								}
 							}
 							else{
-								buy.innerHTML='开始';
+								buy.innerHTML='Start';
 							}
 						}
 						buy.name=i;
@@ -86,7 +104,7 @@ game.import('play',function(lib,game,ui,get,ai,_status){
 					}
 
 					if(!game.phaseNumber&&!game.online){
-						
+						uiintro.add('下注');
 						uiintro.add('<div class="coin_buy">本局获胜<div class="menubutton">20金</span></div></div>');
 						var bet=uiintro.content.lastChild.lastChild.lastChild;
 						bet.listen(function(){
@@ -100,8 +118,8 @@ game.import('play',function(lib,game,ui,get,ai,_status){
 						}
 					}
 					else if(_status.betWin){
-				
-					
+						uiintro.add('下注');
+						uiintro.add('<div class="coin_buy">本局获胜<div class="menubutton">已下注</span></div></div>');
 					}
 
 					uiintro.classList.add('noleave');
@@ -115,18 +133,46 @@ game.import('play',function(lib,game,ui,get,ai,_status){
 				if(typeof num=='number'&&ui.coin){
 					game.saveConfig('coin',lib.config.coin+num);
 					var str;
+
 					if(lib.config.coin_display_playpackconfig=='text'){
-							str='<span>CHAPTER </span><span>'+lib.config.coin+'</span>'
+						str=' '
 					}
 					else{
-						str='<span style="position:absolute">📖 </span><span style="margin-left:22px;font-family:xinwei;line-height:10px">'+lib.config.coin+'</span>';
+						str=' ';
 					}
 					ui.coin.innerHTML=str;
 				}
 			},
 			haveFun:{
 				list:{
-					
+					firework:{
+						name:'Fireworks of Ri',
+						cost:-1,
+					},
+					snow:{
+						name:'Snow of Ri',
+						cost:-1,
+						size:'large',
+						control:function(){
+							var size=ui.create.div('.menubutton');
+							if(game.haveFun.list.snow.size=='small'){
+								size.innerHTML='Great';
+							}
+							else{
+								size.innerHTML='Fairy';
+							}
+							size.listen(game.haveFun.snowSize);
+							return size;
+						}
+					},
+					star:{
+						name:'Bubbles of Ri',
+						cost:0
+					},
+					//blink:{
+					//	name:'Sparkle of Ri',
+					//	cost:0
+					//}
 				},
 				alwaysSnow:function(){
 					game.saveConfig('snowFall',!lib.config.snowFall);
@@ -790,6 +836,8 @@ game.import('play',function(lib,game,ui,get,ai,_status){
 
 					}
 				},
+
+
 				snow:function(){
 					game.haveFun.list.snow.running=true;
 					if(game.haveFun.snowStart){
@@ -1349,7 +1397,3 @@ game.import('play',function(lib,game,ui,get,ai,_status){
 		}
 	};
 });
-
-////////////////////////////////////////////////////////////////
-///   Black NotePad - 5/2/2022 10:43:57 PM - Not activated   ///
-////////////////////////////////////////////////////////////////

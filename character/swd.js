@@ -4860,7 +4860,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					}
 				},
 				content:function(){
-					player.removeSkill('shejie2')
+					//player.removeSkill('shejie2')
 				},
 			},
 			guiyin:{
@@ -6015,6 +6015,18 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					trigger.num++;
 				}
 			},
+			luomux:{
+				trigger:{source:'damageEnd'},
+				forced:true,
+				filter:function(event,player){
+					if(event._notrigger.contains(event.player)) return false;
+					return event.player.countCards('hej');
+				},
+				content:function(){
+					trigger.player.discard(trigger.player.getCards('hej').randomGet());
+				}
+			},
+
 			luomu:{
 				trigger:{source:'damageEnd'},
 				forced:true,
@@ -6026,6 +6038,9 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					trigger.player.discard(trigger.player.getCards('hej').randomGet());
 				}
 			},
+
+		
+
 			huanhun:{
 				trigger:{global:'dying'},
 				priority:6,
@@ -7770,6 +7785,8 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 							return;
 						}
 						player.useCard({name:'sha',nature:'fire'},targets);
+		
+					
 						event.num--;
 						event.redo();
 					}
@@ -10126,7 +10143,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 
 
 			zhanlu:'沾露',
-			luomu:'落木',
+			luomu:'STURDY',
 			jifeng:'魔影',
 			liaoyuan:'燎原',
 			huanhun:'唤魂',

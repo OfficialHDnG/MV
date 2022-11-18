@@ -1719,6 +1719,11 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					threaten:1.5
 				}
 			},
+
+
+regold:{},
+
+
 			ducai:{
 				enable:'phaseUse',
 				usable:1,
