@@ -1,6 +1,3 @@
-﻿////////////////////////////////////////////////////////////////
-///   Black NotePad - 4/18/2022 9:54:18 PM - Not activated   ///
-////////////////////////////////////////////////////////////////
 .player{
 	width:150px;
 	height:180px;
@@ -262,7 +259,7 @@
 	line-height:20px;
 	width:8px;
 	text-align:left;
-	border-radius:0px;
+	border-radius:2px;
 	z-index:1;
 	border-radius:3px 0 0 3px;
 	box-shadow: rgba(0,0,0,0.2) 1px -1px 2px inset,rgba(255,255,255,0.15) -1px 1px 5px inset;
@@ -297,7 +294,7 @@
 	left: -5px;
 }
 .player .count.action{
-display:none;
+	bottom:60px;
 }
 .player .count[data-condition="none"]{
 	background: rgba(57, 123, 4,1);
@@ -569,7 +566,3 @@ display:none;
 @-webkit-keyframes card_start2x{from {opacity: 0;margin-top: -13px;margin-bottom:-11px}}
 @-webkit-keyframes card_start2xx{from {opacity: 0;margin-top: -12px;margin-bottom:-12px;transform:scale(0)}}
 @-webkit-keyframes card_start2xxx{from {opacity: 0;margin-top: -12px;margin-bottom:-12px;transform:scale(0) rotate(90deg)}}
-
-////////////////////////////////////////////////////////////////
-///   Black NotePad - 4/18/2022 9:54:18 PM - Not activated   ///
-////////////////////////////////////////////////////////////////
