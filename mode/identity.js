@@ -1,13 +1,13 @@
-﻿///////////////////////////////////////////////////////////////
-///   Black NotePad - 4/8/2022 8:58:21 AM - Not activated   ///
-///////////////////////////////////////////////////////////////
-'use strict';
+﻿'use strict';
 game.import('mode',function(lib,game,ui,get,ai,_status){
 	return {
 		name:'identity',
 		start:function(){
 			"step 0"
 			if(!lib.config.new_tutorial){
+
+
+				
 				ui.arena.classList.add('only_dialog');
 			}
 			_status.mode=get.config('identity_mode');
@@ -42,6 +42,9 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 			"step 1"
 			var playback=localStorage.getItem(lib.configprefix+'playback');
 			if(playback){
+
+
+
 				ui.create.me();
 				ui.arena.style.display='none';
 				ui.system.style.display='none';
@@ -90,18 +93,17 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					ui.arena.classList.remove('only_dialog');
 				};
 				var step1=function(){
-					ui.create.dialog('Welcome to the Land of Ri');
-			
-
-					ui.dialog.add('<div class="text center">In Home menu, click on Red buttons with symbol to start. Do not change settings in hanja. Choose 3 characters, 4th will join as spirit. Memory of who, Song by who, where in Ri. You can Read Lore. Connect needs a boss pack, and a computer. ');
+					ui.create.dialog('Welcome to LoreSong World Beta？');
+					game.saveConfig('new_tutorial',true);
+					ui.dialog.add('<div class="text center">If you encounter bugs, feel free to contact MCsL Staff!');
 					ui.auto.hide();
-					ui.create.control('跳过向导',function(){
+					ui.create.control('Start Game',function(){
 						clear();
 						clear2();
 						game.resume();
 						// lib.cheat.cfg(); // owidgets
 					});
-					ui.create.control('继续',step2);
+					//ui.create.control('继续',step2);
 				}
 				var step2=function(){
 					if(!lib.config.phonelayout){
@@ -189,6 +191,9 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 			}
 			delete _status.new_tutorial;
 			if(_status.connectMode){
+			
+
+				ui.background.setBackgroundImage('image/background/bg.jpg');
 				game.waitForPlayer(function(){
 					if(lib.configOL.identity_mode=='zhong'||lib.configOL.identity_mode=='purple'){
 						lib.configOL.number=8;
@@ -197,6 +202,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 			}
 			"step 4"
 			if(_status.connectMode){
+				
 				_status.mode=lib.configOL.identity_mode;
 				if(_status.mode=='zhong'){
 					lib.configOL.number=8;
@@ -262,6 +268,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				}
 				var enhance_zhu=false;
 				if(_status.connectMode){
+				
 					enhance_zhu=(_status.mode!='zhong'&&_status.mode!='purple'&&lib.configOL.enhance_zhu&&get.population('fan')>=3);
 				}
 				else{
@@ -291,6 +298,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				}
 			}
 			game.syncState();
+			
 			event.trigger('gameStart');
 
 			var players=get.players(lib.sort.position);
@@ -304,16 +312,22 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 			}
 			_status.videoInited=true;
 			game.addVideo('init',null,info);
+			
 			"step 6"
 			game.gameDraw(_status.firstAct2||game.zhong||game.zhu||_status.firstAct||game.me,function(player){
 				if(_status.mode=='purple'&&player.seatNum>5) return 5;
 				return 4;
 			});
-			if(_status.connectMode&&lib.configOL.change_card) game.replaceHandcards(game.players.slice(0));
+			if(!_status.connectMode&&lib.configOL.change_card) game.replaceHandcards(game.players.slice(0));
+			//if(_status.connectMode&&lib.configOL.change_card) game.replaceHandcards(game.players.slice(0));
+			
 			"step 7"
 			game.phaseLoop(_status.firstAct2||game.zhong||game.zhu||_status.firstAct||game.me);
+			"step 8"
+			
 		},
 		game:{
+			
 			getState:function(){
 				var state={};
 				for(var i in lib.playerOL){
@@ -610,15 +624,17 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				}
 				game.showIdentity();
 				if(me.identity=='zhu'||me.identity=='zhong'||me.identity=='mingzhong'){
-					if(game.zhu.classList.contains('dead')){
-						game.over(false);
+					//if(game.zhu.classList.contains('dead')){
+						if(get.population('fan')==0){
+						game.over(true);
 					}
 					else{
-						game.over(true);
+						game.over(false);
 					}
 				}
 				else if(me.identity=='nei'){
-					if(game.players.length==1&&me.isAlive()){
+					//if(game.players.length==1&&me.isAlive()){
+						if(game.players.length==3&&me.isAlive()){
 						game.over(true);
 					}
 					else{
@@ -659,8 +675,8 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					"step 1"
 					var list=['rZhu','rZhong','rNei','rYe'];
 					var list2=['bZhu','bZhong','bNei','bYe'];
-					
-				
+					list.randomSort();
+					list2.randomSort();
 					var identityList=list.concat(list2);
 					var num=get.rand(0,7);
 					var players=game.players.slice(0);
@@ -750,7 +766,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					for(var i=0;i<players.length;i++){
 						if(true){
 							var group=event[players[i].identity];
-							var str='选择角色';
+							var str='You Are:';
 							var list2=event.map[group].randomGets(4);
 							if(event.map_zhu[group]) list2.addArray(event.map_zhu[group].randomGets(2));
 							event.map[players[i].playerid]=list2;
@@ -796,10 +812,8 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					for(var i=0;i<players.length;i++){
 						if(true){
 							var group=event[players[i].identity.slice(0,1)+'Zhu'];
-							var str='选择角色';
-						
-
-
+							var str='You Are:';
+							var list2=event.map[group].randomRemove(event.mapNum[group]);
 							event.map[players[i].playerid]=list2;
 							list.push([players[i],[str,[list2,'character']],true]);
 						}
@@ -848,8 +862,8 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					"step 1"
 					var list=['rZhu','rZhong','rNei','rYe'];
 					var list2=['bZhu','bZhong','bNei','bYe'];
-				
-				
+					list.randomSort();
+					list2.randomSort();
 					var identityList=list.concat(list2);
 					var num=get.rand(0,7);
 					var players=game.players.slice(0);
@@ -1013,7 +1027,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 						}
 					}
 					else if(player.identity=='zhu'){
-					
+						list2.randomSort();
 						var choice,choice2;
 						if(!_status.event.zhongmode&&Math.random()-0.8<0&&list2.length){
 							choice=list2[0];
@@ -1040,11 +1054,11 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 							player.update();
 						}
 					}
-					else if(player.identity=='fan'){
+					else if(player.identity=='zhong'&&(Math.random()<0.5||['sunliang','key_akane'].contains(game.zhu.name))){
 						var listc=list.slice(0);
 						for(var i=0;i<listc.length;i++){
-							var listx=['sunliang','key_akane','machao','diaochan','liubei','sunquan'];
-							if(listx&&listx.length) listc[i]=['sunliang','key_akane','machao','diaochan','liubei','sunquan'];
+							var listx=lib.characterReplace[listc[i]];
+							if(listx&&listx.length) listc[i]=listx.randomGet();
 						}
 						var choice=0;
 						for(var i=0;i<listc.length;i++){
@@ -1063,7 +1077,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 						var listc=list.slice(0,2);
 						for(var i=0;i<listc.length;i++){
 							var listx=lib.characterReplace[listc[i]];
-							listc[i]=['sunliang','key_akane','machao','diaochan','liubei','sunquan'];
+							if(listx&&listx.length) listc[i]=listx.randomGet();
 						}
 						if(get.config('double_character')){
 							player.init(listc[0],listc[1]);
@@ -1092,7 +1106,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 						list.remove('shen');
 						if(list.length) player.group=function(){
 						 if(_status.mode!='zhong'&&game.zhu&&game.zhu.group){
-						  if(['re_zhangjiao','liubei','re_liubei','caocao','re_caocao','sunquan','re_sunquan','zhangjiao','sp_zhangjiao','caopi','re_caopi','liuchen','caorui','sunliang','sunxiu','sunce','re_sunben','ol_liushan','re_liushan','key_akane','dongzhuo','re_dongzhuo','ol_dongzhuo','jin_simashi'].contains(game.zhu.name)) return game.zhu.group;
+						  if(['re_zhangjiao','liubei','re_liubei','caocao','re_caocao','sunquan','re_sunquan','zhangjiao','sp_zhangjiao','caopi','re_caopi','liuchen','caorui','sunliang','sunxiu','sunce','re_sunben','ol_liushan','re_liushan','key_akane','dongzhuo','re_dongzhuo','ol_dongzhuo','jin_simashi','caomao'].contains(game.zhu.name)) return game.zhu.group;
 						  if(game.zhu.name=='yl_yuanshu'){
 						   if(player.identity=='zhong') list.remove('qun');
 						   else return 'qun';
@@ -1186,11 +1200,11 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 									_status.tempNoButton=false;
 								},500);
 								var link=this.link;
-								if(game.zhu.name){
+								if(game.zhu){
 									if(link!='random'){
 										_status.event.parent.fixedseat=get.distance(game.me,game.zhu,'absolute');
 									}
-									game.zhu.uninit();
+									if(game.zhu.name) game.zhu.uninit();
 									delete game.zhu.isZhu;
 									delete game.zhu.identityShown;
 								}
@@ -1311,7 +1325,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					event.addSetting=addSetting;
 					event.removeSetting=removeSetting;
 					event.list=[];
-				
+					identityList.randomSort();
 					if(event.identity){
 						identityList.remove(event.identity);
 						identityList.unshift(event.identity);
@@ -1439,16 +1453,15 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 						list4.push(i);
 						if(lib.character[i][4]&&lib.character[i][4].contains('zhu')){
 							list2.push(i);
-
 						}
 						else{
 							list3.push(i);
-
 						}
 					}
 					list2.sort(lib.sort.character);
-				
-				
+					event.list.randomSort();
+					_status.characterlist=list4.slice(0).randomSort();
+					list3.randomSort();
 					if(_status.brawl&&_status.brawl.chooseCharacterFilter){
 						_status.brawl.chooseCharacterFilter(event.list,list2,list3);
 					}
@@ -1505,7 +1518,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 						delete event.swapnodialog;
 					}
 					else{
-						var str='选择角色';
+						var str='You Are:';
 						if(_status.brawl&&_status.brawl.chooseCharacterStr){
 							str=_status.brawl.chooseCharacterStr;
 						}
@@ -1517,11 +1530,11 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 						}
 					}
 					if(game.me.special_identity){
-						dialog.setCaption('选择角色（'+get.translation(game.me.special_identity)+'）');
+						dialog.setCaption('You Are:（'+get.translation(game.me.special_identity)+'）');
 						game.me.node.identity.firstChild.innerHTML=get.translation(game.me.special_identity+'_bg');
 					}
 					else{
-						dialog.setCaption('选择角色');
+						dialog.setCaption('You Are:');
 						game.me.setIdentity();
 					}
 					if(!event.chosen.length){
@@ -1540,10 +1553,10 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 								return;
 							}
 							if(game.changeCoin){
-								game.changeCoin(0);
+								game.changeCoin(-3);
 							}
 							if(game.zhu!=game.me){
-					
+								event.list.randomSort();
 								if(_status.brawl&&_status.brawl.chooseCharacter){
 									list=_status.brawl.chooseCharacter(event.list,num);
 									if(list===false||list==='nozhu'){
@@ -1556,7 +1569,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 							}
 							else{
 								list2.sort(lib.sort.character);
-			
+								list3.randomSort();
 								if(_status.brawl&&_status.brawl.chooseCharacter){
 									list=_status.brawl.chooseCharacter(list2,list3,num);
 									if(list===false){
@@ -1568,7 +1581,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 										}
 									}
 									else if(list==='nozhu'){
-									
+										event.list.randomSort();
 										list=event.list.slice(0,num);
 									}
 								}
@@ -1609,7 +1622,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 						ui.cheat2=ui.create.control('自由选将',function(){
 							if(this.dialog==_status.event.dialog){
 								if(game.changeCoin){
-									game.changeCoin(0);
+									game.changeCoin(50);
 								}
 								this.dialog.close();
 								_status.event.dialog=this.backup;
@@ -1624,7 +1637,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 							}
 							else{
 								if(game.changeCoin){
-									game.changeCoin(0);
+									game.changeCoin(-10);
 								}
 								this.backup=_status.event.dialog;
 								_status.event.dialog.close();
@@ -1700,7 +1713,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					}
 					for(var i=0;i<game.players.length;i++){
 						if(game.players[i]!=game.zhu&&game.players[i]!=game.me){
-				
+							event.list.randomSort();
 							event.ai(game.players[i],event.list.splice(0,get.config('choice_'+game.players[i].identity)),null,event.list)
 						}
 					}
@@ -1736,6 +1749,10 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				next.setContent(function(){
 					"step 0"
 					ui.arena.classList.add('choose-character');
+
+
+				
+
 					var i;
 					var identityList;
 					if(_status.mode=='zhong'){
@@ -1773,7 +1790,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 							}
 						}
 					}
-	
+					identityList.randomSort();
 					for(i=0;i<game.players.length;i++){
 						game.players[i].identity=identityList[i];
 						game.players[i].setIdentity('cai');
@@ -1917,7 +1934,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					}
 					var next=game.zhu.chooseButton(true);
 					next.set('selectButton',(lib.configOL.double_character?2:1));
-					next.set('createDialog',['选择角色',[list,'characterx']]);
+					next.set('createDialog',['You Are:',[list,'characterx']]);
 					next.set('callback',function(player,result){
 						player.init(result.links[0],result.links[1]);
 					});
@@ -2008,7 +2025,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 									num3=num2;
 								}
 							}
-							var str='选择角色';
+							var str='You Are:';
 							if(game.players[i].special_identity){
 								str+='（'+get.translation(game.players[i].special_identity)+'）';
 							}
@@ -2080,7 +2097,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 								if(!lib.group.contains(list[ix])) list.splice(ix--,1);
 							}
 						 if(_status.mode!='zhong'&&game.zhu&&game.zhu.group){
-						  if(['re_zhangjiao','liubei','re_liubei','caocao','re_caocao','sunquan','re_sunquan','zhangjiao','sp_zhangjiao','caopi','re_caopi','liuchen','caorui','sunliang','sunxiu','sunce','re_sunben','ol_liushan','re_liushan','key_akane','dongzhuo','re_dongzhuo','ol_dongzhuo','jin_simashi'].contains(game.zhu.name)) return game.zhu.group;
+						  if(['re_zhangjiao','liubei','re_liubei','caocao','re_caocao','sunquan','re_sunquan','zhangjiao','sp_zhangjiao','caopi','re_caopi','liuchen','caorui','sunliang','sunxiu','sunce','re_sunben','ol_liushan','re_liushan','key_akane','dongzhuo','re_dongzhuo','ol_dongzhuo','jin_simashi','caomao'].contains(game.zhu.name)) return game.zhu.group;
 							 if(game.zhu.name=='yl_yuanshu'){
 						   if(player.identity=='zhong') list.remove('qun');
 						   else return 'qun';
@@ -2126,6 +2143,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					setTimeout(function(){
 						ui.arena.classList.remove('choose-character');
 					},500);
+					
 				});
 			},
 		},
@@ -2179,6 +2197,8 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		},
 		element:{
 			player:{
+
+				
 				yexinbilu:function(){
 					game.broadcastAll(function(player){
 						player.showIdentity();
@@ -2621,7 +2641,9 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				switch(identity){
 					case 'zhu':
 						switch(identity2){
-							case 'zhu': return 10;
+					//conntest		case 'zhu': return 10;
+						// IMPORTANT ZHU DONT ATTACK ZHU
+					case 'zhu': return 0;
 							case 'zhong':
 								if (get.population('zhong')==0&&get.population('fan')==1) return -0.5;
 								return 6;
@@ -3081,7 +3103,3 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		}
 	};
 });
-
-///////////////////////////////////////////////////////////////
-///   Black NotePad - 4/8/2022 8:58:21 AM - Not activated   ///
-///////////////////////////////////////////////////////////////

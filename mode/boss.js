@@ -1,6 +1,4 @@
-﻿///////////////////////////////////////////////////////////////
-///   Black NotePad - 5/4/2022 8:55:10 PM - Not activated   ///
-///////////////////////////////////////////////////////////////
+
 'use strict';
 game.import('mode',function(lib,game,ui,get,ai,_status){
 	return {
@@ -44,7 +42,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					}
 				}
 			}
-			lib.translate.restart='返回';
+			lib.translate.restart='Home';
 			lib.init.css(lib.assetURL+'layout/mode','boss');
 			game.delay(0.1);
 			"step 1"
@@ -100,7 +98,8 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					if(lib.characterPack.mode_boss[i]&&get.config(i+'_boss_config')==false){
 						player.style.display='none';
 					}
-					if(player.hp==0){
+					//if(player.hp==0){
+						if(player.hp>=0){
 						player.node.hp.style.display='none';
 					}
 					list.push(player);
@@ -147,6 +146,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 			game.addGlobalSkill('autoswap');
 			ui.arena.setNumber(8);
 			ui.control.style.transitionProperty='opacity';
+			
 			ui.control.classList.add('bosslist');
 			setTimeout(function(){
 				ui.control.style.transitionProperty='';
@@ -324,7 +324,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				game.onSwapControl();
 
 				if(lib.config.show_handcardbutton){
-					lib.setPopped(ui.create.system('手牌',null,true),function(){
+					lib.setPopped(ui.create.system('LoreSongs',null,true),function(){
 						var uiintro=ui.create.dialog('hidden');
 
 						var players=game.players.concat(game.dead);
@@ -948,13 +948,30 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 			}
 		},
 		characterPack:{
-			mode_boss:{
-				boss_hundun:['male','qan',1171,['enemy1234','boss_wuzang','boss_xiangde','boss_yinzei','boss_yinzei_switch'],['qun','boss','bossallowed'],'qun'],
-				boss_qiongqi:['male','qbn','20/25',['boss_xiongshou','boss_zhue','boss_futai','boss_yandu','boss_yandu_switch'],['qun','boss','bossallowed'],'qun'],
-				boss_taotie:['male','qun',20,['boss_xiongshou','boss_tanyu','boss_cangmu','boss_jicai','boss_jicai_switch'],['qun','boss','bossallowed'],'qun'],
-				boss_taowu:['male','qun',25,['boss_xiongshou','boss_minwan','boss_nitai','boss_luanchang','boss_luanchang_switch'],['qun','boss','bossallowed'],'qun'],
-				boss_zhuyin:['male','qun','10/1000',['boss_xiongshou'],['qun','hiddenboss','bossallowed'],'qun'],
+			mode_boss:{  
+			
 				
+				pea1:['male','qun','1/1',['peacettt','taut','pstart','sl'],['qun','hiddenboss','bossallowed'],'qun'],
+				pea2:['male','qun','1/1',['peacettt','taut','pstart','sl'],['qun','hiddenboss','bossallowed'],'qun'],
+				boss_r:['male','qun',1,['taotdia','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
+				boss_a:['male','qun',2,['taotdia','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
+				boss_g:['male','qun',3,['taotdia','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
+				boss_x:['male','qun',4,['taotdia','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
+				boss_taotie:['male','qun',0,['taotdia','pstart','scant','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
+						
+			boss_hundun:['male','aw','2131313/2131313',['randsha','nova','jud','remind','drawj','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','sl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
+				//boss_hundun:['male','qan','1750000/1750000',['pin','enemy','hund','rearth2','shejie2','start','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['qun','boss','bossallowed'],'qun'],
+									
+				boss_qiongqi:['male','re','6131313/6131313',['qiong','nova','jud','randjue','randsha','qiongner','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','qiongskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawr','scant','sl','enemy','hund','enemysky','dshonestory','darkshone','roars','glyptic','earth','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
+											
+				boss_taowu:['male','qun',0,['glyptic','sl','drawr','jud','pstart','noshanb','killdraw','scant','hund'],['qun','boss','bossallowed'],'qun'],
+				//boss_zhuyin:['male','qun','1750000/1750000',['enemy','actma','xstart','hund','rearth2','shejie2','goldenage','black','glyptic','xdimeng','red','glyptic_qiongqi'],['qun','hiddenboss','bossallowed'],'qun'],
+				//boss_zhuyinb:['male','qun','1750000/1750000',['enemy','decei','actmb','xstart','hund','rearth2','shejie2','goldenage','black','glyptic','xdimeng','red','glyptic_qiongqi'],['qun','hiddenboss','bossallowed'],'qun'],
+				boss_zhuyinb:['male','qun','3131313/3131313',['randsha','min','nova','jud','XXexplfour','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','actma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_zhuyin:['male','qun','3131313/3131313',['randsha','min','nova','jud','XXexpltwo','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','actmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_syinb:['male','qun','3131313/3131313',['enemy','min','nova','jud','XXexpltwo','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_syin:['male','qun','2131313/2131313',['enemy','min','nova','jud','XXexplfour','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+		
 				boss_xiangliu:['male','qun',25,['boss_yaoshou','boss_duqu','boss_jiushou','boss_echou','boss_echou_switch'],['qun','boss','bossallowed'],'qun'],
 				boss_zhuyan:['male','qun','25/30',['boss_yaoshou','boss_bingxian','boss_juyuan','boss_xushi','boss_xushi_switch'],['qun','boss','bossallowed'],'qun'],
 				boss_bifang:['male','qun',25,['boss_yaoshou','boss_zhaohuo','boss_honglianx','boss_yanyu','boss_yanyu_switch'],['qun','boss','bossallowed'],'qun'],
@@ -1048,6 +1065,16 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				// boss_sunshangxiang:['male','qun',8,[],['boss','bossallowed'],'wei'],
 			}
 		},
+
+		characterIntro:{
+			boss_hundun:'【Boss】1st Dark entity claiming to be Ea </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#ea" target="blank">Lore of Ea</a></span></br>Strength: 65k',
+			boss_qiongqi:'【Boss】1st Dark entity claiming to be Shone </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#shone" target="blank">Lore of Shone</a></span></br>Strength: 83k / SkyWar: 15k / Careless: Boss boosts Strength to 230%!',
+			boss_zhuyin:'ParallelFragment',
+			boss_zhuyinb:'ParallelFragment',
+			boss_syin:'ParallelFragment',
+			boss_syinb:'ParallelFragment',
+		},
+
 		cardPack:{
 			mode_boss:['honghuangzhili','sadouchengbing','yihuajiemu','guilongzhanyuedao','guofengyupao','chiyanzhenhunqin','qimenbagua','xuwangzhimian','juechenjinge','xiuluolianyuji','chixueqingfeng','longfenghemingjian','qicaishenlu','wushuangfangtianji','shufazijinguan','hongmianbaihuapao','linglongshimandai','boss_mengpohuihun','lingsheji','shanrangzhaoshu','jinwuluorigong','xingtianpojunfu','gubuzifeng']
 		},
@@ -1274,17 +1301,19 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 						list.push(i);
 					}
 		
-					var dialog=ui.create.dialog('Welcome to HDnG first comeback: 5TORY 3VER 4FTER - the first MV GAME!'+'</br>'+'</br>'+'On phone, use the + or - button below to adjust size.'+'</br>'+'When ready, press the MV button on the top left. '+'</br>'+'To play yourself, select any 3 of Roars, Airson, GoldenAge, or X, and the Go button will appear. The 4th member will join as the mastermind!','hidden');
-	ui.create.control('+',function(){						
+					//var dialog=ui.create.dialog('<span style="font-size:30px">Welcome!</span></br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white;font-variant:small-caps"><a href="/lore.html" target="blank">Lore</a> · <a href="https://officialhdng.github.io/" target="blank">Strategy</a> · <a href="https://officialhdng.github.io/" target="blank">Gallery</a> · <a href="https://officialhdng.github.io/" target="blank">Request Your Flag!</a> · <a href="https://officialhdng.github.io/" target="blank">Win! $777 Prize</a></span>');
+					var dialog=ui.create.dialog('<img src="image/gem.png" height="20" width="20"></img></br><span style="font-size:12px">International Version Beta </span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="font-size:25px">CardGame by OffcialHDnG</span></br></br>On phone, lightly swipe up to access MV · Video mode</br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="https://hidngem.miraheze.org/wiki/Hall" target="blank"> CREATORS CONTENT</a> · <a href="777.html" target="blank">WIN! $777 PRIZE</a></span></br></br>Choose 3 members - and the Go button will appear!</span>');
+							ui.create.control('+',function(){						
 game.documentZoom=game.deviceZoom*1.3;
 							ui.updatez();
 								});
-
 			
 	ui.create.control('-',function(){						
 game.documentZoom=game.deviceZoom*1;
 	ui.updatez();
 						});
+
+					//	ui.create.control('pho',ui.click.auto);
 
 					dialog.classList.add('fixed');
 					ui.window.appendChild(dialog);
@@ -1403,11 +1432,11 @@ game.documentZoom=game.deviceZoom*1;
 					return game.boss.nextSeat.nextSeat;
 				},
 				gameDraw:function(player){
-					return player==game.boss?8:4;
+					return player==game.boss?0:0;
 				},
 				minion:{
-					'2':'boss_zhuyin',
-					'8':'boss_zhuyin',
+					'2':'boss_syin',
+					'8':'boss_syinb',
 				},
 				randchoice:function(){
 					return lib.boss.boss_taowu.randchoice.apply(this,arguments);
@@ -1512,17 +1541,18 @@ game.documentZoom=game.deviceZoom*1;
 					return lib.boss.boss_taowu.init.apply(this,arguments);
 				}
 			},
+			qiong:{},
 			boss_hundun:{
 				chongzheng:0,
 				loopFirst:function(){
 					return game.boss.nextSeat.nextSeat;
 				},
 				gameDraw:function(player){
-					return player==game.boss?8:4;
+					return player==game.boss?0:0;
 				},
 				minion:{
 					'2':'boss_zhuyin',
-					'8':'boss_zhuyin',
+					'8':'boss_zhuyinb',
 				},
 				randchoice:function(){
 					return lib.boss.boss_taowu.randchoice.apply(this,arguments);
@@ -1541,11 +1571,11 @@ game.documentZoom=game.deviceZoom*1;
 					return game.boss.nextSeat.nextSeat;
 				},
 				gameDraw:function(player){
-					return player==game.boss?8:4;
+					return player==game.boss?0:0;
 				},
 				minion:{
-					'2':'boss_zhuyin',
-					'8':'boss_zhuyin',
+					'2':'pea1',
+					'8':'pea2',
 				},
 				randchoice:function(){
 					return lib.boss.boss_taowu.randchoice.apply(this,arguments);
@@ -1558,13 +1588,155 @@ game.documentZoom=game.deviceZoom*1;
 					return lib.boss.boss_taowu.init.apply(this,arguments);
 				}
 			},
+
+
+			boss_r:{
+				chongzheng:0,
+				loopFirst:function(){
+					return game.boss.nextSeat.nextSeat;
+				},
+				gameDraw:function(player){
+					return player==game.boss?0:0;
+				},
+			//	minion:{
+					//'2':'pea1',
+					//'8':'pea2',
+				//},
+				randchoice:function(){
+					return lib.boss.boss_taowu.randchoice.apply(this,arguments);
+				},
+				controlid:'shenwuzaishi',
+				control:function(){
+					return lib.boss.boss_taowu.control.apply(this,arguments);
+				},
+				init:function(){
+					return lib.boss.boss_taowu.init.apply(this,arguments);
+				}
+			},
+
+			boss_a:{
+				chongzheng:0,
+				loopFirst:function(){
+					return game.boss.nextSeat.nextSeat;
+				},
+				gameDraw:function(player){
+					return player==game.boss?0:0;
+				},
+			
+				randchoice:function(){
+					return lib.boss.boss_taowu.randchoice.apply(this,arguments);
+				},
+				controlid:'shenwuzaishi',
+				control:function(){
+					return lib.boss.boss_taowu.control.apply(this,arguments);
+				},
+				init:function(){
+					return lib.boss.boss_taowu.init.apply(this,arguments);
+				}
+			},
+
+			boss_g:{
+				chongzheng:0,
+				loopFirst:function(){
+					return game.boss.nextSeat.nextSeat;
+				},
+				gameDraw:function(player){
+					return player==game.boss?0:0;
+				},
+			
+				randchoice:function(){
+					return lib.boss.boss_taowu.randchoice.apply(this,arguments);
+				},
+				controlid:'shenwuzaishi',
+				control:function(){
+					return lib.boss.boss_taowu.control.apply(this,arguments);
+				},
+				init:function(){
+					return lib.boss.boss_taowu.init.apply(this,arguments);
+				}
+			},
+
+			boss_x:{
+				chongzheng:0,
+				loopFirst:function(){
+					return game.boss.nextSeat.nextSeat;
+				},
+				gameDraw:function(player){
+					return player==game.boss?0:0;
+				},
+			
+				randchoice:function(){
+					return lib.boss.boss_taowu.randchoice.apply(this,arguments);
+				},
+				controlid:'shenwuzaishi',
+				control:function(){
+					return lib.boss.boss_taowu.control.apply(this,arguments);
+				},
+				init:function(){
+					return lib.boss.boss_taowu.init.apply(this,arguments);
+				}
+			},
+
+
+			wuguxdoesntwork:{
+				mod:{
+					cardname:function(card,player){
+						if(card.name=='sha') return 'wugu';
+						if(card.name=='wanjian') return 'wugu';
+						if(card.name=='nanman') return 'wugu';
+					},
+				},
+			
+				audio:2,
+				trigger:{player:'phaseZhunbeiBegin'},
+				firstDo:true,
+				forced:true,
+			
+				content:function(){},
+			},
+
+
+
+			taoav:{
+		
+				trigger:{
+					global:'gameStart',
+					player:'enterGame',
+				},
+				forced:true,
+					content:function(player){
+					player.node.avatar2.setBackground('taoav','character');
+					player.node.avatar.setBackground('taoav','character');
+					player.update();			}	
+							
+			},
+
+
+			wuguxold:{
+				audio:2,
+				filter:function(event,player){
+					return player.countCards('hes',{color:'black'})>0;
+				},
+				forced:true,
+				filterCard:function(card){
+					return get.color(card)=='black';
+				},
+				position:'hes',
+				viewAs:{name:'wugu'},
+				
+				
+			},
+
+
+
+
 			boss_taowu:{
 				chongzheng:0,
 				loopFirst:function(){
 					return game.boss.nextSeat.nextSeat;
 				},
 				gameDraw:function(player){
-					return player==game.boss?8:4;
+					return player==game.boss?0:0;
 				},
 				minion:{
 					'2':'boss_zhuyin',
@@ -1733,9 +1905,9 @@ game.documentZoom=game.deviceZoom*1;
 					}
 					lib.inpile.remove('wuzhong');
 					lib.inpile.remove('jiedao');
-					lib.inpile.add('sadouchengbing');
-					lib.inpile.add('yihuajiemu');
-					lib.inpile.add('gubuzifeng');
+					//lib.inpile.add('sadouchengbing');
+					//lib.inpile.add('yihuajiemu');
+					//lib.inpile.add('gubuzifeng');
 					for(var i=0;i<ui.cardPile.childElementCount;i++){
 						var node=ui.cardPile.childNodes[i];
 						if(node.name=='wuzhong'){
@@ -1750,8 +1922,7 @@ game.documentZoom=game.deviceZoom*1;
 						}
 					}
 					var cards=[
-						game.createCard2('gubuzifeng','club',5),
-						game.createCard2('gubuzifeng','diamond',7)
+		
 					];
 					while(cards.length>0){
 						ui.cardPile.insertBefore(cards.shift(),ui.cardPile.childNodes[get.rand(0,ui.cardPile.childElementCount-1)]);
@@ -2718,6 +2889,34 @@ if(event.targets.length&&game.roundNumber%4==0){
 					trigger.player.useCard({name:'jiu'},trigger.player);
 				},
 			},
+
+
+
+
+
+
+
+			wuguxcor:{
+				trigger:{player:'phaseZhunbeiBegin'},
+				viewAs:{name:'wugu'},
+				usable:1,
+				delay:0,
+				forced:true,
+				selectCard:0,
+			
+				
+			},
+
+
+
+
+
+
+
+
+
+
+
 			boss_renao:{
 				trigger:{player:'die'},
 				forceDie:true,
@@ -2996,6 +3195,106 @@ if(event.targets.length&&game.roundNumber%4==0){
 					}
 				},
 			},
+
+
+
+			pin:{
+				
+				
+			enable:'phaseUse',
+				direct:true,
+			
+				filter:function(event,player){
+					return player.countCards('h')>0&&game.hasPlayer(function(current){
+						return current!=player&&player.canCompare(current);
+					});
+				},
+				content:function(){
+					'step 0'
+					player.chooseTarget(get.prompt2('nsfeixiong'),function(card,player,target){
+						return player!=target&&player.canCompare(target);
+					}).set('ai',function(target){
+						var player=_status.event.player;
+						var hs=player.getCards('h').sort(function(a,b){
+							return b.number-a.number;
+						});
+						var ts=target.getCards('h').sort(function(a,b){
+							return b.number-a.number;
+						});
+						if(!hs.length||!ts.length) return 1;
+						if(hs[0].number>ts[0].number) return get.damageEffect(target,player,player);
+						return 1;
+					});
+					'step 1'
+					if(result.bool){
+						var target=result.targets[0];
+						event.target=target;
+						player.logSkill('nsfeixiong',target);
+						player.chooseToCompare(target);
+						var ay=lib.config.aede;
+						var ax=2;
+						var az=(ax+ay);
+						var aa=(ax+ay+3);
+					
+						if(player.hasSkill('goldd')){
+							game.saveConfig('aede',aa);
+						}
+						else{
+							game.saveConfig('aede',az);
+						}
+
+						if(lib.config.ultt){
+							game.broadcastAll('createDialog',event.videoId, '2nd Eden ' + lib.config.aede +'\u00B0');	
+							game.delay(2);
+						}
+
+
+					}
+					else event.finish();
+					'step 2'
+					if(!result.tie){
+						var targets=[player,target];
+						if(result.bool) targets.reverse();
+						var z=Math.min(lib.config.lvx,338351);
+						var x=(Math.floor(Math. sqrt(z/777)));
+						var y=((x*x*450/38.7));
+						var a=1400+y;
+						targets[0].damage('fire',targets[0],a,);
+
+						//player.damage('nosource','fire',3).animate=false;
+
+
+						//targets[0].damage(targets[0],1111,'fire');
+					}
+				},
+			},
+
+
+
+			killdraw:{
+				trigger:{global:'dying'},
+				priority:9,
+				filter:function(event,player){
+					return event.player!=player&&event.player.hp<=0&&event.player.group=='qun';
+				},
+				check:function(event,player){
+					return get.attitude(player,event.player)<0;
+				},
+				forced:true,
+				logTarget:'player',
+				content:function(){
+					'step 0'
+					game.delayx();
+					trigger.player.die();
+					'step 1'
+					if(!trigger.player.isAlive()){
+						trigger.cancel(true);
+					}
+				}
+			},
+
+
+
 			"boss_wanghun":{
  			audio:true,
  			forced:true,
@@ -3093,6 +3392,8 @@ if(event.targets.length&&game.roundNumber%4==0){
   			}
  			},
 			},
+
+
 			"boss_wuliang":{
  			forced:true,
  			audio:true,
@@ -3119,6 +3420,22 @@ if(event.targets.length&&game.roundNumber%4==0){
  		 	}
  			},
 			},
+
+
+			"peacettt":{
+				forced:true,
+				audio:true,
+				trigger:{
+				 global:"gameDrawAfter",
+				 player:['phaseZhunbeiBegin','phaseJieshuBegin','enterGame'],
+				},
+				content:function(){
+					ui.background.setBackgroundImage('image/background/cath.jpg');
+				},
+			   },
+
+
+
 			"boss_dayuan":{
 				trigger:{
      global:"judge",
@@ -3943,6 +4260,17 @@ if(event.targets.length&&game.roundNumber%4==0){
 					if(event.list.length) event.redo();
 				},
 			},
+
+regem:{
+	trigger:{player:'changeHp'},
+	forced:true,
+	content:function(){
+				lib.config.re+=2;
+
+}		
+},
+
+
 			boss_yanyu_switch:{
 				unique:true,
 				charlotte:true,
@@ -4440,7 +4768,7 @@ if(event.targets.length&&game.roundNumber%4==0){
 					on:{
 						trigger:{player:'changeHp'},
 						filter:function(event,player){
-							return player.hp<=100;
+							return player.hp<=8800;
 						},
 						forced:true,
 						skillAnimation:true,
@@ -4461,6 +4789,8 @@ if(event.targets.length&&game.roundNumber%4==0){
 					}
 				}
 			},
+
+
 			boss_jicai_switch:{
 				unique:true,
 				charlotte:true,
@@ -4572,15 +4902,25 @@ if(event.targets.length&&game.roundNumber%4==0){
 				}
 			},
 			boss_xiangde:{
-				trigger:{player:'damageBegin3'},
+				trigger:{global:'gameStart'},
+				popup:false,
+				//trigger:{player:'damageBegin3'},
+				//forced:true,
+				//filter:function(event,player){
+				//	return event.source&&event.source.isIn()&&event.source!=player&&event.source.getEquip(1);
+				//},
+				//content:function(){
+				//	trigger.num++;
+				//
+	
 				forced:true,
-				filter:function(event,player){
-					return event.source&&event.source.isIn()&&event.source!=player&&event.source.getEquip(1);
-				},
-				content:function(){
-					trigger.num++;
-				}
-			},
+					content:function(game,player,event){
+						game.addGlobalSkill('done');
+				
+			}	},
+
+
+
 			boss_yinzei:{
 				trigger:{player:'damageEnd'},
 				forced:true,
@@ -4592,6 +4932,8 @@ if(event.targets.length&&game.roundNumber%4==0){
 					trigger.source.randomDiscard();
 				}
 			},
+
+
 			boss_zhue:{
 				trigger:{global:'damageEnd'},
 				forced:true,
@@ -5745,6 +6087,41 @@ if(event.targets.length&&game.roundNumber%4==0){
 					}
 				}
 			},
+
+
+
+			flow:{
+				forced:true,
+				trigger:{player:'phaseBegin'},
+					content:function(){
+						"step 0"
+						event.targets=game.filterPlayer();
+						event.targets.remove(player);
+						event.targets.sort(lib.sort.seat);
+						event.targets2=event.targets.slice(0);
+						player.line(event.targets,'green');
+						"step 1"
+						if(event.targets.length&&game.roundNumber%4==1){
+							event.targets.shift().damage(50);
+							event.redo();
+						}
+	if(event.targets.length&&game.roundNumber%4==2){
+							event.targets.shift().damage(100);
+							event.redo();
+						}
+	if(event.targets.length&&game.roundNumber%4==3){
+							event.targets.shift().damage(200);
+							event.redo();
+						}
+	if(event.targets.length&&game.roundNumber%4==0){
+							event.targets.shift().damage(400);
+							event.redo();
+						}						
+					},					
+				},
+	
+
+
 			honghuangzhili:{
 				init:function(player){
 					player.disableSkill('honghuangzhili','boss_shenyi');
@@ -5932,8 +6309,8 @@ if(event.targets.length&&game.roundNumber%4==0){
 					player.damage('nosource','fire',3).animate=false;
 					player.$damage(trigger.player);
 					player.$damagepop(-3,'fire');
-					if(lib.config.animation&&!lib.config.low_performance){
-						player.$fire();
+					if(lib.config.animation&&!lib.config.nosparkles){
+						//
 					}
 					if(!event.parent.parent.boss_huihuo_logv){
 						event.parent.parent.boss_huihuo_logv=true;
@@ -7066,6 +7443,15 @@ if(event.targets.length&&game.roundNumber%4==0){
 					},
 				}
 			},
+			enemy:{
+			
+				
+					
+				},
+
+
+
+		
 			boss_nbianshenx:{},
 			boss_jingjue:{
 				inherit:'boss_danshu'
@@ -7729,8 +8115,8 @@ if(event.targets.length&&game.roundNumber%4==0){
 					player.damage('nosource','fire').animate=false;
 					player.$damage(trigger.player);
 					player.$damagepop(-1,'fire');
-					if(lib.config.animation&&!lib.config.low_performance){
-						player.$fire();
+					if(lib.config.animation&&!lib.config.nosparkles){
+						
 					}
 					if(!event.parent.parent.boss_minbao_logv){
 						event.parent.parent.boss_minbao_logv=true;
@@ -8941,7 +9327,519 @@ if(event.targets.length&&game.roundNumber%4==0){
 					}
 				}
 			},
+
+
+comeback:{
+	forced:true,
+	direct:true,
+	filter:function(event,player){
+	return lib.config.musicsw==1;
+	
+},
+	trigger:{
+		
+		player:'phaseZhunbeiBegin',
+	},
+
+	content:function (){
+
+'step 0'
+game.saveConfig('musicsw','0');				
+
+		game.saveConfig('background_music','music_default');				
+
+							game.playBackgroundMusic();
+},},
+
+			win:{
+				trigger:{
+					player:"dying",
+				},
+				popup:false,
+forced:true,
+content:function (){
+
+	game.saveConfig('background_music','music_phliosophy');	
+	game.saveConfig('musicsw','1');	
+	game.playBackgroundMusic();
+player.$fullscreenpop('YOU GOT A WIN!','metal');
+ui.background.setBackgroundImage('image/background/win.jpg');
+
+},
+
+
+			},
+
+
+
+
+
+
+			darkshone:{				
+				unique:true,
+		charlotte:true,
+				usable:1,	
+			 trigger:{player:'phaseZhunbeiBegin'},
+			 filter:function(event,player){
+					if(game.roundNumber!=1) return false;
+				if(!lib.config.rpgstory) return false;
+				return true;
+				
+			},
+
+
+				//forced:true,
+				content:function (player){
+				    'step 0'				
+		 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+	
+	 if(!lib.config.nosparkles){
+		player.$dust();
+	}
+
+
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'Roars, you cannot possibly');
+	// game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-size:99px;font-variant:small-caps;">Roars, you cannot possibly</span>');
+	// game.broadcastAll('createDialog',event.videoId,'<img src="image/background/cute.gif" height="500" width="800"></img>');
+	game.delay(4);
+	
+	// game.delay(14);               
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'want to kill yourself...?');
+	   game.delay(4);
+	   'step 4'
+	   game.broadcastAll('createDialog',event.videoId,'Now, let me keep you as shadows');
+	   game.delay(3);
+'step 5'
+game.broadcastAll('createDialog',event.videoId,' ');
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+				},
+			},
+
+
+
+
+
+
+
+			cccdarkshone:{				
+				unique:true,
+		charlotte:true,
+				usable:1,	
+			 trigger:{player:'phaseZhunbeiBegin'},
+						filter:function(event,player){
+							return game.roundNumber==22;
+						},
+				//forced:true,
+				content:function (player){
+				    'step 0'				
+		 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+	 player.$dust();
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'Roars, if you can survive 7 Rounds');
+	 game.delay(4);               
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'I will return your Gem.');
+	   game.delay(4);
+	   'step 4'
+	   game.broadcastAll('createDialog',event.videoId,'Now, let me keep you and Shone as forever shadows');
+	   game.delay(3);
+'step 5'
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+				},
+			},
+
+
+
+
+			dshonestory:{
+				unique:true,
+		charlotte:true,
 			
+				//limited:true,
+		init:function(player){			
+						player.storage.dshonestory=1;
+							},	
+				skillAnimation:true,
+				animationColor:'fire',
+ 					 trigger:{player:'phaseZhunbeiBegin'},
+
+				
+						filter:function(event,player){
+							return player.hp<=1313138&&player.storage.dshonestory>=1&&lib.config.rpgstory;
+						},
+
+					content:function (player){
+				   'step 0'
+				player.storage.dshonestory-=3;
+	 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+	
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'No one can shake Elrondes reign');
+	 game.delay(4);
+                
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'I can only hope to change it from within.');
+	   game.delay(4);
+
+    'step 4'
+	game.broadcastAll('createDialog',event.videoId,'I believe my skills will change him. He will value the android empire.');
+	game.delay(4);
+
+    'step 5'
+	game.broadcastAll('createDialog',event.videoId,'If I become one of Elrondes agents');
+	game.delay(4);
+
+	'step 6'
+	game.broadcastAll('createDialog',event.videoId,'Give us your blessings.');
+	game.delay(4);
+'step 7'
+
+player.draw(2);
+game.delay();
+player.recover(9999);
+player.$fullscreenpop('妄天 傷','fire');
+player.$fullscreenpop('妄天 傷','fire','dva.png');
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+//'step 8'
+//game.addGlobalSkill('chaoli');
+				}
+			},
+
+
+
+
+			asiadshonestory:{
+				unique:true,
+		charlotte:true,
+			
+				//limited:true,
+		init:function(player){			
+						player.storage.dshonestory=1;
+							},	
+				skillAnimation:true,
+				animationColor:'fire',
+ 					 trigger:{player:'phaseZhunbeiBegin'},
+						filter:function(event,player){
+							return player.hp<=1313138&&player.storage.dshonestory>=1;
+						},
+					content:function (player){
+				   'step 0'
+				player.storage.dshonestory-=3;
+	 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+	
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'爻论的帝国，全世界都无法动摇');
+	 game.delay(4);
+                
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'我只能从内部改变它。');
+	   game.delay(4);
+
+    'step 4'
+	game.broadcastAll('createDialog',event.videoId,'我相信我的能力可以改变爻论。他会好好把握我们生化帝国的资源。');
+	game.delay(4);
+
+    'step 5'
+	game.broadcastAll('createDialog',event.videoId,'若我成为爻论的手下');
+	game.delay(4);
+
+	'step 6'
+	game.broadcastAll('createDialog',event.videoId,'祝福我和爻论的世界帝国吧');
+	game.delay(4);
+'step 7'
+
+player.draw(2);
+game.delay();
+player.recover(9999);
+player.$fullscreenpop('妄天 伤','fire');
+player.$fullscreenpop('妄天 伤','fire','dva.png');
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+//'step 8'
+//game.addGlobalSkill('chaoli');
+				}
+			},
+
+
+
+
+			
+	
+
+
+
+
+			newdshonestory:{
+				trigger:{player:'phaseZhunbeiBegin'},
+					filter:function(event){
+					return player.hp<=5252500&&player.storage.dshonestory>=1;
+				},
+					init:function(player){			
+						player.storage.dshonestory=1;
+							},	
+				forced:true,
+							content:function (){
+				
+								'step 1'
+								ui.background.setBackgroundImage('image/background/hdng.jpg');
+							   
+								'step 2'
+								game.broadcastAll('createDialog',event.videoId,'涅芙');
+								game.delay(4);
+										   
+								  'step 3'
+								  game.broadcastAll('createDialog',event.videoId,'我相信我的能力可以改变爻论。');
+								  game.delay(4);
+						   
+							   'step 4'
+							   game.broadcastAll('createDialog',event.videoId,'他会好好把握我们生化帝国的资源。而我会说服他，将他的精力转向贡献社会');
+							   game.delay(4);
+						   
+							   'step 5'
+							   game.broadcastAll('createDialog',event.videoId,'若你好不起来了。若我成为爻论的手下');
+							   game.delay(4);
+						   
+							   'step 6'
+							   game.broadcastAll('createDialog',event.videoId,'祝福我和爻论的世界帝国吧');
+							   game.delay(4);
+						   'step 7'
+						   
+						   player.draw(2);
+						   game.delay();
+						   player.recover(9999);
+						   player.$fullscreenpop('妄天 伤','fire');
+						   player.$fullscreenpop('妄天 伤','fire','dva.png');
+						   ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+	
+				}
+			},	
+
+
+
+
+
+
+
+
+
+			introd:{
+				audio:2,
+			unique:true,
+		charlotte:true,			
+					usable:1,
+				 trigger:{player:'phaseZhunbeiBegin'},
+						filter:function(event,player){
+							if(game.roundNumber!=1) return false;
+							if(!lib.config.rpgstory) return false;
+							return true;							
+							//return player.storage.activatex==1&&game.roundNumber==1&&lib.config.speed!='vfast';
+						},
+				content:function (player){
+					'step 0'
+					 ui.background.setBackgroundImage('image/background/hdng.jpg');
+					 game.delay(2);
+		 'step 1'
+	 game.broadcastAll('createDialog',event.videoId,'Boss: "If you deserve to be seen, you wont be in the dark"');
+	 game.delay(4);
+
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'"so, if you are left alone in the dark, thats where you belong"');
+	 game.delay(4);
+
+	 'step 3'
+	 game.broadcastAll('createDialog',event.videoId,'"no more hidden gems exist. Not in our world"');
+	 game.delay(4);
+
+	
+
+				}},
+
+
+
+
+			activatex:{
+				audio:2,
+				init:function(player){
+					player.storage.activatex=1;		
+				},
+				unique:true,
+		charlotte:true,			
+					usable:1,
+				 trigger:{player:'phaseZhunbeiBegin'},
+						filter:function(event,player){
+							if(player.storage.activatex!=1) return false;
+							if(game.roundNumber!=8) return false;
+							if(!lib.config.rpgstory) return false;
+							return true;							
+							//return player.storage.activatex==1&&game.roundNumber==1&&lib.config.speed!='vfast';
+						},
+				content:function (player){
+				
+				    'step 0'
+					player.storage.activatex-=1;
+	 //  game.broadcast('createDialog',event.videoId,get.translation(player)+'正在擦拭宝物...');
+	 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+	 //player.$flame();
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'I cant...its CTVT afterall');
+	 game.delay(4);
+                
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'How many millions have died in the Pinnacle...all these lives no one could save');
+	   game.delay(4);
+
+    'step 4'
+	game.broadcastAll('createDialog',event.videoId,'what do I have over others to save Nyeve from the same cancer?');
+	game.delay(4);
+
+    'step 5'
+	game.broadcastAll('createDialog',event.videoId,'the last time I lost her destroyed me. If this time, I dont repeat my self-destruction');
+	game.delay(4);
+
+
+	'step 6'
+	game.broadcastAll('createDialog',event.videoId,'would you blame me, my little sister?');
+	game.delay(4);
+
+
+	'step 7'
+	game.broadcastAll('createDialog',event.videoId,'. ');
+	game.delay(3);
+
+	'step 8'
+	game.broadcastAll('createDialog',event.videoId,'GoldenAge: this boss we are fighting..this is Ea？ ');
+	game.delay(4);
+	
+	'step 9'
+	game.broadcastAll('createDialog',event.videoId,'Roars: No, Ea will never harm us');
+	game.delay(4);
+
+	'step 10'
+	game.broadcastAll('createDialog',event.videoId,'X: Its a fake. The real Ea is not here');
+	game.delay(4);
+
+	'step 11'
+	game.broadcastAll('createDialog',event.videoId,'Airson: Ea, wherever you are...give us your strength');
+	game.delay(4);
+	'step 12'
+	game.broadcastAll('createDialog',event.videoId,' ');
+
+'step 12'
+
+player.draw(5);
+game.delay();
+player.recover(9999);
+player.$fullscreenpop('療無遺芽','fire');
+player.$fullscreenpop('療無遺芽','fire','dva.png');
+player.storage.activatex-=1;
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+//game.changeCoin(52);
+				},
+			},
+
+
+
+
+
+			cactivatex:{
+
+				audio:2,
+				init:function(player){
+					player.storage.activatex=1;
+		
+				},
+				unique:true,
+		charlotte:true,
+			
+			//	limited:true,
+				usable:1,
+				skillAnimation:true,
+			
+				animationColor:'fire',
+ 			//trigger:{player:'changeHp'},
+			 //trigger:{global:'dying'},
+			 trigger:{player:'phaseZhunbeiBegin'},
+						filter:function(event,player){
+							return player.storage.activatex==1&&game.roundNumber==4;
+						},
+				//forced:true,
+				content:function (player){
+				
+				    'step 0'
+					player.storage.activatex-=1;
+	 //  game.broadcast('createDialog',event.videoId,get.translation(player)+'正在擦拭宝物...');
+	 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+	 //player.$flame();
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'我办不到。 。 。是CTVT啊。');
+	 game.delay(4);
+                    //  var str = 'This is my story';
+                   // player.chooseControl('ok2') 
+                   // .set('prompt',str)
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'万国巅失去了多少条生命，全人类都无法挽回的人命。 。 。');
+	   game.delay(4);
+
+                  //    var str1 = '我辦不到。 。 。是CTVT啊。萬國巔失去了多少條生命，全人類都無法挽回的人命。 。 。我又有什麼能力醫治我的妹妹。 ';
+                   // player.chooseControl('ok2')
+                  //  .set('prompt',str1)
+    'step 4'
+	game.broadcastAll('createDialog',event.videoId,'我又有什么能力医治我的妹妹');
+	game.delay(4);
+
+    'step 5'
+	game.broadcastAll('createDialog',event.videoId,'上一次失去她是那么的痛苦。如果这一次，我不让自己彻底瓦解。 。 。');
+	game.delay(4);
+
+
+	'step 6'
+	game.broadcastAll('createDialog',event.videoId,'涅芙，你会怪我吗？');
+	game.delay(4);
+
+	'step 7'
+	game.broadcastAll('createDialog',event.videoId,'GoldenAge: 她。 。 。她是遗芽吗？ ');
+	game.delay(4);
+	
+	'step 8'
+	game.broadcastAll('createDialog',event.videoId,'Roars: 不可能，她不会害我们的');
+	game.delay(4);
+
+	'step 9'
+	game.broadcastAll('createDialog',event.videoId,'X: 她在装。我知道真正的遗芽不是这样的');
+	game.delay(4);
+
+	'step 10'
+	game.broadcastAll('createDialog',event.videoId,'Airson: 遗芽，真正的你在哪里。 。 。帮助我们吧');
+	game.delay(4);
+	'step 10'
+	game.broadcastAll('createDialog',event.videoId,' ');
+
+'step 12'
+
+player.draw(5);
+game.delay();
+player.recover(9999);
+player.$fullscreenpop('疗无遗芽','fire');
+player.$fullscreenpop('疗无遗芽','fire','dva.png');
+player.storage.activatex-=1;
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+//game.changeCoin(52);
+				},
+			},
+
+
+
+
+
+
+
 			"boss_hunzi":{
 				skillAnimation:true,
 				animationColor:"wood",
@@ -9207,11 +10105,20 @@ if(event.targets.length&&game.roundNumber%4==0){
 			boss_yanling:'焰灵',
 			boss_yandi:'炎帝',
 
-			boss_hundun:'混沌',
-			boss_qiongqi:'穷奇',
+			boss_hundun:'【Boss】1st Dark Ea',
+			boss_qiongqi:'【Boss】1st Dark Shone',
+			boss_zhuyin:'ParallelFragment',
+			boss_zhuyinb:'ParallelFragment',
+			boss_syin:'ParallelFragment',
+			boss_syinb:'ParallelFragment',
+			
+
+
+			
+
 			boss_taowu:'梼杌',
 			boss_taotie:'饕餮',
-			boss_zhuyin:'烛阴',
+		
 			boss_xiangliu:'相柳',
 			boss_zhuyan:'朱厌',
 			boss_bifang:'毕方',
@@ -9248,11 +10155,12 @@ if(event.targets.length&&game.roundNumber%4==0){
 			boss_sipu:'司圃',
 			boss_sipu_switch:'司圃',
 			boss_sipu_info:'体力值首次减少至一半或更少时激活此技能。锁定技，你的出牌阶段内，若你使用的牌数小于等于2张，其他角色无法使用或打出牌。',
-			
+			pin:'{X, the Mystery}',
+			pin_info:'This Boss forces a member to play a LoreSong with her - the one who plays the more Mysterious LoreSong strikes the other',
 			boss_wuzang:'无脏',
 			boss_wuzang_info:'锁定技，摸牌阶段，你的摸牌基数改为X（X为你的体力值一半且至少为5）；你的手牌上限基数为0',
-			boss_xiangde:'相德',
-			boss_xiangde_info:'锁定技，其他角色对你造成伤害时，若其装备区内有武器牌，此伤害+1',
+			boss_xiangde:' ',
+			boss_xiangde_info:'',
 			boss_yinzei:'LOSTER',
 			boss_yinzei_switch:'BUSTER',
 			boss_yinzei_info:'体力值首次减少至一半或更少时激活此技能。锁定技，若你没有手牌，其他角色对你造成伤害后，随机弃置一张牌',
@@ -9314,7 +10222,7 @@ if(event.targets.length&&game.roundNumber%4==0){
 			boss_mushengoumang:'木神勾芒',
 			boss_shujing:'树精',
 			boss_taihao:'太昊',
-
+			activatex:'療無遺芽',
 			boss_baimangshilian:'秋之试炼',
 			boss_baihu:'白虎',
 			boss_jinshenrushou:'金神蓐收',
@@ -9403,7 +10311,8 @@ if(event.targets.length&&game.roundNumber%4==0){
 			gaiming_info:'锁定技，在你的判定牌生效前，你观看牌堆顶的7张牌并选择一张作为判定结果，此结果不可更改',
 			fengqi:'风起',
 			fengqi_info:'准备阶段和结束阶段，你可以视为使用任意一张普通锦囊牌',
-
+qan:' ',
+qbn:' ',
 			jiaoxia:'皎霞',
 			jiaoxia_info:'每当你成为红色牌的目标，你可以摸一张牌',
 			lingbo:'凌波',
@@ -9568,6 +10477,8 @@ if(event.targets.length&&game.roundNumber%4==0){
 
 			tinqin:'听琴',
 			boss_guihan:'归汉',
+			boss_syin:'ParallelFragment',
+			boss_syinb:'ParallelFragment',
 			boss_guihan_info:'限定技，濒死阶段，你可以将体力回复至体力上限，摸4张牌，令所有敌人的技能恢复，失去技能【悲歌】和【胡笳】，并获得技能【听琴】、【蕙质】',
 			boss_huixin:'蕙质',
 			boss_huixin_info:'每当你于回合外失去牌，可以进行一次判定，若为黑色，当前回合角色失去一点体力，否则你回复一点体力并摸一张牌',
@@ -9602,6 +10513,12 @@ if(event.targets.length&&game.roundNumber%4==0){
 			shangshix:'伤逝',
 			shangshix2:'伤逝',
 			shangshix_info:'锁定技，你的手牌数至少为4，结束阶段，若你的体力值大于1，你令场上所有角色流失一点体力',
+			boss_r:'Roars Intro',
+
+			boss_a:'Airson Intro',
+			boss_g:'GoldenAge Intro',
+					boss_x:'X Intro',
+
 
 			boss_baonu:'暴怒',
 			boss_baonu_info:'锁定技，当你的体力值降至4或更低时，你变身为暴怒战神或神鬼无前，并立即开始你的回合',
@@ -9717,6 +10634,7 @@ if(event.targets.length&&game.roundNumber%4==0){
 			boss_yingzhong_info:'锁定技。你登场后的第一个回合开始时，你随机获得两个“阴间武将”的全部技能。',
 			boss_yingzhong_append:'<span style="font-family:yuanli">四季映姬到阴曹地府<br>——阴(映)到家了！</span>',
 					//孟婆:
+
 			"boss_mengpo":"孟婆",
 			"boss_shiyou":"拾忧",
 			"boss_shiyou_info":"其他角色于弃牌阶段弃置的牌进入弃牌堆前，你可以选择其中任意张花色各不相同的牌获得之。",
@@ -9726,9 +10644,14 @@ if(event.targets.length&&game.roundNumber%4==0){
 			"boss_wangshi_info":"锁定技，你存活时，敌方角色的回合开始时，令其于本回合不能使用或打出随机一种类型的牌（基本、锦囊、装备）。",
 			"boss_wangshi2":"往事",
 			"boss_wangshi2_info":"",
+			nsfeixiong:'Mini Mystery I',
+			qiong:'Careless',
+			qiong_info:'Boss boosts Strength to 230%!',
+			nsfeixiong_info:'Choose an Enemy, and play a LoreCard!',
 			//地藏王:
-			"boss_dizangwang":"地藏王",
-			"boss_bufo":"不佛",
+
+			
+		
 			"boss_bufo_info":"锁定技，你的回合开始时，你对所有距离为1的其他角色造成1点火焰伤害；你受到大于等于2的伤害时，令此伤害-1。",
 			"boss_wuliang":"无量",
 			"boss_wuliang_info":"锁定技，你登场时额外摸3张牌；结束阶段开始时，你摸两张牌；你的回合开始时，若你当前体力小于3，则回复至3。",

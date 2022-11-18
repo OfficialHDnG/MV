@@ -1098,18 +1098,18 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				},
 			},
 			qunxionggeju:{
-				name:'Ea',
+				name:'Ea - First Candidate of Airson',
 		
 							intro:[
-'Roars, Airson, GoldenAge, and X are only shadows on cards, given a second chance at life. The 4 were among 100 inhabitants whose tragic lives ended in a dystopian dimension called Ri [璃 · 리]'
+'Ea [遗芽  · 유아] grew up as orphans with her younger sister, Nyeve in a slum skyscraper.'
 
 +'</br></br>'+
 
-'The 4 boys can come back to the light if they can solve the mystery of who they were previously.'
+'One day in their young adulthood, Ea receives a strange message from a boy she has met only twice.'
 
 +'</br></br>'+
 
-' To find out who they were, the 4 boys have to slowly uncover what happened in Ri - and how each of the candidates died. Each candidate has a unique GLYPTIC [极越 · 극도]: an indestructible belief that one holds onto, even after transcending the boundary of life. Afterall, the GLYPTIC is what the 100 inhabitants lived and died for...so, what were they willing to die for?'
+'"Just like I knew how it was going to storm when we met, I know your sister has gone missing" - Shone, the First Candidate of Roars'
 +'<a href=https://hidngem.miraheze.org/wiki/Main_Page>'+'</br></br>'
 +' Full story...'+'</a>',
 	
@@ -1414,52 +1414,53 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				},
 			},
 			duzhansanguo:{
-				name:'Shone',
+				name:'Shone - First Candidate of Roars',
 				intro:[
-'Roars, Airson, GoldenAge, and X are only shadows on cards, given a second chance at life. The 4 were among 100 inhabitants whose tragic lives ended in a dystopian dimension called Ri [璃 · 리]'
+'Shone  [傷 · 상] grew up with a nonverbal, overweight father who relied on an electric wheelchair to get around. His father was a victim of the high crime rates in the City, and passed in a random assault.'
 +'</br></br>'+
 'The 4 boys can come back to the light if they can solve the mystery of who they were previously.'
 +'</br></br>'+
-' To find out who they were, the 4 boys have to slowly uncover what happened in Ri - and how each of the candidates died. Each candidate has a unique GLYPTIC [极越 · 극도]: an indestructible belief that one holds onto, even after transcending the boundary of life. Afterall, the GLYPTIC is what the 100 inhabitants lived and died for...so, what were they willing to die for?'
-+'<a href=https://hidngem.miraheze.org/wiki/Main_Page>'+'</br></br>'
+' Nyeve, as the watchwoman of the Citys organized and spontaneous criminal activity, recruits Shone in her operation. Shone was originally only fascinated with the illusion of seeing his father - who loved sightseeing on the Citys numerous, sky-high trains - enjoy the city once more. Nyeve did not stop Shone from the futile project of restoring his fathers body to a normal appearance. They placed the restored body on his reprogrammed electric wheelchair, which carried the body around the city, riding trains and sightseeing without a care.'
++'<a href=https://hidngem.miraheze.org/wiki/Shone>'+'</br></br>'
 +' Full story...'+'</a>',
 	],	},
 
 
 b:{
-				name:'Nyeve',
+				name:'Nyeve - First Candidate of Roars',
 				intro:[
-'Roars, Airson, GoldenAge, and X are only shadows on cards, given a second chance at life. The 4 were among 100 inhabitants whose tragic lives ended in a dystopian dimension called Ri [璃 · 리]'
+'Nyeve  [涅芙 · 날부] grew up with her elder sister Ea after the passing of their parents. She did not grow up being close to Ea; as the younger of the two, Nyeve was dominant, outgoing, and did not ruminate over losing their parents like Ea did. Nyeve dabbled in complex social circles for years as a severely troubled teen.'
 +'</br></br>'+
 'The 4 boys can come back to the light if they can solve the mystery of who they were previously.'
 +'</br></br>'+
-' To find out who they were, the 4 boys have to slowly uncover what happened in Ri - and how each of the candidates died. Each candidate has a unique GLYPTIC [极越 · 극도]: an indestructible belief that one holds onto, even after transcending the boundary of life. Afterall, the GLYPTIC is what the 100 inhabitants lived and died for...so, what were they willing to die for?'
-+'<a href=https://hidngem.miraheze.org/wiki/Main_Page>'+'</br></br>'
+' Through observing the titanic beings who lived in “Yemog” creating worlds through their language, Nyeve awakened her own ability to control electrons through her words.'
++'</br></br>'+
+'She expressed her interest to return to her own world, and she awakened on the top of a skyscraper, soaked in water like a newborn child.'
++'<a href=https://hidngem.miraheze.org/wiki/Nyeve>'+'</br></br>'
 +' Full story...'+'</a>',
 	],	},
-
 
 c:{
-				name:'Healon',
+				name:'Healon - First Candidate of Roars',
 				intro:[
-'Roars, Airson, GoldenAge, and X are only shadows on cards, given a second chance at life. The 4 were among 100 inhabitants whose tragic lives ended in a dystopian dimension called Ri [璃 · 리]'
+'Healon [希任 · 희임], Candidate of X, first comes into the lives of Ea, Nyeve, and Shone as a rescued victim of kidnapping. Healon dismisses the cases in court against her kidnapper, a presumed serial killer and physician who takes his victims out into The Wild. The kidnapper did not return to The City with Healon as his last victim, and in combination with Healon refusing to press any charges, it was widely assumed that Healon had killed her kidnapper and returned to The City in an attempt to save herself.'
 +'</br></br>'+
-'The 4 boys can come back to the light if they can solve the mystery of who they were previously.'
-+'</br></br>'+
-' To find out who they were, the 4 boys have to slowly uncover what happened in Ri - and how each of the candidates died. Each candidate has a unique GLYPTIC [极越 · 극도]: an indestructible belief that one holds onto, even after transcending the boundary of life. Afterall, the GLYPTIC is what the 100 inhabitants lived and died for...so, what were they willing to die for?'
-+'<a href=https://hidngem.miraheze.org/wiki/Main_Page>'+'</br></br>'
+'After Nyeve goes missing, Ea searches through all news records to find that there have been no kidnappings for almost one and a half years. With the exceedingly high crime rate in The Pinnacle of Man-Kings, she puts all hope of finding Nyeve on one person: Healon, the last recorded kidnapping victim in history.'
++'</br></br>'
++'<a href=https://hidngem.miraheze.org/wiki/Healon>'+'</br></br>'
 +' Full story...'+'</a>',
 	],	},
-
 d:{
 				name:'Ri',
 				intro:[
-'Roars, Airson, GoldenAge, and X are only shadows on cards, given a second chance at life. The 4 were among 100 inhabitants whose tragic lives ended in a dystopian dimension called Ri [璃 · 리]'
+'The World of Ri [璃 · 리] is a complex, multi-layered, post-apocalyptic world consisting of three components: '
 +'</br></br>'+
-'The 4 boys can come back to the light if they can solve the mystery of who they were previously.'
+'"Pinnacle of Man-Kings" [万国巅 · 만국전] '
 +'</br></br>'+
-' To find out who they were, the 4 boys have to slowly uncover what happened in Ri - and how each of the candidates died. Each candidate has a unique GLYPTIC [极越 · 극도]: an indestructible belief that one holds onto, even after transcending the boundary of life. Afterall, the GLYPTIC is what the 100 inhabitants lived and died for...so, what were they willing to die for?'
-+'<a href=https://hidngem.miraheze.org/wiki/Main_Page>'+'</br></br>'
+' The Wild [野 · 야]'
++'</br></br>'+
+' “Yemog” [蕊牧 · 예목]'
++'<a href=https://hidngem.miraheze.org/wiki/Ri>'+'</br></br>'
 +' Full story...'+'</a>',
 	],	},
 

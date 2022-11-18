@@ -5,11 +5,11 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		start:function(){
 			var directstartmode=lib.config.directstartmode;
 			ui.create.menu(true);
-			event.textnode=ui.create.div('','输入联机地址');
+			event.textnode=ui.create.div('','Enter Server Code');
 			var createNode=function(){
 				if(event.created) return;
 				if(directstartmode&&lib.node){
-					ui.exitroom=ui.create.system('退出房间',function(){
+					ui.exitroom=ui.create.system('Return to Game',function(){
 						game.saveConfig('directstartmode');
 						game.reload();
 					},true);
@@ -17,7 +17,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					return;
 				}
 				if(lib.node&&window.require){
-					ui.startServer=ui.create.system('启动服务器',function(e){
+					ui.startServer=ui.create.system('Create Server',function(e){
 						e.stopPropagation();
 						ui.click.connectMenu();
 					},true);
@@ -40,14 +40,14 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				node.style.textAlign='center';
 
 				var connect=function(e){
-					event.textnode.innerHTML='正在连接...';
+					event.textnode.innerHTML='Connecting...';
 					clearTimeout(event.timeout);
 					if(e) e.preventDefault();
 					game.saveConfig('last_ip',node.innerHTML);
 					game.connect(node.innerHTML,function(success){
 						if(!success&&event.textnode){
-							alert('连接失败');
-							event.textnode.innerHTML='输入联机地址';
+							alert('No Stable Connection');
+							event.textnode.innerHTML='Enter Server Code';
 						}
 					});
 				};
@@ -72,21 +72,21 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				ui.window.appendChild(text);
 				ui.iptext=text;
 
-				var button=ui.create.div('.menubutton.highlight.large.pointerdiv','连接',connect);
+				var button=ui.create.div('.menubutton.highlight.large.pointerdiv','Connect',connect);
 				button.style.width='70px';
 				button.style.left='calc(50% - 35px)';
 				button.style.top='calc(50% + 60px)';
 				ui.window.appendChild(button);
 				ui.ipbutton=button;
 
-				ui.hall_button=ui.create.system('联机大厅',function(){
+				ui.hall_button=ui.create.system('Lobby',function(){
 					node.innerHTML=get.config('hall_ip')||lib.hallURL;
 					connect();
 				},true);
 				if(!get.config('hall_button')){
 					ui.hall_button.style.display='none';
 				}
-				ui.recentIP=ui.create.system('最近连接',null,true);
+				ui.recentIP=ui.create.system('Recent Servers',null,true);
 				var clickLink=function(){
 					node.innerHTML=this.innerHTML;
 					connect();
@@ -102,7 +102,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 						ui.create.div('.text.textlink',list,clickLink).innerHTML=get.trimip(lib.config.recentIP[i]);
 					}
 					uiintro.add(list);
-					var clear=uiintro.add('<div class="text center">清除</div>');
+					var clear=uiintro.add('<div class="text center">Clear</div>');
 					clear.style.paddingTop=0;
 					clear.style.paddingBottom='3px';
 					clear.listen(function(){
@@ -126,14 +126,14 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				}
 				var n=5;
 				var connect=function(){
-					event.textnode.innerHTML='正在连接...';
+					event.textnode.innerHTML='Connecting...';
 					game.connect(info[0],function(success){
 						if(!success&&n--){
 							createNode();
 							event.timeout=setTimeout(connect,1000);
 						}
 						else{
-							event.textnode.innerHTML='输入联机地址';
+							event.textnode.innerHTML='Enter Server Code';
 						}
 					});
 				};
