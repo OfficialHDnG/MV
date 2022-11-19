@@ -1302,7 +1302,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					}
 		
 					//var dialog=ui.create.dialog('<span style="font-size:30px">Welcome!</span></br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white;font-variant:small-caps"><a href="/lore.html" target="blank">Lore</a> · <a href="https://officialhdng.github.io/" target="blank">Strategy</a> · <a href="https://officialhdng.github.io/" target="blank">Gallery</a> · <a href="https://officialhdng.github.io/" target="blank">Request Your Flag!</a> · <a href="https://officialhdng.github.io/" target="blank">Win! $777 Prize</a></span>');
-					var dialog=ui.create.dialog('<img src="image/gem.png" height="20" width="20"></img></br><span style="font-size:12px">International Version Beta </span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="font-size:25px">CardGame by OffcialHDnG</span></br></br>On phone, lightly swipe up to access MV · Video mode</br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="https://hidngem.miraheze.org/wiki/Hall" target="blank"> CREATORS CONTENT</a> · <a href="777.html" target="blank">WIN! $777 PRIZE</a></span></br></br>Choose 3 members - and the Go button will appear!</span>');
+					var dialog=ui.create.dialog('<img src="image/gem.png" height="20" width="20"></img></br><span style="font-size:12px">International Version Beta </span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="font-size:25px">CardGame by OffcialHDnG</span></br></br>On phone, lightly swipe up to access MV · Video mode</br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="https://hidngem.miraheze.org/wiki/Hall" target="blank"> CREATORS CONTENT</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - and the Go button will appear!</span>');
 							ui.create.control('+',function(){						
 game.documentZoom=game.deviceZoom*1.3;
 							ui.updatez();
@@ -9359,19 +9359,27 @@ game.saveConfig('musicsw','0');
 forced:true,
 content:function (){
 
-	game.saveConfig('background_music','music_phliosophy');	
-	game.saveConfig('musicsw','1');	
-	game.playBackgroundMusic();
+	//game.saveConfig('background_music','music_phliosophy');	
+	//game.saveConfig('musicsw','1');	
+	//game.playBackgroundMusic();
 player.$fullscreenpop('YOU GOT A WIN!','metal');
 ui.background.setBackgroundImage('image/background/win.jpg');
-
-},
-
-
-			},
+},			},
 
 
+los:{
+	trigger:{
+		player:"dying",
+	},
+	popup:false,
+forced:true,
+content:function (){
 
+game.saveConfig('background_music','music_phliosophy');	
+game.saveConfig('musicsw','1');	
+game.playBackgroundMusic();
+
+},			},
 
 
 
