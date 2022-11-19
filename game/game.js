@@ -3885,7 +3885,7 @@ case 'gbig':zoom=1.6;break;
 					import_data_button:{
 						name:'<div style="white-space:nowrap;width:calc(100% - 10px)">'+
 						'<input type="file" style="width:calc(100% - 40px)">'+
-						'<button style="width:40px">确定</button></div>',
+						'<button style="width:40px">Go!!</button></div>',
 						clear:true,
 					},
 					export_data:{
@@ -38322,7 +38322,7 @@ case 'gbig':zoom=1.6;break;
 									selectname2.style.maxWidth='85px';
 									var skillopt2=ui.create.selectlist(list2,list2[0],banskilladdNode);
 									var confirmbutton=document.createElement('button');
-									confirmbutton.innerHTML='确定';
+									confirmbutton.innerHTML='Go!!';
 									banskilladdNode.appendChild(confirmbutton);
 
 									confirmbutton.onclick=function(){
@@ -38588,7 +38588,7 @@ case 'gbig':zoom=1.6;break;
 						importExtension.style.display='none';
 						importExtension.style.width='100%';
 						importExtension.style.textAlign='left';
-						ui.create.div('','<input type="file" accept="application/zip" style="width:153px"><button>确定</button>',importExtension);
+						ui.create.div('','<input type="file" accept="application/zip" style="width:153px"><button>Go!!</button>',importExtension);
 						var promptnode=ui.create.div('','<div style="width:153px;font-size:small;margin-top:8px">',importExtension);
 						promptnode.style.display='none';
 						importExtension.firstChild.lastChild.onclick=function(){
