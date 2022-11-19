@@ -1765,6 +1765,25 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			longhuo:{
 				unique:true,
 				trigger:{player:'phaseEnd'},
+				forced:true,
+				content:function(){
+					'step 0'
+					event.targets=get.players(lib.sort.seat);
+					'step 1'
+					if(event.targets.length){
+						var current=event.targets.shift();
+						if(current.isIn()){
+							player.line(current,'fire');
+							current.damage('fire');
+							event.redo();
+						}
+					}
+				}
+			},
+
+			longhuox:{
+				unique:true,
+				trigger:{player:'phaseEnd'},
 				check:function(event,player){
 					if(player.hp==1&&player.hujia==0) return false;
 					var num=game.countPlayer(function(current){
@@ -1788,6 +1807,8 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					}
 				}
 			},
+
+
 			yanzhan:{
 				enable:'phaseUse',
 				viewAs:{name:'sha',nature:'fire'},

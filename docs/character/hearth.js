@@ -8223,6 +8223,9 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					}
 				}
 			},
+
+
+			
 			tuteng_h:{
 				mod:{
 					maxHandcard:function(player,num){

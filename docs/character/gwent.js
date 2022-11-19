@@ -2638,6 +2638,38 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					game.delayx();
 				}
 			},
+
+
+			jinzhang:{
+				enable:'phaseUse',
+				usable:1,
+				filterCard:true,
+				position:'he',
+				check:function(card){
+					return 8-get.value(card)
+				},
+				content:function(){
+					'step 0'
+					var list=get.typeCard('spell_silver').randomGets(3);
+					if(!list.length){
+						event.finish();
+						return;
+					}
+					var dialog=ui.create.dialog('选择一张加入你的手牌',[list,'vcard'],'hidden');
+					player.chooseButton(dialog,true);
+					'step 1'
+					player.gain(game.createCard(result.links[0][2]),'draw');
+				},
+				ai:{
+					order:8,
+					threaten:1.3,
+					result:{
+						player:1
+					},
+				}
+			},
+
+
 			yinzhang:{
 				enable:'phaseUse',
 				usable:1,
@@ -2666,6 +2698,12 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					},
 				}
 			},
+
+
+
+
+
+
 			gwtianbian:{
 				trigger:{player:'phaseUseBegin'},
 				direct:true,
@@ -4360,6 +4398,56 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					}
 				}
 			},
+
+
+
+
+
+
+			goldyx:{
+				trigger:{player:'phaseZhunbeiBegin'},
+				forced:true,
+				content:function(){
+					'step 0'
+					var list=get.typeCard('spell_gold');
+					list.remove('gw_huangjiashenpan');
+					if(list.length){
+						player.chooseVCardButton('使用一张金卡法术',list.randomGets(3),true).ai=function(button){
+							var info=get.info(button.link[2]);
+							if(info&&info.ai&&info.ai.result&&info.ai.result.player){
+								return info.ai.result.player(player,player);
+							}
+							return 0;
+						};
+					}
+					else{
+						event.finish();
+					}
+					'step 1'
+					if(result.bool){
+						player.useCard(game.createCard(result.links[0][2]));
+					}
+				},
+				//contentAfter:function(){
+				//	var evt=_status.event.getParent('phaseUse');
+				//	if(evt&&evt.name=='phaseUse'){
+				//		evt.skipped=true;
+				//	}
+				//},
+				ai:{
+					value:10,
+					order:1,
+					result:{
+						player:1
+					}
+				}
+			},
+
+
+
+
+
+
 			gwmaoxian_huoge:{
 				type:'gwmaoxian',
 				fullborder:'gold',
@@ -4690,8 +4778,8 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			gwxiaoshou_info:'出牌阶段限两次，你可以弃置一张牌对场上体力值最高（或之一）的一名角色造成一点伤害',
 			gwjiquan:'集权',
 			gwjiquan_info:'出牌阶段限一次，你可以从任意名角色处各获得一张牌，每拿一张牌，被拿牌的角色视为对你使用一张杀',
-			nuhou:'怒吼',
-			nuhou_info:'每当你受到一次伤害，你可以弃置一张牌，然后对一名随机敌人造成一点伤害并随机弃置其一张牌',
+			//nuhou:'怒   ',
+			//nuhou_info:'每当你受到一次伤害，你可以弃置一张牌，然后对一名随机敌人造成一点伤害并随机弃置其一张牌',
 			shewu:'蛇舞',
 			shewu_info:'出牌阶段限一次，你可以弃置1至3张牌然后摸3张牌；若你弃置了至少2张牌，你本回合使用卡牌无视距离；若你弃置了3张牌，你回复一点体力',
 			gwzhanjiang:'斩将',

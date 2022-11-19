@@ -2604,8 +2604,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			nsyice_info:'锁定技，当你使用/打出/弃置的牌进入弃牌堆后，你将这些牌以任意顺序置于你的武将牌上，称为“策”。若这些“策”中有点数相同的牌，则你获得这两张牌中的所有牌，将这两张牌置于牌堆两端。若场上没有处于濒死状态的角色，则你对一名角色造成1点伤害。',
 			ns_lijue:'SP李傕',
 			ns_zhangji:'SP张济',
-			nsfeixiong:'飞熊',
-			nsfeixiong_info:'出牌阶段开始时，你可以和一名其他角色拼点。赢的角色对没赢的角色造成1点伤害。',
+	
 			nscesuan:'策算',
 			nscesuan_info:'锁定技，当你受到伤害时，你防止此伤害并失去一点体力上限。若你因以此法失去体力上限导致体力值减少，则你摸一张牌。',
 			nslulve:'掳掠',
