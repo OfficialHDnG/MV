@@ -4867,6 +4867,7 @@ div[data-decoration="bronze"]::after{
 						}
 						.card.fullskin>.info.Eden {
 							color: rgb(224, 68, 255);
+							text-shadow:0px 0px 7px #1fdeae, 0px 0px 7px #1fdeae;		
 													font-size: 22px;
 													margin-top: -12%;
 														
