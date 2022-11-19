@@ -1,6 +1,4 @@
-﻿////////////////////////////////////////////////////////////////
-///   Black NotePad - 4/28/2022 8:18:26 PM - Not activated   ///
-////////////////////////////////////////////////////////////////
+﻿
 'use strict';
 game.import('card',function(lib,game,ui,get,ai,_status){
 	return {
@@ -75,21 +73,626 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 					}
 				}
 			},
-			sha:{
+
+
+			novab:{
+				type:'basic',
+				content:function(){
+					'step 0'
+			var x=(player.hp/7700+0.01);
+			//target.damage(777+x);	
+			target.damage(x,'thunder');
+		
+			game.broadcastAll('createDialog',event.videoId, 'Stars are Born!');	
+			game.delay(0.5);	
+			'step 1'	
+			game.broadcastAll('createDialog',event.videoId, 'Stars are Born!');	
+			game.delay(0.5);			
+			},			
+			},
+			
+
+			
+
+		
+
+			rultc:{
+				type:'basic',
+				cardnature:'thunder',
+				content:function(){
+				var a=player.countCards('h',{number:'5'});
+				var b=player.countCards('h',{number:'6'});	
+				var c=player.countCards('h',{number:'1'});	
+				var d=player.countCards('h',{number:'2'});	
+			//	game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'wind'+d+'');	
+		game.delay(2);
+			var x=1000*(a*b);
+			var y=2777+1750*(a+b-c-d);
+				var z=(x+y+0.01);
+				target.damage(z);			
+			},			
+			},
+
+
+			erultc:{
+				type:'basic',
+				cardnature:'thunder',
+				content:function(){
+				var a=player.countCards('h',{number:'5'});
+				var b=player.countCards('h',{number:'6'});	
+				
+			//	game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'wind'+d+'');	
+		game.delay(2);
+			var x=1000*(a*b);
+			var y=3777+1750*(a+b);
+				var z=(x+y+0.01);
+				target.damage(z);			
+			},			
+			},
+
+
+
+			uhealon:{
+				type:'basic',
+				
+				content:function(){
+				
+				target.damage(1111);			
+			},			
+			},
+
+
+
+			rultch:{
+				type:'basic',
+				cardnature:'thunder',
+				content:function(){
+				var a=player.countCards('h',{number:'5'});
+				var b=player.countCards('h',{number:'6'});	
+				var c=player.countCards('h',{number:'1'});	
+				var d=player.countCards('h',{number:'2'});	
+			//	game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'wind'+d+'');	
+		game.delay(2);
+			var x=1000*(a*b);
+			var y=3777+2500*(a+b-c-d);
+				var z=(x+y+0.01);
+				target.damage(z,'thunder');			
+			},			
+			},
+
+
+			erultch:{
+				type:'basic',
+				cardnature:'thunder',
+				content:function(){
+				var a=player.countCards('h',{number:'5'});
+				var b=player.countCards('h',{number:'6'});	
+			
+			//	game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'wind'+d+'');	
+		game.delay(2);
+			var x=1000*(a*b);
+			var y=11777+2500*(a+b);
+				var z=(x+y+0.01);
+				target.damage(z,'thunder');			
+			},			
+			},
+
+
+
+			xultc:{
+				type:'basic',
+				content:function(target){
+				var a=player.countCards('h',{number:'1'});
+				var b=player.countCards('h',{number:'2'});	
+				var c=player.countCards('h',{number:'5'});	
+				var d=player.countCards('h',{number:'6'});	
+				//game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'wind'+d+'');	
+		//game.delay(2);
+			var x=1000*(a*b);
+			var y=2300+2500*(a+b-c-d);
+		
+				var z=(x+y+0.01)/12;
+				target.damage(z);			
+			},			
+			},
+
+
+
+
+
+			exultc:{
+				type:'basic',
+				content:function(target){
+				var a=player.countCards('h',{number:'1'});
+				var b=player.countCards('h',{number:'2'});	
+		
+				//game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'wind'+d+'');	
+		//game.delay(2);
+			var x=1000*(a*b);
+			var y=3300+2500*(a+b);
+		
+				var z=(x+y+0.01)/12;
+				target.damage(z);			
+			},			
+			},
+
+			xultch:{
+				type:'basic',
+				content:function(target){
+			
+			var e=(target.hp/5000+0.01);
+			
+				target.damage(e);			
+			},			
+			},
+
+			exultch:{
+				type:'basic',
+				content:function(target){
+			
+			var e=(target.hp/1000+0.01);
+			
+				target.damage(e);			
+			},			
+			},
+
+
+
+			ault:{
+				
+				enable:true,
+							content:function(){
+				var a=player.countCards('h',{number:'7'});
+				var b=player.countCards('h',{number:'1'});	
+				var c=player.countCards('h',{number:'2'});	
+				var d=player.countCards('h',{number:'3'});	
+				var e=player.countCards('h',{number:'4'});	
+				var f=player.countCards('h',{number:'5'});	
+				var g=player.countCards('h',{number:'6'});	
+				var h=player.storage.aedqi;
+				var i=player.storage.jud;
+
+					if(target.hasSkill('enemy')){
+						var x=Math.floor((7000.01+2500*(a)+0.00037*i+370*(b+c+d+e+f+g+h))/10);	
+						target.damage(x);
+					}
+					else {	
+						var t=Math.floor((777+2500*(a)+0.00037*i+370*(b+c+d+e+f+g+h))*12);	
+					
+					target.recover(t);
+					} 
+									
+				},
+				},
+
+
+
+
+				eault:{
+				
+					enable:true,
+								content:function(){
+					var a=player.countCards('h',{number:'7'});
+					var b=player.countCards('h',{number:'1'});	
+					var c=player.countCards('h',{number:'2'});	
+					var d=player.countCards('h',{number:'3'});	
+					var e=player.countCards('h',{number:'4'});	
+					var f=player.countCards('h',{number:'5'});	
+					var g=player.countCards('h',{number:'6'});	
+					var h=player.storage.aedqi;
+					var i=player.storage.jud;
+	
+						if(target.hasSkill('enemy')){
+							var x=Math.floor((7777.01+2500*(a)+0.00037*i+370*(b+c+d+e+f+g+h))/10);	
+							target.damage(x);
+						}
+						else {	
+							var t=Math.floor((777+2500*(a)+0.00037*i+370*(b+c+d+e+f+g+h))*12);	
+						
+						target.recover(t);
+						} 
+										
+					},
+					},
+
+
+
+			gultc:{
+				type:'basic',
+				enable:true,			
+				filterTarget:function(card,player,target){
+					return target!=player;
+				},
+				content:function(target,player){
+				var a=player.countCards('h',{number:'3'});
+				var b=player.countCards('h',{number:'4'});	
+				var c=player.countCards('h',{number:'7'});	
+				var d=player.countCards('h',{number:'7'});	
+			var e=(0.07*target.storage.jud/97);
+				//game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'damage'+e+'');	
+		game.delay(2);
+			var x=1000*(a*b);
+			var y=7999+2500*(a+b-c-d);
+				var z=(x+y+e);
+				target.node.jiu=ui.create.div('.playerea',target.node.avatar);
+					target.node.jiu2=ui.create.div('.playerea',target.node.avatar2);
+					game.delay(2);
+				target.damage(z+0.01);	
+				var cards=player.getCards('h');
+						player.discard(cards);
+				
+
+			},			
+			},
+
+
+
+
+			mgultc:{
+				type:'basic',
+				enable:true,			
+				filterTarget:function(card,player,target){
+					return target!=player;
+				},
+				content:function(target,player){
+				var a=player.countCards('h',{number:'3'});
+				var b=player.countCards('h',{number:'4'});	
+				
+			var e=(0.1*target.storage.jud/97);
+				//game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'damage'+e+'');	
+		game.delay(2);
+			var x=1000*(a*b);
+			var y=9999+2500*(a+b);
+				var z=(x+y+e);
+				target.node.jiu=ui.create.div('.playermea',target.node.avatar);
+					target.node.jiu2=ui.create.div('.playermea',target.node.avatar2);
+					game.delay(2);
+				target.damage(z+0.01);	
+				var cards=player.getCards('h');
+						player.discard(cards);
+				
+
+			},			
+			},
+
+
+
+clearu:{
+	enable:function(event,player){
+		//return !player.hasSkill('jiu');
+		return true;
+	},
+	filterTarget:function(card,player,target){
+		return target.hp>=0;
+	},
+	content:function(target){
+		if(target.hasSkill('xtsunn')){
+			var x=target.storage.xtsunn;
+			target.storage.xtsunn-=x;
+			target.update();
+		}
+
+		if(target.hasSkill('edenn')){
+			var x=target.storage.edenn;
+			target.storage.edenn-=x;
+			target.update();
+
+		}
+
+	},
+},
+
+
+			jiu:{
 				audio:true,
 				fullskin:true,
-				nature:['thunder','fire','kami','ice'],
+				type:"basic",
+				toself:true,
+				enable:function(event,player){
+					//return !player.hasSkill('jiu');
+					return true;
+				},
+				lianheng:true,
+				logv:false,
+				savable:function(card,player,dying){
+					return dying==player||player.hasSkillTag('jiuOther',null,dying,true);
+				},
+				usable:1,
+				selectTarget:-1,
+				modTarget:true,
+				filterTarget:function(card,player,target){
+					return target==player;
+				},
+				content:function(){
+					if(typeof event.baseDamage!='number') event.baseDamage=1;
+					if(target.isDying()||event.getParent(2).type=='dying'){
+						target.recover(event.baseDamage);
+						if(_status.currentPhase==target){
+							target.getStat().card.jiu--;
+						}
+					}
+					else{
+						game.addVideo('jiuNode',target,true);
+						if(cards&&cards.length){
+							card=cards[0];
+						}
+						if(!target.storage.jiu) target.storage.jiu=0;
+						target.storage.jiu+=event.baseDamage;
+						game.broadcastAll(function(target,card,gain2){
+							target.addSkill('jiu');
+							if(!target.node.jiu&&lib.config.jiu_effect){
+								target.node.jiu=ui.create.div('.playerjiu',target.node.avatar);
+								target.node.jiu2=ui.create.div('.playerjiu',target.node.avatar2);
+							}
+							if(gain2&&card.clone&&(card.clone.parentNode==target.parentNode||card.clone.parentNode==ui.arena)){
+								card.clone.moveDelete(target);
+							}
+						},target,card,target==targets[0]&&cards.length==1);
+						if(target==targets[0]&&cards.length==1){
+							if(card.clone&&(card.clone.parentNode==target.parentNode||card.clone.parentNode==ui.arena)){
+								game.addVideo('gain2',target,get.cardsInfo([card]));
+							}
+						}
+					}
+				},
+				ai:{
+					basic:{
+						useful:function(card,i){
+							if(_status.event.player.hp>1){
+								if(i==0) return 4;
+								return 1;
+							}
+							if(i==0) return 7.3;
+							return 3;
+						},
+						value:function(card,player,i){
+							if(player.hp>1){
+								if(i==0) return 5;
+								return 1;
+							}
+							if(i==0) return 7.3;
+							return 3;
+						},
+					},
+					order:function(){
+						return get.order({name:'sha'})+0.2;
+					},
+					result:{
+						target:function(player,target){
+							if(target&&target.isDying()) return 2;
+							if(target&&!target.isPhaseUsing()) return 0;
+							if(lib.config.mode=='stone'&&!player.isMin()){
+								if(player.getActCount()+1>=player.actcount) return 0;
+							}
+							var shas=player.getCards('h','sha');
+							if(shas.length>1&&(player.getCardUsable('sha')>1||player.countCards('h','zhuge'))){
+								return 0;
+							}
+							shas.sort(function(a,b){
+								return get.order(b)-get.order(a);
+							})
+							var card;
+							if(shas.length){
+								for(var i=0;i<shas.length;i++){
+									if(lib.filter.filterCard(shas[i],target)){
+										card=shas[i];break;
+									}
+								}
+							}
+							else if(player.hasSha()&&player.needsToDiscard()){
+								if(player.countCards('h','hufu')!=1){
+									card={name:'sha'};
+								}
+							}
+							if(card){
+								if(game.hasPlayer(function(current){
+									return (get.attitude(target,current)<0&&
+										target.canUse(card,current,true,true)&&
+										!current.hasSkillTag('filterDamage',null,{
+											player:player,
+											card:card,
+											jiu:true,
+										})&&
+										get.effect(current,card,target)>0);
+								})){
+									return 1;
+								}
+							}
+							return 0;
+						},
+					},
+					tag:{
+						save:1
+					}
+				}
+			},
+
+
+
+			shanene:{
+				fullskin:true,
+		
+				enable:true,
+
+				content:function(){
+					"step 0"
+					if(typeof event.baseDamage!='number') event.baseDamage=7;
+
+					if(event.directHit) event._result={bool:false};
+
+					else{
+						var next=target.chooseToRespond({name:'shan'});
+						next.set('ai',function(card){
+							var evt=_status.event.getParent();
+							if(get.damageEffect(evt.target,evt.player,evt.target)>=0) return 0;
+							if(evt.player.hasSkillTag('notricksource')) return 0;
+							if(evt.target.hasSkillTag('notrick')) return 0;
+							if(evt.target.hasSkillTag('noShan')){
+								return -1;
+							}
+						return get.order(card);
+						});
+						next.autochoose=lib.filter.autoRespondShan;
+					}
+					"step 1"
+					if(result.bool==false){
+						var x=900*target.storage.glyptic4;
+						target.damage(x);
+					}
+				},
+			
+				
+				
+			},
+
+
+			ene:{
+				fullskin:true,
+						enable:true,
+							content:function(){					
+					var x=900*target.storage.glyptic5;
+						target.damage(x);					
+					
+				},
+				
+			},
+
+
+
+		
+
+			rsha:{
+				fullskin:true,
+		
+				enable:true,
+			
+				content:function(){
+					
+						target.damage(80);
+					
+					
+				},
+				
+			},
+
+
+
+
+		
+
+
+			celeb:{
+				fullskin:true,
+				type:'trick',
+				enable:true,
+				filterTarget:true,
+				content:function(){
+					'step 0'
+					
+					//var x=Math.floor(0.0005*player.MaxHp);
+					
+					target.recover(77777);
+					target.draw();
+//player.recover(120);
+					//player.draw(1);
+					//'step 1'
+
+					//var hs=target.getCards('h');
+					//if(hs.length){
+					//	target.discard(hs.randomGet());
+					//}
+				},
+				ai:{
+					basic:{
+						order:1.8,
+						value:[6,1],
+						useful:[4,1],
+					},
+					result:{
+						player:function(player,target){
+							if(player==target) return -1;
+							if(player.countCards('h')>=player.hp) return -0.1;
+							if(player.countCards('h')>1) return -0.5;
+							return 0;
+						},
+						target:-1
+					},
+					tag:{
+						damage:1,
+						fireDamage:1,
+						natureDamage:1,
+					}
+				}
+			},
+
+
+
+			roar:{
+				fullskin:true,
+				type:'trick',
+				enable:true,
+				filterTarget:true,
+				content:function(){
+					'step 0'
+					
+					var x=Math.floor(0.0005*player.hp)
+					
+					target.damage(x);
+//player.recover(120);
+					//player.draw(1);
+					//'step 1'
+
+					//var hs=target.getCards('h');
+					//if(hs.length){
+					//	target.discard(hs.randomGet());
+					//}
+				},
+				ai:{
+					basic:{
+						order:1.8,
+						value:[6,1],
+						useful:[4,1],
+					},
+					result:{
+						player:function(player,target){
+							if(player==target) return -1;
+							if(player.countCards('h')>=player.hp) return -0.1;
+							if(player.countCards('h')>1) return -0.5;
+							return 0;
+						},
+						target:-1
+					},
+					tag:{
+						damage:1,
+						fireDamage:1,
+						natureDamage:1,
+					}
+				}
+			},
+
+
+
+
+
+
+
+
+			mha:{
+				audio:true,
+				fullskin:true,
+				
 				type:'basic',
+				
 				enable:true,
 				usable:1,
 				updateUsable:'phaseUse',
-				global:'icesha_skill',
+			
 				range:{attack:1},
 				selectTarget:1,
 				cardPrompt:function(card){
 					if(card.nature=='stab') return '出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，且在此之后需弃置一张手牌（没有则不弃）。否则你对其造成1点伤害。';
 					if(lib.linked.contains(card.nature)) return '出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，否则你对其造成1点'+get.translation(card.nature)+'属性伤害。';
-					return '出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，否则你对其造成1点伤害。';
+					return '1 play per 1 round. Strikes 1 target - remember to choose target';
 				},
 				yingbian_prompt:function(card){
 					var str='';
@@ -127,6 +730,7 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 				filterTarget:function(card,player,target){return player!=target},
 				content:function(){
 					"step 0"
+			
 					if(typeof event.shanRequired!='number'||!event.shanRequired||event.shanRequired<0){
 						event.shanRequired=1;
 					}
@@ -140,7 +744,288 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 						event._result={bool:true,result:'shaned'};
 					}
 					else{
-						var next=target.chooseToUse('请使用一张闪响应杀');
+						var next=target.chooseToUse('Defend? Play 1 Ea: Haven LoreSong');
+						next.set('type','respondShan');
+						next.set('filterCard',function(card,player){
+							if(get.name(card)!='shan') return false;
+							return lib.filter.cardEnabled(card,player,'forceEnable');
+						});
+						if(event.shanRequired>1){
+							next.set('prompt2','（共需使用'+event.shanRequired+'张闪）');
+						}
+						else if(event.card.nature=='stab'){
+							next.set('prompt2','（在此之后仍需弃置一张手牌）');
+						}
+						next.set('ai1',function(card){
+							var target=_status.event.player;
+							var evt=_status.event.getParent();
+							var bool=true;
+							if(_status.event.shanRequired>1&&!get.is.object(card)&&target.countCards('h','shan')<_status.event.shanRequired){
+								bool=false;
+							}
+							else if(target.hasSkillTag('useShan')){
+								bool=true;
+							}
+							else if(target.hasSkillTag('noShan')){
+								bool=false;
+							}
+							else if(get.damageEffect(target,evt.player,target,evt.card.nature)>=0) bool=false;
+							if(bool){
+								return get.order(card);
+							}
+							return 0;
+						}).set('shanRequired',event.shanRequired);
+						next.set('respondTo',[player,card]);
+						//next.autochoose=lib.filter.autoRespondShan;
+					}
+					"step 2"
+					if(!result||!result.bool||!result.result||result.result!='shaned'){
+						event.trigger('shaHit');
+					}
+					else{
+						event.shanRequired--;
+						if(event.shanRequired>0){
+							event.goto(1);
+						}
+						else if(event.card.nature=='stab'&&target.countCards('h')>0){
+							event.responded=result;
+							event.goto(4);
+						}
+						else{
+							event.trigger('shaMiss');
+							event.responded=result;
+						}
+					}
+					"step 3"
+					if((!result||!result.bool||!result.result||result.result!='shaned')&&!event.unhurt){
+						target.damage(get.nature(event.card),event.baseDamage+event.extraDamage);
+						event.result={bool:true}
+						event.trigger('shaDamage');
+					}
+					else{
+						event.result={bool:false}
+						event.trigger('shaUnhirt');
+					}
+					event.finish();
+					"step 4"
+					target.chooseToDiscard('刺杀：请弃置一张牌，否则此【杀】依然造成伤害').set('ai',function(card){
+						var target=_status.event.player;
+						var evt=_status.event.getParent();
+						var bool=true;
+						if(get.damageEffect(target,evt.player,target,evt.card.nature)>=0) bool=false;
+						if(bool){
+							return 8-get.useful(card);
+						}
+						return 0;
+					});
+					"step 5"
+					if((!result||!result.bool)&&!event.unhurt){
+						target.damage(get.nature(event.card),event.baseDamage+event.extraDamage);
+						event.result={bool:true}
+						event.trigger('shaDamage');
+						event.finish();
+					}
+					else{
+						event.trigger('shaMiss');
+					}
+					"step 6"
+					if((!result||!result.bool)&&!event.unhurt){
+						target.damage(get.nature(event.card),event.baseDamage+event.extraDamage);
+						event.result={bool:true}
+						event.trigger('shaDamage');
+						event.finish();
+					}
+					else{
+						event.result={bool:false}
+						event.trigger('shaUnhirt');
+					}
+				},
+				ai:{
+					yingbian:function(card,player,targets,viewer){
+						if(get.attitude(viewer,player)<=0) return 0;
+						var base=0,hit=false;
+						if(get.cardtag(card,'yingbian_hit')){
+							hit=true;
+							if(targets.filter(function(target){
+								return target.hasShan()&&get.attitude(viewer,target)<0&&get.damageEffect(target,player,viewer,get.nature(card))>0;
+							})) base+=5;
+						}
+						if(get.cardtag(card,'yingbian_all')){
+							if(game.hasPlayer(function(current){
+								return !targets.contains(current)&&lib.filter.targetEnabled2(card,player,current)&&get.effect(current,card,player,player)>0;
+							})) base+=5;
+						}
+						if(get.cardtag(card,'yingbian_damage')){
+							if(targets.filter(function(target){
+								return get.attitude(player,target)<0&&(hit||!target.mayHaveShan()||player.hasSkillTag('directHit_ai',true,{
+								target:target,
+								card:card,
+								},true))&&!target.hasSkillTag('filterDamage',null,{
+									player:player,
+									card:card,
+									jiu:true,
+								})
+							})) base+=5;
+						}
+						return base;
+					},
+					canLink:function(player,target,card){
+						if(!target.isLinked()&&!player.hasSkill('wutiesuolian_skill')) return false;
+						if(target.mayHaveShan()&&!player.hasSkillTag('directHit_ai',true,{
+							target:target,
+							card:card,
+						},true)) return false;
+						if(player.hasSkill('jueqing')||player.hasSkill('gangzhi')||target.hasSkill('gangzhi')) return false;
+						return true;
+					},
+					basic:{
+						useful:[5,3,1],
+						value:[5,3,1],
+					},
+					order:function(item,player){
+						if(player.hasSkillTag('presha',true,null,true)) return 10;
+						if(lib.linked.contains(get.nature(item))){
+							if(game.hasPlayer(function(current){
+								return current!=player&&current.isLinked()&&player.canUse(item,current,null,true)&&get.effect(current,item,player,player)>0&&lib.card.sha.ai.canLink(player,current,item);
+							})&&game.countPlayer(function(current){
+								return current.isLinked()&&get.damageEffect(current,player,player,get.nature(item))>0;
+							})>1) return 3.1;
+							return 3;
+						}
+						return 3.05;
+					},
+					result:{
+						target:function(player,target,card,isLink){
+							var eff=function(){
+								if(!isLink&&player.hasSkill('jiu')){
+									if(!target.hasSkillTag('filterDamage',null,{
+										player:player,
+										card:card,
+										jiu:true,
+									})){
+										if(get.attitude(player,target)>0){
+											return -7;
+										}
+										else{
+											return -4;
+										}
+									}
+									return -0.5;
+								}
+								return -1.5;
+							}();
+							if(!isLink&&target&&target.mayHaveShan()&&!player.hasSkillTag('directHit_ai',true,{
+								target:target,
+								card:card,
+							},true)) return eff/1.2;
+							return eff;
+						},
+					},
+					tag:{
+						respond:1,
+						respondShan:1,
+						damage:function(card){
+							if(card.nature=='poison') return;
+							return 1;
+						},
+						natureDamage:function(card){
+							if(card.nature) return 1;
+						},
+						fireDamage:function(card,nature){
+							if(card.nature=='fire') return 1;
+						},
+						thunderDamage:function(card,nature){
+							if(card.nature=='thunder') return 1;
+						},
+						poisonDamage:function(card,nature){
+							if(card.nature=='poison') return 1;
+						}
+					}
+				}
+			},
+
+
+
+
+
+
+
+
+
+
+			sha:{
+				audio:true,
+				fullskin:true,
+				//nature:['thunder','fire','kami','ice'],
+				type:'basic',
+				//vanish:true,
+				//contentBefore:function(){
+				//	player.line(game.filterPlayer());
+				//	player.$skill('终末之战','legend','metal');
+				//	game.delay(2);
+				//},
+				enable:true,
+				usable:1,
+				updateUsable:'phaseUse',
+				global:'icesha_skill',
+				range:{attack:1},
+				selectTarget:1,
+				cardPrompt:function(card){
+					if(card.nature=='stab') return '出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，且在此之后需弃置一张手牌（没有则不弃）。否则你对其造成1点伤害。';
+					if(lib.linked.contains(card.nature)) return '出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，否则你对其造成1点'+get.translation(card.nature)+'属性伤害。';
+					return '1 play per 1 round. Strikes 1 target - remember to choose target';
+				},
+				yingbian_prompt:function(card){
+					var str='';
+					if(get.cardtag(card,'yingbian_hit')){
+						str+='此牌不可被响应';
+					}
+					if(get.cardtag(card,'yingbian_damage')){
+						if(str.length) str+='；';
+						str+='此牌的伤害值基数+1';
+					}
+					if(!str.length||get.cardtag(card,'yingbian_add')){
+						if(str.length) str+='；';
+						str+='当你使用此牌选择目标后，你可为此牌增加一个目标';
+					}
+					return str;
+				},
+				yingbian:function(event){
+					var card=event.card,bool=false;
+					if(get.cardtag(card,'yingbian_hit')){
+						bool=true;
+						event.directHit.addArray(game.players);
+						game.log(card,'不可被响应');
+					}
+					if(get.cardtag(card,'yingbian_damage')){
+						bool=true;
+						if(typeof event.baseDamage!='number') event.baseDamage=1;
+						event.baseDamage++;
+						game.log(event.card,'的伤害值基数+1');
+					}
+					if(!bool||get.cardtag(card,'yingbian_add')){
+						event.yingbian_addTarget=true;
+					}
+				},
+				yingbian_tags:['hit','damage','add'],
+				filterTarget:function(card,player,target){return player!=target},
+				content:function(){
+					"step 0"
+			
+					if(typeof event.shanRequired!='number'||!event.shanRequired||event.shanRequired<0){
+						event.shanRequired=1;
+					}
+					if(typeof event.baseDamage!='number') event.baseDamage=1;
+					if(typeof event.extraDamage!='number') event.extraDamage=0;
+					"step 1"
+					if(event.directHit||event.directHit2||(!_status.connectMode&&lib.config.skip_shan&&!target.hasShan())){
+						event._result={bool:false};
+					}
+					else if(event.skipShan){
+						event._result={bool:true,result:'shaned'};
+					}
+					else{
+						var next=target.chooseToUse('Defend? Play 1 Ea: Haven LoreSong');
 						next.set('type','respondShan');
 						next.set('filterCard',function(card,player){
 							if(get.name(card)!='shan') return false;
@@ -686,6 +1571,7 @@ xelema:{
 				content:function(){
 					event.result='shaned';
 					event.getParent().delayx=false;
+					
 					game.delay(0.5);
 				},
 				ai:{
@@ -1225,10 +2111,11 @@ xelema:{
 				reverseOrder:true,
 				content:function(){
 					"step 0"
-					if(typeof event.baseDamage!='number') event.baseDamage=1;
+					if(typeof event.baseDamage!='number') event.baseDamage=7;
 					if(event.directHit) event._result={bool:false};
 					else{
 						var next=target.chooseToRespond({name:'sha'});
+						
 						next.set('ai',function(card){
 							var evt=_status.event.getParent();
 							if(get.damageEffect(evt.target,evt.player,evt.target)>=0) return 0;
@@ -1240,6 +2127,7 @@ xelema:{
 					}
 					"step 1"
 					if(result.bool==false){
+						game.delay();
 						target.damage(event.baseDamage,event.customSource||player);
 					}
 				},
@@ -1250,7 +2138,7 @@ xelema:{
 						}
 					},
 					basic:{
-						order:9,
+						order:1,
 						useful:[5,1],
 						value:5
 					},
@@ -1315,7 +2203,7 @@ xelema:{
 				},
 				content:function(){
 					"step 0"
-					if(typeof event.baseDamage!='number') event.baseDamage=1;
+					if(typeof event.baseDamage!='number') event.baseDamage=7;
 					if(event.directHit) event._result={bool:false};
 					else{
 						var next=target.chooseToRespond({name:'shan'});
@@ -1333,6 +2221,7 @@ xelema:{
 					}
 					"step 1"
 					if(result.bool==false){
+						game.delay();
 						target.damage(event.baseDamage);
 					}
 				},
@@ -1343,7 +2232,7 @@ xelema:{
 						}
 					},
 					basic:{
-						order:9,
+						order:2,
 						useful:1,
 						value:5
 					},
@@ -1535,53 +2424,7 @@ xelema:{
 						}
 					}
 				},
-				ai:{
-					wuxie:function(target,card,player,viewer){
-						if(player==game.me&&get.attitude(viewer,player)>0){
-							return 0;
-						}
-					},
-					basic:{
-						order:5,
-						useful:1,
-						value:5.5
-					},
-					result:{
-						target:-1.5,
-						player:function(player,target,card){
-							if(player.hasSkillTag('directHit_ai',true,{
-								target:target,
-								card:card,
-							},true)){
-								return 0;
-							}
-							if(get.damageEffect(target,player,target)>0&&get.attitude(player,target)>0&&get.attitude(target,player)>0){
-								return 0;
-							}
-							var hs1=target.getCards('h','sha');
-							var hs2=player.getCards('h','sha');
-							if(hs1.length>hs2.length+1){
-								return -2;
-							}
-							var hsx=target.getCards('h');
-							if(hsx.length>2&&hs2.length==0&&hsx[0].number<6){
-								return -2;
-							}
-							if(hsx.length>3&&hs2.length==0){
-								return -2;
-							}
-							if(hs1.length>hs2.length&&(!hs2.length||hs1[0].number>hs2[0].number)){
-								return -2;
-							}
-							return -0.5;
-						}
-					},
-					tag:{
-						respond:2,
-						respondSha:2,
-						damage:1,
-					}
-				}
+			
 			},
 			shunshou:{
 				audio:true,
@@ -1786,6 +2629,7 @@ xelema:{
 					'step 1'
 					var pos=result.control=='手牌区'?'h':'e';
 					player.discardPlayerCard(target,pos,true,'visible');
+				
 				},
 				ai:{
 					basic:{
@@ -3090,13 +3934,14 @@ xelema:{
 			},
 		},
 		translate:{
-			sha:'Shone:Strike',
+			sha:'ΛShone:Strike',
+		
 			huosha:'火杀',
 			leisha:'雷杀',
 			icesha:'冰杀',
 			kamisha:'神杀',
 			cisha:'刺杀',
-			shan:'Ea:Haven',
+			shan:' ΩEa:Haven',
 			tao:'桃',
 			bagua:'八卦阵',
 			bagua_bg:'卦',
@@ -3137,15 +3982,16 @@ xelema:{
 			qilin_skill:'麒麟弓',
 			wugu:'五谷丰登',
 			taoyuan:'桃园结义',
-			nanman:'Healon:Calm',
-			wanjian:'Nyeve:Empire',
+			nanman:'ξHealon:Calm',
+			wanjian:'ΨNyeve:Empire',
 			wuzhong:'无中生有',
-			juedou:'决斗',
+			juedou:'SkyWar',
 			wugu_bg:'谷',
 			taoyuan_bg:'园',
 			nanman_bg:'蛮',
 			wanjian_bg:'箭',
 			wuzhong_bg:'生',
+			ault:'Ult!',
 			juedou_bg:'斗',
 			shunshou:'顺手牵羊',
 			guohe:'过河拆桥',
@@ -3154,10 +4000,12 @@ xelema:{
 			wuxie:'无懈可击',
 			wuxie_bg:'懈',
 			lebu:'乐不思蜀',
+			roar:'VENGEANCE',
 			shandian:'闪电',
 			shandian_bg:'电',
 			hanbing:'寒冰剑',
 			renwang:'仁王盾',
+			ha:'Assault',
 			hanbing_bg:'冰',
 			renwang_bg:'盾',
 			hanbing_skill:'寒冰剑',
@@ -3166,8 +4014,8 @@ xelema:{
 			hanbing_skill_info:'当你使用杀造成伤害时，你可以防止此伤害，改为依次弃置目标角色的两张牌。',
 			renwang_info:'锁定技，黑色的杀对你无效',
 			renwang_skill_info:'锁定技，黑色的杀对你无效',
-			sha_info:'出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，否则你对其造成1点伤害。',
-			shan_info:'抵消一张【杀】',
+			sha_info:'Once a round, strike 1 target within range of 1',
+			shan_info:'Protects against both kinds of Strike LoreSongs',
 			tao_info:'出牌阶段，对自己使用，回复一点体力。',
 			bagua_info:'当你需要使用或打出一张【闪】时，你可以进行一次判定，若判定结果为红色，视为你使用或打出了一张【闪】。',
 			bagua_skill_info:'当你需要使用或打出一张【闪】时，你可以进行一次判定，若判定结果为红色，视为你使用或打出了一张【闪】。',
@@ -3198,8 +4046,8 @@ xelema:{
 			qilin_info:'当你使用【杀】对目标角色造成伤害时，你可以弃置其装备区里的一张坐骑牌。',
 			wugu_info:'出牌阶段，对所有角色使用。（选择目标后）你从牌堆顶亮出等同于目标数量的牌，每名目标角色获得这些牌中（剩余的）的任意一张。',
 			taoyuan_info:'出牌阶段，对所有角色使用。每名目标角色回复1点体力。',
-			nanman_info:'出牌阶段，对所有其他角色使用。每名目标角色需打出一张【杀】，否则受到1点伤害。',
-			wanjian_info:'出牌阶段，对所有其他角色使用。每名目标角色需打出一张【闪】，否则受到1点伤害。',
+			nanman_info:'All Targets must discard 1 Shone:Strike, including Friends!',
+			wanjian_info:'Strikes all Targets on stage, including Friends!',
 			wuzhong_info:'出牌阶段，对你使用。你摸两张牌。',
 			juedou_info:'出牌阶段，对一名其他角色使用。由其开始，其与你轮流打出一张【杀】，直到其中一方未打出【杀】为止。未打出【杀】的一方受到另一方对其造成的1点伤害。',
 			shunshou_info:'出牌阶段，对距离为1且区域里有牌的一名其他角色使用。你获得其区域里的一张牌。',
@@ -3213,58 +4061,294 @@ xelema:{
 			icesha_skill_info:'防止即将造成的伤害，改为依次弃置其两张牌。',
 		},
 		list:[
-			["spade",1,"wanjian"],
+
+			["spade",1,"sha"],
 			["spade",2,"sha"],
 			["spade",3,"sha"],
 			["spade",4,"sha"],
 			["spade",5,"sha"],
 			["spade",6,"sha"],
-			["spade",7,"shan"],
-		          ["spade",8,"sha"],
-			["spade",9,"sha"],
-			["spade",10,"sha"],
-			["spade",11,"sha"],
-			["spade",12,"sha"],
+			["spade",7,"sha"],
+		 
 			["club",1,"sha"],
-			["club",2,"shan"],
+			["club",2,"sha"],
 			["club",3,"sha"],
-			["club",4,"shan"],
+			["club",4,"sha"],
 			["club",5,"sha"],
-			["club",6,"shan"],
+			["club",6,"sha"],
 			["club",7,"sha"],
-			["club",8,"shan"],
-			["club",9,"sha"],
-			["club",10,"shan"],
-			["club",11,"sha"],
-			["club",12,"shan"],
-
-			["diamond",1,"shan"],
-			["diamond",2,"nanman"],
-			["diamond",3,"wanjian"],
-			["diamond",4,"sha"],
-			["diamond",5,"wanjian"],
-			["diamond",6,"nanman"],
-			["diamond",7,"wanjian"],
-			["diamond",8,"shan"],
-			["diamond",9,"wanjian"],
-			["diamond",10,"nanman"],
-			["diamond",11,"nanman"],
-			["diamond",12,"nanman"],
-
 			
-			["heart",1,"wanjian"],
-			["heart",2,"wanjian"],
+			["diamond",1,"sha"],
+			["diamond",2,"sha"],
+			["diamond",3,"sha"],
+			["diamond",4,"sha"],
+			["diamond",5,"sha"],
+			["diamond",6,"sha"],
+			["diamond",7,"sha"],
+					
+			["heart",1,"sha"],
+			["heart",2,"sha"],
 			["heart",3,"sha"],
 			["heart",4,"sha"],
 			["heart",5,"sha"],
 			["heart",6,"sha"],
+			["heart",7,"sha"],
+		
+
+			["spade",1,"shan"],
+			["spade",2,"shan"],
+			["spade",3,"shan"],
+			["spade",4,"shan"],
+			["spade",5,"shan"],
+			["spade",6,"shan"],
+			["spade",7,"shan"],
+		 
+			["club",1,"shan"],
+			["club",2,"shan"],
+			["club",3,"shan"],
+			["club",4,"shan"],
+			["club",5,"shan"],
+			["club",6,"shan"],
+			["club",7,"shan"],
+			
+			["diamond",1,"shan"],
+			["diamond",2,"shan"],
+			["diamond",3,"shan"],
+			["diamond",4,"shan"],
+			["diamond",5,"shan"],
+			["diamond",6,"shan"],
+			["diamond",7,"shan"],
+					
+			["heart",1,"shan"],
+			["heart",2,"shan"],
+			["heart",3,"shan"],
+			["heart",4,"shan"],
+			["heart",5,"shan"],
+			["heart",6,"shan"],
+			["heart",7,"shan"],
+
+
+			["spade",1,"nanman"],
+			["spade",2,"nanman"],
+			["spade",3,"nanman"],
+			["spade",4,"nanman"],
+			["spade",5,"nanman"],
+			["spade",6,"nanman"],
+			["spade",7,"nanman"],
+		 
+			["club",1,"nanman"],
+			["club",2,"nanman"],
+			["club",3,"nanman"],
+			["club",4,"nanman"],
+			["club",5,"nanman"],
+			["club",6,"nanman"],
+			["club",7,"nanman"],
+			
+			["diamond",1,"nanman"],
+			["diamond",2,"nanman"],
+			["diamond",3,"nanman"],
+			["diamond",4,"nanman"],
+			["diamond",5,"nanman"],
+			["diamond",6,"nanman"],
+			["diamond",7,"nanman"],
+					
+			["heart",1,"nanman"],
+			["heart",2,"nanman"],
+			["heart",3,"nanman"],
+			["heart",4,"nanman"],
+			["heart",5,"nanman"],
+			["heart",6,"nanman"],
 			["heart",7,"nanman"],
-			["heart",8,"shan"],
-			["heart",9,"shan"],
-			["heart",10,"shan"],
-			["heart",11,"wanjian"],
-			["heart",12,"wanjian"],
-	
+
+		
+
+
+			["spade",1,"wanjian"],
+			["spade",2,"wanjian"],
+			["spade",3,"wanjian"],
+			["spade",4,"wanjian"],
+			["spade",5,"wanjian"],
+			["spade",6,"wanjian"],
+			["spade",7,"wanjian"],
+		 
+			["club",1,"wanjian"],
+			["club",2,"wanjian"],
+			["club",3,"wanjian"],
+			["club",4,"wanjian"],
+			["club",5,"wanjian"],
+			["club",6,"wanjian"],
+			["club",7,"wanjian"],
+			
+			["diamond",1,"wanjian"],
+			["diamond",2,"wanjian"],
+			["diamond",3,"wanjian"],
+			["diamond",4,"wanjian"],
+			["diamond",5,"wanjian"],
+			["diamond",6,"wanjian"],
+			["diamond",7,"wanjian"],
+					
+			["heart",1,"wanjian"],
+			["heart",2,"wanjian"],
+			["heart",3,"wanjian"],
+			["heart",4,"wanjian"],
+			["heart",5,"wanjian"],
+			["heart",6,"wanjian"],
+			["heart",7,"wanjian"],
+
+
+			["spade",1,"sha"],
+			["spade",2,"sha"],
+			["spade",3,"sha"],
+			["spade",4,"sha"],
+			["spade",5,"sha"],
+			["spade",6,"sha"],
+			["spade",7,"sha"],
+
+//["spade",1,"juedou"],
+	//		["spade",2,"juedou"],
+	//		["spade",3,"juedou"],
+	///		["spade",4,"juedou"],
+	//		["spade",5,"juedou"],
+	//		["spade",6,"juedou"],
+		//	["spade",7,"juedou"],
+	 
+			["club",1,"sha"],
+			["club",2,"sha"],
+			["club",3,"sha"],
+			["club",4,"sha"],
+			["club",5,"sha"],
+			["club",6,"sha"],
+			["club",7,"sha"],
+			
+			["diamond",1,"sha"],
+			["diamond",2,"sha"],
+			["diamond",3,"sha"],
+			["diamond",4,"sha"],
+			["diamond",5,"sha"],
+			["diamond",6,"sha"],
+			["diamond",7,"sha"],
+					
+			["heart",1,"sha"],
+			["heart",2,"sha"],
+			["heart",3,"sha"],
+			["heart",4,"sha"],
+			["heart",5,"sha"],
+			["heart",6,"sha"],
+			["heart",7,"sha"],
+		
+
+			["spade",1,"shan"],
+			["spade",2,"shan"],
+			["spade",3,"shan"],
+			["spade",4,"shan"],
+			["spade",5,"shan"],
+			["spade",6,"shan"],
+			["spade",7,"shan"],
+		 
+			["club",1,"shan"],
+			["club",2,"shan"],
+			["club",3,"shan"],
+			["club",4,"shan"],
+			["club",5,"shan"],
+			["club",6,"shan"],
+			["club",7,"shan"],
+			
+			["diamond",1,"shan"],
+			["diamond",2,"shan"],
+			["diamond",3,"shan"],
+			["diamond",4,"shan"],
+			["diamond",5,"shan"],
+			["diamond",6,"shan"],
+			["diamond",7,"shan"],
+					
+			["heart",1,"shan"],
+			["heart",2,"shan"],
+			["heart",3,"shan"],
+			["heart",4,"shan"],
+			["heart",5,"shan"],
+			["heart",6,"shan"],
+			["heart",7,"shan"],
+
+
+
+
+			["spade",1,"nanman"],
+			["spade",2,"nanman"],
+			["spade",3,"nanman"],
+			["spade",4,"nanman"],
+			["spade",5,"nanman"],
+			["spade",6,"nanman"],
+			["spade",7,"nanman"],
+		 
+			["club",1,"nanman"],
+			["club",2,"nanman"],
+			["club",3,"nanman"],
+			["club",4,"nanman"],
+			["club",5,"nanman"],
+			["club",6,"nanman"],
+			["club",7,"nanman"],
+			
+			["diamond",1,"nanman"],
+			["diamond",2,"nanman"],
+			["diamond",3,"nanman"],
+			["diamond",4,"nanman"],
+			["diamond",5,"nanman"],
+			["diamond",6,"nanman"],
+			["diamond",7,"nanman"],
+					
+			["heart",1,"nanman"],
+			["heart",2,"nanman"],
+			["heart",3,"nanman"],
+			["heart",4,"nanman"],
+			["heart",5,"nanman"],
+			["heart",6,"nanman"],
+			["heart",7,"nanman"],
+
+
+			["spade",1,"wanjian"],
+			["spade",2,"wanjian"],
+			["spade",3,"wanjian"],
+			["spade",4,"wanjian"],
+			["spade",5,"wanjian"],
+			["spade",6,"wanjian"],
+			["spade",7,"wanjian"],
+		 
+			["club",1,"wanjian"],
+			["club",2,"wanjian"],
+			["club",3,"wanjian"],
+			["club",4,"wanjian"],
+			["club",5,"wanjian"],
+			["club",6,"wanjian"],
+			["club",7,"wanjian"],
+			
+			["diamond",1,"wanjian"],
+			["diamond",2,"wanjian"],
+			["diamond",3,"wanjian"],
+			["diamond",4,"wanjian"],
+			["diamond",5,"wanjian"],
+			["diamond",6,"wanjian"],
+			["diamond",7,"wanjian"],
+					
+			["heart",1,"wanjian"],
+			["heart",2,"wanjian"],
+			["heart",3,"wanjian"],
+			["heart",4,"wanjian"],
+			["heart",5,"wanjian"],
+			["heart",6,"wanjian"],
+			["heart",7,"wanjian"],
+
+			//["heart",1,"ha"],
+			//["heart",2,"ha"],
+			//["heart",3,"ha"],
+			//["heart",4,"ha"],
+			//["heart",5,"ha"],
+			//["heart",6,"ha"],
+			//["heart",7,"ha"],
+
+
+
+
+		
 
 
 

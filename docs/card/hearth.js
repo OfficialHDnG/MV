@@ -3,6 +3,16 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 	return {
 		name:'hearth',
 		card:{
+
+
+
+
+
+	
+
+
+
+
 			linghunzhihuo:{
 				fullskin:true,
 				type:'trick',
@@ -692,6 +702,7 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 			linghunzhihuo:'灵魂之火',
 			linghunzhihuo_info:'对一名角色造成一点火焰伤害，然后随机弃置一张手牌',
 			shenenshu:'神恩术',
+			roar:'vengeance',
 			shenenshu_info:'出牌阶段对自己使用，将所有手牌（含此张）替换为基本牌',
 			zhiliaobo:'治疗波',
 			zhiliaobo_info:'出牌阶段对一名受伤角色使用，目标进行一次判定，若结果为红色，则回复一点体力，否则获得一点护甲',
