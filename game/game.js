@@ -7675,8 +7675,8 @@ case 'gbig':zoom=1.6;break;
 								else if(lib.device=='ios'){
 									game.saveConfig('show_statusbar_ios','overlay');
 								}
-							}
-							else if(confirm('是否切换到触屏模式？（触屏模式可提高触屏设备的响应速度，但无法使用鼠标）')){
+							}//mobile IMP
+							else if(confirm('Game is best played Horizontally! Switch to touchscreen mode?')){
 								game.saveConfig('touchscreen',true);
 								if(ua.indexOf('iphone')!=-1||ua.indexOf('android')!=-1){
 									game.saveConfig('phonelayout',true);
@@ -16168,7 +16168,8 @@ case 'gbig':zoom=1.6;break;
 									player.$fire();
 								}
 								else if(nature=='thunder'){
-									player.$thunder();
+									//TEST
+									//player.$thunder();
 								}
 							}
 						},event.nature,player);
