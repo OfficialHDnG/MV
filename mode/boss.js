@@ -950,7 +950,8 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		characterPack:{
 			mode_boss:{  
 			
-				
+				boss_hundun:['male','aw','2131313/2131313',['randsha','nova','jud','remind','drawj','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','sl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
+			
 				pea1:['male','qun','1/1',['peacettt','taut','pstart','sl'],['qun','hiddenboss','bossallowed'],'qun'],
 				pea2:['male','qun','1/1',['peacettt','taut','pstart','sl'],['qun','hiddenboss','bossallowed'],'qun'],
 				boss_r:['male','qun',1,['taotdia','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
@@ -959,7 +960,6 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 				boss_x:['male','qun',4,['taotdia','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
 				boss_taotie:['male','qun',0,['taotdia','pstart','scant','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
 						
-			boss_hundun:['male','aw','2131313/2131313',['randsha','nova','jud','remind','drawj','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','sl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
 				//boss_hundun:['male','qan','1750000/1750000',['pin','enemy','hund','rearth2','shejie2','start','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['qun','boss','bossallowed'],'qun'],
 									
 				boss_qiongqi:['male','re','6131313/6131313',['qiong','nova','jud','randjue','randsha','qiongner','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','qiongskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawr','scant','sl','enemy','hund','enemysky','dshonestory','darkshone','roars','glyptic','earth','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
@@ -1302,9 +1302,12 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 					}
 		
 					//var dialog=ui.create.dialog('<span style="font-size:30px">Welcome!</span></br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white;font-variant:small-caps"><a href="/lore.html" target="blank">Lore</a> · <a href="https://officialhdng.github.io/" target="blank">Strategy</a> · <a href="https://officialhdng.github.io/" target="blank">Gallery</a> · <a href="https://officialhdng.github.io/" target="blank">Request Your Flag!</a> · <a href="https://officialhdng.github.io/" target="blank">Win! $777 Prize</a></span>');
-					var dialog=ui.create.dialog('<img src="image/gem.png" height="20" width="20"></img></br><span style="font-size:12px">International Version Beta </span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="font-size:25px">CardGame by OffcialHDnG</span></br></br>On phone, lightly swipe up to access MV · Video mode</br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="https://hidngem.miraheze.org/wiki/Hall" target="blank"> CREATORS CONTENT</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - and the Go button will appear!</span>');
-							ui.create.control('+',function(){						
-game.documentZoom=game.deviceZoom*1.3;
+					//var dialog=ui.create.dialog('<img src="image/gem.png" height="20" width="20"></img></br><span style="font-size:12px">International Version Beta </span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="font-size:25px">CardGame by OffcialHDnG</span></br></br>On phone, lightly swipe up to access MV · Video mode</br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="https://hidngem.miraheze.org/wiki/Hall" target="blank"> CREATORS CONTENT</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - and the Go button will appear!</span>');
+					var dialog=ui.create.dialog('<span style="font-size:14px">CardGame by OffcialHDnG</span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="https://hidngem.miraheze.org/wiki/Hall" target="blank"> CREATORS CONTENT</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - the Go button will appear!</span>');
+					
+					
+					ui.create.control('+',function(){						
+game.documentZoom=game.deviceZoom*1.2;
 							ui.updatez();
 								});
 			
