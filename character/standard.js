@@ -11,13 +11,20 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		},
 		character:{	
 			//SGS glow color do light concept, 3 ability lol weave, set up who to ult, ult has no elemental,
-			zhugeliang:['male',' ','2372137/2372137',['roars','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
+			zhugeliang:['male',' ','2372137/2372137',['roars','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
 			
 				zhaoyun:['female',' ','1357720/1357720',['airson','los','endgold','comeback','uea','jud','abfuture','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
 			
 				machao:['male',' ','1971911/1971911',['goldenage','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
 		
-				sunquan:['female',' ','1182383/1182383',['x','los','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','solve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
+				sunquan:['female',' ','1182383/1182383',['x','los','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
+			//	zhugeliang:['male',' ','2372137/2372137',['roars']],
+			
+			//	zhaoyun:['male',' ','2372137/2372137',['airson']],
+			//	machao:['male',' ','2372137/2372137',['goldenage']],
+			//	sunquan:['male',' ','2372137/2372137',['x']],
+//
+
 				
 		},
 		characterIntro:{
@@ -41,7 +48,14 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 
 			},
 
+roundm:{
+	enable:'phaseUse',
+	content:function(){		
+		ui.roundmenu=ui.create.div('#roundmenu.roundarenabutton.menubutton.round',ui.arena);
+		ui.roundmenu._position=[180,210];
+		ui.create.div(ui.roundmenu);
 
+},},
 
 
 endgold:{
@@ -268,7 +282,7 @@ ushone:{
 
 	uea:{
 		enable:'phaseUse',
-	usable:3,
+	//usable:3,
 		filterTarget:function(card,player,target){
 			return target!=player;
 		},
@@ -418,6 +432,31 @@ filter:function(event,player){
 },
 
 },
+
+
+
+andgen:{
+	forced:true,
+trigger:{player:'phaseZhunbeiBegin'},
+	content:function(){
+		game.broadcastAll('createDialog',event.videoId, 'Boss regenerates her Androids!');	
+		game.delay(2);
+		var targets=player.getFriends().randomGets(2);
+	player.useCard({name:'andgen'},targets);
+}
+},
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -870,7 +909,7 @@ else{
 					},
 				},
 				mark:true,
-				marktext:'☯',
+				marktext:' ',
 				intro:{
 					content:function(storage,player){
 						return '已转换过'+(storage||0)+'次';
@@ -2408,6 +2447,39 @@ box:{
 				},
 			},
 
+
+
+			drawn:{
+				trigger:{player:'phaseZhunbeiBegin'},
+				filter:function(event,player){
+					return !game.hasPlayer(function(current){
+						return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
+					});
+			},	
+				forced:true,
+				content:function(){
+					'step 0'
+					var card=get.cardPile(function(card){
+						return card.name=='wanjian';
+					});
+					if(card){
+						player.gain(card,'gain2');
+					}
+					else event.finish();
+
+					'step 1'
+					var card=get.cardPile(function(card){
+						return card.name=='wanjian';
+					});
+					if(card){
+						player.gain(card,'gain2');
+					}
+					else event.finish();
+				},
+			},
+
+
+
 			drawx:{
 				trigger:{player:'phaseZhunbeiBegin'},
 				filter:function(event,player){
@@ -3705,7 +3777,7 @@ player.storage.remind-=3;
 					game.delay(1);
 			}},	
 
-xsl:{
+sl:{
 forced:true,
 trigger:{player:'phaseZhunbeiBegin'},
 content:function(){
@@ -5600,6 +5672,98 @@ player.update;
 
 
 
+
+				ythunder:{
+					trigger:{player:'loseAfter'},
+					group:['ythunder2','ythunder3'],
+					forced:true,
+					//mark:true,
+					//intro:{
+					//	content:"# ",
+					//},
+					init:function(player){
+						player.storage.ythunder=0;
+				 },
+					filter:function(event,player){
+						for(var i=0;i<event.cards.length;i++){
+							if(get.number(event.cards[i],event.player)=='3'){
+								return true;
+							}
+						}
+						return false;
+					},
+					content:function(game,gameconfig){					
+						'step 0'
+						game.broadcastAll('createDialog',event.videoId, 'Thunder LoreSong played: Warning');	
+						game.delay(2);
+						'step 1'
+						game.broadcastAll('createDialog',event.videoId, 'Magnetism Demands Tribute!');	
+						game.delay(2);
+						'step 2'
+						player.storage.ythunder+=1;
+					
+					},},
+
+
+					ythunder2:{
+						trigger:{player:'phaseZhunbeiBegin'},
+						forced:true,
+						filter:function(event,player){
+							return player.countCards('h')<=0&&player.storage.ythunder>=1;
+						},
+						content:function(game,gameconfig){					
+							'step 0'
+							game.broadcastAll('createDialog',event.videoId, 'Tribute Unmet');	
+							game.delay(2);
+							'step 1'
+							var n=player.getEnemies().randomGets(1);
+				player.useCard({name:'ythund',nature:'fire'},n);		
+							'step 2'
+							player.storage.ythunder-=1;
+						
+						},},
+
+ythunder3:{
+	trigger:{player:'phaseZhunbeiBegin'},
+	forced:true,
+	filter:function(event,player){
+		return player.countCards('h')>=1&&player.storage.ythunder>=1;
+	},
+	content:function(game,gameconfig){	
+		game.broadcastAll('createDialog',event.videoId, 'Boss Consumes her Tribute!');	
+							game.delay(2);
+		player.storage.ythunder-=1;
+},},
+
+
+
+				snyeve:{
+						trigger:{player:'phaseJieshuBegin'},
+						forced:true,
+							line:'fire',
+							content:function(){
+								'step 0'
+								game.broadcastAll('createDialog',event.videoId, 'Boss prepares to play Nyeve LoreSong as Yemog SkyWar!');	
+		
+								game.delay(2);
+								'step 1'
+								var cards=player.getCards('h');
+								player.discard(cards);
+								'step 2'
+							var n=player.getEnemies().randomGets(3);
+				player.useCard({name:'juedou',nature:'fire'},n);					
+											},					
+				},
+
+
+
+
+
+
+
+
+
+
 				abfuture:{
 				//	enable:'phaseUse',
 				trigger:{global:'phaseJieshuBegin'},
@@ -5776,7 +5940,9 @@ player.update;
 
 
 				eabfuture:{
-					trigger:{global:'phaseJieshuBegin'},    
+					//OLD
+					//trigger:{global:'phaseJieshuBegin'},  
+					trigger:{player:'phaseZhunbeiBegin'},     
 					forced:true,
 						//unique:true,
 									filter:function(event,player){
@@ -5990,6 +6156,27 @@ else{
 }},
 },
 
+
+
+
+glyptic_taowu:{	
+	forced:true,
+	//trigger:{
+	//	global:'gameStart',
+	//	player:'enterGame',
+	//},
+	trigger:{player:'phaseBeginStart'},
+	
+	content:function(){
+		if(game.roundNumber==1){
+		player.storage.glyptic8+=0.03;
+		
+	}
+	else{
+		player.storage.glyptic8+=0.003;
+		player.storage.glyptic10+=0.003;
+	}},
+	},
 
 
 tstart:{
@@ -8578,6 +8765,13 @@ aeath3:{
 				
 			},		
 
+		},
+
+		tskner:{			mod:{
+				maxHandcard:function(player,num){
+					return num-player.hp+2;
+				},				
+			},		
 		},
 
 		
@@ -14675,7 +14869,7 @@ wind9:{
 
 
 thund:{
-	//group:['thund2','thund3','thund5','thund4','thund6','thund7','thund8','thund9'],
+	group:['thund2','thund3','thund5','thund4','thund6','thund7','thund8','thund9'],
 
 	init:function(player){
 	 player.storage.thund=1;
@@ -14721,10 +14915,54 @@ thund3:{
 	 return true;
 	 },
 content:function(player,event,trigger,source){
+
+
+ 
+'step 0'
+if(trigger.source.hasSkill('roars')){
+	trigger.source.storage.glyptic3+=0.07;
+	trigger.source.storage.glyptic11+=0;
+ }
+if(trigger.source.hasSkill('airson')){
+	trigger.source.storage.glyptic3-=0.09;
+	trigger.source.storage.glyptic11+=0;}
+if(trigger.source.hasSkill('goldenage')){
+	trigger.source.storage.glyptic3-=0.03;
+	trigger.source.storage.glyptic11+=0; }
+if(trigger.source.hasSkill('x')){
+	trigger.source.storage.glyptic3+=0.02;
+	trigger.source.storage.glyptic11+=0;}
+
+'step 1'
+	var a=trigger.source.storage.glyptic3;
+	var x=Math.floor(trigger.num*(1-a)*140);
+	//.broadcastAll('createDialog',event.videoId,'STAREARTH GEM:'+a+' Immune!');
+	game.delay(2);
  trigger.cancel();
- var x=trigger.num+1270-1100*player.storage.glyptic5;
-	  player.recover(Math.floor(x));
-	 player.update();  
+	  player.recover(x);
+	  'step 2'
+	
+	  if(trigger.source.hasSkill('roars')){
+		trigger.source.storage.glyptic3-=0.07;
+		trigger.source.storage.glyptic11+=0;
+	 }
+	if(trigger.source.hasSkill('airson')){
+		trigger.source.storage.glyptic3+=0.09;
+		trigger.source.storage.glyptic11+=0;}
+	if(trigger.source.hasSkill('goldenage')){
+		trigger.source.storage.glyptic3+=0.03;
+		trigger.source.storage.glyptic11+=0; }
+	if(trigger.source.hasSkill('x')){
+		trigger.source.storage.glyptic3-=0.02;
+		trigger.source.storage.glyptic11+=0;}
+
+		'step 3'
+		game.broadcastAll('createDialog',event.videoId,'Thunder Soul: The Hurricane Births Lightning!');
+game.delay(3);
+
+	 
+	 
+
  },},
 
 
@@ -14766,7 +15004,7 @@ content:function(player,event,trigger,source){
 
 
 
-thund6:{
+Xthund6:{
 	 trigger:{player:'damageBefore'},
 
 	 forced:true,
@@ -14785,6 +15023,52 @@ content:function(player,event,trigger,source){
  player.storage.thund-=1;
  }},    
 	},
+
+
+	thund6:{
+		trigger:{player:'damageBefore'},
+		forced:true,
+		filter:function(event,player,source){
+			return event.source.hasSkill('earth');
+			return false;
+			},
+	content:function(event,game,config,source,nature){
+	var x=trigger.num;
+	var y=Math.floor(x);
+	var z=(x/y);
+	if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
+	
+		game.broadcastAll('createDialog',event.videoId, 'Airsons WIND GEM: The Storm moves the Dust!');
+		game.delay(2);
+		var a=2.25+lib.config.lvaw*0.0225;
+	trigger.num*=a;
+	}
+	if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
+		game.broadcastAll('createDialog',event.videoId, 'Roars StarEarth GEM: The Ground Confines the Powers of Electricity!');
+		game.delay(2);
+		var b=2.25+lib.config.lvrw*0.0225;
+	trigger.num*=b;
+	ui.clear();
+	}
+	
+	if(z==1&&trigger.source.hasSkill('enemy')){
+		game.broadcastAll('createDialog',event.videoId, 'Boss WIND GEM!');
+		game.delay(2);
+		trigger.num*=3;
+	}
+	if(z!=1){
+		trigger.num*=1;
+		}	}
+	},
+	
+
+
+
+
+
+
+
+	
 
 	thund7:{ },
 	thund8:{ },
@@ -15085,6 +15369,9 @@ if(z==1){
 		forced:true,
 	
    content:function(player,event,trigger,source){
+
+	game.broadcastAll('createDialog',event.videoId, 'StarEarth GEM: Nullifies Electricity!');
+	game.delay(2);
 	   trigger.cancel();
 	   },},
    
@@ -15126,11 +15413,7 @@ if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
 	game.delay(2);
 	var a=2.25+lib.config.lvaw*0.0225;
 trigger.num*=a;
-
-
-
 }
-
 if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
 	game.broadcastAll('createDialog',event.videoId, 'Roars WIND GEM: The WindRider saves you from Gravity!');
 	game.delay(2);
@@ -15142,14 +15425,16 @@ ui.clear();
 if(z==1&&trigger.source.hasSkill('enemy')){
 	game.broadcastAll('createDialog',event.videoId, 'Boss WIND GEM!');
 	game.delay(2);
-	
-trigger.num*=3;
+	trigger.num*=3;
 }
-
 if(z!=1){
 	trigger.num*=1;
 	}	}
 },
+
+
+
+
 
 
 
