@@ -950,28 +950,34 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		characterPack:{
 			mode_boss:{  
 			
-				boss_hundun:['male','aw','2131313/2131313',['randsha','nova','jud','remind','drawj','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','sl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
+				boss_hundun:['male','aw','2131313/2131313',['randsha','nova','jud','remind','drawj','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','Xsl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
 			
-				pea1:['male','qun','1/1',['peacettt','taut','pstart','sl'],['qun','hiddenboss','bossallowed'],'qun'],
-				pea2:['male','qun','1/1',['peacettt','taut','pstart','sl'],['qun','hiddenboss','bossallowed'],'qun'],
-				boss_r:['male','qun',1,['taotdia','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
-				boss_a:['male','qun',2,['taotdia','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
-				boss_g:['male','qun',3,['taotdia','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
-				boss_x:['male','qun',4,['taotdia','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
-				boss_taotie:['male','qun',0,['taotdia','pstart','scant','taoav','peacettt','taut','pstart','sl'],['qun','boss','bossallowed'],'qun'],
+				pea1:['male','qun','1/1',['peacettt','taut','pstart','Xsl'],['qun','hiddenboss','bossallowed'],'qun'],
+				pea2:['male','qun','1/1',['peacettt','taut','pstart','Xsl'],['qun','hiddenboss','bossallowed'],'qun'],
+				boss_r:['male','qun',1,['taotdia','taoav','peacettt','taut','pstart','Xsl'],['qun','boss','bossallowed'],'qun'],
+				boss_a:['male','qun',2,['taotdia','taoav','peacettt','taut','pstart','Xsl'],['qun','boss','bossallowed'],'qun'],
+				boss_g:['male','qun',3,['taotdia','taoav','peacettt','taut','pstart','Xsl'],['qun','boss','bossallowed'],'qun'],
+				boss_x:['male','qun',4,['taotdia','taoav','peacettt','taut','pstart','Xsl'],['qun','boss','bossallowed'],'qun'],
+				boss_taotie:['male','qun',0,['taotdia','pstart','scant','taoav','peacettt','taut','pstart','Xsl'],['qun','boss','bossallowed'],'qun'],
 						
 				//boss_hundun:['male','qan','1750000/1750000',['pin','enemy','hund','rearth2','shejie2','start','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['qun','boss','bossallowed'],'qun'],
 									
-				boss_qiongqi:['male','re','6131313/6131313',['qiong','nova','jud','randjue','randsha','qiongner','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','qiongskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawr','scant','sl','enemy','hund','enemysky','dshonestory','darkshone','roars','glyptic','earth','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
+				boss_qiongqi:['male','gt','6131313/6131313',['qiong','nova','jud','randjue','randsha','qiongner','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','qiongskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawr','scant','Xsl','enemy','hund','enemysky','dshonestory','darkshone','roars','glyptic','earth','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
+				//boss_taowu:['male','re','6131313/6131313',['nova','darknyeve','remind','ythunder','drawn','sl','glyptic_taowu','andgen','snyeve','jud','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','tskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawg','scant','XXsl','enemy','hund','XXdshonestory','XXdarkshone','goldenage','glyptic','thund','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
 											
-				boss_taowu:['male','qun',0,['glyptic','sl','drawr','jud','pstart','noshanb','killdraw','scant','hund'],['qun','boss','bossallowed'],'qun'],
+				//boss_taowu:['male','qun',0,['glyptic','nova','sl','drawg','jud','pstart','noshanb','killdraw','scant','hund'],['qun','boss','bossallowed'],'qun'],
 				//boss_zhuyin:['male','qun','1750000/1750000',['enemy','actma','xstart','hund','rearth2','shejie2','goldenage','black','glyptic','xdimeng','red','glyptic_qiongqi'],['qun','hiddenboss','bossallowed'],'qun'],
 				//boss_zhuyinb:['male','qun','1750000/1750000',['enemy','decei','actmb','xstart','hund','rearth2','shejie2','goldenage','black','glyptic','xdimeng','red','glyptic_qiongqi'],['qun','hiddenboss','bossallowed'],'qun'],
 				boss_zhuyinb:['male','qun','3131313/3131313',['randsha','min','nova','jud','XXexplfour','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','actma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
 				boss_zhuyin:['male','qun','3131313/3131313',['randsha','min','nova','jud','XXexpltwo','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','actmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
 				boss_syinb:['male','qun','3131313/3131313',['enemy','min','nova','jud','XXexpltwo','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
 				boss_syin:['male','qun','2131313/2131313',['enemy','min','nova','jud','XXexplfour','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_tyinb:['male','qun','3131313/3131313',['enemy','min','nova','jud','XXexpltwo','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_tyin:['male','qun','2131313/3131313',['enemy','min','nova','jud','XXexplfour','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
 		
+
+
+
 				boss_xiangliu:['male','qun',25,['boss_yaoshou','boss_duqu','boss_jiushou','boss_echou','boss_echou_switch'],['qun','boss','bossallowed'],'qun'],
 				boss_zhuyan:['male','qun','25/30',['boss_yaoshou','boss_bingxian','boss_juyuan','boss_xushi','boss_xushi_switch'],['qun','boss','bossallowed'],'qun'],
 				boss_bifang:['male','qun',25,['boss_yaoshou','boss_zhaohuo','boss_honglianx','boss_yanyu','boss_yanyu_switch'],['qun','boss','bossallowed'],'qun'],
@@ -1303,7 +1309,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		
 					//var dialog=ui.create.dialog('<span style="font-size:30px">Welcome!</span></br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white;font-variant:small-caps"><a href="/lore.html" target="blank">Lore</a> · <a href="https://officialhdng.github.io/" target="blank">Strategy</a> · <a href="https://officialhdng.github.io/" target="blank">Gallery</a> · <a href="https://officialhdng.github.io/" target="blank">Request Your Flag!</a> · <a href="https://officialhdng.github.io/" target="blank">Win! $777 Prize</a></span>');
 					//var dialog=ui.create.dialog('<img src="image/gem.png" height="20" width="20"></img></br><span style="font-size:12px">International Version Beta </span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="font-size:25px">CardGame by OffcialHDnG</span></br></br>On phone, lightly swipe up to access MV · Video mode</br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="https://hidngem.miraheze.org/wiki/Hall" target="blank"> CREATORS CONTENT</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - and the Go button will appear!</span>');
-					var dialog=ui.create.dialog('<span style="font-size:14px">CardGame by OffcialHDnG</span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="https://hidngem.miraheze.org/wiki/Hall" target="blank"> CREATORS CONTENT</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - the Go button will appear!</span>');
+					var dialog=ui.create.dialog('<span style="font-size:14px">CardGame by OffcialHDnG</span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="phone.html#LIGHT" target="blank"> PHONE PLAY</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - the Go button will appear!</span>');
 					
 					
 					ui.create.control('+',function(){						
@@ -1742,8 +1748,8 @@ game.documentZoom=game.deviceZoom*1;
 					return player==game.boss?0:0;
 				},
 				minion:{
-					'2':'boss_zhuyin',
-					'8':'boss_zhuyin',
+					'2':'boss_tyin',
+					'8':'boss_tyinb',
 				},
 				randchoice:function(name,list){
 					if(Math.random()>1/3){
@@ -9428,6 +9434,49 @@ game.broadcastAll('createDialog',event.videoId,' ');
 ui.background.setBackgroundImage('image/background/ol_bg.jpg');
 				},
 			},
+
+
+			darknyeve:{				
+				unique:true,
+		charlotte:true,
+		forced:true,
+				usable:1,	
+			 trigger:{player:'phaseZhunbeiBegin'},
+			 filter:function(event,player){
+					if(game.roundNumber!=1) return false;
+				if(!lib.config.rpgstory) return false;
+				return true;							},
+				//forced:true,
+				content:function (player){
+				    'step 0'				
+		 'step 1'
+	 ui.background.setBackgroundImage('image/background/hdng.jpg');
+		 if(!lib.config.nosparkles){
+		player.$dust();
+	}
+	 'step 2'
+	 game.broadcastAll('createDialog',event.videoId,'If you do not worship me for my powers from Yemog');
+	// game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-size:99px;font-variant:small-caps;">Roars, you cannot possibly</span>');
+	// game.broadcastAll('createDialog',event.videoId,'<img src="image/background/cute.gif" height="500" width="800"></img>');
+	game.delay(4);
+	
+	// game.delay(14);               
+       'step 3'
+	   game.broadcastAll('createDialog',event.videoId,'worship me for my tireless prevention of crime in your City');
+	   game.delay(4);
+	   'step 4'
+	   game.broadcastAll('createDialog',event.videoId,'your safety, your life is thanks to me');
+	   game.delay(3);
+'step 5'
+game.broadcastAll('createDialog',event.videoId,'. ');
+game.delay(4);
+'step 6'
+game.broadcastAll('createDialog',event.videoId,'GoldenAge: but...Nyeve never asked for fame or worship');
+game.delay(4);
+ui.background.setBackgroundImage('image/background/ol_bg.jpg');
+				},
+			},
+
 
 
 
