@@ -11,14 +11,17 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		},
 		character:{	
 			//SGS glow color do light concept, 3 ability lol weave, set up who to ult, ult has no elemental,
-			zhugeliang:['male',' ','2372137/2372137',['roars','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
 			
-				zhaoyun:['female',' ','1357720/1357720',['airson','los','endgold','comeback','uea','jud','abfuture','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
+			zhugeliang:['male',' ','2372137/2372137',['roars','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
 			
-				machao:['male',' ','1971911/1971911',['goldenage','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
+			zhaoyun:['female',' ','1357720/1357720',['airson','heab','ustart','los','endgold','comeback','uea','jud','abfuture','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
+			machao:['male',' ','1971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
+			sunquan:['female',' ','1182383/1182383',['x','heab','xocean','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
 		
-				sunquan:['female',' ','1182383/1182383',['x','los','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','bak']],
-			//	zhugeliang:['male',' ','2372137/2372137',['roars']],
+			
+				
+				
+					//	zhugeliang:['male',' ','2372137/2372137',['roars']],
 			
 			//	zhaoyun:['male',' ','2372137/2372137',['airson']],
 			//	machao:['male',' ','2372137/2372137',['goldenage']],
@@ -37,6 +40,487 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			ganning:['lingtong','xf_sufei'],
 		},
 		skill:{
+
+
+
+
+
+
+			xocean:{
+				enable:'phaseUse',
+						popup:false,
+				prepare:'give2',
+				filterTarget:function(card,player,target){
+					if(player==target) return false;
+					return true;
+				},
+			
+				filter:function(event,player){
+					if(!player.countCards('he',function(card){
+							  return get.number(card)=='1';
+					})){
+						return false;
+					}
+					return game.hasPlayer(function(current){
+						return current.maxHp>=1;
+					});
+				},
+
+				prompt:'Choose 1 of your LoreSongs, and let 1 other person take it',
+				filterCard:function(card){
+					return get.number(card)=='1'
+				},
+		
+				discard:false,
+				content:function(card){
+					'step 0'
+					//target.gain(event,cards,player).delay=false;
+					player.line(target);
+					target.gain(cards,player,'giveAuto').gaintag.add('X');
+					target.addTempSkill('garden',{player:'phaseAfter'});
+								},
+			
+			},
+
+
+			garden:{
+				enable:'phaseUse',
+				usable:1,
+					filter:function(event,player){					
+		if(!player.countCards('he',function(card){
+			return get.suit(card)=='heart';	  }))  return false;
+			return true;	
+		},	
+		content:function(card){
+			'step 0'
+		
+		var str = 'Healon comes to Garden the Wild! What LoreSong should Healon grow?';
+		player.chooseControl(['Shone','Ea','Nyeve','Healon'])
+			.set('prompt',str);
+			'step 1'
+			if(result && result.control){
+			var trans = { "Shone":'sha',"Ea":'shan',"Nyeve":'wanjian',"Healon":'nanman'				
+	};			  
+	var cards=[];
+	var x=(game.roundNumber%7)+1;
+		cards.push(game.createCard(trans[result.control],'heart',x));
+	player.directgain(cards);                   
+		}
+		'step 2'
+		game.broadcastAll('createDialog',event.videoId, 'Your LoreSong from the Wild grew!');	
+		game.delay(2);
+
+		},	},
+		
+			
+
+
+			OLDxocean:{  
+				enable:'chooseToUse',
+				//enable:'phaseUse',
+				prepare:'give2',
+				filterTarget:function(card,player,target){
+					if(player==target) return false;
+					return true;
+				},
+				filter:function(event,player){
+				   //if(lib.config.coin%47!=0) return false;
+					if(!player.countCards('he',function(card){
+							  return get.number(card)=='1'
+					})){
+						return false;
+					}	 
+					//if (lib.config.coin%41==0||_status.connectMode)  return true;	
+				},
+				filterCard:function(card){
+					return get.number(card)=='1'
+				},
+				prompt:'Choose 1 Ocean LoreSongs, and let 1 other person take it',
+				discard:false,
+				content:function(card){
+				
+					//target.gain(event,cards,player).delay=false;
+					player.line(target);
+					target.gain(cards,player,'giveAuto').gaintag.add('X');
+					player.addTempSkill('garden',{player:'phaseAfter'});
+				
+				}
+				
+				},
+
+
+
+
+
+			hiimsea:{
+				trigger:{
+					player:'phaseZhunbeiBegin',
+				},
+				forced:true,
+				content:function(){	
+					'step 0'
+					var targets=game.filterPlayer();
+					targets.remove(player);
+					targets.sort(lib.sort.seat);
+					event.targets=targets;
+					event.num=0;
+					//player.unmarkSkill('byuhuo');
+					'step 1'
+					if(num<event.targets.length){
+						var x=Math.floor((player.maxHp-player.hp)/2);
+						game.broadcastAll('createDialog',event.videoId, 'The Wild Worsens');	
+						game.delay(3);
+						//player.line(event.targets[num],'fire');
+						event.targets[num].loseHp(x);
+						event.num++;
+						event.redo();
+					}
+					},	
+			},
+
+
+			healbe:{
+				//	enable:'phaseUse',
+				trigger:{player:'phaseZhunbeiBegin'},
+					unique:true,
+					forced:true,
+					direct:true,
+					line:'fire',
+					filter:function(event,player){
+			
+					return lib.config.aede>=0;
+												},
+					content:function(){
+						'step 0'
+								game.delay(2);	
+						game.broadcastAll('createDialog',event.videoId, 'The Wild takes the vulnerable');	
+					game.delay(4);
+			
+						'step 1'					
+						
+						event.num=1;
+						
+						'step 2'
+
+						if(event.num){
+							var targets=player.getEnemies().randomGets(3);
+							var friends=player.getFriends().randomGets(2);
+							if(!targets.length){
+								event.finish();
+								return;
+							}
+							player.useCard({name:'healbe',nature:'fire'},friends);
+						
+							player.useCard({name:'healbe',nature:'fire'},targets);
+							
+							event.num--;
+							event.redo();
+							}	
+
+					},
+						
+			
+			},
+
+
+
+
+
+
+
+
+			healbegin:{
+				trigger:{player:'phaseZhunbeiBegin'},
+                forced:true,
+               filter:function(event,player){
+                        return !player.hasSkill('hiim');
+                    },
+				content:function(player,game,gameconfig){	
+					var x=player.maxHp-player.hp;
+					player.loseHp(x);
+			},},
+
+
+			healas:{
+              //  mark:true,               
+                trigger:{player:'changeHp'},
+                forced:true,
+               filter:function(event,player){
+                        return player.hp<=3*player.maxHp/4;
+                    },
+				content:function(player,game,gameconfig){		
+					game.broadcastAll('createDialog',event.videoId, 'Below 75%HP - '+get.translation(player) +' Slum LoreSongs are taken by Wild!');	
+					game.delay(3);     },     },
+
+
+			hiim:{
+				trigger:{
+					global:'phaseBefore',
+					player:'enterGame',
+				},
+				forced:true,
+				content:function(){					
+				game.addGlobalSkill('healonbase');
+					game.addGlobalSkill('losectvt');
+					game.addGlobalSkill('healonbases');
+					game.addGlobalSkill('healas');
+					game.addGlobalSkill('healbegin');
+					
+				},
+			},
+
+
+
+
+
+
+
+			healonbases:{
+				trigger:{player:'phaseUseBegin'},
+				forced:true,
+				filter:function(event,player){
+						return player.countCards('h',{suit:'spade'})>0&&player.hp<=3*player.maxHp/4;
+								},
+				filterCard:function(card){
+					return get.suit(card)=='spade'
+				},
+				content:function(){
+					'step 0'
+						var cards=player.getCards('h',{suit:'spade'});
+						if(cards.length){
+							player.lose(cards)._triggered=null;
+						}
+						event.num=cards.length;											
+					'step 2'
+				
+					var cards=[];
+					for(var i=0;i<event.num;i++){
+						cards.push(game.createCard('newctvt','spade',1));
+					}
+					player.directgain(cards);
+					event.goto(1);
+				},			
+			},
+
+
+
+
+
+
+
+
+			healonbase:{
+				trigger:{player:'phaseUseBegin'},
+				forced:true,
+				filter:function(event,player){
+						return player.countCards('h',{suit:'heart'})>0;
+								},
+				filterCard:function(card){
+					return get.suit(card)=='heart'
+				},
+				content:function(){
+					'step 0'
+						var cards=player.getCards('h',{suit:'heart'});
+						if(cards.length){
+							player.lose(cards)._triggered=null;
+						}
+						event.num=cards.length;											
+					'step 2'
+					game.broadcastAll('createDialog',event.videoId, 'LoreSongs from the Wild consumed by ocean of CTVT..');	
+						game.delay(2);	
+					var cards=[];
+					for(var i=0;i<event.num;i++){
+						cards.push(game.createCard('newctvt','heart',1));
+					}
+					player.directgain(cards);
+					event.goto(1);
+				},			
+			},
+
+
+			losectvt:{
+				trigger:{
+					player:['loseAfter','compare'],
+					global:['equipAfter','addJudgeAfter','gainAfter','loseAsyncAfter'],
+			target:'compare',
+				},
+				cardSkill:true,
+				filter:function(event,player,name){
+					if(name=='compare'){
+						if(player==event.player){
+							if(event.iwhile>0) return false;
+							return event.card1.name=='newctvt';
+						}
+						return event.card2.name=='newctvt';
+					}
+					if(event.name!='equip'&&event.name!='addJudge'&&!event.visible) return false;
+					var evt=event.getl(player);
+					if(!evt||!evt.hs||!evt.hs.filter(function(i){
+						return get.name(i,player)=='newctvt';
+					}).length) return false;
+						return true;
+				},
+			
+				forced:true,
+				popup:false,
+				content:function(){
+					'step 0'
+					if(trigger.delay===false) game.delayx();
+					'step 1'
+					game.log(player,'Was Assaulted by','#g','the Wild');
+					//var num=100000;
+					if(typeof trigger.getl=='function'){
+						num=trigger.getl(player).hs.filter(function(i){
+							return get.name(i,player)=='newctvt';
+						}).length;
+					}
+					player.loseHp(100000*num);
+				},
+			},
+
+
+
+
+
+
+
+
+
+
+			NOHURTlosectvt:{
+				trigger:{
+				//	player:['loseAfter','compare'],
+				trigger:{player:'phaseDiscardEnd'},
+					//global:['equipAfter','addJudgeAfter','gainAfter','loseAsyncAfter'],
+			//target:'compare',
+				},
+				filter:function(event,player){
+					for(var i=0;i<event.cards.length;i++){
+						if(get.number(event.cards[i],event.player)=='2'){
+							return true;
+						}
+					}
+					return false;
+				},	
+				forced:true,
+					content:function(){
+//'step 0'
+				//	if(trigger.delay===false) game.delayx();
+				//	'step 1'
+				//	game.log(player,'触发了','#g【毒】','的效果');
+					//var num=1;
+				//	if(typeof trigger.getl=='function'){
+				//		num=trigger.getl(player).hs.filter(function(i){
+				//			return get.name(i,player)=='newctvt';
+				//		}).length;
+				//	}
+					player.damage(1000);
+				},
+			},
+
+
+			
+			//immediate mass damage 
+			XXlosectvt:{
+				trigger:{
+					player:['loseAfter','compare'],
+					global:['equipAfter','addJudgeAfter','gainAfter','loseAsyncAfter'],
+			target:'compare',
+				},
+								
+				forced:true,
+					content:function(){
+					'step 0'
+				//	if(trigger.delay===false) game.delayx();
+				//	'step 1'
+				//	game.log(player,'触发了','#g【毒】','的效果');
+					//var num=1;
+				//	if(typeof trigger.getl=='function'){
+				//		num=trigger.getl(player).hs.filter(function(i){
+				//			return get.name(i,player)=='newctvt';
+				//		}).length;
+				//	}
+					player.loseHp(100000).type='newctvt';
+				},
+			},
+
+			//ALL CARD NO RESPOND
+			XXheab:{
+				//unique:true,
+					forced:true,
+					filterCard:function(card){
+						return get.suit(card)=='heart'
+					},
+				priority:10,
+				mod:{					
+					cardUsable:function(){
+						return false;
+					},
+					cardRespondable:function(){
+						return false;
+					},				
+				},			
+			},
+
+			gthund:{
+				audio:2,
+				trigger:{player:'phaseDrawBegin1'},
+				filter:function(event,player){
+					//return lib.config.coin%43==0&&player.countCards('h',{suit:'diamond'})>0&&!event.numFixed;
+					return player.countCards('h',{suit:'diamond'})>0&&!event.numFixed;
+					//return !event.numFixed;
+				},
+				content:function(){
+					"step 0"
+					player.damage(1000);
+					'step 1'
+					trigger.changeToZero();
+					event.cards=get.cards(7);
+					game.cardsGotoOrdering(event.cards);
+					event.videoId=lib.status.videoId++;
+					game.broadcastAll(function(player,id,cards){
+						var str;
+						if(player==game.me&&!_status.auto){
+							str='Nyeve Expedition: Receive One LoreSong from Each Location';
+						}
+						else{
+							str='Expedition';
+						}
+						var dialog=ui.create.dialog(str,cards);
+						dialog.videoId=id;
+					},player,event.videoId,event.cards);
+					event.time=get.utc();
+					game.addVideo('showCards',player,['Expedition',get.cardsInfo(event.cards)]);
+					game.addVideo('delay',null,2);
+					"step 2"
+					var next=player.chooseButton([0,5],true);
+					next.set('dialog',event.videoId);
+					next.set('filterButton',function(button){
+						for(var i=0;i<ui.selected.buttons.length;i++){
+							if(get.suit(ui.selected.buttons[i].link)==get.suit(button.link)) return false;
+						}
+						return true;
+					});
+					next.set('ai',function(button){
+						return get.value(button.link,_status.event.player);
+					});
+					"step 3"
+					if(result.bool&&result.links){
+						event.cards2=result.links;
+					}
+					else{
+						event.finish();
+					}
+					var time=1000-(get.utc()-event.time);
+					if(time>0){
+						game.delay(0,time);
+					}
+					"step 4"
+					game.broadcastAll('closeDialog',event.videoId);
+					var cards2=event.cards2;
+					player.gain(cards2,'log','gain2');
+				},
+			},
 
 
 			goldd:{
@@ -183,8 +667,7 @@ endgold:{
 					var x=1.5*trigger.cards.length;
 					var z=(x+y);
 					var a=(x+y+3);
-				
-					if(player.hasSkill('goldd')){
+						if(player.hasSkill('goldd')){
 						game.saveConfig('aede',a);
 					}
 					else{
@@ -439,7 +922,7 @@ andgen:{
 	forced:true,
 trigger:{player:'phaseZhunbeiBegin'},
 	content:function(){
-		game.broadcastAll('createDialog',event.videoId, 'Boss regenerates her Androids!');	
+		game.broadcastAll('createDialog',event.videoId, 'Boss wants to regenerate her Androids!');	
 		game.delay(2);
 		var targets=player.getFriends().randomGets(2);
 	player.useCard({name:'andgen'},targets);
@@ -706,6 +1189,33 @@ init:function(player){
 					//game.saveConfig('xtsu',0);
 				},
 			},
+
+
+
+
+			ustart:{
+				trigger:{
+					player:'enterGame',
+				},
+				filter:function(event,player){
+					return game.roundNumber==1;
+				},
+
+				forced:true,
+				content:function(){					
+					var a=Math.floor(lib.config.rvol/2);
+					var b=Math.floor(lib.config.aede/2);
+					var c=Math.floor(lib.config.gjud/2);
+					var d=Math.floor(lib.config.xtsu/2);
+					game.saveConfig('rvol',a);
+					game.saveConfig('aede',a);
+					game.saveConfig('gjud',a);
+					game.saveConfig('xtsu',a);
+
+					
+				},
+			},
+
 
 
 			gjudp:{
@@ -1213,35 +1723,6 @@ game.delay(2);
 },
 
 
-Boost:{
-	enable:'phaseUse',
-prompt: 'Let Members learn new Words from Ri!',
-usable:1,
-		  content:function(game,gameconfig){
-		 'step 0'
-		 //game.animate.flame(10,10,700,'fire');
-		   var str = 'Let a Member learn new Testaments from Ri!</br>You currently have: '+lib.config.expe +' Testaments';
-		 player.chooseControl(['Roars','Airson','GoldenAge','X'])
-		 .set('prompt',str)
-		 'step 1'
-		 if(result && result.control){
-			 var trans = { "Roars":'lvr',"Airson":'lva',"GoldenAge":'lvg',"X":'lvx',
-				 };
-		'step 2'
-		var x=lib.config.expe;
-		game.saveConfig('expe',1);
-		game.saveConfig(trans[result.control],x);
-		'step 3'
-		if(result.control=='lvr'){
-		game.broadcastAll('createDialog',event.videoId, 'R');	
-	}
-	if(result.control=='lva'){
-		game.broadcastAll('createDialog',event.videoId, 'A');	
-	}
-		
-		                   
-		 }
-	 },},
 
 
 
@@ -2401,6 +2882,23 @@ box:{
 				content:function(){
 					'step 0'
 					var card=game.createCard('mgultc');				
+					player.gain(card,'gain2');
+					
+				},
+			},
+
+
+			OLDxocean:{
+				trigger:{player:'phaseZhunbeiBegin'},
+				filter:function(event,player){
+					return !game.hasPlayer(function(current){
+						return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
+					});
+			},	
+				forced:true,
+				content:function(){
+					'step 0'
+					var card=game.createCard('dongzhuxianji');				
 					player.gain(card,'gain2');
 					
 				},
@@ -5677,13 +6175,14 @@ player.update;
 					trigger:{player:'loseAfter'},
 					group:['ythunder2','ythunder3'],
 					forced:true,
-					//mark:true,
-					//intro:{
-					//	content:"# ",
-					//},
+					marktext:"<img style=width:21px src="+lib.assetURL+"image/character/ythund.png>",
+	
 					init:function(player){
 						player.storage.ythunder=0;
-				 },
+					},
+					intro:{
+						content:'mark'
+					},
 					filter:function(event,player){
 						for(var i=0;i<event.cards.length;i++){
 							if(get.number(event.cards[i],event.player)=='3'){
@@ -5694,13 +6193,19 @@ player.update;
 					},
 					content:function(game,gameconfig){					
 						'step 0'
-						game.broadcastAll('createDialog',event.videoId, 'Thunder LoreSong played: Warning');	
+						game.broadcastAll('createDialog',event.videoId, 'Boss received Thunder LoreSong : Warning');	
 						game.delay(2);
 						'step 1'
-						game.broadcastAll('createDialog',event.videoId, 'Magnetism Demands Tribute!');	
+						game.broadcastAll('createDialog',event.videoId, 'Tribute Demanded!');	
 						game.delay(2);
 						'step 2'
-						player.storage.ythunder+=1;
+
+			if(player.storage.ythunder==0){player.storage.ythunder+=1;}
+			else{}
+						
+						'step 3'
+						player.syncStorage('ythunder');
+					player.markSkill('ythunder');
 					
 					},},
 
@@ -5716,10 +6221,16 @@ player.update;
 							game.broadcastAll('createDialog',event.videoId, 'Tribute Unmet');	
 							game.delay(2);
 							'step 1'
+							game.broadcastAll('createDialog',event.videoId, '"I will show you my Thunder from Yemog"');	
+							game.delay(5);
+							'step 2'
 							var n=player.getEnemies().randomGets(1);
 				player.useCard({name:'ythund',nature:'fire'},n);		
-							'step 2'
-							player.storage.ythunder-=1;
+							'step 3'
+							game.delay(2);
+							var x=player.storage.ythunder;
+							player.storage.ythunder-=x;
+							player.unmarkSkill('ythunder');
 						
 						},},
 
@@ -7823,7 +8334,7 @@ rspirit:{
 				player.line(target,'fire');
 				player.$fullscreenpop('Roars SPIRIT!','metal');
 					
-				target.damage(10333+3333*xx);	
+				target.damage(5333+7333*xx);	
 				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Roars appears!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/zhugeliang.png" height="106" width="60"></img></span>');	
 				game.delay(2);
 				target.damage(x+0.07);	
@@ -7861,7 +8372,7 @@ aspirit:{
 				player.line(target,'fire');
 				player.$fullscreenpop('Airson SPIRIT!','metal');
 					
-				target.damage(10333+7777*xx);	
+				target.damage(3333+7777*xx);	
 				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Airson appears!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/zhaoyun.png" height="106" width="60"></img></span>');	
 					game.delay(2);
 				target.damage(x+0.07);	
@@ -7904,7 +8415,7 @@ gspirit:{
 				player.line(target,'fire');
 				player.$fullscreenpop('GoldenAge SPIRIT!','metal');
 					
-				target.damage(10333+9999*xx);	
+				target.damage(3333+7777*xx);	
 				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">GoldenAge appears!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/machao.png" height="106" width="60"></img></span>');	
 					game.delay(2);
 				target.damage(x+0.07);	
@@ -7948,7 +8459,7 @@ xspirit:{
 				player.line(target,'fire');
 				player.$fullscreenpop('X SPIRIT!','metal');
 					
-				target.damage(10333+2222*xx);	
+				target.damage(3333+3333*xx);	
 				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">X is here!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/sunquan.png" height="106" width="60"></img></span>');	
 				game.delay(2);
 				target.damage(x+0.07);	
@@ -8678,28 +9189,27 @@ aeath3:{
 
 
 
-			xocean:{
-				//audio:2,
-				//filter:function(event,player){
-				//	return player.countCards('hes',{suit:'diamond'})>0&&lib.config.xo>=1;
-				//},
-				//enable:'chooseToUse',
-				//filterCard:function(card){
-				//	return get.suit(card)=='diamond';
-				//},
-			//	position:'hes',
-			//	viewAs:{name:'dongzhuxianji'},
-			//	prompt:'Healon:Gardener',
-			//	check:function(card){return 6-get.value(card)},
-			//	ai:{
-			//		threaten:1.5
-			//	}
+			OLDxocean:{
+				audio:2,
+				filter:function(event,player){
+					//return player.countCards('hes',{suit:'diamond'})>0&&lib.config.xo>=1;
+					return player.hp>=0;
+				},
+				enable:'chooseToUse',
+				filterCard:function(card){
+					return get.color(card)=='black';
+				},
+				position:'hes',
+				viewAs:{name:'dongzhuxianji'},
+				prompt:'Healon:Gardener',
+				check:function(card){return 6-get.value(card)},
+				ai:{
+					threaten:1.5
+				}
 			},
 
 
-			gthund:{
 			
-			},
 
 
 			rearthr:{
@@ -10371,6 +10881,33 @@ game.broadcastAll('createDialog',event.videoId,'Find your new gem in Airson Intr
 game.delay(1);
 }	
 
+if(target.group=='gt'&&target.hp<=target.maxHp/4){
+	ui.background.setBackgroundImage('image/background/wind.jpg');
+player.$legend;
+
+var x=lib.config.coin;
+var y=43*x-x;
+game.changeCoin(y);
+target.$dust;
+player.$fullscreenpop('You gained NEW GEM!','metal');
+game.delay(4);
+game.broadcastAll('createDialog',event.videoId,'Find your new gem in GoldenAge Intro!');	
+game.delay(1);
+}	
+
+if(target.group=='xo'&&target.hp<=target.maxHp/4){
+	ui.background.setBackgroundImage('image/background/wind.jpg');
+player.$legend;
+var x=lib.config.coin;
+var y=41*x-x;
+game.changeCoin(y);
+target.$dust;
+player.$fullscreenpop('You gained NEW GEM!','metal');
+game.delay(4);
+game.broadcastAll('createDialog',event.videoId,'Find your new gem in X Intro!');	
+game.delay(1);
+}	
+
 else{
 		//game.broadcastAll('createDialog',event.videoId,'You did not get a gem this time...');	
 }
@@ -10575,7 +11112,10 @@ usable:1,
 						player.addTempSkill(trans[result.control]);
 						player.update();                     
                     }
-                },},
+                },
+			
+			
+			},
 
 
 
@@ -11465,10 +12005,15 @@ target.update();
 			glinit:{
 				enable:'phaseUse',
 				prompt:'Carve with a LoreSong, and choose a Members to carve their GLYPTIC',
-				usable:1,
+				init:function(player){
+					player.storage.glinit=1;
+					},
+					
 			filter:function(event,player){
-					if(lib.config.coin%53==0) return true;
-					if(lib.config.coin%47==0) return true;
+					if(player.storage.glinit>=1&&lib.config.coin%53==0) return true;
+					if(player.storage.glinit>=1&&lib.config.coin%47==0) return true;
+					if(player.storage.glinit>=1&&lib.config.coin%43==0) return true;
+					if(player.storage.glinit>=1&&lib.config.coin%41==0) return true;
 					return false;
 				},
 				filterCard:function(card){
@@ -11482,6 +12027,7 @@ target.update();
 			},
 				position:'he',
 				content:function(target,game,gameconfig){
+					player.storage.glinit-=2;
 			
 				if(target.hasSkill('roars')&&lib.config.coin%47==0){
 			
@@ -11491,8 +12037,7 @@ target.update();
 			////target.storage.glyptic3-=0.073;
 			target.storage.glyptic25+=1;
 	
-			game.broadcastAll(function(target){
-								
+			game.broadcastAll(function(target){						
 																
 		
 				target.node.avatar2.setBackground('rearth','character');
@@ -11542,8 +12087,7 @@ target.update();
 			//target.removeSkill('rblaze');
 			//target.addSkill('rthund');
 			target.update(); break;
-			
-						case target.storage.glyptic=7:
+			case target.storage.glyptic=7:
 			target.storage.glyptic-=6;
 			////target.storage.glyptic3-=0.073;
 			//target.storage.glyptic25+=1;
@@ -11562,8 +12106,7 @@ target.update();
 			target.storage.glyptic22+=1;
 	
 	
-			game.broadcastAll(function(target){
-								
+			game.broadcastAll(function(target){							
 																
 				target.node.avatar2.setBackground('awind','character');
 				target.node.avatar.setBackground('awind','character');
@@ -11629,17 +12172,17 @@ target.update();
 			
 			target.update(); break;	}
 			}
-			if(target.hasSkill('goldenage')){
+			if(target.hasSkill('goldenage')&&lib.config.coin%43==0){
 			switch(target.storage.glyptic){
 						case target.storage.glyptic=77:
 			target.storage.glyptic-=66;
 			////target.storage.glyptic3-=0.073;
 			
 			target.storage.glyptic23+=1;
-			//target.node.avatar2.setBackground('gthund','character');
-			//target.node.avatar.setBackground('gthund','character');
-			//target.addSkill('thund');
-			//target.addSkill('gthund');
+			target.node.avatar2.setBackground('gthund','character');
+			target.node.avatar.setBackground('gthund','character');
+			target.addSkill('thund');
+			target.addSkill('gthund');
 			
 			target.update(); break;
 						case target.storage.glyptic=11:
@@ -11695,17 +12238,16 @@ target.update();
 			
 			target.update(); break;	}
 			}
-					if(target.hasSkill('x')){
+					if(target.hasSkill('x')&&lib.config.coin%41==0){
 			switch(target.storage.glyptic){
 						case target.storage.glyptic=77:
 			target.storage.glyptic-=75;
 			////target.storage.glyptic3-=0.073;
-			
-			target.storage.glyptic21+=1;
-			//target.node.avatar2.setBackground('xocean','character');
-			//target.node.avatar.setBackground('xocean','character');
-			//target.addSkill('ocean');
-			//target.addSkill('xocean');
+				target.storage.glyptic21+=1;
+			target.node.avatar2.setBackground('xocean','character');
+			target.node.avatar.setBackground('xocean','character');
+			target.addSkill('ocean');
+			target.addSkill('xocean');
 			
 			target.update(); break;
 						case target.storage.glyptic=2:
@@ -14577,7 +15119,7 @@ player.storage.glyptic27=0;
 
 
 ocean:{
-	//group:['ocean2','ocean3','ocean5','ocean4','ocean6','ocean7','ocean8','ocean9'],
+	group:['ocean2','ocean3','ocean5','ocean4','ocean6','ocean7','ocean8','ocean9'],
 
 	init:function(player){
 	 player.storage.ocean=1;
@@ -14668,23 +15210,29 @@ content:function(player,event,trigger,source){
 
 ocean6:{
 	 trigger:{player:'damageBefore'},
-
 	 forced:true,
-		 filter:function(event,player,source){
-		 return event.source.hasSkill('thund');
-		 return false;
-		 },
-content:function(player,event,trigger,source){
- 'step 0'
- if(player.storage.ocean>=1){
- trigger.num*=3;
- //trigger.cancel();
- //var y=trigger.num*3;
- //player.damage(y);
- game.delay(2);
- player.storage.ocean-=1;
- }},    
-	},
+	 filter:function(event,player,source){
+		return event.source.hasSkill('thund');
+		return false;
+		},
+content:function(event,game,config,source,nature){
+var x=trigger.num;
+var y=Math.floor(x);
+var z=(x/y);
+if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
+	game.broadcastAll('createDialog',event.videoId, 'GoldenAge Thunder GEM: Electricity Fills the Sea!');
+	game.delay(2);
+	var a=2.25+lib.config.lvg*0.0225;
+	
+trigger.num*=a;
+}
+}
+},
+
+
+
+
+
 
 	ocean7:{
 	 trigger:{player:'damageBefore'},
@@ -14935,7 +15483,7 @@ if(trigger.source.hasSkill('x')){
 
 'step 1'
 	var a=trigger.source.storage.glyptic3;
-	var x=Math.floor(trigger.num*(1-a)*140);
+	var x=Math.floor(trigger.num*(1-a)*270);
 	//.broadcastAll('createDialog',event.videoId,'STAREARTH GEM:'+a+' Immune!');
 	game.delay(2);
  trigger.cancel();
@@ -14975,11 +15523,15 @@ game.delay(3);
 		 return true;
 		 },
 	 forced:true,
-	 filter:function(event){
-		return event.source&&event.source.hasSkill('thund');
-	},
+	
 content:function(player,event,trigger,source){
+	var x=trigger.num;
+var y=Math.floor(x);
+var z=(x/y);
+if(z==1){
 	trigger.cancel();
+	game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+'s THUNDER GEM: Immune!');
+	game.delay(1);}
 	},},
 
 
@@ -15310,7 +15862,7 @@ if(trigger.source.hasSkill('x')){
 
 'step 1'
 	var a=trigger.source.storage.glyptic3;
-	var x=Math.floor(trigger.num*(1-a)*140);
+	var x=Math.floor(trigger.num*(1-a)*270);
 	//.broadcastAll('createDialog',event.videoId,'STAREARTH GEM:'+a+' Immune!');
 	game.delay(2);
  trigger.cancel();
@@ -20289,7 +20841,7 @@ filter:function(event,player){
 				frequent:true,
 				preHidden:true,
 				content:function(){
-				
+				player.draw();
 				},
 			},
 			xinbiyue:{
@@ -20686,10 +21238,11 @@ learnx:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-v
 
 
 ocean2:'Ocean',
-thund2:'Thunder',
+ythunder:'Yemog Thunder',
 wind2:'{Wind:SkyWar}',
 light2:'Light',
 earth2:'{StarEarth:SkyWar}',
+thund2:'{Thunder:SkyWar}',
 flora2:'Flora',
 
 cho:'<span style="text-shadow:0px 0px 7px #ff0000 , 0px 0px 7px #ff0000;font-color:#000000;">!BOSS REVEAL</span>',
@@ -20707,6 +21260,10 @@ awind:'<span style><img src=image/character/marks.png></img></span>',
 rearth:'<span style><img src=image/character/markse.png></img></span>',
 awind_info:'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Ea Ult: Nurse </span></br>Choose a Member - Gift all ⚶ Slums LoreSongs for Future Heal',
 rearth_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Shone Ult: Endure </span></br>Choose a Member - Gift all 🜎 Pinnacle LoreSongs. </br></br>In Earth Rounds, Roars shares his health. </br></br>Star Rounds: Roars saves +1 LoreSongs for the member.',
+gthund_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Nyeve Ult: Expedition </span></br>If GoldenAge holds a Yemog LoreSong, GoldenAge sacrifices his health to find 1 LoreSong of each location: Slum, Yemog, Pinnacle, CTVT, by exploring 7 LoreSongs',
+
+
+gthund:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Nyeve Ult: Expedition</span>',
 
 
 
@@ -20725,7 +21282,7 @@ glyptic_gbase:'GoldenAge-Spirit',
 xbaser:'X-Spirit',
 xbasea:'X-Spirit',
 xbaseg:'X-Spirit',
-gthund:'Nyeve:Bolt',
+
 hpscan:'{Solve}',
 //glinit:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;">GLYPTIC</span>',
 //glinit:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">Glyptic</span>',
@@ -20825,6 +21382,12 @@ evil:'Evil',
 //paranoia /counter
 randsha_info:'Strikes a Random player',
 randjue_info:'Launches SkyWar on a Random player',
+andgen:'Mechanize',
+ythunder:'Yemog Thunder',
+glyptic_taowu:'Storming',
+andgen_info:'Boss fixes her android Parallel Fragments massively when under 1 million HP',
+ythunder_info:'Boss deals massive Thunder-elemental Damage when she uses a Thunder LoreSong; can be avoided via gifting Boss one of your LoreSongs',
+glyptic_taowu_info:'Boss increases her SkyWar stat by additional 3% each time!',
 resha_info:'Strikes player that is most powerful',
 //cannot block with Ea
 rejue_info:'Launches unblockable SkyWar on player that is most powerful',
