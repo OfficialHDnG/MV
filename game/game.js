@@ -10291,7 +10291,7 @@ case 'gbig':zoom=1.6;break;
 			heart:"❃",
 			diamond:"♛",
 			spade:"⚶",
-			club:"🜎",
+			club:"╬",
 			ghujia:'护甲',
 			ghujia_bg:'甲',
 			heart2:"红桃",
@@ -53433,7 +53433,7 @@ case 'gbig':zoom=1.6;break;
 			switch(type){
 				case 'mark':{
 					if(content>0){
-						return '共有'+content+'个标记';
+						return 'Boss:'+content+'Scheme';
 					}
 					return false;
 				}
