@@ -12099,10 +12099,10 @@ target.update();
 					},
 					
 			filter:function(event,player){
-					if(player.storage.glinit>=1&&lib.config.coin%53==0) return true;
-					if(player.storage.glinit>=1&&lib.config.coin%47==0) return true;
-					if(player.storage.glinit>=1&&lib.config.coin%43==0) return true;
-					if(player.storage.glinit>=1&&lib.config.coin%41==0) return true;
+					if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%53==0) return true;
+					if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%47==0) return true;
+					if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%43==0) return true;
+					if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%41==0) return true;
 					return false;
 				},
 				filterCard:function(card){
