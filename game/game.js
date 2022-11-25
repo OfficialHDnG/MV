@@ -16201,7 +16201,8 @@ case 'gbig':zoom=1.6;break;
 						game.broadcastAll(function(nature,player){
 							if(lib.config.animation&&!lib.config.nosparkles){
 								if(nature=='fire'){
-									player.$fire();
+										//TEST
+									//player.$fire();
 								}
 								else if(nature=='thunder'){
 									//TEST
@@ -37724,7 +37725,7 @@ case 'gbig':zoom=1.6;break;
 						}
 					}
 					//menux=createMenu(['PLAY','SET','武将','卡牌','扩展','VIDEO'],{
-					menux=createMenu(['PLAY','Script',' ',' ',' ','VIDEO'],{
+					menux=createMenu(['Play','SCRIPT',' ',' ',' ','VIDEO'],{
 						position:menuContainer,bar:40
 					});
 				}
