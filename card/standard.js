@@ -75,6 +75,38 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 			},
 
 
+
+			dongzhuxianji:{
+				audio:true,
+				fullskin:true,
+				type:'trick',
+				enable:true,
+				selectTarget:-1,
+				toself:true,
+				filterTarget:function(card,player,target){
+					return target==player;
+				},
+				modTarget:true,
+				content:function(){
+					target.chooseToGuanxing(2);
+					target.draw(2);
+				},
+				ai:{
+					basic:{
+						order:7.2,
+						useful:4.5,
+						value:9.2
+					},
+					result:{
+						target:2.5,
+					},
+					tag:{
+						draw:2
+					}
+				}
+			},
+
+
 			novab:{
 				type:'basic',
 				content:function(){
@@ -92,7 +124,24 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 			},
 			
 
-			
+			andgen:{
+				type:'basic',
+				content:function(){
+					if(target.hp>=1000000){
+						target.recover();
+					}
+					if(target.hp<1000000){
+						target.recover(1000000);
+
+					}
+			},	},
+
+			healbe:{
+				type:'basic',
+				content:function(){
+					var x=Math.floor((target.maxHp-target.hp));
+					target.loseHp(x);
+			},	},
 
 		
 
@@ -138,6 +187,16 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 				content:function(){
 				
 				target.damage(1111);			
+			},			
+			},
+
+
+			ythund:{
+				type:'basic',
+				
+				content:function(){
+				
+				target.damage(11454);			
 			},			
 			},
 
@@ -200,6 +259,87 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 
 
 
+			newctvt:{
+				type:'basic',
+				fullskin:true,
+				global:['g_newctvt'],
+				content:function(){},
+				ai:{
+					value:function(card,player,i){
+						if(player.hp<=1&&_status.currentPhase==player&&_status.event.getParent('phaseUse').name=='phaseUse'
+						&&_status.event.name!='chooseButton'&&_status.event.name!='chooseCard'){
+							return 100;
+						}
+						for(var i=0;i<10;i++){
+							if(_status.event.getParent(i)&&_status.event.getParent(i).name=='chooseToCompare') return 100;
+						}
+						return -5;
+					},
+					useful:function(card,i){
+						var player=_status.event.player
+						if(player.hp<=1&&_status.currentPhase==player&&_status.event.getParent('phaseDiscard').name=='phaseDiscard'&&player.countCards('h','tao')+player.countCards('h','jiu')<=0){
+							return 11;
+						}
+						return 6;
+					},
+					result:{
+						player:function(player,target){
+							if(player.hasSkillTag('usedu')) return 5;
+							return -1;
+						}
+					},
+					order:7.5
+				},
+			},
+
+
+
+
+
+			g_newctvt:{
+				trigger:{
+					player:['loseAfter','compare'],
+					global:['equipAfter','addJudgeAfter','gainAfter','loseAsyncAfter'],
+			target:'compare',
+				},
+				cardSkill:true,
+				filter:function(event,player,name){
+					if(name=='compare'){
+						if(player==event.player){
+							if(event.iwhile>0) return false;
+							return event.card1.name=='newctvt';
+						}
+						return event.card2.name=='newctvt';
+					}
+					if(event.name!='equip'&&event.name!='addJudge'&&!event.visible) return false;
+					var evt=event.getl(player);
+					if(!evt||!evt.hs||!evt.hs.filter(function(i){
+						return get.name(i,player)=='newctvt';
+					}).length) return false;
+						return true;
+				},
+				whiteListFilter:[
+					
+					(event)=>event.getParent(3).name=='guaguliaodu',
+				],
+				forced:true,
+				popup:false,
+				content:function(){
+					'step 0'
+					if(trigger.delay===false) game.delayx();
+					'step 1'
+					game.log(player,'触发了','#g【毒】','的效果');
+					var num=1;
+					if(typeof trigger.getl=='function'){
+						num=trigger.getl(player).hs.filter(function(i){
+							return get.name(i,player)=='newctvt';
+						}).length;
+					}
+					player.loseHp(100000).type='newctvt';
+				},
+			},
+
+
 			exultc:{
 				type:'basic',
 				content:function(target){
@@ -219,9 +359,12 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 			xultch:{
 				type:'basic',
 				content:function(target){
-			
-			var e=(target.hp/5000+0.01);
-			
+					var a=player.countCards('h',{number:'1'});
+					var b=player.countCards('h',{number:'2'});	
+					var c=player.countCards('h',{number:'5'});	
+					var d=player.countCards('h',{number:'6'});	
+					var f=(1+0.24*(a+b-c-d));
+			var e=(f*target.hp/5000+0.01);			
 				target.damage(e);			
 			},			
 			},
@@ -230,9 +373,13 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 				type:'basic',
 				content:function(target){
 			
-			var e=(target.hp/1000+0.01);
-			
-				target.damage(e);			
+					var a=player.countCards('h',{number:'1'});
+					var b=player.countCards('h',{number:'2'});	
+					var c=player.countCards('h',{number:'5'});	
+					var d=player.countCards('h',{number:'6'});	
+					var f=(1+0.44*(a+b-c-d));
+			var e=(f*target.hp/5000+0.01);			
+				target.damage(e);				
 			},			
 			},
 
@@ -319,8 +466,7 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 					game.delay(2);
 				target.damage(z+0.01);	
 				var cards=player.getCards('h');
-						player.discard(cards);
-				
+						player.discard(cards);			
 
 			},			
 			},
@@ -329,6 +475,7 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 
 
 			mgultc:{
+		
 				type:'basic',
 				enable:true,			
 				filterTarget:function(card,player,target){
@@ -1713,7 +1860,7 @@ xelema:{
 				subtype:'equip4',
 				distance:{globalFrom:-1},
 			},
-			zixin:{
+			XXzixin:{
 				fullskin:true,
 				type:'equip',
 				subtype:'equip4',
@@ -1852,7 +1999,7 @@ xelema:{
 				},
 				skills:['qilin_skill']
 			},
-			wugu:{
+			xxwugu:{
 				audio:true,
 				fullskin:true,
 				type:'trick',
@@ -3948,6 +4095,7 @@ xelema:{
 			bagua_skill:'八卦阵',
 			jueying:'绝影',
 			dilu:'的卢',
+			newctvt:'The Wild: CTVT',
 			zhuahuang:'爪黄飞电',
 			jueying_bg:'+马',
 			dilu_bg:'+马',
@@ -3956,8 +4104,8 @@ xelema:{
 			chitu_bg:'-马',
 			dawan:'大宛',
 			dawan_bg:'-马',
-			zixin:'紫骍',
-			zixin_bg:'-马',
+			//zixin:'Judgment',
+			//zixin_bg:'<img src="image/card/zixin.png" width="80px" height="60px"></img>',
 			zhuge:'诸葛连弩',
 			cixiong:'雌雄双股剑',
 			zhuge_bg:'弩',
@@ -3980,16 +4128,17 @@ xelema:{
 			guanshi_skill:'贯石斧',
 			fangtian_skill:'方天画戟',
 			qilin_skill:'麒麟弓',
-			wugu:'五谷丰登',
+			wugu:'Judgment',
 			taoyuan:'桃园结义',
 			nanman:'ξHealon:Calm',
 			wanjian:'ΨNyeve:Empire',
 			wuzhong:'无中生有',
 			juedou:'SkyWar',
-			wugu_bg:'谷',
+			
+			gultc:'審',
+			mgultc:'禧',
 			taoyuan_bg:'园',
-			nanman_bg:'蛮',
-			wanjian_bg:'箭',
+		
 			wuzhong_bg:'生',
 			ault:'Ult!',
 			juedou_bg:'斗',
