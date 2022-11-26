@@ -13,7 +13,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			//SGS glow color do light concept, ault element choose,
 		
 			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-			zhaoyun:['female',' ','1357720/1357720',['airson','heab','ustart','los','endgold','comeback','uea','jud','abfuture','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
+			zhaoyun:['female',' ','1357720/1357720',['airson','heab','alight','ustart','los','endgold','comeback','uea','jud','abfuture','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			
 			machao:['male',' ','1971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
@@ -6993,9 +6993,16 @@ tstart:{
 				filter:function(event,player){
 					return player.countCards('h')>0;
 				},
+				filterCard:function(card){
+					if(card.hasGaintag('G')){
+						return false;			
+					}
+					return true;
+				},
+
 				//targetprompt:'Choose 1 LoreSong as a Gift, then choose who to gift',
 				prompt:'Choose 1 of your LoreSongs, and let 1 other person take it',
-				filterCard:true,
+				//filterCard:true,
 				check:function(card){
 					if(card.name=='du') return 20;
 					return 7-get.value(card);
@@ -9009,9 +9016,65 @@ aeath3:{
 
 
 			alight:{
-				
+				enable:'phaseUse',
+				getResult:function(cards){
+					var l=cards.length;
+					var all=Math.pow(l,2);
+					var list=[];
+					for(var i=1;i<all;i++){
+						var array=[];
+						for(var j=0;j<l;j++){
+							if(Math.floor((i%Math.pow(2,j+1))/Math.pow(2,j))>0) array.push(cards[j])
+						}
+						var num=0;
+						for(var k of array){
+							num+=get.number(k);
+						}
+						if(num==7) list.push(array);
+					}
+					if(list.length){
+						list.sort(function(a,b){
+							if(a.length!=b.length) return b.length-a.length;
+							return get.value(a)-get.value(b);
+						});
+						return list[0];
+					}
+					return list;
+				},
+				usable:1,
+				filterCard:function(card){
+					var num=0;
+					for(var i=0;i<ui.selected.cards.length;i++){
+						num+=get.number(ui.selected.cards[i]);
+					}
+					return get.number(card)+num<=7;
+				},
+				complexCard:true,
+				selectCard:function(){
+					var num=0;
+					for(var i=0;i<ui.selected.cards.length;i++){
+						num+=get.number(ui.selected.cards[i]);
+					}
+					if(num==7) return ui.selected.cards.length;
+					return ui.selected.cards.length+2;
+				},
+				check:function(card){
+					var evt=_status.event;
+					if(!evt.minsi_choice) evt.minsi_choice=lib.skill.minsi.getResult(evt.player.getCards('he'));
+					if(!evt.minsi_choice.contains(card)) return 0;
+					return 1;
+				},
+				position:'he',
+				content:function(){
+					player.draw(cards.length*2);
+					//player.draw(cards.length*2).gaintag=['minsi2'];
+					//player.addTempSkill('minsi2');
+				},
+				ai:{
+					order:5,
+					result:{player:1},
+				},
 			},
-
 		
 
 
