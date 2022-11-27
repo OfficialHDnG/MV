@@ -16,7 +16,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			zhaoyun:['female',' ','1357720/1357720',['airson','heab','ustart','los','endgold','comeback','uea','jud','abfuture','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			
 			machao:['male',' ','1971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-			sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
+			sunquan:['female',' ','182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 						
 		},
 		characterIntro:{
@@ -891,7 +891,7 @@ ushone:{
 
 		uhealon:{
 			enable:'phaseUse',
-			usable:3,
+			//usable:3,
 				filter:function(event,player){
 				return game.roundNumber%4==1&&player.countCards('he',{name:'nanman'});
 			},
@@ -9416,6 +9416,8 @@ aeath3:{
 			
 			},
 
+		
+
 
 		qiongskner:{
 			mod:{
@@ -9434,16 +9436,41 @@ aeath3:{
 			},		
 		},
 
-		
+		XXrearth3:{
+			trigger:'phaseZhunbeiBegin',
+			forced:true,
+			init:function(player){
+				player.storage.rearth=true;
+			},
+			marktext:"<img style=width:21px src="+lib.assetURL+"image/character/markse.png>",
+			intro:{
+				content:"EarthRound",
+			},
+			content:function(target,player){
+				//if(game.roundNumber%2==0){
+				//	player.markSkill('rearth3');
+				//}
+				//else{
+				//	player.unmarkSkill('rearth3');
+				//}
+
+		},},
+
+
+
+		RStar:{
+			prompt:'【Pinnacle to the Stars】</br>',
+	
+		},
 
 
 		rearth:{
-			usable:1,
+		//	usable:1,
 			charlotte:true,
 			skillAnimation:true,
 			animationColor:'fire',
 		prompt:'【Pinnacle to the Stars】</br></br>Roars can gift all Pinnacle 🜎 LoreSongs for special effect!',
-		enable:'phaseUse',
+		enable:'phaseUse',		
 		init:function(player){
 			player.storage.rearth=0;
 		},
@@ -9458,15 +9485,25 @@ aeath3:{
 			},
 			content:function(target,player){
 				'step 0'
-				player.chooseTarget(get.prompt2('rearth'),function(card,player,target){
+			
+				if(game.roundNumber%2==1){
+					player.chooseTarget(get.prompt2('rearth'),function(card,player,target){
 					return player!=target;
 				}).set('ai',function(target){
 					return (get.attitude(_status.event.player,target)-2)*target.maxHp;
 				});
-
+			}
+else{
+	player.chooseTarget(get.prompt2('RStar'),function(card,player,target){
+		return player!=target;
+	}).set('ai',function(target){
+		return (get.attitude(_status.event.player,target)-2)*target.maxHp;
+	});
+}
 
 
 				'step 1'
+
 				if(result.bool){
 					var cards=player.getCards('he',function(card){
 												   return get.suit(card)=='club';
@@ -9520,8 +9557,26 @@ game.delay(2);
 			
 					game.delay();
 				}
-			}
-		},
+
+				
+			},
+			subSkill:{
+				
+				mark:{
+					marktext:"<img style=width:21px src="+lib.assetURL+"image/character/markse.png>",
+					trigger:{player:['phaseZhunbeiBegin']},
+					forced:true,
+					content:function(){
+						if(game.roundNumber%2==1){
+							player.markSkill('rearth_mark');
+						}						
+						if(game.roundNumber%2==0){
+							player.unmarkSkill('rearth_mark');
+						}
+					}
+				},
+
+		},	},
 
 				
 
@@ -9561,7 +9616,7 @@ game.delay(2);
 			awind:{
 				direct:true,
 				audio:2,
-				usable:1,
+				//usable:1,
 				direct:true,
 				filter:function(event,player){					
 					//if(lib.config.coin%47!=0||!_status.connectMode) return false;
@@ -15965,7 +16020,7 @@ if(z==1){
 	}
  
 	if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
-	 game.broadcastAll('createDialog',event.videoId, 'Roars STAREARTH GEM: Electricity Fills the Sea!');
+	 game.broadcastAll('createDialog',event.videoId, 'Roars STAREARTH GEM: The Land Silences All Lightning!');
 	 game.delay(2);
 	 var a=2.25+lib.config.lvrs*0.0225;
 	 trigger.num*=a; 
@@ -22173,7 +22228,10 @@ awind:'<span style><img src=image/character/marks.png></img></span>',
 		
 rearth:'<span style><img src=image/character/markse.png></img></span>',
 awind_info:'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Ea Ult: Nurse </span></br>Choose a Member - Gift all ⚶ Slums LoreSongs for Future Heal',
-rearth_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Shone Ult: Endure </span></br>Choose a Member - Gift all 🜎 Pinnacle LoreSongs. </br></br>In Earth Rounds, Roars shares his health. </br></br>Star Rounds: Roars saves +1 LoreSongs for the member.',
+rearth_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Shone Ult: Endure </span></br>Choose a Member - Gift all 🜎 Pinnacle LoreSongs. </br></br>In Earth Rounds, Roars shares his health.',
+RStar_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Shone Ult: Endure </span></br>Choose a Member - Gift all 🜎 Pinnacle LoreSongs. </br></br>Roars saves +1 LoreSongs for the member in the Stars.',
+RStar:'Roars of Stars',
+
 gthund_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Nyeve Ult: Expedition </span></br>If GoldenAge holds a Yemog LoreSong, GoldenAge sacrifices his health to find 1 LoreSong of each location: Slum, Yemog, Pinnacle, CTVT, by exploring 7 LoreSongs',
 
 
