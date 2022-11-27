@@ -139,9 +139,18 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 			healbe:{
 				type:'basic',
 				content:function(){
-					var x=Math.floor((target.maxHp-target.hp));
+					var x=Math.floor(0.3*(target.maxHp-target.hp));
 					target.loseHp(x);
 			},	},
+
+			uhealon:{
+				type:'basic',
+				content:function(){
+				var x=0.005*(player.maxHp-player.hp);
+				target.damage(328+x);			
+			},			
+			},
+
 
 		
 
@@ -181,15 +190,7 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 
 
 
-			uhealon:{
-				type:'basic',
-				
-				content:function(){
-				
-				target.damage(1111);			
-			},			
-			},
-
+		
 
 			ythund:{
 				type:'basic',
