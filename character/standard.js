@@ -13,7 +13,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			//SGS glow color do light concept, ault element choose,
 		
 			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-			zhaoyun:['female',' ','1357720/1357720',['airson','heab','alight','ustart','los','endgold','comeback','uea','jud','abfuture','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
+			zhaoyun:['female',' ','1357720/1357720',['airson','heab','ustart','los','endgold','comeback','uea','jud','abfuture','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			
 			machao:['male',' ','1971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
@@ -1680,11 +1680,11 @@ else{
 					forced:true,
 				content:function(){
 					'step 0'
-					var card=game.createCard('juedou');				
+					var card=game.createCard('gultc');				
 					player.gain(card,'gain2');
 			
 					'step 1'
-					var card=game.createCard('juedou');				
+					var card=game.createCard('mgultc');				
 					player.gain(card,'gain2');
 					
 				},
@@ -5440,7 +5440,7 @@ enable:'phaseUse',
 				'step 5'
 				//player.node.avatar2.setBackground('awind','character');
 				//player.node.avatar.setBackground('awind','character');
-				player.$fullscreenpop('天青信空兒','metal','dva.png');
+				player.$fullscreenpop('天青信控','metal','dva.png');
 				
 
 				'step 6'
@@ -5757,7 +5757,7 @@ else{	player.recover();
 				'step 5'
 			//	player.node.avatar2.setBackground('awind','character');
 				//player.node.avatar.setBackground('awind','character');
-				player.$fullscreenpop('天青信空儿','metal','dva.png');
+				player.$fullscreenpop('天青信控','metal','dva.png');
 				
 				'step 6'
 				game.delay(3);
@@ -12179,6 +12179,9 @@ target.update();
 			},
 				position:'he',
 				content:function(target,game,gameconfig){
+					target.node.jiu=ui.create.div('.playerglea',target.node.avatar);
+					target.node.jiu2=ui.create.div('.playerglea',target.node.avatar2);
+					game.delay(2);
 					player.storage.glinit-=2;
 			
 				if(target.hasSkill('roars')&&lib.config.coin%47==0){
@@ -22335,7 +22338,7 @@ flora5:'FLORA SOUL',
 flora6:'FLORA GEM',
 flora7:'WEAK',
 flora8:'WEAK',
-     act:'天青信空儿',
+     act:'天青信控',
 	 airshan:'Ea',
 	 rbg:'Intro',
 	 rsbg:'Stats',
