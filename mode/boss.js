@@ -1464,7 +1464,7 @@ game.documentZoom=game.deviceZoom*1;
 					return game.boss.nextSeat.nextSeat;
 				},
 				gameDraw:function(player){
-					return player==game.boss?8:4;
+					return player==game.boss?0:0;
 				},
 				minion:{
 					'2':'boss_zhuyin',
