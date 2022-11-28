@@ -950,7 +950,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		characterPack:{
 			mode_boss:{  
 			
-				boss_hundun:['male','aw','2131313/2131313',['randsha','nova','jud','remind','drawj','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','Xsl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
+				boss_hundun:['male','aw','2131313/2131313',['randsha','nova','jud','remind','drawa','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','Xsl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
 			
 				pea1:['male','qun','1/1',['peacettt','taut','pstart','Xsl'],['qun','hiddenboss','bossallowed'],'qun'],
 				pea2:['male','qun','1/1',['peacettt','taut','pstart','Xsl'],['qun','hiddenboss','bossallowed'],'qun'],
