@@ -11,11 +11,10 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		},
 		character:{	
 			//SGS glow color do light concept, ault element choose,
-			zhugeliang:['male',' ','372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
+			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			zhaoyun:['female',' ','1357720/1357720',['airson','heab','ustart','los','endgold','comeback','uea','jud','abfuture','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-			
-		
-			machao:['male',' ','971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
+				
+			machao:['male',' ','1971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 					sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 				
 		},
@@ -22638,29 +22637,30 @@ ainit:'Airson Center',
 ginit:'GoldenAge Center',
 xinit:'X Center',
 
-lvupa:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">{Level Up!}</span>',
-lvupr:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">{Level Up!}</span>',
-lvupg:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">{Level Up!}</span>',
-lvupx:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">{Level Up!}</span>',
+lvupa:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-family:serif;font-variant:small-caps;">{Level Up!}</span>',
+lvupr:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-family:serif;font-variant:small-caps;">{Level Up!}</span>',
+lvupg:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-family:serif;font-variant:small-caps;">{Level Up!}</span>',
+lvupx:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-family:serif;font-variant:small-caps;">{Level Up!}</span>',
 
-learna:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">{Build Now!}</span>',
-learnr:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">{Build Now!}</span>',
-learng:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">{Build Now!}</span>',
-learnx:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">{Build Now!}</span>',
+learna:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-family:serif;font-variant:small-caps;">{Build Now!}</span>',
+learnr:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-family:serif;font-variant:small-caps;">{Build Now!}</span>',
+learng:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-family:serif;font-variant:small-caps;">{Build Now!}</span>',
+learnx:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-family:serif;font-variant:small-caps;">{Build Now!}</span>',
+
+wind10:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;font-family:serif;">Storm 2</span>',
+wind11:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;font-family:serif;">Storm 1</span>',
+wind2:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;font-family:serif;">{Wind:SkyWar}</span>',
+
+earth10:'<span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff;font-family:serif; text-color:black">Meteor 2</span>',
+earth11:'<span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff; font-family:serif;text-color:black">Meteor 1</span>',
+
+earth2:'<span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff; font-family:serif;text-color:black">{StarEarth:SkyWar}</span>',
 
 
-
-
-wind10:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;">Storm 2</span>',
-wind11:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;">Storm 1</span>',
-earth10:'<span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff; text-color:black">Meteor 2</span>',
-earth11:'<span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff; text-color:black">Meteor 1</span>',
-
-ocean2:'{Ocean:SkyWar}',
 ythunder:'Yemog Thunder',
-wind2:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;">{Storm:SkyWar}</span>',
+
 light2:'Light',
-earth2:'{StarEarth:SkyWar}',
+
 
 thund2:'{Thunder:SkyWar}',
 flora2:'Flora',
@@ -22678,10 +22678,7 @@ awind:'<span style><img src=image/character/marks.png></img></span>',
 //rearth_info:'【Pinnacle to the Stars!】</br></br>Roars can gift all Pinnacle 🜎 LoreSongs to a Member. Earth Round: Roars shares his health with the member. Star Round: the member now saves +1 LoreSongs.',
 		
 rearth:'<span style><img src=image/character/markse.png></img></span>',
-awind_info:'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Ea Ult: Nurse </span></br>Choose a Member - Gift all ⚶ Slums LoreSongs for Future Heal',
-rearth_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Shone Ult: Endure </span></br>Choose a Member - Gift all 🜎 Pinnacle LoreSongs. </br></br>In Earth Rounds, Roars shares his health.',
-RStar_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Shone Ult: Endure </span></br>Choose a Member - Gift all 🜎 Pinnacle LoreSongs. </br></br>Roars saves +1 LoreSongs for the member in the Stars.',
-RStar:'Roars of Stars',
+
 
 gthund_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Nyeve Ult: Expedition </span></br>If GoldenAge holds a Yemog LoreSong, GoldenAge sacrifices his health to find 1 LoreSong of each location: Slum, Yemog, Pinnacle, CTVT, by exploring 7 LoreSongs',
 
@@ -22694,7 +22691,7 @@ ocean4:'OceanSkyWar',
 thund4:'ThunderSkyWar',
 wind4:'Weak',
 ultw:'Solve',
-xsolve:'{Solve}',
+
 light4:'LightSkyWar',
 earth4:'Weak',
 flora4:'FloraSkyWar',
@@ -22706,12 +22703,10 @@ xbaser:'X-Spirit',
 xbasea:'X-Spirit',
 xbaseg:'X-Spirit',
 
-hpscan:'{Solve}',
+
 //glinit:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;">GLYPTIC</span>',
 //glinit:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">Glyptic</span>',
 
-mcslsecret:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;"> ·  </span>',
-pmen:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-variant:small-caps;">Script</span>',
 
 		
 			zhugeliang:'Roars',
@@ -22728,26 +22723,58 @@ pmen:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-var
 		actr:'{Celebrate!}',
 			actw:'{Celebrate!}',
 		//	rba:'【Roars the Knight】',
+
+		rbg:'<span style="font-family:serif">Intro</span>',
+		rsbg:'<span style="font-family:serif">Stats</span>',
+		rgibg:'<span style="font-family:serif">【1st Gem!】</span>', 
+	   abg:'<span style="font-family:serif">Intro</span>',
+	   asbg:'<span style="font-family:serif">Stats</span>',
+	   agibg:'<span style="font-family:serif">【1st Gem!】</span>',
+	   gbg:'<span style="font-family:serif">Intro</span>',
+		gsbg:'<span style="font-family:serif">Stats</span>',
+		ggibg:'<span style="font-family:serif">【1st Gem!</span>',
+	   xbg:'<span style="font-family:serif">Intro</span>',
+		xsbg:'<span style="font-family:serif">Stats</span>',
+	   xgibg:'<span style="font-family:serif">Gem</span>',
+
+
+		solve:'<span style="font-family:serif">{Decipher}</span>',
+		xsolve:'<span style="font-family:serif">{Solve}</span>',
+		twa:'<span style="font-family:serif">{Airson Build}</span>',
+twr:'<span style="font-family:serif">{Roars Build}</span>',
+twg:'<span style="font-family:serif">{GoldenAge Build}</span>',
+twx:'<span style="font-family:serif">{X Build}</span>',
 	rba:'<span style="font-family:serif">{Roars the Knight}</span>',
-			aba:'{Airson the Healer}',
-			gb:'{GoldenAge the Child}',
-			gbfuture:'{GiftBox!}',
+			aba:'<span style="font-family:serif">{Airson the Healer}</span>',
+			gb:'<span style="font-family:serif">{GoldenAge the Child}</span>',
+			gbfuture:'<span style="font-family:serif">{GiftBox!}</span>',
 	//chaoli:'【Guard】',
-	chaoli:'{Guard}',
-			abfuture:'{Ea!}',
-rbfuture:'{Shone!}',
-xbfuture:'{Healon!}',
+	chaoli:'<span style="font-family:serif">{Guard}</span>',
+			abfuture:'<span style="font-family:serif">{Ea!}</span>',
+rbfuture:'<span style="font-family:serif">{Shone!}</span>',
+xbfuture:'<span style="font-family:serif">{Healon!}</span>',
 			xba:'{check pin in bossjs}',
-			glinit:'{GLYPTIC}',
-			box:'{a Gift Box}',
+			glinit:'<span style="font-family:serif">{GLYPTIC}</span>',
+			box:'<span style="font-family:serif">{a Gift Box}</span>',
+
+			mcslsecret:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-family:serif;font-variant:small-caps;"> ·  </span>',
+			pmen:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-family:serif;font-variant:small-caps;">Script</span>',
+			hpscan:'<span style="font-family:serif">{Solve}</span>',
+			//SERIF
+			awind_info:'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Ea Ult: Nurse </span></br>Choose a Member - Gift all ⚶ Slums LoreSongs for Future Heal',
+			rearth_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Shone Ult: Endure </span></br>Choose a Member - Gift all 🜎 Pinnacle LoreSongs. </br></br>In Earth Rounds, Roars shares his health.',
+			RStar_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Shone Ult: Endure </span></br>Choose a Member - Gift all 🜎 Pinnacle LoreSongs. </br></br>Roars saves +1 LoreSongs for the member in the Stars.',
+			RStar:'Roars of Stars',
+
+
 			
 	guangshu:'',
 	glyptic:'極鍍',
-bak:'Exit',
+bak:'<span style="font-family:serif">Exit',
 	ex:'无',
-	uea:'【Ea!】',
-	ushone:'【Shone!】',
-	uhealon:'【Healon!】',
+	uea:'<span style="font-family:serif">【Ea!】</span>',
+	ushone:'<span style="font-family:serif">【Shone!】</span>',
+	uhealon:'<span style="font-family:serif">【Healon!】</span>',
 	
 	xocean:'Healon:Gardener',
 
@@ -22765,18 +22792,11 @@ bak:'Exit',
 	nuhoux:'X SPIRIT!',
 	nuhoux_info:'Do you have a LoreSong for X to play? Choose 1 for X',
 	
-
-
-
-
-
 Eden2:'Eden SkyWar',
 			
 		
-		
-		
 glyptic_turn:'[GL] ReOrient',
-solve:'{Decipher}',
+
 sunquan:'X',
 ocean3:'OCEAN GEM',
 ocean4:'OCEAN GEM',
@@ -22823,10 +22843,7 @@ evil_info:'Hurts the player closest to death',
 //paranoia /counter
 
 
-twa:'{Airson Build}',
-twr:'{Roars Build}',
-twg:'{GoldenAge Build}',
-twx:'{X Build}',
+
 light3:'LIGHT SOUL',
 light4:'LIGHT SOUL',
 light5:'LIGHT SOUL',
@@ -22850,18 +22867,7 @@ flora7:'WEAK',
 flora8:'WEAK',
      act:'天青信控',
 	 airshan:'Ea',
-	 rbg:'Intro',
-	 rsbg:'Stats',
-	 rgibg:'【1st Gem!】', 
-	abg:'Intro',
-	asbg:'Stats',
-	agibg:'【1st Gem!】',
-	gbg:'Intro',
-	 gsbg:'Stats',
-	 ggibg:'【1st Gem!】',
-	xbg:'Intro',
-	 xsbg:'Stats',
-	xgibg:'Gem',
+	
 	 
 
 rearth2:'Shone:Dedication',
