@@ -4383,8 +4383,8 @@ xelema:{
 			wuzhong:'无中生有',
 			juedou:'SkyWar',
 			
-			gultc:'<span style:"font-family:KaiTi">審</span>',
-			mgultc:'<span style:"font-family:KaiTi">禧</span>',
+			gultc:'審',
+			mgultc:'禧',
 			taoyuan_bg:'园',
 		
 			wuzhong_bg:'生',
