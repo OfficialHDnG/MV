@@ -950,7 +950,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		characterPack:{
 			mode_boss:{  
 			
-				boss_hundun:['male','aw','2131313/2131313',['randsha','nova','jud','remind','drawa','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','Xsl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
+				boss_hundun:['male','aw','2131313/2131313',['randsha','Xustart','nova','jud','remind','introd','expdam','bossgl','expe','expread','barinit','swann','lowphpd','lowphph','bordert','pstart','noshanb','killdraw','drawa','scant','Xsl','ehand','turnb','enemy','hund','xrearth2','xshejie2','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['zqun','boss','bossallowed'],'zqun'],
 			
 				pea1:['male','qun','1/1',['peacettt','taut','pstart','Xsl'],['qun','hiddenboss','bossallowed'],'qun'],
 				pea2:['male','qun','1/1',['peacettt','taut','pstart','Xsl'],['qun','hiddenboss','bossallowed'],'qun'],
@@ -962,24 +962,29 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 						
 				//boss_hundun:['male','qan','1750000/1750000',['pin','enemy','hund','rearth2','shejie2','start','airson','glyptic','win','znsbugua','activatex','boss_xiangde'],['qun','boss','bossallowed'],'qun'],
 									
-				boss_qiongqi:['male','re','6131313/6131313',['qiong','nova','jud','randjue','randsha','qiongner','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','qiongskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawr','scant','Xsl','enemy','hund','enemysky','dshonestory','darkshone','roars','glyptic','earth','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
-				//boss_taowu:['male','re','6131313/6131313',['nova','darknyeve','remind','ythunder','drawn','sl','glyptic_taowu','andgen','snyeve','jud','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','tskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawg','scant','XXsl','enemy','hund','XXdshonestory','XXdarkshone','goldenage','glyptic','thund','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
+				boss_qiongqi:['male','re','6131313/6131313',['qiong','Xustart','nova','jud','randjue','randsha','qiongner','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','qiongskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawr','scant','Xsl','enemy','hund','enemysky','dshonestory','darkshone','roars','glyptic','earth','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
+				//boss_taowu:['male','gt','7131313/7131313',['nova','Xustart','darknyeve','remind','drawg','sl','snyeve','jud','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','tskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawg','scant','XXsl','enemy','hund','XXdshonestory','XXdarkshone','goldenage','glyptic','thund','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
+				
+			//	boss_taowux:['male','gt','6131313/6131313',['nova','Xustart','darknyeve','remind','ythunder','drawn','sl','glyptic_taowu','andgen','snyeve','jud','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','tskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawg','scant','XXsl','enemy','hund','XXdshonestory','XXdarkshone','goldenage','glyptic','thund','win','glyptic_qiongqi'],['zqun','boss','bossallowed'],'zqun'],
 											
 				//boss_taowu:['male','qun',0,['glyptic','nova','sl','drawg','jud','pstart','noshanb','killdraw','scant','hund'],['qun','boss','bossallowed'],'qun'],
 				//boss_zhuyin:['male','qun','1750000/1750000',['enemy','actma','xstart','hund','rearth2','shejie2','goldenage','black','glyptic','xdimeng','red','glyptic_qiongqi'],['qun','hiddenboss','bossallowed'],'qun'],
 				//boss_zhuyinb:['male','qun','1750000/1750000',['enemy','decei','actmb','xstart','hund','rearth2','shejie2','goldenage','black','glyptic','xdimeng','red','glyptic_qiongqi'],['qun','hiddenboss','bossallowed'],'qun'],
-				boss_zhuyinb:['male','qun','3131313/3131313',['randsha','min','nova','jud','XXexplfour','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','actma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
-				boss_zhuyin:['male','qun','3131313/3131313',['randsha','min','nova','jud','XXexpltwo','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','actmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
-				boss_syinb:['male','qun','3131313/3131313',['enemy','min','nova','jud','XXexpltwo','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
-				boss_syin:['male','qun','2131313/2131313',['enemy','min','nova','jud','XXexplfour','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
-				boss_tyinb:['male','qun','3131313/3131313',['enemy','min','nova','jud','XXexpltwo','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
-				boss_tyin:['male','qun','2131313/3131313',['enemy','min','nova','jud','XXexplfour','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
-		
-
-
-
-				boss_xiangliu:['male','qun',25,['boss_yaoshou','boss_duqu','boss_jiushou','boss_echou','boss_echou_switch'],['qun','boss','bossallowed'],'qun'],
-				boss_zhuyan:['male','qun','25/30',['boss_yaoshou','boss_bingxian','boss_juyuan','boss_xushi','boss_xushi_switch'],['qun','boss','bossallowed'],'qun'],
+				boss_zhuyinb:['male','qun','3131315/3131315',['randsha','min','nova','jud','XXexplfour','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','actma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_zhuyin:['male','qun','3131314/3131314',['randsha','min','nova','jud','XXexpltwo','enemy','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','actmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_syinb:['male','qun','3131315/3131315',['enemy','min','nova','jud','XXexpltwo','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_syin:['male','qun','2131314/2131314',['enemy','min','nova','jud','XXexplfour','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_tyinb:['male','qun','2131315/3131315',['enemy','min','nova','jud','XXexpltwo','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+				boss_tyin:['male','qun','3131314/3131314',['enemy','min','nova','jud','XXexplfour','resha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+			
+			//	boss_zhuyan:['male','xo','4131313/4131313',['nova','healbe','remind','resha','jud','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','tskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawx','scant','XXsl','enemy','hund','XXdshonestory','XXdarkshone','x','glyptic','ocean','win'],['zqun','boss','bossallowed'],'zqun'],
+						
+				//challenge		boss_zhuyan:['male','gt','3111111/3111111',['nova','hiimsea','hiim','remind','sl','jud','expdam','remind','glyptic_phys','glyptic_skyw','bossgl','tskner','expread','expe','barinit','swann','lowphpd','lowphph','bordert','skywarbg','bshaannounce','pstart','noshanb','killdraw','drawg','scant','XXsl','enemy','hund','XXdshonestory','XXdarkshone','x','glyptic','ocean','win'],['zqun','boss','bossallowed'],'zqun'],
+						boss_zhuyaml:['male','qun','4131315/4131315',['enemy','ocean','min','nova','jud','XXexpltwo','randsha','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','XXactma','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+						boss_zhuyamr:['male','qun','4131314/4131314',['enemy','ocean','min','nova','jud','XXexplfour','randjue','barinit','swann','lowphpd','lowphph','bordert','pstart','scant','XXmsha','etall','turnb','decei','XXactmb','xstart','hund','xrearth2','xshejie2','goldenage','glyptic','xdimeng','xglyptic_qiongqi'],['zqun','hiddenboss','zbossallowed'],'zqun'],
+						
+				
+				
 				boss_bifang:['male','qun',25,['boss_yaoshou','boss_zhaohuo','boss_honglianx','boss_yanyu','boss_yanyu_switch'],['qun','boss','bossallowed'],'qun'],
 				boss_yingzhao:['male','qun',25,['boss_yaoshou','boss_fengdong','boss_xunyou','boss_sipu','boss_sipu_switch'],['qun','boss','bossallowed'],'qun'],
 
@@ -1073,12 +1078,21 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		},
 
 		characterIntro:{
-			boss_hundun:'【Boss】1st Dark entity claiming to be Ea </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#ea" target="blank">Lore of Ea</a></span></br>Strength: 65k',
-			boss_qiongqi:'【Boss】1st Dark entity claiming to be Shone </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#shone" target="blank">Lore of Shone</a></span></br>Strength: 83k / SkyWar: 15k / Careless: Boss boosts Strength to 230%!',
+			boss_hundun:'【Boss】1st Dark entity pretending to be Ea </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#ea" target="blank">Lore of Ea</a></span>Non-elemental</br></br>Strength: 65k',
+			boss_qiongqi:'【Boss】1st Dark entity pretending to be Shone </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#shone" target="blank">Lore of Shone</a></span></br>StarEarth elemental</br>Strength: 83k / SkyWar: 15k / Careless: Boss boosts Strength to 230%!',
+			boss_taowu:'【Boss】1st Dark entity pretending to be Nyeve </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#nyeve" target="blank">Lore of Nyeve</a></span></br>Thunder elemental</br>',
+			boss_taowux:'【Boss】1st 魔 entity pretending to be Nyeve: Challenger Mode </br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#nyeve" target="blank">Lore of Nyeve</a></span></br>Thunder elemental</br>',
+			boss_zhuyan:'【Boss】1st Dark entity pretending to be Healon</br><span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#healon" target="blank">Lore of Healon</a></span></br>Ocean elemental</br>',
+			
+			boss_tyin:'ParallelFragment',
+			boss_tyinb:'ParallelFragment',
 			boss_zhuyin:'ParallelFragment',
 			boss_zhuyinb:'ParallelFragment',
 			boss_syin:'ParallelFragment',
 			boss_syinb:'ParallelFragment',
+			boss_zhuyaml:'ParallelFragment</br>Ocean elemental',
+			boss_zhuyamr:'ParallelFragment</br>Ocean elemental',
+
 		},
 
 		cardPack:{
@@ -1309,7 +1323,7 @@ game.import('mode',function(lib,game,ui,get,ai,_status){
 		
 					//var dialog=ui.create.dialog('<span style="font-size:30px">Welcome!</span></br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white;font-variant:small-caps"><a href="/lore.html" target="blank">Lore</a> · <a href="https://officialhdng.github.io/" target="blank">Strategy</a> · <a href="https://officialhdng.github.io/" target="blank">Gallery</a> · <a href="https://officialhdng.github.io/" target="blank">Request Your Flag!</a> · <a href="https://officialhdng.github.io/" target="blank">Win! $777 Prize</a></span>');
 					//var dialog=ui.create.dialog('<img src="image/gem.png" height="20" width="20"></img></br><span style="font-size:12px">International Version Beta </span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="font-size:25px">CardGame by OffcialHDnG</span></br></br>On phone, lightly swipe up to access MV · Video mode</br><span style="font-size:10px">Speed of Game is affected by BROWSER - switch to laptop for faster play! </span></br></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="https://hidngem.miraheze.org/wiki/Hall" target="blank"> CREATORS CONTENT</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - and the Go button will appear!</span>');
-					var dialog=ui.create.dialog('<span style="font-size:14px">CardGame by OffcialHDnG</span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="phone.html#LIGHT" target="blank"> PHONE PLAY</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - the Go button will appear!</span>');
+					var dialog=ui.create.dialog('<span style="font-size:14px">CardGame by OffcialHDnG</span></br><span style="font-size:37px">{ 5 T O R Y   3 V E R   4 F T E R }</span></br><a href="https://officialhdng.github.io/home">{谙灵光} 汉·中版</a></br><span style="text-shadow:0px 0px 3px orange;text-decoration:none;font-color:white"><a href="lore.html" target="blank">LORE</a> · <a href="strategy.html" target="blank">STRATEGY</a> · <a href="media.html#LIGHT" target="blank">MEDIA</a> · <a href="phone.html#LIGHT" target="blank"> PHONE PLAY</a> · <a href="XX777.html" target="blank">???SECRET</a></span></br></br>Choose 3 members - the Go button will appear!</span>');
 					
 					
 					ui.create.control('+',function(){						
@@ -1464,7 +1478,7 @@ game.documentZoom=game.deviceZoom*1;
 					return game.boss.nextSeat.nextSeat;
 				},
 				gameDraw:function(player){
-					return player==game.boss?0:0;
+					return player==game.boss?8:4;
 				},
 				minion:{
 					'2':'boss_zhuyin',
@@ -1487,11 +1501,11 @@ game.documentZoom=game.deviceZoom*1;
 					return game.boss.nextSeat.nextSeat;
 				},
 				gameDraw:function(player){
-					return player==game.boss?8:4;
+					return player==game.boss?0:0;
 				},
 				minion:{
-					'2':'boss_zhuyin',
-					'8':'boss_zhuyin',
+					'2':'boss_zhuyaml',
+					'8':'boss_zhuyamr',
 				},
 				randchoice:function(){
 					return lib.boss.boss_taowu.randchoice.apply(this,arguments);
@@ -1737,6 +1751,21 @@ game.documentZoom=game.deviceZoom*1;
 			},
 
 
+
+
+
+			boss_taowux:{
+				chongzheng:0,
+				loopFirst:function(){
+					return game.boss.nextSeat.nextSeat;
+				},
+				gameDraw:function(player){
+					return player==game.boss?0:0;
+				},
+				minion:{
+					'2':'boss_tyin',
+					'8':'boss_tyinb',
+				},},
 
 
 			boss_taowu:{
@@ -10165,18 +10194,13 @@ ui.background.setBackgroundImage('image/background/ol_bg.jpg');
 			boss_yanling:'焰灵',
 			boss_yandi:'炎帝',
 
-			boss_hundun:'【Boss】1st Dark Ea',
-			boss_qiongqi:'【Boss】1st Dark Shone',
-			boss_zhuyin:'ParallelFragment',
-			boss_zhuyinb:'ParallelFragment',
-			boss_syin:'ParallelFragment',
-			boss_syinb:'ParallelFragment',
+		
 			
 
 
 			
 
-			boss_taowu:'梼杌',
+	
 			boss_taotie:'饕餮',
 		
 			boss_xiangliu:'相柳',
@@ -10691,6 +10715,20 @@ qbn:' ',
 			boss_shikieiki_ab:'四季映姫',
 			boss_shikieiki:'四季映姬·夜魔仙那度',
 			boss_yingzhong:'映冢',
+			boss_hundun:'【Boss】1st Dark Ea',
+			boss_qiongqi:'【Boss】1st Dark Shone',
+			boss_zhuyin:'ParallelFragment',
+			boss_zhuyinb:'ParallelFragment',
+			boss_syin:'ParallelFragment',
+			boss_syinb:'ParallelFragment',
+			boss_tyin:'ParallelFragment',
+			boss_tyinb:'ParallelFragment',
+		
+			boss_taowu:'【Boss】1st Dark Nyeve',
+
+			boss_taowux:'【Boss】1st Dark Nyeve-魔',
+
+
 			boss_yingzhong_info:'锁定技。你登场后的第一个回合开始时，你随机获得两个“阴间武将”的全部技能。',
 			boss_yingzhong_append:'<span style="font-family:yuanli">四季映姬到阴曹地府<br>——阴(映)到家了！</span>',
 					//孟婆:
