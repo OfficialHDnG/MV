@@ -996,14 +996,7 @@ ushone:{
 		
 				
 			},
-			ai:{
-				order:1,
-				result:{
-					player:function(player){
-							return 10;
-					}
-				}
-			}
+		
 			},
 	
 		
@@ -5669,10 +5662,10 @@ sjie:{
 								game.delay(2);
 										}
 
-					if(trigger.num>=10000){//game.delay();
+					if(trigger.num>=10311){//game.delay();
 						var trm=Math.floor(trigger.num*97);
 											player.$fullscreenpop('M I L L I O N','metal');
-											game.delay(2);
+											game.delay(4);
 											player.$fullscreenpop(trm+' 𝄞' ,'metal');
 											game.delay(2);
 													
@@ -6274,7 +6267,7 @@ overdrive:{
 						player.discard(cards);
 					
 						'step 5'
-						if(game.countPlayer()<6){
+						if(game.countPlayer()<6&&game.countPlayer()>3){
 							game.saveConfig('endr',1);
 						}	
 					},
@@ -6309,7 +6302,7 @@ overdrive:{
 											
 						player.$fullscreenpop('Roars ULT: SuperNova','metal');
 						game.delay(2);
-						player.$fullscreenpop('星火新世','metal','dva.png');
+						player.$fullscreenpop('<span style="font-family:Kaiti">星火新世</span>','metal','dva.png');
 						game.delay(2);
 
 						'step 1'
@@ -6355,7 +6348,7 @@ overdrive:{
 						var cards=player.getCards('h');
 						player.discard(cards);
 						'step 6'
-						if(game.countPlayer()<6){
+						if(game.countPlayer()<6&&game.countPlayer()>3){
 							game.saveConfig('enda',1);
 						}	
 					},
@@ -6493,7 +6486,7 @@ ythunder3:{
 									
 						player.$fullscreenpop('Airson Ult: 2nd Eden','metal');
 						game.delay(3);
-						player.$fullscreenpop('伊甸再臨','metal','dva.png');
+						player.$fullscreenpop('<span style="font-family:Kaiti">伊甸再臨</span>','metal','dva.png');
 						game.delay(2);
 						'step 1'					
 						var n=lib.config.aede-20;
@@ -6520,7 +6513,7 @@ ythunder3:{
 							}	
 
 				'step 3'
-				if(game.countPlayer()<6){
+				if(game.countPlayer()<6&&game.countPlayer()>3){
 					game.saveConfig('endg',1);
 				}	
 				'step 4'
@@ -6557,7 +6550,7 @@ ythunder3:{
 						player.$fullscreenpop('Combo! ','metal');
 						game.delay(2);
 						'step 2'
-						player.$fullscreenpop('天璃海窗','metal','dva.png');
+						player.$fullscreenpop('<span style="font-family:Kaiti">天璃海窗</span>','metal','dva.png');
 						game.delay(3);
 						'step 3'	
 						event.num=3;
@@ -6611,7 +6604,7 @@ ythunder3:{
 							player.$fullscreenpop('Combo! ','metal');
 							game.delay(2);
 							'step 2'
-							player.$fullscreenpop('星火新世','metal','dva.png');
+							player.$fullscreenpop('<span style="font-family:Kaiti">星火新世</span>','metal','dva.png');
 							game.delay(3);
 							'step 3'	
 							ui.background.setBackgroundImage('image/background/ol_bg.jpg');
@@ -6655,7 +6648,7 @@ ythunder3:{
 								player.$fullscreenpop('Combo! ','metal');
 								game.delay(2);
 								'step 2'
-								player.$fullscreenpop('伊甸再臨','metal','dva.png');
+								player.$fullscreenpop('<span style="font-family:Kaiti">伊甸再臨</span>','metal','dva.png');
 								game.delay(3);
 								'step 3'
 								ui.background.setBackgroundImage('image/background/ol_bg.jpg');
@@ -6720,7 +6713,7 @@ ythunder3:{
 						player.$fullscreenpop('GoldenAge Ult:</br> Judgment','metal');
 						game.delay(1);
 						'step 1'
-						player.$fullscreenpop('審判日','metal','dva.png');
+						player.$fullscreenpop('<span style="font-family:Kaiti">審判日</span>','metal','dva.png');
 						game.delay(2);
 						'step 2'								
 						game.saveConfig('xtsu',0);
@@ -6731,7 +6724,7 @@ ythunder3:{
 						var card=game.createCard('gultc','spade',u);					
 					player.gain(card,'gain2');
 					'step 3'
-					if(game.countPlayer()<6){
+					if(game.countPlayer()<6&&game.countPlayer()>3){
 						game.saveConfig('endx',1);
 					}							
 				},				
@@ -6760,7 +6753,7 @@ ythunder3:{
 					player.$fullscreenpop('Combo!','metal');
 					game.delay(2);
 					'step 2'
-					player.$fullscreenpop('審判日','metal','dva.png');
+					player.$fullscreenpop('<span style="font-family:Kaiti">審判日</span>','metal','dva.png');
 					game.delay(3);
 					'step 3'
 					ui.background.setBackgroundImage('image/background/ol_bg.jpg');
@@ -22773,7 +22766,7 @@ xbfuture:'<span style="font-family:serif">{Healon!}</span>',
 bak:'<span style="font-family:serif">Exit',
 	ex:'无',
 	uea:'<span style="font-family:serif">【Ea!】</span>',
-	ushone:'<span style="font-family:serif">【Shone!</span>',
+	ushone:'<span style="font-family:serif">【Shone!】</span>',
 	uhealon:'<span style="font-family:serif">【Healon!】</span>',
 	
 	xocean:'Healon:Gardener',
