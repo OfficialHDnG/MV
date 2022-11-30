@@ -12518,7 +12518,7 @@ case 'gbig':zoom=1.6;break;
 					_status.noclearcountdown=true;
 					if(event.type=='phase'){
 						if(event.isMine()){
-							event.endButton=ui.create.control('Fin','stayleft',function(){
+							event.endButton=ui.create.control('<span style="font-family:serif">{Peace}</span>','stayleft',function(){
 								if(_status.event.skill){
 									ui.click.cancel();
 								}
@@ -45916,10 +45916,10 @@ case 'gbig':zoom=1.6;break;
 				ui.shortcut=ui.create.div('#shortcut.hidden',ui.window);
 				ui.shortcut.listen(ui.click.shortcut);
 				ui.create.div(ui.shortcut,function(e){e.stopPropagation()});
-				ui.create.div('.menubutton.round','<span>ReDo</span>',ui.shortcut,game.reload).dataset.position=1;
-				ui.create.div('.menubutton.round','<span>Exit</span>',ui.shortcut,game.exit).dataset.position=3;
-				ui.create.div('.menubutton.round','<span>Rest</span>',ui.shortcut,ui.click.pause).dataset.position=4;
-				ui.shortcut.autobutton=ui.create.div('.menubutton.round','<span>MV</span>',ui.shortcut,ui.click.auto);
+				ui.create.div('.menubutton.round','<span style="font-family:serif">ReDo</span>',ui.shortcut,game.reload).dataset.position=1;
+				ui.create.div('.menubutton.round','<span style="font-family:serif">Exit</span>',ui.shortcut,game.exit).dataset.position=3;
+				ui.create.div('.menubutton.round','<span style="font-family:serif">Rest</span>',ui.shortcut,ui.click.pause).dataset.position=4;
+				ui.shortcut.autobutton=ui.create.div('.menubutton.round','<span style="font-family:serif">MV</span>',ui.shortcut,ui.click.auto);
 				ui.shortcut.autobutton.dataset.position=2;
 				ui.favmodelist=ui.create.div('.favmodelist',ui.shortcut);
 				ui.favmodelist.update=function(){
