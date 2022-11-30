@@ -95,7 +95,7 @@ str='<span>Roars Lv.'+r+' · Airson Lv. '+ a +' · GoldenAge Lv. '+g+' · X Lv.'
 								}
 							}
 							else{
-								buy.innerHTML='Start';
+								//buy.innerHTML='Start';
 							}
 						}
 						buy.name=i;
