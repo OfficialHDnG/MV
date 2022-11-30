@@ -22728,7 +22728,7 @@ pmen:'<span style="text-shadow:0px 0px 7px #fff000, 0px 0px 7px #fff000;font-var
 		actr:'{Celebrate!}',
 			actw:'{Celebrate!}',
 		//	rba:'【Roars the Knight】',
-	rba:'{Roars the Knight}',
+	rba:'<span style="font-family:serif">{Roars the Knight}</span>',
 			aba:'{Airson the Healer}',
 			gb:'{GoldenAge the Child}',
 			gbfuture:'{GiftBox!}',
