@@ -6302,7 +6302,7 @@ overdrive:{
 											
 						player.$fullscreenpop('Roars ULT: SuperNova','metal');
 						game.delay(2);
-						player.$fullscreenpop('<span style="font-family:Kaiti">星火新世</span>','metal','dva.png');
+						player.$fullscreenpop('星火新世','metal','dva.png');
 						game.delay(2);
 
 						'step 1'
@@ -6486,7 +6486,7 @@ ythunder3:{
 									
 						player.$fullscreenpop('Airson Ult: 2nd Eden','metal');
 						game.delay(3);
-						player.$fullscreenpop('<span style="font-family:Kaiti">伊甸再臨</span>','metal','dva.png');
+						player.$fullscreenpop('伊甸再臨','metal','dva.png');
 						game.delay(2);
 						'step 1'					
 						var n=lib.config.aede-20;
@@ -6550,7 +6550,7 @@ ythunder3:{
 						player.$fullscreenpop('Combo! ','metal');
 						game.delay(2);
 						'step 2'
-						player.$fullscreenpop('<span style="font-family:Kaiti">天璃海窗</span>','metal','dva.png');
+						player.$fullscreenpop('天璃海窗','metal','dva.png');
 						game.delay(3);
 						'step 3'	
 						event.num=3;
@@ -6604,7 +6604,7 @@ ythunder3:{
 							player.$fullscreenpop('Combo! ','metal');
 							game.delay(2);
 							'step 2'
-							player.$fullscreenpop('<span style="font-family:Kaiti">星火新世</span>','metal','dva.png');
+							player.$fullscreenpop('星火新世','metal','dva.png');
 							game.delay(3);
 							'step 3'	
 							ui.background.setBackgroundImage('image/background/ol_bg.jpg');
@@ -6648,7 +6648,7 @@ ythunder3:{
 								player.$fullscreenpop('Combo! ','metal');
 								game.delay(2);
 								'step 2'
-								player.$fullscreenpop('<span style="font-family:Kaiti">伊甸再臨</span>','metal','dva.png');
+								player.$fullscreenpop('伊甸再臨','metal','dva.png');
 								game.delay(3);
 								'step 3'
 								ui.background.setBackgroundImage('image/background/ol_bg.jpg');
@@ -6713,7 +6713,7 @@ ythunder3:{
 						player.$fullscreenpop('GoldenAge Ult:</br> Judgment','metal');
 						game.delay(1);
 						'step 1'
-						player.$fullscreenpop('<span style="font-family:Kaiti">審判日</span>','metal','dva.png');
+						player.$fullscreenpop('審判日','metal','dva.png');
 						game.delay(2);
 						'step 2'								
 						game.saveConfig('xtsu',0);
@@ -6753,7 +6753,7 @@ ythunder3:{
 					player.$fullscreenpop('Combo!','metal');
 					game.delay(2);
 					'step 2'
-					player.$fullscreenpop('<span style="font-family:Kaiti">審判日</span>','metal','dva.png');
+					player.$fullscreenpop('審判日','metal','dva.png');
 					game.delay(3);
 					'step 3'
 					ui.background.setBackgroundImage('image/background/ol_bg.jpg');
