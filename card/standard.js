@@ -438,7 +438,7 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 	
 						if(target.hasSkill('enemy')){
 							var x=Math.floor((7777.01+2500*(a)+0.00037*i+370*(b+c+d+e+f+g+h))/10);	
-							target.damage(x);
+							target.damage(x+0.01);
 						}
 						else {	
 							var t=Math.floor((777+2500*(a)+0.00037*i+370*(b+c+d+e+f+g+h))*12);	
@@ -4593,146 +4593,7 @@ xelema:{
 			["heart",7,"wanjian"],
 
 
-			["spade",1,"sha"],
-			["spade",2,"sha"],
-			["spade",3,"sha"],
-			["spade",4,"sha"],
-			["spade",5,"sha"],
-			["spade",6,"sha"],
-			["spade",7,"sha"],
-
-//["spade",1,"juedou"],
-	//		["spade",2,"juedou"],
-	//		["spade",3,"juedou"],
-	///		["spade",4,"juedou"],
-	//		["spade",5,"juedou"],
-	//		["spade",6,"juedou"],
-		//	["spade",7,"juedou"],
-	 
-			["club",1,"sha"],
-			["club",2,"sha"],
-			["club",3,"sha"],
-			["club",4,"sha"],
-			["club",5,"sha"],
-			["club",6,"sha"],
-			["club",7,"sha"],
 			
-			["diamond",1,"sha"],
-			["diamond",2,"sha"],
-			["diamond",3,"sha"],
-			["diamond",4,"sha"],
-			["diamond",5,"sha"],
-			["diamond",6,"sha"],
-			["diamond",7,"sha"],
-					
-			["heart",1,"sha"],
-			["heart",2,"sha"],
-			["heart",3,"sha"],
-			["heart",4,"sha"],
-			["heart",5,"sha"],
-			["heart",6,"sha"],
-			["heart",7,"sha"],
-		
-
-			["spade",1,"shan"],
-			["spade",2,"shan"],
-			["spade",3,"shan"],
-			["spade",4,"shan"],
-			["spade",5,"shan"],
-			["spade",6,"shan"],
-			["spade",7,"shan"],
-		 
-			["club",1,"shan"],
-			["club",2,"shan"],
-			["club",3,"shan"],
-			["club",4,"shan"],
-			["club",5,"shan"],
-			["club",6,"shan"],
-			["club",7,"shan"],
-			
-			["diamond",1,"shan"],
-			["diamond",2,"shan"],
-			["diamond",3,"shan"],
-			["diamond",4,"shan"],
-			["diamond",5,"shan"],
-			["diamond",6,"shan"],
-			["diamond",7,"shan"],
-					
-			["heart",1,"shan"],
-			["heart",2,"shan"],
-			["heart",3,"shan"],
-			["heart",4,"shan"],
-			["heart",5,"shan"],
-			["heart",6,"shan"],
-			["heart",7,"shan"],
-
-
-
-
-			["spade",1,"nanman"],
-			["spade",2,"nanman"],
-			["spade",3,"nanman"],
-			["spade",4,"nanman"],
-			["spade",5,"nanman"],
-			["spade",6,"nanman"],
-			["spade",7,"nanman"],
-		 
-			["club",1,"nanman"],
-			["club",2,"nanman"],
-			["club",3,"nanman"],
-			["club",4,"nanman"],
-			["club",5,"nanman"],
-			["club",6,"nanman"],
-			["club",7,"nanman"],
-			
-			["diamond",1,"nanman"],
-			["diamond",2,"nanman"],
-			["diamond",3,"nanman"],
-			["diamond",4,"nanman"],
-			["diamond",5,"nanman"],
-			["diamond",6,"nanman"],
-			["diamond",7,"nanman"],
-					
-			["heart",1,"nanman"],
-			["heart",2,"nanman"],
-			["heart",3,"nanman"],
-			["heart",4,"nanman"],
-			["heart",5,"nanman"],
-			["heart",6,"nanman"],
-			["heart",7,"nanman"],
-
-
-			["spade",1,"wanjian"],
-			["spade",2,"wanjian"],
-			["spade",3,"wanjian"],
-			["spade",4,"wanjian"],
-			["spade",5,"wanjian"],
-			["spade",6,"wanjian"],
-			["spade",7,"wanjian"],
-		 
-			["club",1,"wanjian"],
-			["club",2,"wanjian"],
-			["club",3,"wanjian"],
-			["club",4,"wanjian"],
-			["club",5,"wanjian"],
-			["club",6,"wanjian"],
-			["club",7,"wanjian"],
-			
-			["diamond",1,"wanjian"],
-			["diamond",2,"wanjian"],
-			["diamond",3,"wanjian"],
-			["diamond",4,"wanjian"],
-			["diamond",5,"wanjian"],
-			["diamond",6,"wanjian"],
-			["diamond",7,"wanjian"],
-					
-			["heart",1,"wanjian"],
-			["heart",2,"wanjian"],
-			["heart",3,"wanjian"],
-			["heart",4,"wanjian"],
-			["heart",5,"wanjian"],
-			["heart",6,"wanjian"],
-			["heart",7,"wanjian"],
 
 			//["heart",1,"ha"],
 			//["heart",2,"ha"],
