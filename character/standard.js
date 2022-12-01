@@ -7115,6 +7115,7 @@ tstart:{
 				content:function(card){
 					'step 0'
 					//target.gain(event,cards,player).delay=false;
+			
 					player.line(target);
 					target.gain(cards,player,'giveAuto').gaintag.add('G');
 
@@ -7137,10 +7138,10 @@ tstart:{
 
 					var num=get.number(cards[0]);
 					if(num==6){target.recover(100*num);
-						player.recover(100*num);}
+						player.loseHp(100*num);}
 					else{target.recover(111*num);
-						player.recover(111*num);}
-					
+						player.loseHp(111*num);}
+						
 
 					
 
