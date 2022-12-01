@@ -12,7 +12,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		character:{	
 			//SGS glow color do light concept, ault element choose,
 			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-			zhaoyun:['female',' ','1357720/1357720',['airson','heab','ustart','los','endgold','comeback','uea','jud','abfuture','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
+			zhaoyun:['female',' ','1357720/1357720',['airson','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 				
 			machao:['male',' ','1971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 					sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
@@ -36,6 +36,16 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 					}
 				},
 			},
+
+testxp:{
+	trigger:{global:['phaseZhunbeiBegin']},
+forced:true,
+content:function(player){
+	var y=ui.cardPile.childElementCount;
+	game.broadcastAll('createDialog',event.videoId,' cards:'+ y +'!');	
+			game.delay(1);
+
+},},
 
 
 
@@ -936,7 +946,7 @@ ushone:{
 				return get.name(card)=='shan';
 			});	
 			"step 1"
-		player.storage.glyptic8+=1.2;	
+		player.storage.glyptic8+=1.02;	
 		"step 2"
 		if(result.bool){
 			player.$fullscreenpop('Airson-Ea Ult!','metal','',true);
@@ -952,7 +962,7 @@ ushone:{
 		else{	
 		}
 		"step 3"
-		player.storage.glyptic8-=1.2;	
+		player.storage.glyptic8-=1.02;	
 		
 		},
 		ai:{
@@ -996,14 +1006,7 @@ ushone:{
 		
 				
 			},
-			ai:{
-				order:1,
-				result:{
-					player:function(player){
-							return 10;
-					}
-				}
-			}
+		
 			},
 	
 		
@@ -2709,7 +2712,7 @@ lowphph:{
 												
 							game.broadcastAll('createDialog',event.videoId, 'Airson strikes softly!');
 							game.delay(2);
-							target.damage(611.1);
+							target.loseHp(33333);
 											
 							//if(lib.config.lva>=777){
 							//	'step 1'	
@@ -3228,7 +3231,8 @@ box:{
 					'step 1'
 					var x=target.storage.glyptic5;
 					var y=player.maxHp/3000;
-						target.damage(y*x,'poison');	
+					var z=Math.floor(y*x);
+						target.damage(z,'poison');	
 					'step 2'
 					if(target.hasSkill('roars')){
 					target.storage.glyptic5+=0.27;
@@ -3639,9 +3643,9 @@ game.delay(2);
 				content:function(){
 					if(game.roundNumber==1){	trigger.num-=2;}
 
+					if(game.roundNumber>=2){	trigger.num-=2;}
 					//	if(game.roundNumber>=1){trigger.num+=8;}
 
-					if(game.roundNumber>=2){	trigger.num-=2;}
 
 				},	
 			},
@@ -5669,10 +5673,10 @@ sjie:{
 								game.delay(2);
 										}
 
-					if(trigger.num>=10000){//game.delay();
+					if(trigger.num>=10311){//game.delay();
 						var trm=Math.floor(trigger.num*97);
 											player.$fullscreenpop('M I L L I O N','metal');
-											game.delay(2);
+											game.delay(4);
 											player.$fullscreenpop(trm+' 𝄞' ,'metal');
 											game.delay(2);
 													
@@ -6274,7 +6278,7 @@ overdrive:{
 						player.discard(cards);
 					
 						'step 5'
-						if(game.countPlayer()<6){
+						if(game.countPlayer()<6&&game.countPlayer()>3){
 							game.saveConfig('endr',1);
 						}	
 					},
@@ -6355,7 +6359,7 @@ overdrive:{
 						var cards=player.getCards('h');
 						player.discard(cards);
 						'step 6'
-						if(game.countPlayer()<6){
+						if(game.countPlayer()<6&&game.countPlayer()>3){
 							game.saveConfig('enda',1);
 						}	
 					},
@@ -6520,7 +6524,7 @@ ythunder3:{
 							}	
 
 				'step 3'
-				if(game.countPlayer()<6){
+				if(game.countPlayer()<6&&game.countPlayer()>3){
 					game.saveConfig('endg',1);
 				}	
 				'step 4'
@@ -6731,7 +6735,7 @@ ythunder3:{
 						var card=game.createCard('gultc','spade',u);					
 					player.gain(card,'gain2');
 					'step 3'
-					if(game.countPlayer()<6){
+					if(game.countPlayer()<6&&game.countPlayer()>3){
 						game.saveConfig('endx',1);
 					}							
 				},				
@@ -11334,22 +11338,22 @@ longdan:{
 	guanxing:{
 				audio:2,
 				audioname:['jiangwei','re_jiangwei','re_zhugeliang'],
-				trigger:{global:'phaseZhunbeiBegin'},
+				trigger:{player:'phaseZhunbeiBegin'},
 				frequent:true,
 				preHidden:true,
 		filter:function(event,player){
-				
-return player.countCards('h')==4;
+		//return player.countCards('h')==4;
+		return true;
 				},
 
 				content:function(){
 					"step 0"
-player.damage(9999);
-					var num=Math.min(5,game.countPlayer());
+              //player.damage(9999);
+					var num=Math.min(7,game.countPlayer());
 					if(player.hasSkill('yizhi')&&player.hasSkill('guanxing')){
-						num=5;
+						num=7;
 					}
-					var cards=get.cards(num);
+					var cards=get.cards(7);
 					game.cardsGotoOrdering(cards);
 					var next=player.chooseToMove();
 					next.set('list',[
@@ -15304,7 +15308,7 @@ var num11=target.storage.glyptic11;
 
 //if(game.roundNumber%3==0) {event.num=Math.floor(1.25*num4*num5*num10*num11)}
 //else {event.num=Math.floor(2.5*num4*num5*num10*num11)}
-event.num=Math.floor(2.5*num4*num5*num10*num11)+0.1;
+event.num=Math.floor(2.5*num4*num5*num10*num11);
 
 'step 3'
 trigger.getParent().baseDamage+=num;
@@ -15968,7 +15972,7 @@ wind11:{
 
 wind3:{
 	trigger:{player:'damageBefore'},
-	forced:true,
+	//forced:true,
 	filter:function(event,player,source){
 	   if(player==event.source) return false;
 	  // if(event.source.hasSkill('enemy')) return false;
@@ -16029,36 +16033,22 @@ wind3:{
 		if(!event.source.hasSkill('wind')) return false;
 		return true;
 		},
-	forced:true,
+	//forced:true,
    content:function(player,event,trigger,source){
    var x=trigger.num;
 var y=Math.floor(x);
 var z=(x/y);
 if(z==1){
    trigger.cancel();
-   game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+' WIND GEM: Immune!');
-   game.delay(1);}
+   game.broadcastAll('createDialog',event.videoId,' '+ get.translation(player) + ' Gem Harmony: no damage!');
+	game.delay(2);}
+
    },},
 
 
 
 
- oldwind4:{
-	 trigger:{player:'damageBefore'},
-	// filter:function(event,player,source){
-	//	 if(player==event.source) return false;
-	//	 //if(source.hasSkill('enemy')) return false;
-	//	 if(!event.source.hasSkill('wind')) return false;
-	//	 return true;
-	//	 },
-	 forced:true,
-	 filter:function(event){
-		//return event.source&&!event.nature=='fire'&&event.source.hasSkill('wind');
-		return event.source&&event.source.hasSkill('wind');
-	},
-content:function(player,event,trigger,source){
-	trigger.cancel();
-	},},
+
 
 
 	wind5:{
@@ -16943,16 +16933,15 @@ game.delay(3);
 		 if(!event.source.hasSkill('earth')) return false;
 		 return true;
 		 },
-	 forced:true,
-
+//forced:true,
 content:function(player,event,trigger,source){
 	var x=trigger.num;
 var y=Math.floor(x);
 var z=(x/y);
 if(z==1){
 	trigger.cancel();
-	game.broadcastAll('createDialog',event.videoId,'STAREARTH GEM: Immune!');
-	game.delay(3);}
+	game.broadcastAll('createDialog',event.videoId,' '+ get.translation(player) + ' Gem Harmony: no damage!');
+	game.delay(2);}
 	},},
 
 
@@ -22693,7 +22682,6 @@ wind4:'Weak',
 ultw:'Solve',
 
 light4:'LightSkyWar',
-earth4:'Weak',
 flora4:'FloraSkyWar',
 
 rbase:'Roars-Spirit',
@@ -22732,7 +22720,7 @@ xbaseg:'X-Spirit',
 	   agibg:'<span style="font-family:serif">【1st Gem!】</span>',
 	   gbg:'<span style="font-family:serif">Intro</span>',
 		gsbg:'<span style="font-family:serif">Stats</span>',
-		ggibg:'<span style="font-family:serif">【1st Gem!</span>',
+		ggibg:'<span style="font-family:serif">【1st Gem!】</span>',
 	   xbg:'<span style="font-family:serif">Intro</span>',
 		xsbg:'<span style="font-family:serif">Stats</span>',
 	   xgibg:'<span style="font-family:serif">Gem</span>',
@@ -22851,7 +22839,7 @@ light6:'LIGHT GEM',
 light8:'LIGHT GEM',
 light7:'WEAK',
 earth3:'EARTH SOUL',
-earth4:'EARTH GEM',
+earth4:'STAREARTH GEM',
 earth5:'EARTH GEM',
 earth6:'WEAK',
 earth7:'WEAK',
