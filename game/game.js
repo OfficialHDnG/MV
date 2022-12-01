@@ -10327,7 +10327,8 @@ case 'gbig':zoom=1.6;break;
 			heart:"❃",
 			diamond:"♛",
 			spade:"⚶",
-			club:"🜎",
+			club:"☨",
+			//club:"⋚",☨
 			ghujia:'护甲',
 			ghujia_bg:'甲',
 			heart2:"红桃",
@@ -10342,8 +10343,8 @@ case 'gbig':zoom=1.6;break;
 			//ok2:'<span style="text-shadow:0px 0px 7px #ff0000, 0px 0px 7px #ff0000;font-size:29px;font-color:red;"> Go!! </span>',
 	
 		
-			cancel:"取消",
-			cancel2:"取消",
+			cancel:"no",
+			cancel2:"no",
 			restart:"重新开始",
 			setting:"设置",
 			start:"开始",
@@ -10354,14 +10355,14 @@ case 'gbig':zoom=1.6;break;
 			fire:"火",
 			thunder:"雷",
 			poison:"毒",
-			kami:'神',
+			kami:' ',
 			ice:'冰',
 			stab:'刺',
 			wei:'魏',
 			shu:'蜀',
 			wu:'吴',
 			qun:'群',
-			shen:'神',
+			shen:' ',
 			western:'西',
 			key:'键',
 			jin:'晋',
@@ -35560,7 +35561,10 @@ case 'gbig':zoom=1.6;break;
 		},
 		updateRoundNumber:function(){
 			game.broadcastAll(function(num1,num2,top){
-				if(ui.cardPileNumber) ui.cardPileNumber.innerHTML=' Round '+num1+ ' · LoreSongs in Memory '+num2;
+				//link to showtime
+				//if(ui.cardPileNumber) ui.cardPileNumber.innerHTML=' Round '+num1+ ' · LoreSongs in Memory '+num2;
+				ui.cardPileNumber.innerHTML=' Round '+num1+ ' · LoreSongs in Memory '+num2;
+							
 				//if(ui.cardPileNumber) ui.cardPileNumber.innerHTML=' ';
 				
 				_status.pileTop=top;
