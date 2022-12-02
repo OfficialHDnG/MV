@@ -9748,24 +9748,18 @@ game.delay(2);
 							
 							if(target.hasSkill('enemy'))
 							{
-								target.damage(3456);
+player.$fullscreenpop('天青信控','metal','dva.png');
+game.delay(2);
+	target.damage(3456);
 							}
 
 							if(!target.hasSkill('enemy'))
 							{
 								target.storage.awind+=777;
 							}
-
-
-
-
-							game.delay();
+							
 						}
-						'step 2'
-					//	game.broadcastAll('createDialog',event.videoId,'<span style"text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;font-size:19px">Airson of Wind ULT</span>');
-					//	game.delay(2);
-
-
+						'step 2'			
 					player.$fullscreenpop('Airson Wind ULT!','metal');
 					game.delay(2);
 					'step 3'
@@ -9774,8 +9768,6 @@ game.delay(2);
 						'step 4'
 						game.broadcastAll('createDialog',event.videoId,' ');	
 						game.delay(1);
-
-
 
 					}
 				},
