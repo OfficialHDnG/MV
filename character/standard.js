@@ -11,12 +11,12 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		},
 		character:{	
 			//SGS glow color do light concept, ault element choose,
-			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
+					zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			zhaoyun:['female',' ','1357720/1357720',['airson','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 				
 			machao:['male',' ','1971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-					sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-				
+			sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
+			
 		},
 		characterIntro:{
 				zhugeliang:'政落彻 · 정한결</br> 1st Past-Life Candidate: Shone</br> <span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#shone" target="blank">Lore of Shone</a></span>',
@@ -622,7 +622,7 @@ content:function(){
 				},
 				content:function(){
 					"step 0"
-					player.damage(2946);
+					player.damage(1111);
 					'step 1'
 					trigger.changeToZero();
 					event.cards=get.cards(7);
@@ -844,7 +844,7 @@ endgold:{
 
 					'step 1'
 					if(lib.config.ultt){
-					game.broadcastAll('createDialog',event.videoId, 'Airson ' + lib.config.aede +'\u00B0');	
+					game.broadcastAll('createDialog',event.videoId, 'Ea ' + lib.config.aede +'\u00B0');	
 					game.delay(1);
 				}
 				},				
@@ -873,7 +873,7 @@ endgold:{
 
 
 					if(lib.config.ultt){
-						game.broadcastAll('createDialog',event.videoId, 'Airson ' + lib.config.aede +'\u00B0');	
+						game.broadcastAll('createDialog',event.videoId, 'Ea ' + lib.config.aede +'\u00B0');	
 						game.delay(1);
 					}
 
@@ -1409,7 +1409,7 @@ gjud:{
 			}
 
 			if(lib.config.ultt){
-			game.broadcastAll('createDialog',event.videoId, 'GoldenAge ' + lib.config.gjud +'\u00B0');	
+			game.broadcastAll('createDialog',event.videoId, 'Nyeve ' + lib.config.gjud +'\u00B0');	
 			game.delay(1);
 		}
 			//game.update;
@@ -1435,7 +1435,7 @@ rvolg:{
 			
 
 		if(lib.config.ultt){
-			game.broadcastAll('createDialog',event.videoId, 'Roars ' + lib.config.rvol +'\u00B0');	
+			game.broadcastAll('createDialog',event.videoId, 'Shone ' + lib.config.rvol +'\u00B0');	
 			game.delay(1);
 		}
 		},},
@@ -1455,7 +1455,7 @@ rvolg:{
 				     game.saveConfig('rvol',y);
 					
 					if(lib.config.ultt){
-						game.broadcastAll('createDialog',event.videoId, 'Roars ' + lib.config.rvol +'\u00B0');	
+						game.broadcastAll('createDialog',event.videoId, 'Shone ' + lib.config.rvol +'\u00B0');	
 						game.delay(1);
 					}
 					},},
@@ -1486,7 +1486,7 @@ rvolg:{
 					}
 
 					if(lib.config.ultt){
-					game.broadcastAll('createDialog',event.videoId, 'Airson ' + lib.config.aede +'\u00B0');	
+					game.broadcastAll('createDialog',event.videoId, 'Ea ' + lib.config.aede +'\u00B0');	
 					game.delay(1);
 				}
 					//game.update;
@@ -1528,7 +1528,7 @@ else{
 				
 
 					if(lib.config.ultt){
-						game.broadcastAll('createDialog',event.videoId, 'X ' + lib.config.xtsu +'\u00B0');	
+						game.broadcastAll('createDialog',event.videoId, 'Healon ' + lib.config.xtsu +'\u00B0');	
 						game.delay(1);
 					}
 					//game.update;
@@ -1751,6 +1751,26 @@ else{
 				ai:{
 					threaten:12				}
 			},
+
+
+			nbiyue:{			
+				trigger:{player:'phaseJieshuBegin'},
+				forced:true,
+				order:13,
+				content:function(){
+				var card=get.cardPile(function(card){
+						return card.name=='wanjian';
+					});
+					if(card){
+						player.gain(card,'gain2');
+					}
+					else event.finish();
+
+			
+				
+				},
+			},
+
 
 			drawj:{
 				trigger:{player:'phaseZhunbeiBegin'},
@@ -2775,7 +2795,7 @@ box:{
 		game.saveConfig('aede',x);
 		'step 4'
 		if(lib.config.ultt){
-			game.broadcastAll('createDialog',event.videoId, 'Airson ' + lib.config.aede +'\u00B0');	
+			game.broadcastAll('createDialog',event.videoId, 'Ea ' + lib.config.aede +'\u00B0');	
 			game.delay(1);
 		}
 
@@ -5661,6 +5681,8 @@ sjie:{
 				
 					else if(trigger.num>=3000&&trigger.num<=10310){//game.delay();
 						var tr=Math.floor(trigger.num);
+						player.$fullscreenpop('MASSIVE!','metal');	
+						game.delay(2);
 					player.$fullscreenpop(tr*97+' 𝄞' ,'metal');
 								game.delay(2);
 										}
@@ -6222,14 +6244,20 @@ overdrive:{
 				content:function(){
 			
 					'step 0'
-											
+					
+					game.broadcastAll('createDialog',event.videoId, 'Ocean & Wind </br></br> Healon: "Alone in the winds, the ocean of CTVT...I look to a future when all will be clear"');	
+					game.delay(4);
+							
+					
+						'step 1'
 						player.$fullscreenpop('X ULT: HeavenSea ','metal');
 						game.delay(3);
 						player.$fullscreenpop('天璃海窗','metal','dva.png');
 					
-						'step 1'
+						'step 2'	
 						var n=lib.config.xtsu-23;	
 						if(n>0){
+							game.delay(3);
 							player.$fullscreenpop('Overdrive: '+n+'! ','metal');
 							game.delay(6);
 					}
@@ -6238,7 +6266,7 @@ overdrive:{
 				}			
 
 						event.num=3+Math.floor(n/2);
-						'step 2'					
+								
 					
 						game.saveConfig('xtsu',0);
 						game.saveConfig('gjud',0);
@@ -6254,7 +6282,7 @@ overdrive:{
 								event.finish();
 								return;
 							}
-						//	target.removeSkill('xtsu');
+					
 							player.useCard({name:'xultc',nature:'fire'},targets);
 							player.useCard({name:'xultch',nature:'fire'},targets);			
 							player.useCard({name:'xultc',nature:'fire'},targets);
@@ -6297,16 +6325,18 @@ overdrive:{
 							//player.countCards('h')>0;
 					},
 					content:function(){
-
-
 						'step 0'
+						game.broadcastAll('createDialog',event.videoId, 'Fire & StarEarth </br></br> Shone: "With passion and endurance - let us create a new world"');	
+						game.delay(4);
+
+						'step 1'
 											
 						player.$fullscreenpop('Roars ULT: SuperNova','metal');
 						game.delay(2);
 						player.$fullscreenpop('星火新世','metal','dva.png');
 						game.delay(2);
 
-						'step 1'
+						'step 2'
 						var n=lib.config.rvol-10;	
 						if(n>0){
 							player.$fullscreenpop('Overdrive: '+n+'! ','metal');
@@ -6316,9 +6346,7 @@ overdrive:{
 						game.delay(1);
 				}			
 
-						event.num=2+Math.floor(n);
-
-						'step 2'					
+						event.num=2+Math.floor(n);							
 					
 						game.saveConfig('xtsu',0);
 						game.saveConfig('gjud',0);
@@ -6447,15 +6475,19 @@ ythunder3:{
 				snyeve:{
 						trigger:{player:'phaseJieshuBegin'},
 						forced:true,
+						selectCard:1,
+				check:function(card){
+					return 7-get.value(card);
+				},
+				//	order:1,
 							line:'fire',
 							content:function(){
 								'step 0'
 								game.broadcastAll('createDialog',event.videoId, 'Boss prepares to play Nyeve LoreSong as Yemog SkyWar!');	
-		
 								game.delay(2);
-								'step 1'
-								var cards=player.getCards('h');
-								player.discard(cards);
+								//'step 1'
+								// cards=player.getCards('h');
+								//player.discard(cards);
 								'step 2'
 							var n=player.getEnemies().randomGets(3);
 				player.useCard({name:'tjuedou',nature:'fire'},n);					
@@ -6484,12 +6516,16 @@ ythunder3:{
 												},
 					content:function(){
 						'step 0'
-									
+						game.broadcastAll('createDialog',event.videoId,'Eden </br> </br> Ea: "I know once something is corrupt, we can make it heaven again" ');	
+						game.delay(2);
+						
+						'step 1'
 						player.$fullscreenpop('Airson Ult: 2nd Eden','metal');
 						game.delay(3);
 						player.$fullscreenpop('伊甸再臨','metal','dva.png');
 						game.delay(2);
-						'step 1'					
+								
+						//var n=lib.config.aede-20;
 						var n=lib.config.aede-20;
 						event.num=Math.floor(7+n);
 						game.saveConfig('xtsu',0);
@@ -6545,7 +6581,7 @@ ythunder3:{
 						'step 0'
 						ui.background.setBackgroundImage('image/background/hdng.jpg');
 							game.saveConfig('endx',0);				
-						player.$fullscreenpop('X EndGame: ','metal');
+						player.$fullscreenpop('Healon EndGame: ','metal');
 						game.delay(2);
 						'step 1'
 						player.$fullscreenpop('Combo! ','metal');
@@ -6599,7 +6635,7 @@ ythunder3:{
 							'step 0'
 							ui.background.setBackgroundImage('image/background/hdng.jpg');
 								game.saveConfig('endr',0);				
-							player.$fullscreenpop('Roars EndGame ','metal');
+							player.$fullscreenpop('Shone EndGame: ','metal');
 							game.delay(2);
 							'step 1'
 							player.$fullscreenpop('Combo! ','metal');
@@ -6643,7 +6679,7 @@ ythunder3:{
 								'step 0'
 								ui.background.setBackgroundImage('image/background/hdng.jpg');
 									game.saveConfig('enda',0);              
-								player.$fullscreenpop('Airson EndGame ','metal');
+								player.$fullscreenpop('Ea EndGame: ','metal');
 								game.delay(2);
 								'step 1'
 								player.$fullscreenpop('Combo! ','metal');
@@ -6707,16 +6743,17 @@ ythunder3:{
 							},
 					content:function(){
 						'step 0'	
-					//	target.node.jiu=ui.create.div('.playerea',target.node.avatar);
-					//	target.node.jiu2=ui.create.div('.playerea',target.node.avatar2);
-					//	game.delay(4);
-					//	'step 1'
+						game.broadcastAll('createDialog',event.videoId,'Thunder & Light </br></br>Nyeve: "It will wait for you. It will be measured. And it will be on the right person." ');	
+						game.delay(4);
+						
+						'step 1'
+
 						player.$fullscreenpop('GoldenAge Ult:</br> Judgment','metal');
 						game.delay(1);
-						'step 1'
+						'step 2'
 						player.$fullscreenpop('審判日','metal','dva.png');
 						game.delay(2);
-						'step 2'								
+												
 						game.saveConfig('xtsu',0);
 						game.saveConfig('gjud',0);
 						game.saveConfig('rvol',0);
@@ -6748,7 +6785,7 @@ ythunder3:{
 						'step 0'
 						ui.background.setBackgroundImage('image/background/hdng.jpg');
 						game.saveConfig('endg',0);              
-					player.$fullscreenpop(' GoldenAge</br>EndGame','metal');
+					player.$fullscreenpop(' Nyeve</br>EndGame:','metal');
 					game.delay(2);
 					'step 1'
 					player.$fullscreenpop('Combo!','metal');
@@ -16209,7 +16246,7 @@ wind9:{
 
 
 thund:{
-	group:['thund2','thund3','thund5','thund4','thund6','thund7','thund8','thund9'],
+	group:['thund2','thund3','thund5','thund4','thund6','thund7','thund8','thund10','thund11','thund9'],
 
 	init:function(player){
 	 player.storage.thund=1;
@@ -16218,11 +16255,76 @@ thund:{
 
 },  
 
+
+
+
+thund10:{  
+	enable:'chooseToUse',
+	filter:function(event,player){
+	if(!player.countCards('he',function(card){
+				  return get.number(card)=='2';
+		})){
+			return false;
+		}	 
+		if (lib.config.coin%43==0||_status.connectMode)  return true;	
+	},
+	filterCard:function(card){
+		return get.number(card)=='2'
+	},
+	position:'he',
+	viewAs:{name:'djuedou'},
+	viewAsFilter:function(player){
+		if(player.countCards('he',{number:'2'})) return true;
+	   
+	},
+	prompt:'Play a LoreSong as Bolt II',
+	//content:function(player,event,trigger,source){ 
+	   //player.glyptic
+   //},
+	check:function(card){return 5-get.value(card)},
+									   
+   },
+
+
+   
+thund11:{  
+	enable:'chooseToUse',
+	filter:function(event,player){
+	 	if(!player.countCards('he',function(card){
+				  return get.number(card)=='4';
+		})){
+			return false;
+		}	 
+		if (lib.config.coin%43==0||_status.connectMode)  return true;	
+	},
+	filterCard:function(card){
+		return get.number(card)=='4'
+	},
+	position:'he',
+	viewAs:{name:'tjuedou'},
+	viewAsFilter:function(player){
+		if(player.countCards('he',{number:'4'})) return true;
+	   
+	},
+	prompt:'Play a LoreSong as Bolt I',
+	//content:function(player,event,trigger,source){ 
+	   //player.glyptic
+   //},
+	check:function(card){return 5-get.value(card)},
+									   
+   },
+
+
+
+
+
+
+
 thund2:{  
  enable:'chooseToUse',
  filter:function(event,player){
 	 if(!player.countCards('he',function(card){
-			   return get.number(card)=='2'||get.number(card)=='3'||get.number(card)=='4';
+			   return get.number(card)=='3';
 	 })){
 		 return false;
 	 }
@@ -16231,15 +16333,13 @@ thund2:{
 	 });
  },
  filterCard:function(card){
-	 return get.number(card)=='2'||get.number(card)=='3'||get.number(card)=='4'
+	 return get.number(card)=='3'
  },
  position:'he',
  viewAs:{name:'juedou'},
  viewAsFilter:function(player){
-	 if(player.countCards('he',{number:'2'})) return true;
 	 if(player.countCards('he',{number:'3'})) return true;
-	 if(player.countCards('he',{number:'4'})) return true;
- },
+	 },
  prompt:'Play a LoreSong as Thunder Skywar',
  check:function(card){return 5-get.value(card)},
 									
@@ -16312,7 +16412,7 @@ game.delay(3);
 		 if(!event.source.hasSkill('thund')) return false;
 		 return true;
 		 },
-	 forced:true,
+	 //forced:true,
 	
 content:function(player,event,trigger,source){
 	var x=trigger.num;
@@ -16320,8 +16420,8 @@ var y=Math.floor(x);
 var z=(x/y);
 if(z==1){
 	trigger.cancel();
-	game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+' THUNDER GEM: Immune!');
-	game.delay(1);}
+	game.broadcastAll('createDialog',event.videoId,' '+ get.translation(player) + ' Gem Harmony: no damage!');
+	game.delay(2);}
 	},},
 
 
@@ -16936,7 +17036,7 @@ if(z==1){
 			if(!event.source.hasSkill('thund')) return false;
 			return true;
 			},
-		forced:true,
+	//	forced:true,
 	   content:function(player,event,trigger,source){
 	   var x=trigger.num;
 	var y=Math.floor(x);
@@ -22230,6 +22330,9 @@ filter:function(event,player){
 				player.draw();
 				},
 			},
+
+
+
 			xinbiyue:{
 				audio:'biyue',
 				trigger:{player:'phaseJieshuBegin'},
@@ -22623,6 +22726,12 @@ wind10:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;font-f
 wind11:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;font-family:serif;">Storm 1</span>',
 wind2:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;font-family:serif;">{Wind:SkyWar}</span>',
 
+
+thund10:'<span style="text-shadow:0px 0px 7px #FFFF00, 0px 0px 7px #FFFF00;font-family:serif;">Bolt 2</span>',
+thund11:'<span style="text-shadow:0px 0px 7px #FFFF00, 0px 0px 7px #FFFF00;font-family:serif;">Bolt 1</span>',
+thund2:'<span style="text-shadow:0px 0px 7px #FFFF00, 0px 0px 7px #FFFF00;font-family:serif;">{Thunder:SkyWar}</span>',
+
+
 earth10:'<span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff;font-family:serif; text-color:black">Meteor 2</span>',
 earth11:'<span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff; font-family:serif;text-color:black">Meteor 1</span>',
 
@@ -22634,7 +22743,7 @@ ythunder:'Yemog Thunder',
 light2:'Light',
 
 
-thund2:'{Thunder:SkyWar}',
+
 flora2:'Flora',
 
 cho:'<span style="text-shadow:0px 0px 7px #ff0000 , 0px 0px 7px #ff0000;font-color:#000000;">!BOSS REVEAL</span>',
@@ -22660,7 +22769,7 @@ gthund:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Nye
 
 
 ocean4:'OceanSkyWar',
-thund4:'ThunderSkyWar',
+
 wind4:'Weak',
 ultw:'Solve',
 
@@ -22823,7 +22932,7 @@ light8:'LIGHT GEM',
 light7:'WEAK',
 earth3:'EARTH SOUL',
 earth4:'STAREARTH GEM',
-earth5:'EARTH GEM',
+earth5:'STAREARTH GEM',
 earth6:'WEAK',
 earth7:'WEAK',
 blaze3:'BLAZE SOUL',
