@@ -946,23 +946,20 @@ ushone:{
 				return get.name(card)=='shan';
 			});	
 			"step 1"
-		player.storage.glyptic8+=1.02;	
+		player.storage.glyptic8+=1.7;	
 		"step 2"
 		if(result.bool){
 			player.$fullscreenpop('Airson-Ea Ult!','metal','',true);
 			game.delay(2);
 			game.broadcastAll('createDialog',event.videoId, 'Ea: "heaven...is worth sacrificing to protect"');
 			game.delay(4);
-				player.useCard({name:'juedou',nature:'fire'},target);
-		//		game.saveConfig('xtsu',0);
-		//	game.saveConfig('gjud',0);
-		//	game.saveConfig('rvol',0);
-			game.saveConfig('aede',0);	
+				player.useCard({name:'djuedou',nature:'fire'},target);
+				game.saveConfig('aede',0);	
 		}
 		else{	
 		}
 		"step 3"
-		player.storage.glyptic8-=1.02;	
+		player.storage.glyptic8-=1.7;	
 		
 		},
 		ai:{
@@ -4433,7 +4430,7 @@ player.storage.remind-=3;
 		content:function(){				
 			var targets=player.getEnemies().randomGets(1);
 					//player.useCard({name:'juedou'},targets,cards).animate=true;
-					player.useCard({name:'juedou',nature:'thunder'},targets,cards);
+					player.useCard({name:'djuedou',nature:'thunder'},targets,cards);
 					//player.recover(1);
 					game.delay();
 					game.broadcastAll('createDialog',event.videoId,'BOSS: LAUNCHING SKYWAR');
@@ -5658,27 +5655,20 @@ sjie:{
 				content:function (){
 					
 					'step 0'
-					if(trigger.num>=1000){
-						player.$fullscreenpop('MASSIVE!','metal');
-
-					//if(game.roundNumber%3!=0)
-					//{game.delay(1);}
-								
-											}
-					'step 1'
-
-					if(trigger.num>=3000&&trigger.num<=9999){//game.delay();
+					if(trigger.num>=1000&&trigger.num<=3000){
+						player.$fullscreenpop('MASSIVE!','metal');							
+									}
+				
+					else if(trigger.num>=3000&&trigger.num<=10310){//game.delay();
 						var tr=Math.floor(trigger.num);
 					player.$fullscreenpop(tr*97+' 𝄞' ,'metal');
 								game.delay(2);
 										}
 
-					if(trigger.num>=10311){//game.delay();
+					else if(trigger.num>=10311){//game.delay();
 						var trm=Math.floor(trigger.num*97);
 											player.$fullscreenpop('M I L L I O N','metal');
-											game.delay(4);
-											player.$fullscreenpop(trm+' 𝄞' ,'metal');
-											game.delay(2);
+											game.delay(4);									
 													
 																}
 					
@@ -6468,7 +6458,7 @@ ythunder3:{
 								player.discard(cards);
 								'step 2'
 							var n=player.getEnemies().randomGets(3);
-				player.useCard({name:'juedou',nature:'fire'},n);					
+				player.useCard({name:'tjuedou',nature:'fire'},n);					
 											},					
 				},
 
@@ -6849,7 +6839,7 @@ trigger:{player:'phaseBeginStart'},
 
 content:function(){
 	if(game.roundNumber==1){
-	player.storage.glyptic8-=0.1;
+	player.storage.glyptic8+=1.1;
 	player.storage.glyptic10+=1.3;
 }
 else{
@@ -9641,7 +9631,7 @@ if(target.hasSkill('enemy'))
 player.$fullscreenpop('黑鑽落徹','metal','dva.png');
 game.delay(2);
 
-var x=3456+3333*(1+player.storage.rearth);
+var x=1333+2333*(1+player.storage.rearth);
 target.damage(x);
 game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;text-color:black;">Shone:"Let me be with you until the end.</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/rearth.png" height="106" width="60"></img></span>');  
 game.delay(2);
