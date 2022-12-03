@@ -11,9 +11,9 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		},
 		character:{	
 			//SGS glow color do light concept, ault element choose,
+			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			zhaoyun:['female',' ','1357720/1357720',['airson','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			machao:['male',' ','1971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-					zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			
 			sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			
@@ -2894,28 +2894,31 @@ box:{
 							var a=get.distance(player,target);
 							game.broadcastAll('createDialog',event.videoId, 'Strike One');
 							game.delay(1);
-							target.damage(4.1);
+							target.damage(4.1*a/1.5);
 							'step 1'
 							var b=get.distance(player,target);
 							game.broadcastAll('createDialog',event.videoId, 'Strike Two');
 							game.delay(1);
-							target.damage(40.1);
+							target.damage(40.1*b/1.5);
 							'step 2'
 							var c=get.distance(player,target);
-							game.broadcastAll('createDialog',event.videoId, 'Strike Three');
+							var z=Math.min(lib.config.lvr,7777777);
+							var x=(Math.floor(Math. sqrt(z/777)));		
+							var d=x+7;
+							game.broadcastAll('createDialog',event.videoId, 'Lv.'+d +' Roars 3rd Strike Three');
 							game.delay(1);
-							target.damage(400.1);
-							'step 3'
+							target.damage(400.1*c/1.5+d/2);
+						//	'step 3'
 							
-							if(lib.config.lvr>=778){
-								game.broadcastAll('createDialog',event.videoId, 'Roars Testament Bonus!');
-							game.delay(1);
-								var z=Math.min(lib.config.lvr,7777777);
-								var x=(Math.floor(Math. sqrt(z/777)));
-								var y=((x*x*139/777)-0.01);
-								var a=y+400;
-								target.damage(a);																
-								}
+						//	if(lib.config.lvr>=778){
+						//		game.broadcastAll('createDialog',event.videoId, 'Roars Testament Bonus!');
+						//	game.delay(1);
+						//		var z=Math.min(lib.config.lvr,7777777);
+						//		var x=(Math.floor(Math. sqrt(z/777)));
+						//		var y=((x*x*139/777)-0.01);
+						//		var a=y+400;
+						//		target.damage(a);																
+							//			}
 
 						
 
