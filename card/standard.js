@@ -166,7 +166,9 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 		game.delay(2);
 			var x=1000*(a*b);
 			var y=2777+1750*(a+b-c-d);
-				var z=(x+y+0.01);
+			var a=get.distance(player,target);
+			var b=(7-a)/5;
+				var z=b*(x+y)+0.01;
 				target.damage(z);			
 			},			
 			},
@@ -174,6 +176,10 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 
 			erultc:{
 				type:'basic',
+				enable:true,			
+				filterTarget:function(card,player,target){
+					return target!=player;
+				},
 				cardnature:'thunder',
 				content:function(){
 				var a=player.countCards('h',{number:'5'});
@@ -181,10 +187,14 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 				
 			//	game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'wind'+d+'');	
 		game.delay(2);
+	
+
 			var x=1000*(a*b);
 			var y=3777+1750*(a+b);
-				var z=(x+y+0.01);
-				target.damage(z);			
+			var a=get.distance(player,target);
+			var b=(7-a)/5;
+				var z=b*(x+y)+0.01;
+					target.damage(z);			
 			},			
 			},
 
@@ -497,6 +507,7 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 		game.delay(2);
 			var x=1000*(a*b);
 			var y=9999+2500*(a+b);
+			
 				var z=(x+y+e);
 				target.node.jiu=ui.create.div('.playermea',target.node.avatar);
 					target.node.jiu2=ui.create.div('.playermea',target.node.avatar2);
