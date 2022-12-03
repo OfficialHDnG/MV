@@ -6259,7 +6259,7 @@ overdrive:{
 			
 					'step 0'
 					
-					game.broadcastAll('createDialog',event.videoId, 'Ocean & Wind </br></br> Healon: "Alone in the winds, the ocean of CTVT...I look to a future when all will be clear"');	
+					game.broadcastAll('createDialog',event.videoId, '<span style="text-shadow:0px 0px 7px #2B65EC, 0px 0px 7px #2B65EC ">Ocean</span> & <span style="text-shadow:0px 0px 7px #00FFFF, 0px 0px 7px #00FFFF">Wind</span>  </br></br> Healon: "Alone in the winds, the ocean of CTVT...I look to a future when all will be clear"');	
 					game.delay(4);
 							
 					
@@ -6340,7 +6340,7 @@ overdrive:{
 					},
 					content:function(){
 						'step 0'
-						game.broadcastAll('createDialog',event.videoId, 'Fire & StarEarth </br></br> Shone: "With passion and endurance - let us create a new world"');	
+						game.broadcastAll('createDialog',event.videoId, '<span style="text-shadow:0px 0px 7px #FF0000, 0px 0px 7px #FF0000">Blaze</span> & <span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff;font-color:black;">StarEarth</span>  </br></br> Shone: "With passion and endurance - let us create a new world"');	
 						game.delay(4);
 
 						'step 1'
@@ -6530,7 +6530,7 @@ ythunder3:{
 												},
 					content:function(){
 						'step 0'
-						game.broadcastAll('createDialog',event.videoId,'Eden </br> </br> Ea: "I know once something is corrupt, we can make it heaven again" ');	
+						game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #00FF00, 0px 0px 7px #00FF00">1st Eden</span> & <span style="text-shadow:0px 0px 7px #8F00FF, 0px 0px 7px #8F00FF">2nd Eden</span>  </br> </br> Ea: "I know once something is corrupt, we can make it heaven again" ');	
 						game.delay(2);
 						
 						'step 1'
@@ -6757,7 +6757,7 @@ ythunder3:{
 							},
 					content:function(){
 						'step 0'	
-						game.broadcastAll('createDialog',event.videoId,'Thunder & Light </br></br>Nyeve: "It will wait for you. It will be measured. And it will be on the right person." ');	
+						game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #FFA500, 0px 0px 7px #FFA500">Thunder</span> & <span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff">Light</span> </br></br>Nyeve: "It will wait for you. It will be measured. And it will be on the right person." ');	
 						game.delay(4);
 						
 						'step 1'
@@ -15872,7 +15872,7 @@ if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')
 	trigger.num*=a;	
 }
 if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'Rpars Thunder GEM: Electricity Fills the Sea!');
+	game.broadcastAll('createDialog',event.videoId, 'Roars Thunder GEM: Electricity Fills the Sea!');
 	game.delay(2);
 	var a=2.25+lib.config.lvrt*0.0225;
 	trigger.num*=a;	
