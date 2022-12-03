@@ -11,7 +11,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		},
 		character:{	
 			//SGS glow color do light concept, ault element choose,
-			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','lvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
+			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			zhaoyun:['female',' ','1357720/1357720',['airson','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			machao:['male',' ','1971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
 			
@@ -19,16 +19,18 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			
 		},
 		characterIntro:{
-				zhugeliang:'政落彻 · 정한결</br> 1st Past-Life Candidate: Shone</br> <span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#shone" target="blank">Lore of Shone</a></span>',
-				zhaoyun:'信基永 · 신기용</br> 1st Past-Life Candidate: Ea</br> <span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#ea" target="blank">Lore of Ea</a></span>',
-				machao:'金花流年 · 김구</br> 1st Past-Life Candidate: Nyeve</br> <span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#nyeve" target="blank">Lore of Nyeve</a></span>',
-				sunquan:'玄明准 · 현명준</br> 1st Past-Life Candidate: Healon</br> <span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#healon" target="blank">Lore of Healon</a></span>',
+				zhugeliang:'政落彻 · 정한결</br> 1st Past-Life Candidate: Shone</br> <span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#shone" target="blank">Lore of Shone</a></span></br>',
+				zhaoyun:'信基永 · 신기용</br> 1st Past-Life Candidate: Ea</br> <span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#ea" target="blank">Lore of Ea</a></span></br>',
+				machao:'金花流年 · 김구</br> 1st Past-Life Candidate: Nyeve</br> <span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#nyeve" target="blank">Lore of Nyeve</a></span></br>',
+				sunquan:'玄明准 · 현명준</br> 1st Past-Life Candidate: Healon</br> <span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#healon" target="blank">Lore of Healon</a></span></br>',
 				}, 
 		perfectPair:{
 			ganning:['lingtong','xf_sufei'],
 		},
 		skill:{
 
+
+			
 
 distxx:{
 	enable:'phaseuse',
@@ -58,6 +60,18 @@ content:function(player){
 
 },},
 
+
+
+abb:{
+	enable:'phaseUse',
+	filter:function(event,player){
+		return lib.config.lva>0&&!game.hasPlayer(function(current){
+			return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
+		});
+			},	
+	content:function(player){
+		player.damage(100);
+},},
 
 
 alight:{
@@ -2715,7 +2729,7 @@ lowphph:{
 			aba:{
 				enable:'phaseUse',
 				filter:function(event,player){
-					return !game.hasPlayer(function(current){
+					return lib.config.lva>=0&&!game.hasPlayer(function(current){
 						return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
 					});
 						},	
@@ -6260,9 +6274,7 @@ overdrive:{
 					'step 0'
 					
 					game.broadcastAll('createDialog',event.videoId, '<span style="text-shadow:0px 0px 7px #2B65EC, 0px 0px 7px #2B65EC ">Ocean</span> & <span style="text-shadow:0px 0px 7px #00FFFF, 0px 0px 7px #00FFFF">Wind</span>  </br></br> Healon: "Alone in the winds, the ocean of CTVT...I look to a future when all will be clear"');	
-					game.delay(4);
-							
-					
+									
 						'step 1'
 						player.$fullscreenpop('X ULT: HeavenSea ','metal');
 						game.delay(3);
@@ -6341,8 +6353,7 @@ overdrive:{
 					content:function(){
 						'step 0'
 						game.broadcastAll('createDialog',event.videoId, '<span style="text-shadow:0px 0px 7px #FF0000, 0px 0px 7px #FF0000">Blaze</span> & <span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff;font-color:black;">StarEarth</span>  </br></br> Shone: "With passion and endurance - let us create a new world"');	
-						game.delay(4);
-
+				
 						'step 1'
 											
 						player.$fullscreenpop('Roars ULT: SuperNova','metal');
@@ -6530,9 +6541,8 @@ ythunder3:{
 												},
 					content:function(){
 						'step 0'
-						game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #00FF00, 0px 0px 7px #00FF00">1st Eden</span> & <span style="text-shadow:0px 0px 7px #8F00FF, 0px 0px 7px #8F00FF">2nd Eden</span>  </br> </br> Ea: "I know once something is corrupt, we can make it heaven again" ');	
-						game.delay(2);
-						
+						game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #00FF00, 0px 0px 7px #00FF00">1st Eden</span> & <span style="text-shadow:0px 0px 7px #8F00FF, 0px 0px 7px #8F00FF">2nd Eden</span>  </br> </br> Ea: "When everyone learns to protect it...heaven will be among us again" ');	
+											
 						'step 1'
 						player.$fullscreenpop('Airson Ult: 2nd Eden','metal');
 						game.delay(3);
@@ -6757,9 +6767,8 @@ ythunder3:{
 							},
 					content:function(){
 						'step 0'	
-						game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #FFA500, 0px 0px 7px #FFA500">Thunder</span> & <span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff">Light</span> </br></br>Nyeve: "It will wait for you. It will be measured. And it will be on the right person." ');	
-						game.delay(4);
-						
+						game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #FFA500, 0px 0px 7px #FFA500">Thunder</span> & <span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff">Light</span> </br></br>Nyeve: "It will wait. And it will be measured, for every right person." ');	
+												
 						'step 1'
 
 						player.$fullscreenpop('GoldenAge Ult:</br> Judgment','metal');
