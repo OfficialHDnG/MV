@@ -2737,30 +2737,22 @@ lowphph:{
 					player.line(target);
 
 						if(target.hasSkill('enemy')){	
-												
-							game.broadcastAll('createDialog',event.videoId, 'Airson strikes softly!');
+							var z=Math.min(lib.config.lva,7777777);
+							var x=(Math.floor(Math. sqrt(z/777)));		
+							var a=x+7;		
+							game.broadcastAll('createDialog',event.videoId, 'Lv.'+a+' Airson strikes softly!');
 							game.delay(2);
-							target.loseHp(33333);
-											
-							//if(lib.config.lva>=777){
-							//	'step 1'	
-							//	game.broadcastAll('createDialog',event.videoId, 'Airson Word Bonus!');
-							//	game.delay(2);	
-							//	var z=Math.min(lib.config.lva,338351);
-							//	var x=(Math.floor(Math. sqrt(z/777)));
-							//	var y=((x*x*250/38.7)-0.01);
-							//	target.damage(y);																
-							//	}																	
+							target.damage(303.33+15*a);
+																					
 						}
 
 						if(!target.hasSkill('enemy')){		
 							game.broadcastAll('createDialog',event.videoId, 'Airson provided healing!');
 							game.delay(2);
-							//target.damage(0.013);
 							var z=Math.min(lib.config.lva,7777777);
 							var x=(Math.floor(Math. sqrt(z/777)));
 							var a=Math.floor(77777+(x*x*3333/777));
-							target.recover(a);	
+							target.recover(77777);	
 							}
 							
 						},
@@ -3677,7 +3669,7 @@ game.delay(2);
 			//		});
 			//},
 				content:function(){
-					if(game.roundNumber==1){	trigger.num+=2;}
+					if(game.roundNumber==1){	trigger.num-=2;}
 
 					if(game.roundNumber>=2){	trigger.num-=2;}
 					//	if(game.roundNumber>=1){trigger.num+=8;}
