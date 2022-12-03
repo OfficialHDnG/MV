@@ -2742,7 +2742,7 @@ lowphph:{
 							var a=x+7;		
 							game.broadcastAll('createDialog',event.videoId, 'Lv.'+a+' Airson strikes softly!');
 							game.delay(2);
-							target.damage(303.33+15*a);
+							target.damage(7.33+15*a);
 																					
 						}
 
@@ -2894,12 +2894,12 @@ box:{
 							var a=get.distance(player,target);
 							game.broadcastAll('createDialog',event.videoId, 'Strike One');
 							game.delay(1);
-							target.damage(4.1*a/1.5);
+							target.damage(8.1*a/1.5);
 							'step 1'
 							var b=get.distance(player,target);
 							game.broadcastAll('createDialog',event.videoId, 'Strike Two');
 							game.delay(1);
-							target.damage(40.1*b/1.5);
+							target.damage(80.1*b/1.5);
 							'step 2'
 							var c=get.distance(player,target);
 							var z=Math.min(lib.config.lvr,7777777);
@@ -2907,7 +2907,7 @@ box:{
 							var d=x+7;
 							game.broadcastAll('createDialog',event.videoId, 'Lv.'+d +' Roars 3rd Strike Three');
 							game.delay(1);
-							target.damage(400.1*c/1.5+d/2);
+							target.damage(400.1*c/1.5+d*3);
 						//	'step 3'
 							
 						//	if(lib.config.lvr>=778){
@@ -13813,26 +13813,84 @@ var index=player.getHistory('useCard',function(evtx){
 return evtx.card.name=='wanjian'&&evtx.getParent('phaseUse')==evt;
 }).indexOf(trigger);
 
-var z=Math.min(lib.config.lvg,338351);
-var x=(Math.floor(Math. sqrt(z/777)));
-var y=((x*x*120/38.7)-0.01);
-var empire = Math.min(Math.max(parseInt((player.hp/player.maxHp)*247+y), 1), 2847);
+//var z=Math.min(lib.config.lvg,338351);
+// x=(Math.floor(Math. sqrt(z/777)));
+//var y=((x*x*120/38.7)-0.01);
+
+
+var empire = Math.min(Math.max(parseInt((player.hp/player.maxHp)*247), 1), 2847);
 
 if(index==0){
 game.log(trigger.card,'Initial');
 if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
-trigger.baseDamage*=Math.floor(empire);
+var z=Math.min(lib.config.lvg,7777777);
+var x=(Math.floor(Math. sqrt(z/777)));		
+var a=x+7;	
+trigger.baseDamage*=Math.floor((1+a/100)*empire);
+
 }
 
 else{
 game.log(trigger.card,'COMBO');
 if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
-trigger.baseDamage*=Math.floor(5*empire);
+var z=Math.min(lib.config.lvg,7777777);
+var x=(Math.floor(Math. sqrt(z/777)));		
+var a=x+7;	
+trigger.baseDamage*=Math.floor((1+a/100)*5*empire);
 }
 },
 },
 
+
+
 glyptic_m:{
+	trigger:{player:'useCard'},
+	forced:true,
+	filter:function(event,player){
+	if(event.card.name!='nanman') return false;
+	var evt=event.getParent('phaseUse');
+	if(!evt||evt.player!=player) return false;
+	var index=player.getHistory('useCard',function(evtx){
+	return evtx.card.name=='nanman'&&evtx.getParent('phaseUse')==evt;
+	}).indexOf(event);
+	return index==0||index==1;
+	},
+	content:function(){
+	var evt=trigger.getParent('phaseUse');
+	var index=player.getHistory('useCard',function(evtx){
+	return evtx.card.name=='nanman'&&evtx.getParent('phaseUse')==evt;
+	}).indexOf(trigger);
+		
+	var empire = Math.min(Math.max(parseInt((1.01-(player.hp/player.maxHp))*677), 1), 5847);
+
+	if(index==0){
+	game.log(trigger.card,'Initial');
+	if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
+	var z=Math.min(lib.config.lvx,7777777);
+	var x=(Math.floor(Math. sqrt(z/777)));		
+	var a=x+7;	
+	trigger.baseDamage*=Math.floor((1+a/100)*empire);
+	
+	}
+	
+	else{
+	game.log(trigger.card,'COMBO');
+	if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
+	var z=Math.min(lib.config.lvx,7777777);
+	var x=(Math.floor(Math. sqrt(z/777)));		
+	var a=x+7;	
+	trigger.baseDamage*=Math.floor((1+a/100)*3.5*empire);
+	}
+	},
+	},
+	
+
+
+
+
+
+
+xglyptic_m:{
 trigger:{player:'useCard'},
 forced:true,
 filter:function(event,player){ 
@@ -13850,26 +13908,37 @@ var index=player.getHistory('useCard',function(evtx){
 return evtx.card.name=='nanman'&&evtx.getParent('phaseUse')==evt;
 }).indexOf(trigger);
 
-var z=Math.min(lib.config.lvx,338351);
-var x=(Math.floor(Math. sqrt(z/777)));
-var y=((x*x*180/38.7)-0.01);
+//var z=Math.min(lib.config.lvx,338351);
+//var x=(Math.floor(Math. sqrt(z/777)));
+//var y=((x*x*180/38.7)-0.01);
+
 var calm = Math.min(Math.max(parseInt((1.01-(player.hp/player.maxHp))*677+y), 1), 5847);
 
 if(index==0){
 game.log(trigger.card,'Initial');
 if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
-
-
-trigger.baseDamage*=Math.floor(calm);
+var z=Math.min(lib.config.lvx,7777777);
+var x=(Math.floor(Math. sqrt(z/777)));      
+var a=x+7;
+trigger.baseDamage*=Math.floor((1+a/100)*calm);
 }
 
 else{
 game.log(trigger.card,'COMBO');
 if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
-trigger.baseDamage*=Math.floor(3.5*calm);
+var z=Math.min(lib.config.lvx,7777777);
+var x=(Math.floor(Math. sqrt(z/777)));      
+var a=x+7;
+trigger.baseDamage*=Math.floor((1+a/100)*4.5*calm);
 }
 },
 },
+
+
+
+
+
+
 
 
 dairsonshone:{
