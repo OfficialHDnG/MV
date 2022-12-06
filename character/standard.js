@@ -448,7 +448,7 @@ FireExterm:{
 		return event&&event.source;
 	},
 	content:function(){
-		game.broadcastAll('createDialog',event.videoId,'"The fires routinely surround the Wild...it cares not what it burns"');	
+		game.broadcastAll('createDialog',event.videoId,'Boss is burned by fires from The Wild!');	
 		game.delay(2);
 		trigger.source.damage(238238/97);
 	},
