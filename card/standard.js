@@ -1,4 +1,4 @@
-﻿
+
 'use strict';
 game.import('card',function(lib,game,ui,get,ai,_status){
 	return {
@@ -15,6 +15,65 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 					}
 				}
 			},
+
+
+			Dark:{
+				vanish:true,
+			},
+
+grave:{
+	content:function(){
+		var x=player.maxHp/970;
+		target.damage(x);
+	
+},		
+
+
+},
+
+
+			cold:{
+				audio:true,
+				fullskin:true,
+				type:'delay',
+				cardnature:'thunder',
+				modTarget:function(card,player,target){
+					return lib.filter.judge(card,player,target);
+				},
+				enable:function(card,player){
+					return player.canAddJudge(card);
+				},
+				filterTarget:function(card,player,target){
+					return (lib.filter.judge(card,player,target)&&player==target);
+				},
+				selectTarget:[-1,-1],
+				judge:function(card){
+					if(get.number(card)!='6') return -6;
+					return 0;
+				},
+				effect:function(){
+					'step 0'
+						if(result.bool==false){					
+						
+						if(player.countCards('hes',{number:'6'})>1){
+							game.broadcastAll('createDialog',event.videoId, 'Your Blaze Keeps you Warm!');
+							game.delay(2);
+						}
+						else{player.damage(200000/97)}
+					}
+					'step 1'
+					player.addJudgeNext(card);
+				},
+				cancel:function(){
+					player.addJudgeNext(card);
+				},
+			
+			},
+
+
+
+
+
 			recover:{
 				ai:{
 					result:{
@@ -76,6 +135,217 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 
 
 
+pande:{
+	filterTarget:function(card,player,target){
+		return target!=player;
+	},
+	content:function(){
+		'step 0'
+		if(target.hp>target.maxHp/2){
+			target.damage(300000/97);
+		}
+	
+},			
+},
+
+pandef:{
+	filterTarget:function(card,player,target){
+		return target!=player;
+	},
+	content:function(){
+	
+	
+		if(target.countCards('h')){
+			target.damage(300000/97);
+		}		
+},			
+},
+
+
+
+
+			diaobingqianjiang:{
+				fullskin:true,
+				type:'trick',
+				enable:true,
+				//vanish:true,
+				selectTarget:-1,
+				filterTarget:function(card,player,target){
+					return player==target||target.countCards('h');
+				},
+				contentBefore:function(){
+					"step 0"
+					game.delay();
+					player.draw();
+					"step 1"
+					if(get.is.versus()){
+						player.chooseControl('顺时针','逆时针',function(event,player){
+							if(player.next.side==player.side) return '逆时针';
+							return '顺时针';
+						}).set('prompt','选择'+get.translation(card)+'的结算方向');
+					}
+					else{
+						event.goto(3);
+					}
+					"step 2"
+					if(result&&result.control=='顺时针'){
+						var evt=event.getParent();
+						evt.fixedSeat=true;
+						evt.targets.sortBySeat();
+						evt.targets.reverse();
+						if(evt.targets[evt.targets.length-1]==player){
+							evt.targets.unshift(evt.targets.pop());
+						}
+					}
+					"step 3"
+					ui.clear();
+					var cards=get.cards(5);
+					var dialog=ui.create.dialog('TrainsInSky',cards,true);
+					_status.dieClose.push(dialog);
+					dialog.videoId=lib.status.videoId++;
+					game.addVideo('cardDialog',null,['调兵遣将',get.cardsInfo(cards),dialog.videoId]);
+					event.getParent().preResult=dialog.videoId;
+				},
+				content:function(){
+					"step 0"
+					for(var i=0;i<ui.dialogs.length;i++){
+						if(ui.dialogs[i].videoId==event.preResult){
+							event.dialog=ui.dialogs[i];break;
+						}
+					}
+					if(!event.dialog||!target.countCards('h')){
+						event.finish();
+						return;
+					}
+					var minValue=20;
+					var hs=target.getCards('h');
+					for(var i=0;i<hs.length;i++){
+						minValue=Math.min(minValue,get.value(hs[i],target));
+					}
+					if(target.isUnderControl(true)){
+						event.dialog.setCaption('Access 1 LoreSong, and Switch it with 1 of Yours');
+					}
+					var next=target.chooseButton(function(button){
+						var list=target.getEnemies();
+						for (var i=0;i<list.length;i++){
+							if (list[i].getEquip(5)&&list[i].getEquip(5).name=='shanrangzhaoshu') return 0;
+						}
+						return get.value(button.link,_status.event.player)-minValue;
+					});
+					next.set('dialog',event.preResult);
+					next.set('closeDialog',false);
+					next.set('dialogdisplay',true);
+					"step 1"
+					event.dialog.setCaption('  ');
+					if(result.bool){
+						event.button=result.buttons[0];
+						target.chooseCard('Which of your LoreSong will you send to gain '+get.translation(result.links),true).ai=function(card){
+							return -get.value(card);
+						}
+					}
+					else{
+						target.popup('不换');
+						event.finish();
+					}
+					"step 2"
+					if(result.bool){
+						target.lose(result.cards,ui.special);
+						target.$throw(result.cards);
+
+						game.log(target,'用',result.cards,'替换了',event.button.link);
+						target.gain(event.button.link);
+						target.$gain2(event.button.link);
+						event.dialog.buttons.remove(event.button);
+						event.dialog.buttons.push(ui.create.button(result.cards[0],'card',event.button.parentNode));
+						event.button.remove();
+					}
+					"step 3"
+					game.delay(2);
+				},
+				contentAfter:function(){
+					'step 0'
+					event.dialog=get.idDialog(event.preResult);
+					if(!event.dialog){
+						event.finish();
+						return;
+					}
+					var nextSeat=_status.currentPhase.next;
+					var att=get.attitude(player,nextSeat);
+					if(player.isUnderControl(true)&&!_status.auto){
+						event.dialog.setCaption('System will loop! Which LoreSongs do you want in your near-future destinations?');
+					}
+					var next=player.chooseButton([1,event.dialog.buttons.length],event.dialog);
+					next.ai=function(button){
+						if(att>0){
+							return get.value(button.link,nextSeat)-5;
+						}
+						else{
+							return 5-get.value(button.link,nextSeat);
+						}
+					}
+					next.set('closeDialog',false);
+					next.set('dialogdisplay',true);
+					'step 1'
+					if(result&&result.bool&&result.links&&result.links.length){
+						for(var i=0;i<result.buttons.length;i++){
+							event.dialog.buttons.remove(result.buttons[i]);
+						}
+						var cards=result.links.slice(0);
+						while(cards.length){
+							ui.cardPile.insertBefore(cards.pop(),ui.cardPile.firstChild);
+						}
+						game.log(player,'将'+get.cnNumber(result.links.length)+'张牌置于牌堆顶');
+					}
+					for(var i=0;i<event.dialog.buttons.length;i++){
+						event.dialog.buttons[i].link.discard();
+					}
+					'step 2'
+					var dialog=event.dialog;
+					dialog.close();
+					_status.dieClose.remove(dialog);
+					game.addVideo('cardDialog',null,event.preResult);
+				},
+				ai:{
+					wuxie:function(){
+						return 0;
+					},
+					basic:{
+						order:2,
+						useful:[3,1],
+						value:[5,1]
+					},
+					result:{
+						player:function(player,target){
+							if (game.players.length>2&&player.hasFriend()){
+								var list=player.getEnemies();
+								for (var i=0;i<list.length;i++){
+									if (list[i].getEquip(5)&&list[i].getEquip(5).name=='shanrangzhaoshu') return 0;
+								}
+							}
+							return 1;
+						},
+						target:function(player,target){
+							if(target.countCards('h')==0) return 0;
+							if (game.players.length>2&&player.hasFriend()){
+								var list=player.getEnemies();
+								for (var i=0;i<list.length;i++){
+									if (list[i].getEquip(5)&&list[i].getEquip(5).name=='shanrangzhaoshu') return 0;
+								}
+							}
+							return (Math.sqrt(target.countCards('h'))-get.distance(player,target,'absolute')/game.countPlayer()/3)/2;
+						}
+					},
+					tag:{
+						loseCard:1,
+						multitarget:1
+					}
+				}
+			},
+
+
+
+
+
 			dongzhuxianji:{
 				audio:true,
 				fullskin:true,
@@ -123,6 +393,15 @@ game.import('card',function(lib,game,ui,get,ai,_status){
 			},			
 			},
 			
+
+			tsafe:{
+				type:'basic',
+				content:function(){
+					target.tempHide();
+			},
+			},
+
+
 
 			andgen:{
 				type:'basic',
@@ -3315,7 +3594,7 @@ xelema:{
 					}
 				},
 			},
-			lebu:{
+			xlebu:{
 				audio:true,
 				fullskin:true,
 				type:'delay',
@@ -3357,6 +3636,26 @@ xelema:{
 					}
 				}
 			},
+
+
+
+
+			lebu:{
+				audio:true,
+				fullskin:true,
+				type:'delay',
+				filterTarget:function(card,player,target){
+					return (lib.filter.judge(card,player,target)&&player!=target);
+				},			
+				effect:function(){
+						player.skip('phaseUse');
+				},
+				
+			},
+
+
+
+
 			shandian:{
 				audio:true,
 				fullskin:true,
@@ -4393,7 +4692,7 @@ xelema:{
 			wanjian:'ΨNyeve:Empire',
 			wuzhong:'无中生有',
 			juedou:'SkyWar',
-			
+			diaobingqianjiang:'Train Pass to Ride 400 Floors in the Sky!',
 			gultc:'審',
 			mgultc:'禧',
 			taoyuan_bg:'园',
