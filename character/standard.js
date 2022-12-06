@@ -438,21 +438,6 @@ var x=lib.config.lva;
 			},},
 
 
-WordsofYemog:{
-	enable:'phaseUse',
-	filterTarget:function(card,player,target){
-		//if(target=player) return false;
-		return true;
-	},
-	content:function(){
-		var x=lib.config.expe;
-		var y=(target.hp)-1;
-		var z=Math.min(x,y);
-		var a=x-z;
-		target.damage(z/97);
-		game.saveConfig('expe',a)
-
-},},
 
 
 
@@ -463,6 +448,8 @@ FireExterm:{
 		return event&&event.source;
 	},
 	content:function(){
+		game.broadcastAll('createDialog',event.videoId,'"The fires routinely surround the Wild...it cares not what it burns"');	
+		game.delay(2);
 		trigger.source.damage(238238/97);
 	},
 },
