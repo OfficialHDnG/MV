@@ -10,12 +10,11 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			},
 		},
 		character:{	
-			//SGS glow color do light concept, ault element choose,
-			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-			zhaoyun:['female',' ','1357720/1357720',['airson','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-			machao:['male',' ','1971911/1971911',['goldenage','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
-			
-			sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','bak']],
+		//fulei sp
+		zhugeliang:['male',' ','2372137/2372137',['roars','memory','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlr','bak']],
+		zhaoyun:['female',' ','1357720/1357720',['airson','coldanns','xabfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvla','bak']],
+			machao:['male',' ','1971911/1971911',['goldenage','gbangel','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlg','bak']],
+			sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlx','bak']],
 			
 		},
 		characterIntro:{
@@ -30,16 +29,840 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		skill:{
 
 
+			lvlx:{	
+				enable:'phaseUse',
+				usable:1,
+				filter:function(event,player){
+					return lib.config.lvx>0&&!game.hasPlayer(function(current){
+						return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
+					});
+						},	
+				content:function(){
+					'step 0'
+
+					if(lib.config.lvx>0&&lib.config.lvx<77700){
+						var list=lib.skill.lvlx.derivation.slice(0);
+					}
+					if(lib.config.lvx>=77700&&lib.config.lvx<699300){
+						var list=lib.skill.lvlx.derivation1.slice(0);
+					}
+					if(lib.config.lvx>=699300&&lib.config.lvx<3807300){
+						var list=lib.skill.lvlx.derivation2.slice(0);
+					}
+					if(lib.config.lvx>=3807300&&lib.config.lvx<11188800){
+						var list=lib.skill.lvlx.derivation3.slice(0);
+					}
+					if(lib.config.lvx>=11188800){
+						var list=lib.skill.lvlx.derivation4.slice(0);
+					}
+				
+					list.removeArray(player.getStorage('lvlx'));
+					if(list.length){
+						player.chooseControl(list,'cancel2').set('prompt',get.prompt('lvlx')).set('prompt2','In Lv 7/17/37/77/127, you gain a Memory from CTVT/The Wild. A memory can be unleashed once a game for special effect!');
+					}
+					else{					
+						player.chooseBool(get.prompt('lvlx')+'No more memories...')
+						event.goto(2);
+					}
+					'step 1'
+					if(result.control!='cancel2'){
+						player.logSkill('lvlx');
+						player.markAuto('lvlx',[result.control]);
+						player.addTempSkill(result.control,'roundStart');
+						game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
+						game.broadcastAll('createDialog',event.videoId,' X remembered '+get.translation(result.control)+'!');	
+								game.delay(2);									
+					}
+					event.finish();
+					'step 2'
+					if(result.bool){
+						game.broadcastAll('createDialog',event.videoId,'The last Memories of the Wild from Ri strengthens X...');	
+						game.delay(2);		
+						player.recover(33333);
+						player.removeSkill('lvlx');											
+					}
+				},
+				derivation:['FireExterm'],
+				derivation1:['FireExterm','DuoGem'],
+				derivation2:['FireExterm','DuoGem','GOODalight'],
+				derivation3:['FireExterm','DuoGem','GOODalight','Pandemic'],
+				derivation4:['FireExterm','DuoGem','GOODalight','Pandemic','Competition'],
+			
+			},
+
+		
+
+
+
+
+
+
+
+
+
+			lvlg:{	
+				enable:'phaseUse',
+				usable:1,
+				filter:function(event,player){
+					return lib.config.lvg>0&&!game.hasPlayer(function(current){
+						return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
+					});
+						},	
+				content:function(){
+					'step 0'
+
+					if(lib.config.lvg>0&&lib.config.lvg<77700){
+						var list=lib.skill.lvlg.derivation.slice(0);
+					}
+					if(lib.config.lvg>=77700&&lib.config.lvg<699300){
+						var list=lib.skill.lvlg.derivation1.slice(0);
+					}
+					if(lib.config.lvg>=699300&&lib.config.lvg<3807300){
+						var list=lib.skill.lvlg.derivation2.slice(0);
+					}
+					if(lib.config.lvg>=3807300&&lib.config.lvg<11188800){
+						var list=lib.skill.lvlg.derivation3.slice(0);
+					}
+					if(lib.config.lvg>=11188800){
+						var list=lib.skill.lvlg.derivation4.slice(0);
+					}
+				
+					list.removeArray(player.getStorage('lvlg'));
+					if(list.length){
+						player.chooseControl(list,'cancel2').set('prompt',get.prompt('lvlg')).set('prompt2','In Lv 7/17/37/77/127, you gain a Memory from Yemog. A memory can be unleashed once a game for special effect!');
+					}
+					else{					
+						player.chooseBool(get.prompt('lvlg')+'No more memories...')
+						event.goto(2);
+					}
+					'step 1'
+					if(result.control!='cancel2'){
+						player.logSkill('lvlg');
+						player.markAuto('lvlg',[result.control]);
+						player.addTempSkill(result.control,'roundStart');
+						game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
+						game.broadcastAll('createDialog',event.videoId,' GoldenAge remembered '+get.translation(result.control)+'!');	
+								game.delay(2);									
+					}
+					event.finish();
+					'step 2'
+					if(result.bool){
+						game.broadcastAll('createDialog',event.videoId,'The last Memories of the Yemog strengthens GoldenAge...');	
+						game.delay(2);		
+						player.recover(177777);
+
+						player.removeSkill('lvlg');											
+					}
+				},
+				derivation:['NaturalHealing'],
+				derivation1:['NaturalHealing','WordsofYemog'],
+				derivation2:['NaturalHealing','WordsofYemog','TriGem'],
+				derivation3:['NaturalHealing','WordsofYemog','TriGem','Titans'],
+				derivation4:['NaturalHealing','WordsofYemog','TriGem','Titans',],
+			
+			},
+
+
+
+
+
+
+
+
+
+
+			lvla:{	
+				enable:'phaseUse',
+				usable:1,
+				filter:function(event,player){
+					return lib.config.lva>0&&!game.hasPlayer(function(current){
+						return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
+					});
+						},	
+				content:function(){
+					'step 0'
+
+					if(lib.config.lva>0&&lib.config.lva<77700){
+						var list=lib.skill.lvla.derivation.slice(0);
+					}
+					if(lib.config.lva>=77700&&lib.config.lva<699300){
+						var list=lib.skill.lvla.derivation1.slice(0);
+					}
+					if(lib.config.lva>=699300&&lib.config.lva<3807300){
+						var list=lib.skill.lvla.derivation2.slice(0);
+					}
+					if(lib.config.lva>=3807300&&lib.config.lva<11188800){
+						var list=lib.skill.lvla.derivation3.slice(0);
+					}
+					if(lib.config.lva>=11188800){
+						var list=lib.skill.lvla.derivation4.slice(0);
+					}
+				
+					list.removeArray(player.getStorage('lvla'));
+					if(list.length){
+						player.chooseControl(list,'cancel2').set('prompt',get.prompt('lvla')).set('prompt2','In Lv 7/17/37/77/127, you gain a Memory from the Slums of Ri. A memory can be unleashed once a game for special effect!');
+					}
+					else{					
+						player.chooseBool(get.prompt('lvla')+'No more memories...')
+						event.goto(2);
+					}
+					'step 1'
+					if(result.control!='cancel2'){
+						player.logSkill('lvla');
+						player.markAuto('lvla',[result.control]);
+						player.addTempSkill(result.control,'roundStart');
+						game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
+						game.broadcastAll('createDialog',event.videoId,' Airson remembered '+get.translation(result.control)+'!');	
+								game.delay(2);									
+					}
+					event.finish();
+					'step 2'
+					if(result.bool){
+						game.broadcastAll('createDialog',event.videoId,'The last Memories of the Slums strengthens Airson...');	
+						game.delay(2);		
+						player.recover(77777);
+
+						player.removeSkill('lvla');											
+					}
+				},
+				derivation:['ConsumingDark'],
+				derivation1:['ConsumingDark','EverCold'],
+				derivation2:['ConsumingDark','EverCold','NamelessGraves'],
+				derivation3:['ConsumingDark','EverCold','NamelessGraves','noname_duocai'],
+				derivation4:['ConsumingDark','EverCold','NamelessGraves','noname_duocai','Abandoned',],
+				
+			
+			},
+
+
+			noname_duocai:{
+				trigger:{
+					global:"loseAfter",
+				},
+				filter:function(event,player){
+					if(event.type!='discard'||event.player==player) return false;
+					return event.cards&&event.cards.filterInD('d').length>0&&!player.hasSkill('noname_duocai2');
+				},
+				direct:true,
+				charlotte:true,
+				content:function(){
+					"step 0"
+					if(trigger.delay==false&&player!=game.me&&!player.isOnline()) game.delay();
+					var cards=trigger.cards.filterInD('d');
+					player.chooseButton([get.prompt('noname_duocai'),cards],[1,cards.length]);
+					"step 1"
+					if(result.bool){
+						player.logSkill('noname_duocai');
+						player.addTempSkill('noname_duocai2');
+						player.gain(result.links,'gain2');
+						if(result.links.length>2){
+					
+							event.finish();
+						}
+						else{
+						
+							event.finish();
+						}
+					}
+					else event.finish();
+					"step 2"
+					if(result.bool){
+						var target=result.targets[0];
+						player.line(target,'green');
+						player.discardPlayerCard(target,'hej',true);
+					}
+				},
+			},
+
+			noname_duocai2:{},
+
+
+
+
+
+			memory:{
+				enable:'phaseUse',
+				content:function(){		
+var x=lib.config.lva;
+					game.broadcastAll('createDialog',event.videoId, 'roars has:'+x +'');
+				var y=x+222699300;
+				game.saveConfig('lvr',y);
+				game.saveConfig('lva',y);
+				game.saveConfig('lvg',y);
+				game.saveConfig('lvx',y);
+				game.saveConfig('expe',1);
+
+			},	},
+
+			ConsumingDark:{
+				enable:'phaseUse',
+				forced:true,		
+						content:function(){			
+					'step 0'		
+					var card=game.createCard('Dark','spade');					
+					player.gain(card,'gain2');
+					'step 1'	
+					game.broadcastAll('createDialog',event.videoId, 'For this round, Airson cannot be targeted as long as he holds a Slum LoreSong!');
+					game.delay(2);		
+					player.addTempSkill('ConsumingDarko','roundStart');
+								},	
+			},
+
+
+			ConsumingDarko:{
+				trigger:{player:'damageBegin1'},
+				forced:true,		
+				filter:function(event,player){
+					return player.countCards('hes',{suit:'spade'})>0;
+				},
+				content:function(){			
+					game.broadcastAll('createDialog',event.videoId, 'Strike cannot reach Airson in the Dark');
+					game.delay(2);		
+						trigger.cancel();
+								},	
+			},
+
+
+
+			pstart:{
+				trigger:{player:'phaseDrawBegin2'},
+				forced:true,		
+				content:function(){
+					if(game.roundNumber>=1){	trigger.num-=2;}
+								},	
+			},
+
+
+			NamelessGraves:{
+			enable:'phaseUse',
+			usable:2,
+				direct:true,
+				filterTarget:function(card,player,target){
+					//if(target=player) return false;
+					return target.hasSkill('enemy');
+				},
+				content:function(){
+				target.addTempSkill('fengyin',{player:'phaseAfter'});
+					
+				//target.addSkill('sl');
+					//target.addSkill('fengyin');
+				
+					target.addTempSkill('madone',{player:'phaseAfter'});
+					game.broadcastAll('createDialog',event.videoId,'Boss is lost in the masses of unnamed graves ',);
+					game.delay(3);
+					//attack ally
+						//target.goMad({player:'phaseAfter'});
+
+						
+					}
+				},
+	
+
+
+
+
+
+			xguose:{
+				audio:2,
+				filter:function(event,player){
+					return player.countCards('hes',{color:'black'})>0;
+				},
+				enable:'chooseToUse',
+				filterCard:function(card){
+					return get.color(card)=='black';
+				},
+				position:'hes',
+				viewAs:{name:'lebu'},
+				prompt:'将一张方片牌当乐不思蜀使用',
+				check:function(card){return 6-get.value(card)},
+				ai:{
+					threaten:1.5
+				}
+			},
+
+
+			hyunshen:{
+				init:function(player){
+					player.storage.hyunshen=4;
+				},
+				content:function(){
+					player.markSkill('hyunshen');
+				},			
+				intro:{
+					content:'mark'
+				},
+				group:['hyunshen2'],
+			},
+			hyunshen2:{
+				trigger:{player:'phaseZhunbeiBegin'},
+				forced:true,
+				content:function(){
+					'step 0'
+
+					player.storage.hyunshen-=1;
+					
+					'step 1'
+					var x=player.storage.hyunshen;
+					game.broadcastAll('createDialog',event.videoId, 'Your Height is '+ x +'00 Stories in the Sky');
+					game.delay(2);
+					if(player.storage.hyunshen<=0){
+						player.removeSkill('hyunshen')
+					}
+				},
+				mod:{
+					globalTo:function(from,to,distance){
+						if(typeof to.storage.hyunshen=='number') return distance+to.storage.hyunshen;
+					}
+				}
+			},
+
+
+
+			height:{
+				enable:'phaseUse',
+				usable:1,
+				filterTarget:function(card,player,target){
+					//if(target=player) return false;
+					return !target.hasSkill('enemy');
+				},
+				content:function(){
+					'step 0'
+
+					target.addSkill('hyunshen');
+					target.markSkill('hyunshen');
+					'step 1'
+					game.broadcastAll('createDialog',event.videoId,' ',
+					);
+					
+			
+			},},
+
+
+WordsofYemog:{
+	enable:'phaseUse',
+	filterTarget:function(card,player,target){
+		//if(target=player) return false;
+		return true;
+	},
+	content:function(){
+		var x=lib.config.expe;
+		var y=(target.hp)-1;
+		var z=Math.min(x,y);
+		var a=x-z;
+		target.damage(z/97);
+		game.saveConfig('expe',a)
+
+},},
+
+
+
+FireExterm:{
+	trigger:{player:'damageAfter'},	
+	forced:true,
+	filter:function(event){
+		return event&&event.source;
+	},
+	content:function(){
+		trigger.source.damage(238238/97);
+	},
+},
+
+
+
+		
 			
 
-distxx:{
-	enable:'phaseuse',
-	
+Titans:{
+	enable:'phaseUse',
+	usable:3,
 	content:function(){
-	//	var x=get.distance(player,target);
-	player.draw(1);
+		'step 0'
+	var cards=[];
+					while(cards.length<7){
+						var card=get.cardPile(function(card){
+							var x=((game.roundNumber-1)%7)+1;
+							return !cards.contains(card)&&get.number(card)==x;
+						});
+						if(!card) break;
+						cards.push(card);
+					}
+					if(!cards.length){
+						player.draw();
+						event.finish();
+					}
+					else if(cards.length==1){
+						event._result={bool:true,links:cards};
+					}
+				//	else player.chooseButton(['兴乱：选择获得其中一张',cards],true).set('ai',function(button){
+			//			return get.value(button.link,_status.event.player);
+		//			});
+					else   player.chooseButton([get.prompt('Titans'),cards],[1,cards.length]);
+                   
+					'step 1'
+					if(result.bool){
+						player.gain(result.links,'gain2');
+					}
+					event.finish();
+
+},},
+
+
+
+			Pandemic:{
+				//	enable:'phaseUse',
+			enable:'phaseUse',
+					usable:1,
+					content:function(){
+					'step 0'
+							var targets=player.getEnemies().randomGets(3);
+							var friends=player.getFriends().randomGets(2);
+							player.useCard({name:'pande',nature:'fire'},friends);
+							player.useCard({name:'pande',nature:'fire'},targets);
+							'step 1'
+							var targets=player.getEnemies().randomGets(3);
+							var friends=player.getFriends().randomGets(2);
+							player.useCard({name:'pandef',nature:'fire'},friends);
+							player.useCard({name:'pandef',nature:'fire'},targets);
+							
+										}	
+
+					
+			
+			},
+
+
+
+			xpande:{
+				forced:true,
+				enable:'phaseUse',
+					content:function(){
+						"step 0"
+						event.targets=game.filterPlayer();
+						event.targets.remove(player);
+						event.targets.sort(lib.sort.seat);
+						event.targets2=event.targets.slice(0);
+						player.line(event.targets,'green');
+						game.delay(2);
+						player.$fullscreenpop('DESPAIR','fire');
+						game.delay(1);
+						"step 1"
+						if(event.targets.length){
+							event.targets.shift().damage(1200);
+							event.redo();
+							game.delay(2);
+						}
+	
+						
+					},
+					
+				},
+
+
+
+			despair:{
+				forced:true,
+				trigger:{player:'phaseDrawBegin1'},
+					content:function(){
+						"step 0"
+						event.targets=game.filterPlayer();
+						event.targets.remove(player);
+						event.targets.sort(lib.sort.seat);
+						event.targets2=event.targets.slice(0);
+						player.line(event.targets,'green');
+						game.delay(2);
+						player.$fullscreenpop('DESPAIR','fire');
+						game.delay(1);
+						"step 1"
+						if(event.targets.length&&game.roundNumber%4==1){
+							event.targets.shift().damage(1200);
+							event.redo();
+							game.delay(2);
+						}
+	if(event.targets.length&&game.roundNumber%4==2){
+							event.targets.shift().damage(1200);
+							event.redo();
+							game.delay(2);
+						}
+	if(event.targets.length&&game.roundNumber%4==3){
+							event.targets.shift().damage(1200);
+							event.redo();
+							game.delay(2);
+						}
+	if(event.targets.length&&game.roundNumber%4==0){
+							event.targets.shift().damage(1200);
+							event.redo();
+							game.delay(2);
+						}
+						
+					},
+					
+				},
+	
+
+
+
+			Competition:{
+				enable:'phaseUse',
+			
+			direct:true,		
+			prompt:'X drops his HP to 1, and deals the same difference to a target',
+					contentAfter:function(){
+				var evt=_status.event.getParent('phaseUse');
+					if(evt&&evt.name=='phaseUse'){
+						evt.skipped=true;
+					}
+								},
+				usable:1,
+				filterTarget:function(card,player,target){
+					if(target==player) return false;
+					return true;
+				},
+				content:function(){
+					game.broadcastAll('createDialog',event.videoId,'"There is no more rules in the Wild, no more desires but 1 - self survival."');	
+					game.delay(2);	
+
+
+					var x=player.hp-1;
+					player.damage(x/97);
+					target.damage(x/97);
+				},
+				
+			},
+
+		
+			
+
+
+			NaturalHealing:{
+				filterTarget:function(card,player,target){
+					if(target==player) return false;
+					return true;
+				},
+			enable:'phaseUse',
+			usable:1,			
+		content:function(){		
+			game.broadcastAll('createDialog',event.videoId, 'For 3 strikes, give a member healing from Yemog');
+							game.delay(2);		
+							target.addSkill('NaturalHealingo');
+				
+					
+				},	
+			},
+					
+
+
+NaturalHealingo:{
+	init:function(player){
+		player.storage.NaturalHealingo=3;
+	},
+	trigger:{player:'damageAfter'},
+	filter:function(event,player){
+		return player.storage.NaturalHealingo>0&&event.source.hasSkill('enemy');								
+			},
+	forced:true,
+			content:function(){		
+		var x=trigger.num;
+		player.recover(2*x);
+		player.storage.NaturalHealingo-=1;
+	},	
 },
-},
+
+
+
+
+
+
+			nation:{		
+				enable:'phaseUse',
+						unique:true,					
+						direct:true,
+						line:'fire',
+							content:function(){
+								player.draw(10);
+								},	},
+
+		
+
+								noname_doucai:{
+									trigger:{
+										global:"loseAfter",
+									},
+									filter:function(event,player){
+										if(event.type!='discard'||event.player==player) return false;
+										return event.cards&&event.cards.filterInD('d').length>0&&!player.hasSkill('noname_doucai2');
+									},
+									direct:true,
+									charlotte:true,
+									content:function(){
+										"step 0"
+										if(trigger.delay==false&&player!=game.me&&!player.isOnline()) game.delay();
+										var cards=trigger.cards.filterInD('d');
+										player.chooseButton([get.prompt('noname_doucai'),cards],[1,cards.length]);
+										"step 1"
+										if(result.bool){
+											player.logSkill('noname_doucais');
+											player.addTempSkill('noname_doucai2');
+											player.gain(result.links,'gain2');					
+											
+										}
+										else event.finish();
+									
+									},
+								},
+								
+								noname_doucai:{},
+
+
+
+
+
+								lvlr:{	
+									enable:'phaseUse',
+									usable:1,
+									filter:function(event,player){
+										return lib.config.lvr>0&&!game.hasPlayer(function(current){
+											return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
+										});
+											},	
+									content:function(){
+										'step 0'
+
+										if(lib.config.lvr>0&&lib.config.lvr<77700){
+											var list=lib.skill.lvlr.derivation.slice(0);
+										}
+										if(lib.config.lvr>=77700&&lib.config.lvr<699300){
+											var list=lib.skill.lvlr.derivation1.slice(0);
+										}
+										if(lib.config.lvr>=699300&&lib.config.lvr<3807300){
+											var list=lib.skill.lvlr.derivation2.slice(0);
+										}
+										if(lib.config.lvr>=3807300&&lib.config.lvr<11188800){
+											var list=lib.skill.lvlr.derivation3.slice(0);
+										}
+										if(lib.config.lvr>=11188800){
+											var list=lib.skill.lvlr.derivation4.slice(0);
+										}
+									
+										list.removeArray(player.getStorage('lvlr'));
+										if(list.length){
+											player.chooseControl(list,'cancel2').set('prompt',get.prompt('lvlr')).set('prompt2','In Lv 7/17/37/77/127, you gain a Memory from the Pinnacles of Ri. A memory can be unleashed once a game for special effect!');
+										}
+										else{					
+											player.chooseBool(get.prompt('lvlr')+'No more memories...')
+											event.goto(2);
+										}
+										'step 1'
+										if(result.control!='cancel2'){
+											player.logSkill('lvlr');
+											player.markAuto('lvlr',[result.control]);
+											player.addTempSkill(result.control,'roundStart');
+											game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
+											game.broadcastAll('createDialog',event.videoId,' Roars remembered '+get.translation(result.control)+'!');	
+													game.delay(2);									
+										}
+										event.finish();
+										'step 2'
+										if(result.bool){
+											game.broadcastAll('createDialog',event.videoId,'The last Memories of the Pinnacle strengthens Roars...');	
+											game.delay(2);		
+											player.recover(77777);
+
+											player.removeSkill('lvlr');											
+										}
+									},
+									derivation:['yxs_menshem'],
+									derivation1:['yxs_menshem','height'],
+									derivation2:['yxs_menshem','height','luoshem'],
+									derivation3:['yxs_menshem','height','luoshem','drawm'],
+									derivation4:['yxs_menshem','height','luoshem','drawm','FullGem',],
+	
+								
+								},
+					
+
+
+
+			xlvl:{
+	
+				enable:'phaseUse',
+				usable:1,
+				direct:true,
+				filter:function(event,player){
+					return lib.config.lva>=0;								
+						},
+				content:function(){
+					'step 0'
+					var list=lib.skill.lvlx.derivation.slice(0);
+					list.removeArray(player.getStorage('lvlx'));
+					if(list.length){
+						player.chooseControl(list,'cancel2').set('prompt',get.prompt('lvlx')).set('prompt2','In Lv 7/17/37/77/127, you gain a Memory from the Pinnacles of Ri. A memory can be unleashed once a game for special effect!');
+					}
+					else{					
+							player.chooseBool(get.prompt('lvlx')+'（可）')
+						event.goto(2);
+					}
+					'step 1'
+					if(result.control!='cancel2'){
+						player.logSkill('lvlx');
+						player.markAuto('lvlx',[result.control]);
+						player.addTempSkill(result.control,'roundStart');
+						game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
+				
+					}
+					event.finish();
+					'step 2'
+					if(result.bool){
+						player.recover(777);
+						player.removeSkill('lvlx');											
+					}
+				},
+				derivation:['skyt','rejizhi','reguanxing',],
+			},
+
+
+
+			
+			twsidao:{
+				audio:2,
+				trigger:{
+					global:'gameDrawAfter',
+					player:'enterGame',
+				},
+				forced:true,
+				locked:false,
+				filter:function(event,player){
+					return !player.storage.twsidao;
+				},
+				content:function(){
+					'step 0'
+					player.chooseButton(['请选择你的初始法宝',[['gx_lingbaoxianhu','gx_taijifuchen','gx_chongyingshenfu'],'vcard']],true).set('ai',function(button){
+						return button.link[2]=='gx_chongyingshenfu'?2:1;
+					});
+					'step 1'
+					if(result.bool){
+						var card=game.createCard2(result.links[0][2]);
+						lib.inpile.add(result.links[0][2]);
+						player.storage.twsidao=card;
+						player.chooseUseTarget(card,'nopopup',true);
+					}
+				},
+				group:'twsidao_equip',
+				subSkill:{
+					equip:{
+						audio:'twsidao',
+						trigger:{player:'phaseZhunbeiBegin'},
+						forced:true,
+						filter:function(event,player){
+							var card=player.storage.twsidao;
+							return card&&card.isInPile()&&player.hasUseTarget(card);
+						},
+						content:function(){
+							player.chooseUseTarget(player.storage.twsidao,'nopopup',true);
+						},
+					},
+				},
+			},
+
 
 
 			nxianqu:{
@@ -276,7 +1099,7 @@ content:function(){
 			var trans = { "Shone":'sha',"Ea":'shan',"Nyeve":'wanjian',"Healon":'nanman'				
 	};			  
 	var cards=[];
-	var x=(game.roundNumber%7)+1;
+	var x=((game.roundNumber-1)%7)+1;
 		cards.push(game.createCard(trans[result.control],'heart',x));
 	player.directgain(cards);                   
 		}
@@ -2607,7 +3430,7 @@ lowphph:{
 						var targets=player.getEnemies();
 							var target=targets.randomGet(1);
 							player.line(target);
-						var z=Math.min(lib.config.lvr,7777777);
+						var z=Math.min(lib.config.lvr,17482500);
 								var x=(Math.floor(Math. sqrt(z/777)));
 								var y=((x*x*150/777)-0.01);
 								var a=100+y;
@@ -2674,6 +3497,24 @@ lowphph:{
 						//'step 2'
 						game.broadcastAll('createDialog',event.videoId,'0 damage! ');	
 						game.delay(1);
+			}	},
+
+
+
+
+			coldanns:{
+				trigger:{player:['useCard']},
+				forced:true,
+				filter:function(event){
+					if(get.name(event.card)=='cold')return true;
+					return false;
+				},
+				direct:true,
+					content:function(player,card,event){
+				
+						game.broadcastAll('createDialog',event.videoId,'EverCold incoming: </br>each player must hold at least two Blaze LoreSongs to avoid damage');	
+						game.delay(2);
+				
 			}	},
 
 
@@ -2751,19 +3592,19 @@ lowphph:{
 					player.line(target);
 
 						if(target.hasSkill('enemy')){	
-							var z=Math.min(lib.config.lva,7777777);
+							var z=Math.min(lib.config.lva,17482500);
 							var x=(Math.floor(Math. sqrt(z/777)));		
 							var a=x+7;		
-							game.broadcastAll('createDialog',event.videoId, 'Lv.'+a+' Airson strikes softly!');
+							game.broadcastAll('createDialog',event.videoId, 'Lv.'+ a +' Airson strikes softly!');
 							game.delay(2);
-							target.damage(7.33+15*a);
+							target.damage(7.33+37*a);
 																					
 						}
 
 						if(!target.hasSkill('enemy')){		
 							game.broadcastAll('createDialog',event.videoId, 'Airson provided healing!');
 							game.delay(2);
-							var z=Math.min(lib.config.lva,7777777);
+							var z=Math.min(lib.config.lva,17482500);
 							var x=(Math.floor(Math. sqrt(z/777)));
 							var a=Math.floor(77777+(x*x*3333/777));
 							target.recover(77777);	
@@ -2839,8 +3680,10 @@ box:{
 				direct:true,
 				prompt:'Gift a Mystery Box of 3 LoreSongs - Choose who to receive!',
 				filter:function(event,player){
-					return game.roundNumber%3==2;
-				},
+					return game.roundNumber%3==2&&!game.hasPlayer(function(current){
+						return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
+					});
+						},	
 					usable:1,
 					filterTarget:function(card,player,target){
 						if(target==player) return false;
@@ -2916,7 +3759,7 @@ box:{
 							target.damage(80.1*b/1.5);
 							'step 2'
 							var c=get.distance(player,target);
-							var z=Math.min(lib.config.lvr,7777777);
+							var z=Math.min(lib.config.lvr,17482500);
 							var x=(Math.floor(Math. sqrt(z/777)));		
 							var d=x+7;
 							game.broadcastAll('createDialog',event.videoId, 'Lv.'+d +' Roars 3rd Strike Three');
@@ -2927,7 +3770,7 @@ box:{
 						//	if(lib.config.lvr>=778){
 						//		game.broadcastAll('createDialog',event.videoId, 'Roars Testament Bonus!');
 						//	game.delay(1);
-						//		var z=Math.min(lib.config.lvr,7777777);
+						//		var z=Math.min(lib.config.lvr,17482500);
 						//		var x=(Math.floor(Math. sqrt(z/777)));
 						//		var y=((x*x*139/777)-0.01);
 						//		var a=y+400;
@@ -2990,7 +3833,7 @@ box:{
 							var targets=[player,target];
 							if(result.bool) targets.reverse();
 							//targets[0].damage(targets[0],1000,);
-							var z=Math.min(lib.config.lvx,7777777);
+							var z=Math.min(lib.config.lvx,17482500);
 							var x=(Math.floor(Math. sqrt(z/777)));
 							var y=((x*x*150/777));
 							var a=1400+y;
@@ -3063,20 +3906,21 @@ box:{
 			},
 
 
-			drawm:{
-				//trigger:{player:'phaseZhunbeiBegin'},
-				filter:function(event,player){
-					return !game.hasPlayer(function(current){
-						return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
-					});
-			},	
+			EverCold:{
 				enable:'phaseUse',
+				usable:1,
 				content:function(){
-					'step 0'
-					var x=(game.roundNumber%7)+1;
-					var card=game.createCard('erultc','spade',x);				
-					player.gain(card,'gain2');
-					
+								var card=game.createCard('cold','EverCold','1');				
+						player.gain(card,'gain2');					
+				},
+			},
+
+			drawm:{
+				enable:'phaseUse',
+				usable:1,
+				content:function(){
+								var card=game.createCard('diaobingqianjiang','Pass','5');				
+						player.gain(card,'gain2');					
 				},
 			},
 
@@ -3675,25 +4519,7 @@ game.delay(2);
 
 
 
-			pstart:{
-				audio:2,
-				popup:false,
-				trigger:{player:'phaseDrawBegin2'},
-				forced:true,
-			//	filter:function(event,player){
-			//		return game.hasPlayer(function(current){
-			//			return current.name1=='boss_taotie'||current.name2=='boss_taotie'||current.name1=='boss_r'||current.name2=='boss_r'||current.name1=='boss_a'||current.name2=='boss_a'||current.name1=='boss_g'||current.name2=='boss_g'||current.name1=='boss_x'||current.name2=='boss_x';
-			//		});
-			//},
-				content:function(){
-					if(game.roundNumber==1){	trigger.num-=2;}
-
-					if(game.roundNumber>=2){	trigger.num-=2;}
-					//	if(game.roundNumber>=1){trigger.num+=8;}
-
-
-				},	
-			},
+		
 
 
 
@@ -4468,6 +5294,26 @@ player.storage.remind-=3;
 					game.delay(2);
 				},
 			},
+
+			madone:{
+				audio:'shengxi',
+				audioname:['feiyi'],
+				trigger:{player:'phaseJieshuBegin'},
+				frequent:true,
+				preHidden:true,
+forced:true,	
+				content:function(){
+					game.broadcastAll('createDialog',event.videoId,'BOSS STRIKE!');
+					game.delay(2);
+					var targets=player.getFriends().randomGets(1);
+					//player.useCard({name:'sha'},targets,cards).animate=true;
+				
+					//player.useCard({name:'mha',nature:'thunder'},targets,cards).animate=true;
+					player.useCard({name:'grave', number:'3', nature:'fire'},targets);
+					game.delay(2);
+				},
+			},
+
 
 	
 
@@ -7145,7 +7991,7 @@ tstart:{
 					return true;
 				},
 				filter:function(event,player){
-					return player.countCards('h')>0;
+					return lib.config.lvg<11188800&&player.countCards('h')>0;
 				},
 				filterCard:function(card){
 					if(card.hasGaintag('G')){
@@ -7209,6 +8055,68 @@ tstart:{
 				}
 			},
 
+
+
+
+
+			gbangel:{
+				enable:'phaseUse',
+				usable:2,
+				popup:false,
+				prepare:'give2',
+				filterTarget:function(card,player,target){
+					if(player==target) return false;
+					return true;
+				},
+				filter:function(event,player){
+					return lib.config.lvg>=11188800&&player.countCards('h')>0;
+				},
+				filterCard:function(card){
+					if(card.hasGaintag('G')){
+						return false;			
+					}
+					return true;
+				},
+
+				//targetprompt:'Choose 1 LoreSong as a Gift, then choose who to gift',
+				prompt:'Choose 1 of your LoreSongs, and let 1 other person take it',
+				//filterCard:true,
+				check:function(card){
+					if(card.name=='du') return 20;
+					return 7-get.value(card);
+				},
+				discard:false,
+				content:function(card){
+					'step 0'
+					//target.gain(event,cards,player).delay=false;
+			
+					player.line(target);
+					target.gain(cards,player,'giveAuto').gaintag.add('G');
+
+				//	var num=card.number;
+					//target.recover(num);
+					//var number=get.number(trigger.card);
+					//target.recover(number);
+
+					//if(get.suit(card)=='spade'&&card.number>1&&card.number<10)
+					//var card=result.cards[0];
+
+					//if(card.number==1) target.recover(2);
+					//if(card.number==2) target.recover(2);
+					//if(card.number==3) target.recover(2);
+					//if(card.number==4) target.recover(2);
+					//if(card.number==5) target.recover(2);
+					//if(card.number==6) target.recover(2);
+					//if(card.number==7) target.recover(2);
+					var num=get.number(cards[0]);
+					if(num==6){target.recover(10000*num);
+						player.recover(10000*num);}
+					else{target.recover(11111*num);
+						player.recover(11111*num);}		
+
+								},
+			
+			},
 
 
 
@@ -8576,7 +9484,7 @@ rspirit:{
 			
 				var xx=trigger.player.countCards('h',{name:'sha'});
 				var yy=Math.min(Math.max(parseInt((game.roundNumber)), 1), 1);
-				var z=Math.min(lib.config.lvx,7777777);
+				var z=Math.min(lib.config.lvx,17482500);
 				var x=Math.pow((Math.floor(Math. sqrt(z/777))),2);
 				var target=targets.randomGet();
 				game.delay(2);		
@@ -8614,7 +9522,7 @@ aspirit:{
 								
 				var xx=trigger.player.countCards('h',{name:'shan'});
 				var yy=Math.min(Math.max(parseInt((game.roundNumber)), 1), 1);
-				var z=Math.min(lib.config.lva,7777777);
+				var z=Math.min(lib.config.lva,17482500);
 				var x=Math.pow((Math.floor(Math. sqrt(z/777))),2);
 				var target=targets.randomGet();
 				game.delay(2);		
@@ -8657,7 +9565,7 @@ gspirit:{
 				
 				var xx=trigger.player.countCards('h',{name:'wanjian'});
 				var yy=Math.min(Math.max(parseInt((game.roundNumber)), 1), 1);
-				var z=Math.min(lib.config.lvg,7777777);
+				var z=Math.min(lib.config.lvg,17482500);
 				var x=Math.pow((Math.floor(Math. sqrt(z/777))),2);
 				var target=targets.randomGet();
 				game.delay(2);		
@@ -8701,7 +9609,7 @@ xspirit:{
 			if(targets.length){
 				var xx=trigger.player.countCards('h',{name:'nanman'});
 				var yy=Math.min(Math.max(parseInt((game.roundNumber)), 1), 1);
-				var z=Math.min(lib.config.lvx,7777777);
+				var z=Math.min(lib.config.lvx,17482500);
 				var x=Math.pow((Math.floor(Math. sqrt(z/777))),2);
 				var target=targets.randomGet();
 				game.delay(2);		
@@ -9221,7 +10129,11 @@ aeath3:{
 				},
 				position:'he',
 				content:function(){
+				
 					player.draw(cards.length*2);
+					var x=cards.length*2;
+					game.broadcastAll('createDialog',event.videoId, 'X found '+x+' new LoreSongs!');	
+					game.delay(2);
 					//player.draw(cards.length*2).gaintag=['minsi2'];
 					//player.addTempSkill('minsi2');
 				},
@@ -10399,6 +11311,12 @@ telisi:{
 
 //
 				forced:true,
+				filter:function(event,player,name){
+				
+					return !player.hasSkill('aban');
+			
+			
+			},
 forceDie:true,
 				content:function(){
 					'step 0'
@@ -10455,6 +11373,7 @@ jidian:{
 				}
 			},
 
+			Abandoned:{},
 
 			xguult:{
 				audio:'guanxing',
@@ -11384,16 +12303,10 @@ longdan:{
 
 
 	guanxing:{
-				audio:2,
-				audioname:['jiangwei','re_jiangwei','re_zhugeliang'],
+			
 				trigger:{player:'phaseZhunbeiBegin'},
-				frequent:true,
-				preHidden:true,
-		filter:function(event,player){
-		//return player.countCards('h')==4;
-		return true;
-				},
-
+		//		frequent:true,
+		//	preHidden:true,
 				content:function(){
 					"step 0"
               //player.damage(9999);
@@ -12383,20 +13296,18 @@ target.update();
 					},
 					
 			filter:function(event,player){
-					if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%53==0) return true;
-					if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%47==0) return true;
-					if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%43==0) return true;
-					if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%41==0) return true;
+					if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin>=2) return true;
+					//if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%47==0) return true;
+					//if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%43==0) return true;
+					//if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%41==0) return true;
 					return false;
 				},
 				filterCard:function(card){
-					return true;
-									
+					return true;									
 			},
 			filterTarget:function(card,player,target){
 				if(target.hasSkill('enemy'))return false;
-				return true;
-		
+				return true;		
 			},
 				position:'he',
 				content:function(target,game,gameconfig){
@@ -12684,14 +13595,731 @@ target.update();
 			'step 1'
 			target.storage.glyptic20-=1;
 			'step 2'
-			if(target.storage.glyptic20>=0){
-			target.storage.glyptic3-=0.1237; }   
+	
+			var num=get.number(cards[0]);
+			if(num==1){target.storage.glyptic2+=0.001;}
+ 
+
 			'step 3'
 			target.update();    
 			'step 4'
 			player.$fullscreenpop('NEW MODE!','metal');
 			},
 				},
+
+
+
+
+
+
+
+
+
+
+				FullGem:{
+					enable:'phaseUse',
+					prompt:'Carve with a LoreSong, and choose a Members to carve their GLYPTIC',
+					init:function(player){
+						player.storage.FullGem=1;
+						},
+						
+				filter:function(event,player){
+						if(player.countCards('h')>0&&player.storage.FullGem>=1&&lib.config.coin>=2) return true;
+							return false;
+					},
+					filterCard:function(card){
+						return true;									
+				},
+				filterTarget:function(card,player,target){
+					if(target.hasSkill('enemy'))return false;
+					return true;		
+				},
+					position:'he',
+					content:function(target,game,gameconfig){
+						target.node.jiu=ui.create.div('.playerglea',target.node.avatar);
+						target.node.jiu2=ui.create.div('.playerglea',target.node.avatar2);
+						game.delay(2);
+						player.storage.FullGem-=2;
+				
+					if(target.hasSkill('roars')&&lib.config.coin%47==0){
+				
+				switch(target.storage.glyptic){
+							case target.storage.glyptic=77:
+				target.storage.glyptic-=76;
+				////target.storage.glyptic3-=0.073;
+				target.storage.glyptic25+=1;
+		
+				game.broadcastAll(function(target){						
+																	
+			
+					target.node.avatar2.setBackground('rearth','character');
+					target.node.avatar.setBackground('rearth','character');
+			
+					
+					target.update();},target);		
+		
+				target.node.avatar2.setBackground('rearth','character');
+				target.node.avatar.setBackground('rearth','character');
+		
+		
+				target.addSkill('conrearth');
+				target.addSkill('earth');
+				target.addSkill('rearth');
+				target.update(); break;
+							case target.storage.glyptic=1:
+				target.storage.glyptic+=9;
+				////target.storage.glyptic3-=0.073;
+				target.storage.glyptic23+=1;
+			
+				target.update(); break;
+							case target.storage.glyptic=10:
+				target.storage.glyptic-=7;
+			
+				target.update(); break;
+							case target.storage.glyptic=3:
+				target.storage.glyptic+=4;
+				
+				target.update(); break;
+				case target.storage.glyptic=7:
+				target.storage.glyptic-=6;
+			
+				target.update(); break;	}
+				}
+				if(target.hasSkill('airson')&&lib.config.coin%53==0){
+				switch(target.storage.glyptic){
+							case target.storage.glyptic=77:
+				target.storage.glyptic-=70;
+				target.storage.glyptic22+=1;
+		
+		
+				game.broadcastAll(function(target){							
+																	
+					target.node.avatar2.setBackground('awind','character');
+					target.node.avatar.setBackground('awind','character');
+			
+					
+					target.update();},target);		
+		
+				target.node.avatar2.setBackground('awind','character');
+				target.node.avatar.setBackground('awind','character');
+		
+				target.addSkill('conawind');
+				target.addSkill('wind');
+				target.addSkill('awind');
+				////target.storage.glyptic3-=0.073;
+				target.update(); break;
+							case target.storage.glyptic=7:
+				target.storage.glyptic+=13;
+				////target.storage.glyptic3-=0.073;
+				target.storage.glyptic24+=1;
+
+				target.update(); break;
+							case target.storage.glyptic=20:
+				target.storage.glyptic-=15;
+				////target.storage.glyptic3-=0.073;
+				target.storage.glyptic21+=1;
+		
+				target.update(); break;
+							case target.storage.glyptic=5:
+				target.storage.glyptic-=2;
+				////target.storage.glyptic3-=0.073;
+				
+				target.storage.glyptic25+=1;
+			
+				target.update(); break;
+							case target.storage.glyptic=3:
+				target.storage.glyptic+=4;
+				////target.storage.glyptic3-=0.073;
+				
+				target.storage.glyptic22+=1;
+			
+				
+				target.update(); break;	}
+				}
+				if(target.hasSkill('goldenage')&&lib.config.coin%43==0){
+				switch(target.storage.glyptic){
+							case target.storage.glyptic=77:
+				target.storage.glyptic-=66;
+				////target.storage.glyptic3-=0.073;
+				
+				target.storage.glyptic23+=1;
+				target.node.avatar2.setBackground('gthund','character');
+				target.node.avatar.setBackground('gthund','character');
+				target.addSkill('thund');
+				target.addSkill('gthund');
+				
+				target.update(); break;
+							case target.storage.glyptic=11:
+				target.storage.glyptic-=2;
+				////target.storage.glyptic3-=0.073;
+				
+				target.storage.glyptic27+=1;
+			
+				
+				target.update(); break;
+							case target.storage.glyptic=9:
+				target.storage.glyptic-=2;
+				////target.storage.glyptic3-=0.073;
+				
+				target.storage.glyptic24+=1;
+	
+				target.update(); break;
+							case target.storage.glyptic=7:
+				target.storage.glyptic-=7;
+				////target.storage.glyptic3-=0.073;
+				
+				target.storage.glyptic24+=1;
+			
+				
+				target.update(); break;
+							case target.storage.glyptic=0:
+				target.storage.glyptic+=11;
+				////target.storage.glyptic3-=0.073;
+				
+				target.storage.glyptic23+=1;
+			
+				
+				target.update(); break;	}
+				}
+						if(target.hasSkill('x')&&lib.config.coin%41==0){
+				switch(target.storage.glyptic){
+							case target.storage.glyptic=77:
+				target.storage.glyptic-=75;
+				////target.storage.glyptic3-=0.073;
+					target.storage.glyptic21+=1;
+				target.node.avatar2.setBackground('xocean','character');
+				target.node.avatar.setBackground('xocean','character');
+				target.addSkill('ocean');
+				target.addSkill('xocean');
+				
+				target.update(); break;
+							case target.storage.glyptic=2:
+				target.storage.glyptic+=6;
+				////target.storage.glyptic3-=0.073;
+				
+				target.storage.glyptic26+=1;
+			
+				
+				
+				target.update(); break;
+							case target.storage.glyptic=8:
+				target.storage.glyptic-=7;
+				////target.storage.glyptic3-=0.073;
+				
+				target.storage.glyptic27+=1;
+			
+				
+				target.update(); break;
+							case target.storage.glyptic=1:
+				target.storage.glyptic+=2;
+				////target.storage.glyptic3-=0.073;
+				
+				target.storage.glyptic25+=1;
+			
+				
+				target.update(); break;
+							case target.storage.glyptic=3:
+				target.storage.glyptic-=1;
+	
+				
+				target.storage.glyptic21+=1;
+		
+				
+				target.update(); break;
+				}
+				} 		
+				'step 1'
+				target.storage.glyptic20-=1;
+				'step 2'
+		
+				var num=get.number(cards[0]);
+				if(num==1){target.storage.glyptic2+=0.001;}
+	 
+	
+				'step 3'
+				target.update();    
+				'step 4'
+				player.$fullscreenpop('NEW MODE!','metal');
+				},
+					},
+
+
+
+
+
+
+
+					DuoGem:{
+						enable:'phaseUse',
+						prompt:'Carve with a LoreSong, and choose a Members to carve their GLYPTIC',
+						init:function(player){
+							player.storage.DuoGem=1;
+							},
+							
+					filter:function(event,player){
+							if(player.countCards('h')>0&&player.storage.DuoGem>=1&&lib.config.coin>=2) return true;
+								return false;
+						},
+						filterCard:function(card){
+							return true;									
+					},
+					filterTarget:function(card,player,target){
+						if(target.hasSkill('enemy'))return false;
+						return true;		
+					},
+						position:'he',
+						content:function(target,game,gameconfig){
+							target.node.jiu=ui.create.div('.playerglea',target.node.avatar);
+							target.node.jiu2=ui.create.div('.playerglea',target.node.avatar2);
+							game.delay(2);
+							player.storage.DuoGem-=2;
+					
+						if(target.hasSkill('roars')&&lib.config.coin%47==0){
+					
+					switch(target.storage.glyptic){
+								case target.storage.glyptic=77:
+					target.storage.glyptic-=76;
+					////target.storage.glyptic3-=0.073;
+					target.storage.glyptic25+=1;
+			
+					game.broadcastAll(function(target){						
+																		
+				
+						target.node.avatar2.setBackground('rearth','character');
+						target.node.avatar.setBackground('rearth','character');
+				
+						
+						target.update();},target);		
+			
+					target.node.avatar2.setBackground('rearth','character');
+					target.node.avatar.setBackground('rearth','character');
+			
+			
+					target.addSkill('conrearth');
+					target.addSkill('earth');
+					target.addSkill('rearth');
+					target.update(); break;
+								case target.storage.glyptic=1:
+					target.storage.glyptic+=9;
+					////target.storage.glyptic3-=0.073;
+					target.storage.glyptic23+=1;
+				
+					target.update(); break;
+								case target.storage.glyptic=10:
+					target.storage.glyptic-=7;
+				
+					target.update(); break;
+								case target.storage.glyptic=3:
+					target.storage.glyptic+=4;
+					
+					target.update(); break;
+					case target.storage.glyptic=7:
+					target.storage.glyptic-=6;
+				
+					target.update(); break;	}
+					}
+					if(target.hasSkill('airson')&&lib.config.coin%53==0){
+					switch(target.storage.glyptic){
+								case target.storage.glyptic=77:
+					target.storage.glyptic-=70;
+					target.storage.glyptic22+=1;
+			
+			
+					game.broadcastAll(function(target){							
+																		
+						target.node.avatar2.setBackground('awind','character');
+						target.node.avatar.setBackground('awind','character');
+				
+						
+						target.update();},target);		
+			
+					target.node.avatar2.setBackground('awind','character');
+					target.node.avatar.setBackground('awind','character');
+			
+					target.addSkill('conawind');
+					target.addSkill('wind');
+					target.addSkill('awind');
+					////target.storage.glyptic3-=0.073;
+					target.update(); break;
+								case target.storage.glyptic=7:
+					target.storage.glyptic+=13;
+					////target.storage.glyptic3-=0.073;
+					target.storage.glyptic24+=1;
+	
+					target.update(); break;
+								case target.storage.glyptic=20:
+					target.storage.glyptic-=15;
+					////target.storage.glyptic3-=0.073;
+					target.storage.glyptic21+=1;
+			
+					target.update(); break;
+								case target.storage.glyptic=5:
+					target.storage.glyptic-=2;
+					////target.storage.glyptic3-=0.073;
+					
+					target.storage.glyptic25+=1;
+				
+					target.update(); break;
+								case target.storage.glyptic=3:
+					target.storage.glyptic+=4;
+					////target.storage.glyptic3-=0.073;
+					
+					target.storage.glyptic22+=1;
+				
+					
+					target.update(); break;	}
+					}
+					if(target.hasSkill('goldenage')&&lib.config.coin%43==0){
+					switch(target.storage.glyptic){
+								case target.storage.glyptic=77:
+					target.storage.glyptic-=66;
+					////target.storage.glyptic3-=0.073;
+					
+					target.storage.glyptic23+=1;
+					target.node.avatar2.setBackground('gthund','character');
+					target.node.avatar.setBackground('gthund','character');
+					target.addSkill('thund');
+					target.addSkill('gthund');
+					
+					target.update(); break;
+								case target.storage.glyptic=11:
+					target.storage.glyptic-=2;
+					////target.storage.glyptic3-=0.073;
+					
+					target.storage.glyptic27+=1;
+				
+					
+					target.update(); break;
+								case target.storage.glyptic=9:
+					target.storage.glyptic-=2;
+					////target.storage.glyptic3-=0.073;
+					
+					target.storage.glyptic24+=1;
+		
+					target.update(); break;
+								case target.storage.glyptic=7:
+					target.storage.glyptic-=7;
+					////target.storage.glyptic3-=0.073;
+					
+					target.storage.glyptic24+=1;
+				
+					
+					target.update(); break;
+								case target.storage.glyptic=0:
+					target.storage.glyptic+=11;
+					////target.storage.glyptic3-=0.073;
+					
+					target.storage.glyptic23+=1;
+				
+					
+					target.update(); break;	}
+					}
+							if(target.hasSkill('x')&&lib.config.coin%41==0){
+					switch(target.storage.glyptic){
+								case target.storage.glyptic=77:
+					target.storage.glyptic-=75;
+					////target.storage.glyptic3-=0.073;
+						target.storage.glyptic21+=1;
+					target.node.avatar2.setBackground('xocean','character');
+					target.node.avatar.setBackground('xocean','character');
+					target.addSkill('ocean');
+					target.addSkill('xocean');
+					
+					target.update(); break;
+								case target.storage.glyptic=2:
+					target.storage.glyptic+=6;
+					////target.storage.glyptic3-=0.073;
+					
+					target.storage.glyptic26+=1;
+				
+					
+					
+					target.update(); break;
+								case target.storage.glyptic=8:
+					target.storage.glyptic-=7;
+					////target.storage.glyptic3-=0.073;
+					
+					target.storage.glyptic27+=1;
+				
+					
+					target.update(); break;
+								case target.storage.glyptic=1:
+					target.storage.glyptic+=2;
+					////target.storage.glyptic3-=0.073;
+					
+					target.storage.glyptic25+=1;
+				
+					
+					target.update(); break;
+								case target.storage.glyptic=3:
+					target.storage.glyptic-=1;
+		
+					
+					target.storage.glyptic21+=1;
+			
+					
+					target.update(); break;
+					}
+					} 		
+					'step 1'
+					target.storage.glyptic20-=1;
+					'step 2'
+			
+					var num=get.number(cards[0]);
+					if(num==1){target.storage.glyptic2+=0.001;}
+		 
+		
+					'step 3'
+					target.update();    
+					'step 4'
+					player.$fullscreenpop('DuoGem MODE!','metal');
+					},
+						},
+	
+
+
+
+
+
+
+						TriGem:{
+							enable:'phaseUse',
+							prompt:'Carve with a LoreSong, and choose a Members to carve their GLYPTIC',
+							init:function(player){
+								player.storage.TriGem=1;
+								},
+								
+						filter:function(event,player){
+								if(player.countCards('h')>0&&player.storage.TriGem>=1&&lib.config.coin>=2) return true;
+									return false;
+							},
+							filterCard:function(card){
+								return true;									
+						},
+						filterTarget:function(card,player,target){
+							if(target.hasSkill('enemy'))return false;
+							return true;		
+						},
+							position:'he',
+							content:function(target,game,gameconfig){
+								target.node.jiu=ui.create.div('.playerglea',target.node.avatar);
+								target.node.jiu2=ui.create.div('.playerglea',target.node.avatar2);
+								game.delay(2);
+								player.storage.TriGem-=2;
+						
+							if(target.hasSkill('roars')&&lib.config.coin%47==0){
+						
+						switch(target.storage.glyptic){
+									case target.storage.glyptic=77:
+						target.storage.glyptic-=76;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic25+=1;
+				
+						game.broadcastAll(function(target){						
+																			
+					
+							target.node.avatar2.setBackground('rearth','character');
+							target.node.avatar.setBackground('rearth','character');
+					
+							
+							target.update();},target);		
+				
+						target.node.avatar2.setBackground('rearth','character');
+						target.node.avatar.setBackground('rearth','character');
+				
+				
+						target.addSkill('conrearth');
+						target.addSkill('earth');
+						target.addSkill('rearth');
+						target.update(); break;
+									case target.storage.glyptic=1:
+						target.storage.glyptic+=9;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic23+=1;
+					
+						target.update(); break;
+									case target.storage.glyptic=10:
+						target.storage.glyptic-=7;
+					
+						target.update(); break;
+									case target.storage.glyptic=3:
+						target.storage.glyptic+=4;
+						
+						target.update(); break;
+						case target.storage.glyptic=7:
+						target.storage.glyptic-=6;
+					
+						target.update(); break;	}
+						}
+						if(target.hasSkill('airson')&&lib.config.coin%53==0){
+						switch(target.storage.glyptic){
+									case target.storage.glyptic=77:
+						target.storage.glyptic-=70;
+						target.storage.glyptic22+=1;
+				
+				
+						game.broadcastAll(function(target){							
+																			
+							target.node.avatar2.setBackground('awind','character');
+							target.node.avatar.setBackground('awind','character');
+					
+							
+							target.update();},target);		
+				
+						target.node.avatar2.setBackground('awind','character');
+						target.node.avatar.setBackground('awind','character');
+				
+						target.addSkill('conawind');
+						target.addSkill('wind');
+						target.addSkill('awind');
+						////target.storage.glyptic3-=0.073;
+						target.update(); break;
+									case target.storage.glyptic=7:
+						target.storage.glyptic+=13;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic24+=1;
+		
+						target.update(); break;
+									case target.storage.glyptic=20:
+						target.storage.glyptic-=15;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic21+=1;
+				
+						target.update(); break;
+									case target.storage.glyptic=5:
+						target.storage.glyptic-=2;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic25+=1;
+					
+						target.update(); break;
+									case target.storage.glyptic=3:
+						target.storage.glyptic+=4;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic22+=1;
+					
+						
+						target.update(); break;	}
+						}
+						if(target.hasSkill('goldenage')&&lib.config.coin%43==0){
+						switch(target.storage.glyptic){
+									case target.storage.glyptic=77:
+						target.storage.glyptic-=66;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic23+=1;
+						target.node.avatar2.setBackground('gthund','character');
+						target.node.avatar.setBackground('gthund','character');
+						target.addSkill('thund');
+						target.addSkill('gthund');
+						
+						target.update(); break;
+									case target.storage.glyptic=11:
+						target.storage.glyptic-=2;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic27+=1;
+					
+						
+						target.update(); break;
+									case target.storage.glyptic=9:
+						target.storage.glyptic-=2;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic24+=1;
+			
+						target.update(); break;
+									case target.storage.glyptic=7:
+						target.storage.glyptic-=7;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic24+=1;
+					
+						
+						target.update(); break;
+									case target.storage.glyptic=0:
+						target.storage.glyptic+=11;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic23+=1;
+					
+						
+						target.update(); break;	}
+						}
+								if(target.hasSkill('x')&&lib.config.coin%41==0){
+						switch(target.storage.glyptic){
+									case target.storage.glyptic=77:
+						target.storage.glyptic-=75;
+						////target.storage.glyptic3-=0.073;
+							target.storage.glyptic21+=1;
+						target.node.avatar2.setBackground('xocean','character');
+						target.node.avatar.setBackground('xocean','character');
+						target.addSkill('ocean');
+						target.addSkill('xocean');
+						
+						target.update(); break;
+									case target.storage.glyptic=2:
+						target.storage.glyptic+=6;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic26+=1;
+					
+						
+						
+						target.update(); break;
+									case target.storage.glyptic=8:
+						target.storage.glyptic-=7;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic27+=1;
+					
+						
+						target.update(); break;
+									case target.storage.glyptic=1:
+						target.storage.glyptic+=2;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic25+=1;
+					
+						
+						target.update(); break;
+									case target.storage.glyptic=3:
+						target.storage.glyptic-=1;
+			
+						
+						target.storage.glyptic21+=1;
+				
+						
+						target.update(); break;
+						}
+						} 		
+						'step 1'
+						target.storage.glyptic20-=1;
+						'step 2'
+				
+						var num=get.number(cards[0]);
+						if(num==1){target.storage.glyptic2+=0.001;}
+			 
+			
+						'step 3'
+						target.update();    
+						'step 4'
+						player.$fullscreenpop('TriGem MODE!','metal');
+						},
+							},
+			
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -13832,7 +15460,7 @@ var empire = Math.min(Math.max(parseInt((player.hp/player.maxHp)*247), 1), 2847)
 if(index==0){
 game.log(trigger.card,'Initial');
 if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
-var z=Math.min(lib.config.lvg,7777777);
+var z=Math.min(lib.config.lvg,17482500);
 var x=(Math.floor(Math. sqrt(z/777)));		
 var a=x+7;	
 trigger.baseDamage*=Math.floor((1+a/100)*empire);
@@ -13842,7 +15470,7 @@ trigger.baseDamage*=Math.floor((1+a/100)*empire);
 else{
 game.log(trigger.card,'COMBO');
 if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
-var z=Math.min(lib.config.lvg,7777777);
+var z=Math.min(lib.config.lvg,17482500);
 var x=(Math.floor(Math. sqrt(z/777)));		
 var a=x+7;	
 trigger.baseDamage*=Math.floor((1+a/100)*5*empire);
@@ -13875,7 +15503,7 @@ glyptic_m:{
 	if(index==0){
 	game.log(trigger.card,'Initial');
 	if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
-	var z=Math.min(lib.config.lvx,7777777);
+	var z=Math.min(lib.config.lvx,17482500);
 	var x=(Math.floor(Math. sqrt(z/777)));		
 	var a=x+7;	
 	trigger.baseDamage*=Math.floor((1+a/100)*empire);
@@ -13885,7 +15513,7 @@ glyptic_m:{
 	else{
 	game.log(trigger.card,'COMBO');
 	if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
-	var z=Math.min(lib.config.lvx,7777777);
+	var z=Math.min(lib.config.lvx,17482500);
 	var x=(Math.floor(Math. sqrt(z/777)));		
 	var a=x+7;	
 	trigger.baseDamage*=Math.floor((1+a/100)*3.5*empire);
@@ -13926,7 +15554,7 @@ var calm = Math.min(Math.max(parseInt((1.01-(player.hp/player.maxHp))*677+y), 1)
 if(index==0){
 game.log(trigger.card,'Initial');
 if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
-var z=Math.min(lib.config.lvx,7777777);
+var z=Math.min(lib.config.lvx,17482500);
 var x=(Math.floor(Math. sqrt(z/777)));      
 var a=x+7;
 trigger.baseDamage*=Math.floor((1+a/100)*calm);
@@ -13935,7 +15563,7 @@ trigger.baseDamage*=Math.floor((1+a/100)*calm);
 else{
 game.log(trigger.card,'COMBO');
 if(typeof trigger.baseDamage!='number') trigger.baseDamage=1;
-var z=Math.min(lib.config.lvx,7777777);
+var z=Math.min(lib.config.lvx,17482500);
 var x=(Math.floor(Math. sqrt(z/777)));      
 var a=x+7;
 trigger.baseDamage*=Math.floor((1+a/100)*4.5*calm);
@@ -17965,44 +19593,6 @@ player.update();
 
 
 
-despair:{
-			forced:true,
-            trigger:{player:'phaseDrawBegin1'},
-				content:function(){
-					"step 0"
-					event.targets=game.filterPlayer();
-					event.targets.remove(player);
-					event.targets.sort(lib.sort.seat);
-					event.targets2=event.targets.slice(0);
-					player.line(event.targets,'green');
-					game.delay(2);
-					player.$fullscreenpop('DESPAIR','fire');
-					game.delay(1);
-					"step 1"
-					if(event.targets.length&&game.roundNumber%4==1){
-						event.targets.shift().damage(1200);
-						event.redo();
-						game.delay(2);
-					}
-if(event.targets.length&&game.roundNumber%4==2){
-						event.targets.shift().damage(1200);
-						event.redo();
-						game.delay(2);
-					}
-if(event.targets.length&&game.roundNumber%4==3){
-						event.targets.shift().damage(1200);
-						event.redo();
-						game.delay(2);
-					}
-if(event.targets.length&&game.roundNumber%4==0){
-						event.targets.shift().damage(1200);
-						event.redo();
-						game.delay(2);
-					}
-					
-				},
-				
-			},
 
 
 
@@ -20730,13 +22320,23 @@ timeflow:{
 					}
 				}
 			},
-			luoshen:{
+			luoshem:{
 				audio:2,
-				trigger:{player:'phaseZhunbeiBegin'},
+		
+			enable:'phaseUse',
 				frequent:true,
-				preHidden:true,
+				usable:1,
+		
+			
 				content:function(){
 					"step 0"
+					player.draw(1);
+					var x=player.countCards('h');
+					game.broadcastAll('createDialog',event.videoId,'A LoreSong appears...if it belongs to the Pinnacle or the Slums, it immediately becomes part of Roars </br></br> The Nations Fall & Rise: '+ x+' ');
+					game.delay(3);
+				
+					"step 1"
+					
 					if(event.cards==undefined) event.cards=[];
 					var next=player.judge(function(card){
 						if(get.color(card)=='black') return 1.5;
@@ -22922,7 +24522,17 @@ xbaseg:'X-Spirit',
 		xsbg:'<span style="font-family:serif">Stats</span>',
 	   xgibg:'<span style="font-family:serif">Gem</span>',
 
-
+	   lvlr:'☨',
+	   lvla:'⚶',
+	   lvlg:'♛',
+	   lvlx:'❃',
+	   drawm:'TrainsInSky',
+	   Titans_info:'7 Titans appear! Gain as many as you wish',
+	   luoshem:'Nations',
+	   GOODalight:'GhostTowns',
+	   height:'GreatHeights',
+	   gbangel:'{a Child with His Guardian Angel}',
+	   height_info:'For 4 turns, Roars sends a target to the heights, allowing them to be intargetable, or, receive less damage from Strike & SkyWar',
 		solve:'<span style="font-family:serif">{Decipher}</span>',
 		xsolve:'<span style="font-family:serif">{Solve}</span>',
 		twa:'<span style="font-family:serif">{Airson Build}</span>',
@@ -22988,6 +24598,8 @@ ocean4:'OCEAN GEM',
 ocean5:'OCEAN GEM',
 ocean6:'WEAK',
  ocean7:'WEAK',
+ noname_duocai:"TrashCollect",
+ noname_duocai_info:"You recycle all LoreSongs that are returned or discarded by others this round",
 
  wind3:'WIND SOUL',
  wind4:'WIND GEM',
