@@ -10425,7 +10425,7 @@ case 'gbig':zoom=1.6;break;
 			_icesha:'冰杀',
 			qianxing:'潜行',
 			mianyi:'免疫',
-			fengyin:'封印',
+			fengyin:'混',
 			baiban:'白板',
 			_disableJudge:"判定区",
 			
@@ -16776,7 +16776,7 @@ case 'gbig':zoom=1.6;break;
 				},
 				judge:function(){
 					"step 0"
-					var judgestr=get.translation(player)+'的'+event.judgestr+'判定';
+					var judgestr=get.translation(player)+' experiences '+event.judgestr+'...';
 					event.videoId=lib.status.videoId++;
 					var cardj=event.directresult;
 					if(!cardj){
