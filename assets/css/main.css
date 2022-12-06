@@ -142,7 +142,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: garamond, Seoul Hangang, Kaiti, STKaiti;
+		font-family: serif, garamond, Seoul Hangang, Kaiti, STKaiti;
 		font-variant: small-caps;
 		font-weight: 500;
 		font-size: 1rem;
@@ -264,7 +264,7 @@ input, select, textarea {
 	code {
 		background: rgba(255, 255, 255, 0.075);
 		border-radius: 4px;
-		font-family: garamond, Seoul Hangang, Kaiti, STKaiti;
+		font-family: serif, garamond, Seoul Hangang, Kaiti, STKaiti;
 		font-variant: small-caps;
 		font-weight: 500;
 		font-size: 0.9rem;
@@ -274,7 +274,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: garamond, Seoul Hangang, Kaiti, STKaiti;
+		font-family:  serif, garamond, Seoul Hangang, Kaiti, STKaiti;
 		font-variant: small-caps;
 		font-size: 0.9rem;
 		font-weight: 500;
