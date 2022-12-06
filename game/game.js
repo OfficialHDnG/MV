@@ -10337,14 +10337,14 @@ case 'gbig':zoom=1.6;break;
 			club2:"梅花",
 			red:'红色',
 			black:'黑色',
-			ok:" GO!! ",
-			ok2:" GO!! ",
+			ok:"<span style='font-family:serif'>Go!!</span> ",
+			ok2:"<span style='font-family:serif'>Go!!</span> ",
 			//ok:'<span style="text-shadow:0px 0px 7px #ff0000, 0px 0px 7px #ff0000;font-size:29px;font-color:red;"> Go!! </span>',
 			//ok2:'<span style="text-shadow:0px 0px 7px #ff0000, 0px 0px 7px #ff0000;font-size:29px;font-color:red;"> Go!! </span>',
 	
 		
-			cancel:"no",
-			cancel2:"no",
+			cancel:"<span style='font-family:serif'>no</span> ",
+			cancel2:"<span style='font-family:serif'>no</span> ",
 			restart:"重新开始",
 			setting:"设置",
 			start:"开始",
