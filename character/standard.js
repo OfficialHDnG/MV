@@ -11,8 +11,8 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		},
 		character:{	
 		//fulei sp
-		zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlr','bak']],
-		zhaoyun:['female',' ','1357720/1357720',['airson','coldanns','xabfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvla','bak']],
+		zhugeliang:['male',' ','2372137/2372137',['roars','memory','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlr','bak']],
+		zhaoyun:['female',' ','1357720/1357720',['airson','coldanns','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvla','bak']],
 			machao:['male',' ','1971911/1971911',['goldenage','gbangel','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlg','bak']],
 			sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlx','bak']],
 			
@@ -461,7 +461,7 @@ FireExterm:{
 
 Titans:{
 	enable:'phaseUse',
-	usable:3,
+	usable:1,
 	content:function(){
 		'step 0'
 	var cards=[];
@@ -3190,7 +3190,7 @@ barinit:{
 		});
 },	
 	trigger:{
-		global:'phaseBefore',
+		//global:'phaseBefore',
 		player:'enterGame',
 	},
 	forced:true,
@@ -3281,7 +3281,7 @@ lowphph:{
 									content:function (player,ui){
 						var x=Math.floor(player.hp/player.maxHp*100);
 	
-						if(lib.config.lva>=1942501&&lib.config.lvr>=1942501&&lib.config.lvg>=1942501&&lib.config.lvx>=1942501&&x%2==0&&lib.config.hpbar){
+						if(lib.config.lva>=1942500&&lib.config.lvr>=1942500&&lib.config.lvg>=1942500&&lib.config.lvx>=1942500&&x%2==0&&lib.config.hpbar){
 						//	game.broadcastAll('createDialog',event.videoId,'print'+x+'test');	
 											//game.delay(3);
 				//	game.broadcastAll('createDialog',event.videoId,'bronze'+x+'z');	
@@ -3293,7 +3293,7 @@ lowphph:{
 						player.update();
 					game.update;
 					}
-					if(lib.config.lva>=1942501&&lib.config.lvr>=1942501&&lib.config.lvg>=1942501&&lib.config.lvx>=1942501&&x%2==1&&lib.config.hpbar){
+					if(lib.config.lva>=1942500&&lib.config.lvr>=1942500&&lib.config.lvg>=1942500&&lib.config.lvx>=1942500&&x%2==1&&lib.config.hpbar){
 					
 							var y=x+1;
 					//game.broadcastAll('createDialog',event.videoId,'bronze'+y+'z');
@@ -9481,7 +9481,7 @@ rspirit:{
 				target.damage(1111+2777*xx);	
 				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Roars appears!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/zhugeliang.png" height="106" width="60"></img></span>');	
 				game.delay(2);
-				target.damage(x+0.07);	
+				//target.damage(x+0.07);	
 
 
 
@@ -9519,7 +9519,7 @@ aspirit:{
 				target.damage(1111+2777*xx);	
 				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Airson appears!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/zhaoyun.png" height="106" width="60"></img></span>');	
 					game.delay(2);
-				target.damage(x+0.07);	
+				//starget.damage(x+0.07);	
 
 
 
@@ -9562,7 +9562,7 @@ gspirit:{
 				target.damage(1111+2777*xx);	
 				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">GoldenAge appears!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/machao.png" height="106" width="60"></img></span>');	
 					game.delay(2);
-				target.damage(x+0.07);	
+			//	target.damage(x+0.07);	
 
 
 
@@ -9606,7 +9606,7 @@ xspirit:{
 				target.damage(1111+2777*xx);	
 				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">X is here!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/sunquan.png" height="106" width="60"></img></span>');	
 				game.delay(2);
-				target.damage(x+0.07);	
+			//	target.damage(x+0.07);	
 						
 			}
 		}
