@@ -3540,7 +3540,7 @@ case 'gbig':zoom=1.6;break;
 					},
 					show_replay:{
 						name:'显示重来按钮',
-						init:false,
+						init:true,
 						unfrequent:true,
 						onclick:function(bool){
 							game.saveConfig('show_replay',bool);
