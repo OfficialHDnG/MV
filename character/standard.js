@@ -24429,7 +24429,7 @@ target.damage(999999,'fire');
 					},
 					ai:{
 						threaten:0.4					}
-				},
+ 				},
 
 
 
@@ -24631,6 +24631,34 @@ xbaseg:'X-Spirit',
 	   lvla:'⚶',
 	   lvlg:'♛',
 	   lvlx:'❃',
+	   //name memory
+
+
+
+	   WordsofYemog:'<span style="font-family:serif">WordsofYemog</span>',
+	   NaturalHealing:'<span style="font-family:serif">NaturalHealing</span>',
+	   TriGem:'<span style="font-family:serif">TriGem</span>',
+	   Titans:'<span style="font-family:serif">Titans</span>',
+	   
+	   FireExterm:'<span style="font-family:serif">FireExterm</span>',
+	   DuoGem:'<span style="font-family:serif">DuoGem</span>',
+
+	   Pandemic:'<span style="font-family:serif">Pandemic</span>',
+	   Competition:'<span style="font-family:serif">Competition</span>',
+
+
+
+
+
+
+
+	   ConsumingDark:'<span style="font-family:serif">ConsumingDark</span>',
+	   EverCold:'<span style="font-family:serif">EverCold</span>',
+	   Abandoned:'<span style="font-family:serif">Abandoned</span>',
+	   noname_duocai:'<span style="font-family:serif">TrashCollect</span>',
+	   NamelessGraves:'<span style="font-family:serif">NamelessGraves</span>',
+
+	   FullGem:'<span style="font-family:serif">FullGem</span>',
 	   drawm:'<span style="font-family:serif">TrainsInSky</span>',
 	   Titans_info:'7 Titans appear! Gain as many as you wish',
 	   luoshem:'<span style="font-family:serif">Nations</span>',
@@ -24703,7 +24731,7 @@ ocean4:'OCEAN GEM',
 ocean5:'OCEAN GEM',
 ocean6:'WEAK',
  ocean7:'WEAK',
- noname_duocai:"TrashCollect",
+
  noname_duocai_info:"You recycle all LoreSongs that are returned or discarded by others this round",
 
  wind3:'WIND SOUL',
