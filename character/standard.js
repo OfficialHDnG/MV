@@ -10,12 +10,13 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			},
 		},
 		character:{	
-		//fulei sp
-		zhugeliang:['male',' ','2372137/2372137',['roars','memory','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlr','bak']],
+			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlr','bak']],
 		zhaoyun:['female',' ','1357720/1357720',['airson','coldanns','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvla','bak']],
-			machao:['male',' ','1971911/1971911',['goldenage','gbangel','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlg','bak']],
-			sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlx','bak']],
+		
 			
+		machao:['male',' ','1971911/1971911',['goldenage','gbangel','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlg','bak']],
+		sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlx','bak']],
+				
 		},
 		characterIntro:{
 				zhugeliang:'政落彻 · 정한결</br> 1st Past-Life Candidate: Shone</br> <span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;"><a href="e1.html#shone" target="blank">Lore of Shone</a></span></br>',
@@ -69,6 +70,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 						player.logSkill('lvlx');
 						player.markAuto('lvlx',[result.control]);
 						player.addTempSkill(result.control,'roundStart');
+						player.markSkill(result.control,'roundStart');
 						game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
 						game.broadcastAll('createDialog',event.videoId,' X remembered '+get.translation(result.control)+'!');	
 								game.delay(2);									
@@ -140,7 +142,8 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 						player.logSkill('lvlg');
 						player.markAuto('lvlg',[result.control]);
 						player.addTempSkill(result.control,'roundStart');
-						game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
+						player.markSkill(result.control,'roundStart');
+											game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
 						game.broadcastAll('createDialog',event.videoId,' GoldenAge remembered '+get.translation(result.control)+'!');	
 								game.delay(2);									
 					}
@@ -154,11 +157,11 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 						player.removeSkill('lvlg');											
 					}
 				},
-				derivation:['NaturalHealing'],
-				derivation1:['NaturalHealing','WordsofYemog'],
-				derivation2:['NaturalHealing','WordsofYemog','TriGem'],
-				derivation3:['NaturalHealing','WordsofYemog','TriGem','Titans'],
-				derivation4:['NaturalHealing','WordsofYemog','TriGem','Titans',],
+				derivation:['WordsofYemog'],
+				derivation1:['WordsofYemog','NaturalHealing'],
+				derivation2:['WordsofYemog','NaturalHealing','TriGem'],
+				derivation3:['WordsofYemog','NaturalHealing','TriGem','Titans'],
+				derivation4:['WordsofYemog','NaturalHealing','TriGem','Titans',],
 			
 			},
 
@@ -211,6 +214,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 						player.logSkill('lvla');
 						player.markAuto('lvla',[result.control]);
 						player.addTempSkill(result.control,'roundStart');
+						player.markSkill(result.control,'roundStart');
 						game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
 						game.broadcastAll('createDialog',event.videoId,' Airson remembered '+get.translation(result.control)+'!');	
 								game.delay(2);									
@@ -227,15 +231,16 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 				},
 				derivation:['ConsumingDark'],
 				derivation1:['ConsumingDark','EverCold'],
-				derivation2:['ConsumingDark','EverCold','NamelessGraves'],
-				derivation3:['ConsumingDark','EverCold','NamelessGraves','noname_duocai'],
-				derivation4:['ConsumingDark','EverCold','NamelessGraves','noname_duocai','Abandoned',],
+				derivation2:['ConsumingDark','EverCold','Abandoned'],
+				derivation3:['ConsumingDark','EverCold','Abandoned','noname_duocai'],
+				derivation4:['ConsumingDark','EverCold','Abandoned','noname_duocai','NamelessGraves',],
 				
 			
 			},
 
 
 			noname_duocai:{
+				marktext:'⚶',
 				trigger:{
 					global:"loseAfter",
 				},
@@ -296,13 +301,16 @@ var x=lib.config.lva;
 
 			ConsumingDark:{
 				enable:'phaseUse',
+				marktext:'⚶',
+				usable:1,
 				forced:true,		
 						content:function(){			
 					'step 0'		
 					var card=game.createCard('Dark','spade');					
 					player.gain(card,'gain2');
+					player.unmarkSkill('ConsumingDark');
 					'step 1'	
-					game.broadcastAll('createDialog',event.videoId, 'For this round, Airson cannot be targeted as long as he holds a Slum LoreSong!');
+					game.broadcastAll('createDialog',event.videoId, 'For this round, Airson cannot be targeted as long as he holds a Slum LoreSong');
 					game.delay(2);		
 					player.addTempSkill('ConsumingDarko','roundStart');
 								},	
@@ -323,6 +331,10 @@ var x=lib.config.lva;
 			},
 
 
+			
+
+
+
 
 			pstart:{
 				trigger:{player:'phaseDrawBegin2'},
@@ -334,8 +346,10 @@ var x=lib.config.lva;
 
 
 			NamelessGraves:{
+				marktext:'⚶',
 			enable:'phaseUse',
-			usable:2,
+			usable:1,
+			prompt:'Choose a boss to see the graves of the slums',
 				direct:true,
 				filterTarget:function(card,player,target){
 					//if(target=player) return false;
@@ -350,13 +364,66 @@ var x=lib.config.lva;
 					target.addTempSkill('madone',{player:'phaseAfter'});
 					game.broadcastAll('createDialog',event.videoId,'Boss is lost in the masses of unnamed graves ',);
 					game.delay(3);
+					player.unmarkSkill('NamelessGraves');
 					//attack ally
 						//target.goMad({player:'phaseAfter'});
 
 						
 					}
 				},
-	
+
+
+				WordsofYemog:{
+					marktext:'⚶',
+				enable:'phaseUse',
+				usable:1,
+				prompt:'Choose a member to hear the language from Yemog',
+					direct:true,
+					filterTarget:function(card,player,target){
+							return true
+					},
+					content:function(){
+						player.unmarkSkill('WordsofYemog');
+					target.addTempSkill('woyo','roundStart');
+					target.markSkill('woyo','roundStart');	
+									
+						}
+					},
+
+					woyo:{
+						
+						trigger:{player:'damageAfter'},
+						filter:function(event,player){
+							return true
+								},
+						forced:true,
+								content:function(){		
+									'step 0'
+									game.broadcastAll('createDialog',event.videoId,'The common language created the Universe...');	
+									game.delay(2);	
+									'step 1'
+							var x=trigger.num;
+							event.targets=game.filterPlayer();
+						event.targets.remove(player);
+						event.targets.sort(lib.sort.seat);
+						event.targets2=event.targets.slice(0);
+												
+						'step 2'
+						var x=Math.floor(trigger.num/event.targets.length);
+						
+						if(event.targets.length){
+							event.targets.shift().damage(x/97);
+							player.recover(x);
+							event.redo();
+							game.delay(1);
+						}
+						'step 3'
+						player.unmarkSkill('woyo');
+						player.removeSkill('woyo');
+							
+							
+						},	
+					},
 
 
 
@@ -420,6 +487,7 @@ var x=lib.config.lva;
 
 			height:{
 				enable:'phaseUse',
+				marktext:"☨",
 				usable:1,
 				filterTarget:function(card,player,target){
 					//if(target=player) return false;
@@ -430,6 +498,7 @@ var x=lib.config.lva;
 
 					target.addSkill('hyunshen');
 					target.markSkill('hyunshen');
+					player.unmarkSkill('height');
 					'step 1'
 					game.broadcastAll('createDialog',event.videoId,' ',
 					);
@@ -443,6 +512,7 @@ var x=lib.config.lva;
 
 FireExterm:{
 	trigger:{player:'damageAfter'},	
+	marktext:'❃',
 	forced:true,
 	filter:function(event){
 		return event&&event.source;
@@ -460,10 +530,17 @@ FireExterm:{
 			
 
 Titans:{
+	marktext:'♛',
 	enable:'phaseUse',
 	usable:1,
+	//prompt:'Titans appear - gain as many LoreSongs as you wish',
 	content:function(){
-		'step 0'
+'step 0'
+game.broadcastAll('createDialog',event.videoId,'Titans appear - gain as many LoreSongs as you wish');	
+					game.delay(2);
+				
+		'step 1'
+		player.unmarkSkill('Titans');
 	var cards=[];
 					while(cards.length<7){
 						var card=get.cardPile(function(card){
@@ -485,7 +562,7 @@ Titans:{
 		//			});
 					else   player.chooseButton([get.prompt('Titans'),cards],[1,cards.length]);
                    
-					'step 1'
+					'step 2'
 					if(result.bool){
 						player.gain(result.links,'gain2');
 					}
@@ -498,14 +575,20 @@ Titans:{
 			Pandemic:{
 				//	enable:'phaseUse',
 			enable:'phaseUse',
+			marktext:'❃',
 					usable:1,
 					content:function(){
-					'step 0'
+						'step 0'
+						player.unmarkSkill('Pandemic');
+						game.broadcastAll('createDialog',event.videoId,'The situation takes over the field!');	
+						game.delay(2);		
+					'step 1'
+
 							var targets=player.getEnemies().randomGets(3);
 							var friends=player.getFriends().randomGets(2);
 							player.useCard({name:'pande',nature:'fire'},friends);
 							player.useCard({name:'pande',nature:'fire'},targets);
-							'step 1'
+							'step 2'
 							var targets=player.getEnemies().randomGets(3);
 							var friends=player.getFriends().randomGets(2);
 							player.useCard({name:'pandef',nature:'fire'},friends);
@@ -584,34 +667,34 @@ Titans:{
 					},
 					
 				},
+
+
+
+
 	
 
-
+				
 
 			Competition:{
 				enable:'phaseUse',
-			
-			direct:true,		
-			prompt:'X drops his HP to 1, and deals the same difference to a target',
-					contentAfter:function(){
-				var evt=_status.event.getParent('phaseUse');
-					if(evt&&evt.name=='phaseUse'){
-						evt.skipped=true;
-					}
-								},
+				marktext:'❃',
+				mark:true,
+			//direct:true,		
+			prompt:'Choose a target - X drops his HP to 1, and deals the same difference to a target',
+				
 				usable:1,
 				filterTarget:function(card,player,target){
-					if(target==player) return false;
-					return true;
+					//if(target==player) return false;
+					return target.hasSkill('enemy');
 				},
 				content:function(){
+					player.unmarkSkill('Competition');
 					game.broadcastAll('createDialog',event.videoId,'"There is no more rules in the Wild, no more desires but 1 - self survival."');	
 					game.delay(2);	
-
-
 					var x=player.hp-1;
 					player.damage(x/97);
 					target.damage(x/97);
+					//player.removeSkill('Competition');
 				},
 				
 			},
@@ -621,15 +704,17 @@ Titans:{
 
 
 			NaturalHealing:{
+				marktext:'♛',
 				filterTarget:function(card,player,target){
 					if(target==player) return false;
 					return true;
 				},
 			enable:'phaseUse',
+			prompt:'Choose a member - when hurt by a boss, they have a chance to heal after the strike!',
 			usable:1,			
 		content:function(){		
-			game.broadcastAll('createDialog',event.videoId, 'For 3 strikes, give a member healing from Yemog');
-							game.delay(2);		
+			player.unmarkSkill('NaturalHealing');
+			
 							target.addSkill('NaturalHealingo');
 				
 					
@@ -648,9 +733,12 @@ NaturalHealingo:{
 			},
 	forced:true,
 			content:function(){		
+				game.broadcastAll('createDialog',event.videoId,'The purity of nature in Yemog heals...');	
+				game.delay(2);	
 		var x=trigger.num;
 		player.recover(2*x);
 		player.storage.NaturalHealingo-=1;
+		
 	},	
 },
 
@@ -743,6 +831,7 @@ NaturalHealingo:{
 											player.logSkill('lvlr');
 											player.markAuto('lvlr',[result.control]);
 											player.addTempSkill(result.control,'roundStart');
+											player.markSkill(result.control,'roundStart');
 											game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
 											game.broadcastAll('createDialog',event.videoId,' Roars remembered '+get.translation(result.control)+'!');	
 													game.delay(2);									
@@ -793,6 +882,7 @@ NaturalHealingo:{
 						player.logSkill('lvlx');
 						player.markAuto('lvlx',[result.control]);
 						player.addTempSkill(result.control,'roundStart');
+						player.markSkill(result.control);
 						game.log(player,'Remembered','#g【'+get.translation(result.control)+'】')
 				
 					}
@@ -3196,7 +3286,7 @@ barinit:{
 	forced:true,
 	
 	content:function(game,gameconfig){
-		if(lib.config.hpbar&&lib.config.lva>=1942501&&lib.config.lvr>=1942501&&lib.config.lvg>=1942501&&lib.config.lvx>=1942501){
+		if(lib.config.hpbar&&lib.config.lva>=1942500&&lib.config.lvr>=1942500&&lib.config.lvg>=1942500&&lib.config.lvx>=1942500){
 			player.node.framebg.dataset.auto='bronze100';
 	}},	
 	
@@ -3895,19 +3985,27 @@ box:{
 
 			EverCold:{
 				enable:'phaseUse',
+				marktext:'⚶',
 				usable:1,
 				content:function(){
 								var card=game.createCard('cold','EverCold','1');				
-						player.gain(card,'gain2');					
+						player.gain(card,'gain2');	
+						player.unmarkSkill('EverCold');		
+						game.broadcastAll('createDialog',event.videoId,'The cold manifests into a song - use it now!');		
 				},
 			},
 
 			drawm:{
 				enable:'phaseUse',
+				marktext:"☨",
 				usable:1,
 				content:function(){
 								var card=game.createCard('diaobingqianjiang','Pass','5');				
-						player.gain(card,'gain2');					
+						player.gain(card,'gain2');	
+						player.unmarkSkill('drawm');	
+						game.broadcastAll('createDialog',event.videoId,'Roars gained a Train Pass - use it now!');
+
+
 				},
 			},
 
@@ -10064,8 +10162,22 @@ aeath3:{
 				}
 			},
 
-
 			GOODalight:{
+				forced:true,
+				marktext:'❃',
+				trigger:{player:'damageAfter'},
+				content:function(){
+					game.broadcastAll('createDialog',event.videoId, 'X found something in the Ruins');	
+					game.delay(4);
+					player.draw(1);
+				
+					//player.draw(cards.length*2).gaintag=['minsi2'];
+					//player.addTempSkill('minsi2');
+				},
+			},
+
+
+			prysmaGOODalight:{
 				enable:'phaseUse',
 				getResult:function(cards){
 					var l=cards.length;
@@ -11360,7 +11472,9 @@ jidian:{
 				}
 			},
 
-			Abandoned:{},
+			Abandoned:{
+				marktext:'⚶',
+			},
 
 			xguult:{
 				audio:'guanxing',
@@ -13605,6 +13719,7 @@ target.update();
 
 				FullGem:{
 					enable:'phaseUse',
+					marktext:"☨",
 					prompt:'Carve with a LoreSong, and choose a Members to carve their GLYPTIC',
 					init:function(player){
 						player.storage.FullGem=1;
@@ -13838,6 +13953,7 @@ target.update();
 
 					DuoGem:{
 						enable:'phaseUse',
+						marktext:'❃',
 						prompt:'Carve with a LoreSong, and choose a Members to carve their GLYPTIC',
 						init:function(player){
 							player.storage.DuoGem=1;
@@ -14070,6 +14186,7 @@ target.update();
 
 
 						TriGem:{
+							marktext:'♛',
 							enable:'phaseUse',
 							prompt:'Carve with a LoreSong, and choose a Members to carve their GLYPTIC',
 							init:function(player){
@@ -22309,11 +22426,10 @@ timeflow:{
 			},
 			luoshem:{
 				audio:2,
-		
-			enable:'phaseUse',
+					enable:'phaseUse',
 				frequent:true,
 				usable:1,
-		
+				marktext:"☨",				
 			
 				content:function(){
 					"step 0"
@@ -22363,6 +22479,8 @@ timeflow:{
 							player.gain(event.cards,'gain2');
 						}
 					}
+					"step 3"
+					player.unmarkSkill('luoshem');
 				}
 			},
 			xinluoshen:{
@@ -24513,12 +24631,12 @@ xbaseg:'X-Spirit',
 	   lvla:'⚶',
 	   lvlg:'♛',
 	   lvlx:'❃',
-	   drawm:'TrainsInSky',
+	   drawm:'<span style="font-family:serif">TrainsInSky</span>',
 	   Titans_info:'7 Titans appear! Gain as many as you wish',
-	   luoshem:'Nations',
-	   GOODalight:'GhostTowns',
-	   height:'GreatHeights',
-	   gbangel:'{a Child with His Guardian Angel}',
+	   luoshem:'<span style="font-family:serif">Nations</span>',
+	   GOODalight:'<span style="font-family:serif">GhostTowns</span>',
+	   height:'<span style="font-family:serif">GreatHeights</span>',
+	   gbangel:'<span style="font-family:serif">{Child w His Angel}</span>',
 	   height_info:'For 4 turns, Roars sends a target to the heights, allowing them to be intargetable, or, receive less damage from Strike & SkyWar',
 		solve:'<span style="font-family:serif">{Decipher}</span>',
 		xsolve:'<span style="font-family:serif">{Solve}</span>',
@@ -24526,9 +24644,9 @@ xbaseg:'X-Spirit',
 twr:'<span style="font-family:serif">{Roars Build}</span>',
 twg:'<span style="font-family:serif">{GoldenAge Build}</span>',
 twx:'<span style="font-family:serif">{X Build}</span>',
-	rba:'<span style="font-family:serif">{Roars the Knight}</span>',
-			aba:'<span style="font-family:serif">{Airson the Healer}</span>',
-			gb:'<span style="font-family:serif">{GoldenAge the Child}</span>',
+	rba:'<span style="font-family:serif">{Roars:Knight}</span>',
+			aba:'<span style="font-family:serif">{Airson:Healer}</span>',
+			gb:'<span style="font-family:serif">{GoldenAge:Child}</span>',
 			gbfuture:'<span style="font-family:serif">{GiftBox!}</span>',
 	//chaoli:'【Guard】',
 	chaoli:'<span style="font-family:serif">{Guard}</span>',
@@ -24552,7 +24670,7 @@ xbfuture:'<span style="font-family:serif">{Healon!}</span>',
 			
 	guangshu:'',
 	glyptic:'極鍍',
-bak:'<span style="font-family:serif">Exit',
+bak:'<span style="font-family:serif">Exit</span>s',
 	ex:'无',
 	uea:'<span style="font-family:serif">【Ea!】</span>',
 	ushone:'<span style="font-family:serif">【Shone!】</span>',

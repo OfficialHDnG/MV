@@ -171,6 +171,7 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 						player.line(target,'green');
 						game.log(target,'成为了','【门】','的目标');
 						target.storage.yxs_menshem2=player;
+						player.addTempSkill('ybait','roundStart');
 						target.addTempSkill('yxs_menshem2','roundStart');
      }
     else {       
@@ -178,10 +179,20 @@ game.import('character',function(lib,game,ui,get,ai,_status){
     }                     
    },      
    ai:{
-       expose:0.5,
+	threaten:200,
    },               
             },
          
+ybait:{
+	ai:{
+		threaten:200,
+	},   
+
+},
+
+
+
+
            yxs_menshem2:{
      audio:2,
     	mark:'character',
