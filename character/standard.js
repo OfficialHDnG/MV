@@ -12,10 +12,9 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		character:{	
 			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlr','bak']],
 		zhaoyun:['female',' ','1357720/1357720',['airson','coldanns','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvla','bak']],
-		
-			
 		machao:['male',' ','1971911/1971911',['goldenage','gbangel','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlg','bak']],
-		sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlx','bak']],
+		
+	sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlx','bak']],
 				
 		},
 		characterIntro:{
@@ -340,7 +339,8 @@ var x=lib.config.lva;
 				trigger:{player:'phaseDrawBegin2'},
 				forced:true,		
 				content:function(){
-					if(game.roundNumber>=1){	trigger.num-=2;}
+					if(game.roundNumber==1){	trigger.num-=2;}
+					if(game.roundNumber>=2){	trigger.num-=2;}
 								},	
 			},
 
@@ -518,9 +518,9 @@ FireExterm:{
 		return event&&event.source;
 	},
 	content:function(){
-		game.broadcastAll('createDialog',event.videoId,'Boss is burned by fires from The Wild!');	
+		game.broadcastAll('createDialog',event.videoId,'Outsider is burned by fires from The Wild!');	
 		game.delay(2);
-		trigger.source.damage(238238/97);
+		trigger.source.damage(538238/97);
 	},
 },
 
@@ -1283,8 +1283,8 @@ content:function(){
 								event.finish();
 								return;
 							}
+							player.useCard({name:'healbe',nature:'fire'},friends);
 							player.useCard({name:'healbe',number:'4',suit:'spade',nature:'fire'},targets);
-						//	player.useCard({name:'healbe',nature:'fire'},friends);
 							
 							//player.useCard({name:'healbe',nature:'fire'},targets);
 							
@@ -2787,7 +2787,7 @@ content:function(player,gameconfig){
 	var a=player.maxHp;
 	var b=lib.config.expe;
 	var c=player.storage.expe;
-	var d=Math.floor((a/100)/c);
+	var d=Math.floor((a/170)/c);
 	var e=b+d;
 	game.saveConfig('expe',e);							
 
@@ -7347,6 +7347,7 @@ overdrive:{
 
 
 
+			
 				ythunder:{
 					trigger:{player:'loseAfter'},
 					group:['ythunder2','ythunder3'],
@@ -7369,7 +7370,7 @@ overdrive:{
 					},
 					content:function(game,gameconfig){					
 						'step 0'
-						game.broadcastAll('createDialog',event.videoId, 'Boss received Thunder LoreSong : Warning');	
+						game.broadcastAll('createDialog',event.videoId, 'Boss let go of her Thunder LoreSong : Warning');	
 						game.delay(2);
 						'step 1'
 						game.broadcastAll('createDialog',event.videoId, 'Tribute Demanded!');	
@@ -7390,15 +7391,13 @@ overdrive:{
 						trigger:{player:'phaseZhunbeiBegin'},
 						forced:true,
 						filter:function(event,player){
-							return player.countCards('h')<=0&&player.storage.ythunder>=1;
+							return player.countCards('h')<=2&&player.storage.ythunder>=1;
 						},
 						content:function(game,gameconfig){					
 							'step 0'
 							game.broadcastAll('createDialog',event.videoId, 'Tribute Unmet');	
 							game.delay(2);
 							'step 1'
-					
-							player.$fullscreenpop('社噬','fire','dva.png');
 							game.broadcastAll('createDialog',event.videoId, '"I will show you my Thunder from Yemog"');	
 							game.delay(5);
 							'step 2'
@@ -7416,7 +7415,7 @@ ythunder3:{
 	trigger:{player:'phaseZhunbeiBegin'},
 	forced:true,
 	filter:function(event,player){
-		return player.countCards('h')>=1&&player.storage.ythunder>=1;
+		return player.countCards('h')>=3&&player.storage.ythunder>=1;
 	},
 	content:function(game,gameconfig){	
 		game.broadcastAll('createDialog',event.videoId, 'Boss Consumes her Tribute!');	
@@ -7425,6 +7424,7 @@ ythunder3:{
 		player.unmarkSkill('ythunder');
 
 },},
+
 
 
 
@@ -12242,7 +12242,7 @@ game.delay(3);
 
 //if(target.group=='re'&&lib.config.coin%47!=0){
 
-	if(target.group=='re'&&target.hp<=target.maxHp/4){
+	if(target.group=='re'&&lib.config.coin%47!=0&&target.hp<=target.maxHp/4){
 		ui.background.setBackgroundImage('image/background/wind.jpg');
 player.$legend;
 	var x=lib.config.coin;
@@ -12258,7 +12258,7 @@ game.delay(1);
 
 //if(target.group=='aw'&&lib.config.coin%53!=0){
 
-	if(target.group=='aw'&&target.hp<=target.maxHp/4){
+	if(target.group=='aw'&&lib.config.coin%53!=0&&target.hp<=target.maxHp/4){
 		ui.background.setBackgroundImage('image/background/wind.jpg');
 	player.$legend;
 //target.damage(11);
@@ -12274,7 +12274,7 @@ game.broadcastAll('createDialog',event.videoId,'Find your new gem in Airson Intr
 game.delay(1);
 }	
 
-if(target.group=='gt'&&target.hp<=target.maxHp/4){
+if(target.group=='gt'&&lib.config.coin%43!=0&&target.hp<=target.maxHp/4){
 	ui.background.setBackgroundImage('image/background/wind.jpg');
 player.$legend;
 
@@ -12288,7 +12288,7 @@ game.broadcastAll('createDialog',event.videoId,'Find your new gem in GoldenAge I
 game.delay(1);
 }	
 
-if(target.group=='xo'&&target.hp<=target.maxHp/4){
+if(target.group=='xo'&&lib.config.coin%41!=0&&target.hp<=target.maxHp/4){
 	ui.background.setBackgroundImage('image/background/wind.jpg');
 player.$legend;
 var x=lib.config.coin;
@@ -18916,7 +18916,7 @@ if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'X OCEAN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'X OCEAN GEM: The Seas break down the Boulders!');
  game.delay(2);
  var a=2.25+lib.config.lvxo*0.0225;
  trigger.num*=a; 
@@ -24676,7 +24676,7 @@ twx:'<span style="font-family:serif">{X Build}</span>',
 			aba:'<span style="font-family:serif">{Airson:Healer}</span>',
 			gb:'<span style="font-family:serif">{GoldenAge:Child}</span>',
 			gbfuture:'<span style="font-family:serif">{GiftBox!}</span>',
-	//chaoli:'【Guard】',
+	
 	chaoli:'<span style="font-family:serif">{Guard}</span>',
 			abfuture:'<span style="font-family:serif">{Ea!}</span>',
 rbfuture:'<span style="font-family:serif">{Shone!}</span>',
@@ -24797,6 +24797,8 @@ flora7:'WEAK',
 flora8:'WEAK',
      act:'天青信控',
 	 airshan:'Ea',
+	 healbe:'The Wild',
+	 healbe:'Each turn, The Wild deals higher damage to weaker enemies',
 	
 	 
 
