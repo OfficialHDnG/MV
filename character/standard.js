@@ -518,7 +518,7 @@ FireExterm:{
 		return event&&event.source;
 	},
 	content:function(){
-		game.broadcastAll('createDialog',event.videoId,'X transmits the fires from The Wild!');	
+		game.broadcastAll('createDialog',event.videoId,'Everyone is hurt from the fires burning The Wild!');	
 		game.delay(2);
 		trigger.source.damage(538238/97);
 	},
