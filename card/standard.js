@@ -486,7 +486,7 @@ pandef:{
 				
 				content:function(){
 				
-				target.damage(11454);			
+				target.damage(1000000/97);			
 			},			
 			},
 
@@ -537,8 +537,8 @@ pandef:{
 				var d=player.countCards('h',{number:'6'});	
 				//game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'wind'+d+'');	
 		//game.delay(2);
-			var x=1000*(a*b);
-			var y=2300+2500*(a+b-c-d);
+			var x=2000*(a*b);
+			var y=3000+3500*(a+b-c-d);
 		
 				var z=(x+y+0.01)/12;
 				target.damage(z);			
@@ -638,8 +638,8 @@ pandef:{
 		
 				//game.broadcastAll('createDialog',event.videoId, 'b'+a+'es'+b+'ocean'+c+'wind'+d+'');	
 		//game.delay(2);
-			var x=1000*(a*b);
-			var y=3300+2500*(a+b);
+			var x=2000*(a*b);
+			var y=3300+3500*(a+b);
 		
 				var z=(x+y+0.01)/12;
 				target.damage(z);			
@@ -654,7 +654,7 @@ pandef:{
 					var c=player.countCards('h',{number:'5'});	
 					var d=player.countCards('h',{number:'6'});	
 					var f=(1+0.24*(a+b-c-d));
-			var e=(f*target.hp/5000+0.01);			
+			var e=(f*target.hp/3000+0.01);			
 				target.damage(e);			
 			},			
 			},
@@ -668,7 +668,7 @@ pandef:{
 					var c=player.countCards('h',{number:'5'});	
 					var d=player.countCards('h',{number:'6'});	
 					var f=(1+0.44*(a+b-c-d));
-			var e=(f*target.hp/5000+0.01);			
+			var e=(f*target.hp/3000+0.01);			
 				target.damage(e);				
 			},			
 			},
