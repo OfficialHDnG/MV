@@ -518,7 +518,7 @@ FireExterm:{
 		return event&&event.source;
 	},
 	content:function(){
-		game.broadcastAll('createDialog',event.videoId,'Outsider is burned by fires from The Wild!');	
+		game.broadcastAll('createDialog',event.videoId,'X transmits the fires from The Wild!');	
 		game.delay(2);
 		trigger.source.damage(538238/97);
 	},
@@ -1717,7 +1717,7 @@ endgold:{
 			min:{},
 
 		
-			gresha:{
+			gesha:{
 				enable:'phaseUse',
 				usable:1,
 				filterTarget:function(card,player,target){
@@ -4206,7 +4206,9 @@ box:{
 					var b=get.distance(player,target);
 					var d=(7-b)/(5);
 					var z=Math.floor(y*x*d);
-						target.damage(z,'poison');	
+					player.useCard({name:'sha',nature:'fire'},target);
+					//	target.damage(z,'poison');	
+
 					'step 2'
 					if(target.hasSkill('roars')){
 					target.storage.glyptic5+=0.27;
