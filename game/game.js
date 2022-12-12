@@ -244,7 +244,7 @@
 
 
 					compatiblemode:{
-						name:'Lv.57+ HP Bar',
+						name:'Lv.57+ Border',
 						init:false,
 						intro:'开启兼容模式可防止扩展使游戏卡死并提高对旧扩展的兼容性，但对游戏速度有一定影响，若无不稳定或不兼容的扩展建议关闭',
 						onclick:function(bool){
