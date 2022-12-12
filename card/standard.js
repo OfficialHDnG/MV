@@ -55,11 +55,24 @@ grave:{
 					'step 0'
 						if(result.bool==false){					
 						
-						if(player.countCards('hes',{number:'6'})>1){
+						if(player.countCards('hes',{number:'6'})>=1){
 							game.broadcastAll('createDialog',event.videoId, 'Your Blaze Keeps you Warm!');
 							game.delay(2);
 						}
-						else{player.damage(200000/97)}
+						
+						else{
+							if(player.hasSkill('airson')&&!player.hasSkill('enemy')){
+								game.broadcastAll('createDialog',event.videoId, 'Ea has learned to survive the cold');
+							game.delay(2);	
+							}
+							else {
+								player.damage(222222/97)
+								var x=player.hp;
+								player.damage(x/3000)
+							
+							}
+						
+						}
 					}
 					'step 1'
 					player.addJudgeNext(card);
