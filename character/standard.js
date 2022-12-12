@@ -1537,9 +1537,38 @@ content:function(){
 				},			
 			},
 
+
+			gthund2:{
+				trigger:{player:'phaseZhunbeiBegin'},
+				forced:true,
+				init:function(player,skill){
+					player.storage.gthund2=1;
+				},
+				filter:function(event,player){
+					return player.storage.gthund2>=1;
+				
+				},
+				content:function(){	
+
+					'step 0'
+					player.storage.gthund2-=2;
+					var card=get.cardPile(function(card){
+						return card.number=='3'&&card.suit=='diamond';
+					});
+					if(card){
+						player.gain(card,'gain2');
+					}
+					else event.finish();
+					
+				},
+			},
+
+
+
 			gthund:{
 				audio:2,
 				trigger:{player:'phaseDrawBegin1'},
+				group:['gthund2'],
 				filter:function(event,player){
 					//return lib.config.coin%43==0&&player.countCards('h',{suit:'diamond'})>0&&!event.numFixed;
 					return player.countCards('h',{suit:'diamond'})>0&&!event.numFixed;
@@ -1547,7 +1576,7 @@ content:function(){
 				},
 				content:function(){
 					"step 0"
-					player.damage(1111);
+					player.damage(197191/97);
 					'step 1'
 					trigger.changeToZero();
 					event.cards=get.cards(7);
@@ -3589,7 +3618,7 @@ lowphph:{
 				direct:true,
 					content:function(player,card,event){
 				
-						game.broadcastAll('createDialog',event.videoId,'EverCold incoming: </br>each player must hold at least two Blaze LoreSongs to avoid damage');	
+						game.broadcastAll('createDialog',event.videoId,'EverCold incoming: </br>each player must hold at least 1 Blaze LoreSongs to avoid damage');	
 						game.delay(2);
 				
 			}	},
@@ -9579,7 +9608,7 @@ rspirit:{
 				player.$fullscreenpop('Roars SPIRIT!','metal');
 					
 				target.damage(1111+2777*xx);	
-				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Roars appears!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/zhugeliang.png" height="106" width="60"></img></span>');	
+				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Roars appears! "'+ get.translation(player)+', let me help you"</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/zhugeliang.png" height="106" width="60"></img></span>');	
 				game.delay(2);
 				//target.damage(x+0.07);	
 
@@ -9617,7 +9646,7 @@ aspirit:{
 				player.$fullscreenpop('Airson SPIRIT!','metal');
 					
 				target.damage(1111+2777*xx);	
-				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Airson appears!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/zhaoyun.png" height="106" width="60"></img></span>');	
+				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">Airson appears! "'+ get.translation(player)+', let me help you"</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/zhaoyun.png" height="106" width="60"></img></span>');	
 					game.delay(2);
 				//starget.damage(x+0.07);	
 
@@ -9660,7 +9689,7 @@ gspirit:{
 				player.$fullscreenpop('GoldenAge SPIRIT!','metal');
 					
 				target.damage(1111+2777*xx);	
-				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">GoldenAge appears!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/machao.png" height="106" width="60"></img></span>');	
+				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">GoldenAge appears! "'+ get.translation(player)+', let me help you"</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/machao.png" height="106" width="60"></img></span>');	
 					game.delay(2);
 			//	target.damage(x+0.07);	
 
@@ -9704,7 +9733,7 @@ xspirit:{
 				player.$fullscreenpop('X SPIRIT!','metal');
 					
 				target.damage(1111+2777*xx);	
-				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">X is here!</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/sunquan.png" height="106" width="60"></img></span>');	
+				game.broadcastAll('createDialog',event.videoId,'<span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;">X appears! "'+ get.translation(player)+', let me help you"</span></br></br><span style="text-shadow:0px 0px 7px #3ef0b8 , 0px 0px 7px #3ef0b8;opacity:0.7;"><img src="image/character/sunquan.png" height="106" width="60"></img></span>');	
 				game.delay(2);
 			//	target.damage(x+0.07);	
 						
@@ -24573,7 +24602,7 @@ awind:'<span style><img src=image/character/marks.png></img></span>',
 rearth:'<span style><img src=image/character/markse.png></img></span>',
 
 
-gthund_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Nyeve Ult: Expedition </span></br>If GoldenAge holds a Yemog LoreSong, GoldenAge sacrifices his health to find 1 LoreSong of each location: Slum, Yemog, Pinnacle, CTVT, by exploring 7 LoreSongs',
+gthund_info:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Nyeve Ult: Expedition </span></br>GoldenAge may receive an initial Yemog-Thunder LoreSong.</br></br> Each round, if GoldenAge holds a Yemog LoreSong, GoldenAge sacrifices his health, explores 7 LoreSongs, and can find 1 LoreSong of each location: Slums, Yemog, Pinnacle, CTVT',
 
 
 gthund:'<span style="text-shadow:0px 0px 7px #ffffff , 0px 0px 7px #ffffff;">Nyeve Ult: Expedition</span>',
@@ -24762,7 +24791,7 @@ andgen:'Mechanize',
 ythunder:'Yemog Thunder',
 glyptic_taowu:'Storming',
 andgen_info:'Boss fixes her android Parallel Fragments massively when under 1 million HP',
-ythunder_info:'Boss deals massive Thunder-elemental Damage when she uses a Thunder LoreSong; can be avoided via gifting Boss one of your LoreSongs',
+ythunder_info:'Boss deals massive Damage when she uses a Thunder LoreSong; can be avoided by gifting Boss one of your LoreSongs. Surge: this power bypasses all Gem abilities!',
 glyptic_taowu_info:'Boss increases her SkyWar stat by additional 3% each time!',
 resha_info:'Strikes player that is most powerful',
 //cannot block with Ea
@@ -24800,7 +24829,7 @@ flora8:'WEAK',
      act:'天青信控',
 	 airshan:'Ea',
 	 healbe:'The Wild',
-	 healbe:'Each turn, The Wild deals higher damage to weaker enemies',
+	 healbe:'Each turn, The Wild deals higher damage to weaker enemies. Overflow: this power bypasses all Gem abilities',
 	
 	 
 
