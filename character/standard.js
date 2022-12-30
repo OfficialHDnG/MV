@@ -11,10 +11,12 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 		},
 		character:{	
 			zhugeliang:['male',' ','2372137/2372137',['roars','fwarn','heab','ustart','XXroundm','los','endgold','comeback','ushone','erbfuture','rvolg','jud','jud','rvol','upp','bosshan','atk','XXlvroarsha','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','rbfuture','rba','drawr','scant','ets','styli','xdmgtest','xchk','xbg','pmen','pstart','mcslsecret','pas','pr','cho','pure','conv','xcoinm','conbg','chaoli','infshone','dust','actr','xMV','rcomb','rs','emp','etn','etw','rearthr','renem','turnm','conboss','rearth2','xko','hund','aglyptic_ocean','awind2','glyptic','xglyptic_carve','start','au','gu','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlr','bak']],
-		zhaoyun:['female',' ','1357720/1357720',['airson','coldanns','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvla','bak']],
-		machao:['male',' ','1971911/1971911',['goldenage','gbangel','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlg','bak']],
+			
+			zhaoyun:['female',' ','1357720/1357720',['airson','coldanns','abfuture','heab','ustart','los','endgold','comeback','uea','jud','eabfuture','aedqi','jud','XXedenn','XXaemark','aedep','bosshan','atk','twa','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','glinit','aba','drawa','scant','styli','pmen','pstart','mcslsecret','pas','pa','cho','pure','conv','xcoinp','xcoinm','conbg','glinit','infshone','xcoinp','xcoinm','dust','turnm','as','acomb','emp','ets','etn','etw','xairshan','aenem','conboss','glyptic','actw','xko','hund','rearth2','awind2','act','aglyptic_ocean','glyptic_carve','start','gu','ru','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvla','bak']],
+			
+					machao:['male',' ','1971911/1971911',['goldenage','gbangel','heab','ustart','los','endgold','comeback','XGoldCast','jud','gabfuture','egabfuture','gjudp','bosshan','atk','lvsha','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','gbfuture','gba','drawg','scant','styli','pmen','pstart','mcslsecret','pas','pg','cho','pure','conv','conbg','infshone','dust','turnm','gs','gcomb','emp','ets','etn','genem','conboss','awind2','xko','hund','rearth2','aglyptic_ocean','glyptic','gb','start','ru','au','glyptic_carve','xu','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlg','bak']],
+			sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlx','bak']],
 		
-	sunquan:['female',' ','1182383/1182383',['x','heab','los','ustart','endgold','comeback','xbfuture','exbfuture','uhealon','xsolve','jud','xtsup','bosshan','atk','twa','twr','twg','twx','barinit','lowphpd','lowphph','bordert','XXsolve','pin','drawx','XXhpscan','scant','pmen','pstart','mcslsecret','pas','px','cho','pure','conv','conbg','turnm','infshone','dust','xs','xcomb','emp','ets','etw','xenem','conboss','glyptic','awind2','xko','hund','rearth2','start','ru','start','gu','glyptic_carve','au','xStill','rbg','rsbg','rgibg','abg','asbg','agibg','gbg','gsbg','xbg','xsbg','st','et','nt','ht','introgl','ggibg','lvlx','bak']],
 				
 		},
 		characterIntro:{
@@ -27,6 +29,8 @@ game.import('character',function(lib,game,ui,get,ai,_status){
 			ganning:['lingtong','xf_sufei'],
 		},
 		skill:{
+
+
 
 
 			lvlx:{	
@@ -339,8 +343,9 @@ var x=lib.config.lva;
 				trigger:{player:'phaseDrawBegin2'},
 				forced:true,		
 				content:function(){
-					if(game.roundNumber==1){	trigger.num-=2;}
-					if(game.roundNumber>=2){	trigger.num-=2;}
+
+//if(game.roundNumber>=1){	trigger.num+=12;}
+					if(game.roundNumber>=1){	trigger.num-=2;}
 								},	
 			},
 
@@ -1077,7 +1082,7 @@ content:function(){
 				direct:true,
 				filter:function(event,player){					
 					//if(lib.config.coin%47!=0||!_status.connectMode) return false;
-					if(!player.countCards('he')) return false;
+					if(player.countCards('he')<=1) return false;
 					if (lib.config.coin%41==0||_status.connectMode)  return true;	
 					//return true;		
 				},
@@ -1102,7 +1107,25 @@ content:function(){
 							player.logSkill('xyirang',target);
 							target.gain(cards,player,'give');
 							//target.gain(cards,player,'giveAuto').gaintag.add('X');
-							target.addTempSkill('garden',{player:'phaseAfter'});
+							
+							if(target.hasSkill('enemy'))
+							{
+player.$fullscreenpop('蓝晶希任','metal','dva.png');
+game.delay(2);
+var z=get.distance(player,target);
+var b=(7-z)/5;
+	target.damage(Math.floor(5203*b));
+							}
+
+							if(!target.hasSkill('enemy'))
+							{
+								tartarget.addTempSkill('garden',{player:'phaseAfter'});
+						
+							}
+							
+						
+						
+						
 							game.delay();
 						}
 						'step 2'
@@ -1120,7 +1143,7 @@ content:function(){
 
 
 
-			OLDxocean:{
+			OLDxoan:{
 				enable:'phaseUse',
 						popup:false,
 				prepare:'give2',
@@ -1189,7 +1212,7 @@ content:function(){
 			
 
 
-			OLDxocean:{  
+			OLDxean:{  
 				enable:'chooseToUse',
 				//enable:'phaseUse',
 				prepare:'give2',
@@ -2633,9 +2656,12 @@ else{
 					
 						trigger.cancel();
 
-					game.broadcastAll('createDialog',event.videoId, 'Ea:"I will make sure you are safe, ' + get.translation(player) +'  "');	
+						if(!player.hasSkill('enemy'))	{game.broadcastAll('createDialog',event.videoId, 'Ea:"I will make sure you are safe, ' + get.translation(player) +'  "');	
 					game.delay(2);
-			
+				}
+				if(player.hasSkill('enemy'))	{game.broadcastAll('createDialog',event.videoId, 'Boss dodges by playing Ea:Haven LoreSong!');	
+					game.delay(2);
+				}
 
 					}
 					
@@ -3703,16 +3729,16 @@ lowphph:{
 							var a=x+7;		
 							game.broadcastAll('createDialog',event.videoId, 'Lv.'+ a +' Airson strikes softly!');
 							game.delay(2);
-							target.damage(7.33+37*a);
+							var b=player.storage.glyptic4;
+							var c=player.storage.glyptic10;
+							target.damage(1.5*(270+b)*c*(1+a/12),'poison');
 																					
 						}
 
 						if(!target.hasSkill('enemy')){		
 							game.broadcastAll('createDialog',event.videoId, 'Airson provided healing!');
 							game.delay(2);
-							var z=Math.min(lib.config.lva,17482500);
-							var x=(Math.floor(Math. sqrt(z/777)));
-							var a=Math.floor(77777+(x*x*3333/777));
+						
 							target.recover(77777);	
 							}
 							
@@ -4041,7 +4067,7 @@ box:{
 
 
 
-			OLDxocean:{
+			OLDxean:{
 				trigger:{player:'phaseZhunbeiBegin'},
 				filter:function(event,player){
 					return !game.hasPlayer(function(current){
@@ -5699,7 +5725,7 @@ player.skip('phaseUse');
 				if(evt&&evt.player==player) evt.skipped=true;}						
 			},
 
-			ets:{
+		ets:{
 				trigger:{player:['useCard']},
 				direct:true,
 				filter:function(event){
@@ -5708,8 +5734,9 @@ player.skip('phaseUse');
 				},
 				content:function(player,card,event){
 									
-					var evt=event.getParent('phaseUse');
-				if(evt&&evt.player==player) evt.skipped=true;}						
+			//#		var evt=event.getParent('phaseUse');
+			//#		if(evt&&evt.player==player) evt.skipped=true;
+		}						
 			},
 		
 			etn:{
@@ -8177,7 +8204,8 @@ tstart:{
 
 			gbangel:{
 				enable:'phaseUse',
-				usable:2,
+				usable:1,
+				//usable:2,
 				popup:false,
 				prepare:'give2',
 				filterTarget:function(card,player,target){
@@ -8225,10 +8253,16 @@ tstart:{
 					//if(card.number==6) target.recover(2);
 					//if(card.number==7) target.recover(2);
 					var num=get.number(cards[0]);
-					if(num==6){target.recover(10000*num);
-						player.recover(10000*num);}
-					else{target.recover(11111*num);
-						player.recover(11111*num);}		
+				//	if(num==6){target.recover(10000*num);
+				//		player.recover(10000*num);}
+				//	else{target.recover(11111*num);
+				//		player.recover(11111*num);}	
+						
+						if(num==6){target.damage(100/97*num);
+							player.recover(100*num);}
+						else{target.damage(111/97*num);
+							player.recover(111*num);}		
+
 
 								},
 			
@@ -10132,6 +10166,9 @@ aeath3:{
 //	},
 },
 
+aearth3:{},
+
+
 			aearth:{
 				audio:'wushuang',
 				group:['aearth2','aearth3'],
@@ -10164,7 +10201,7 @@ aeath3:{
 	
 
 
-			aearthX2:{
+			aearth2:{
 				audio:'wushuang',
 				audioname:['re_lvbu','shen_lvbu','lvlingqi'],
 				trigger:{player:'useCardToPlayered',target:'useCardToTargeted'},
@@ -10536,7 +10573,7 @@ aeath3:{
 
 
 
-			OLDxocean:{
+			OLDcean:{
 				audio:2,
 				filter:function(event,player){
 					//return player.countCards('hes',{suit:'diamond'})>0&&lib.config.xo>=1;
@@ -13420,6 +13457,614 @@ target.update();
 
 
 
+			brill:{
+				enable:'phaseUse',
+				prompt:'Carve with a LoreSong, and choose a Members to carve their GLYPTIC',
+			filter:function(event,player){
+					if(player.countCards('h')>0&&lib.config.coin>=2) return true;
+					return false;				},
+				filterCard:function(card){
+					return true;			},
+			filterTarget:function(card,player,target){
+				if(target.hasSkill('enemy'))return false;
+				return true;		},
+				position:'he',
+				content:function(target,game,gameconfig){
+					'step 0'
+					target.node.jiu=ui.create.div('.playerglea',target.node.avatar);
+					target.node.jiu2=ui.create.div('.playerglea',target.node.avatar2);
+					game.delay(2);
+
+				'step 1'
+				var num=get.number(cards[0]);
+				if(num<=4){
+					if(target.hasSkill('roars')){
+		
+						switch(target.storage.glyptic){
+									case target.storage.glyptic=77:
+						target.storage.glyptic-=76;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic25+=1;
+						target.node.avatar2.setBackground('rearth','character');
+						target.node.avatar.setBackground('rearth','character');
+						target.addSkill('earth');
+						target.addSkill('rearth');
+						target.update(); break;
+									case target.storage.glyptic=1:
+						target.storage.glyptic+=9;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic23+=1;
+						target.node.avatar2.setBackground('rwind','character');
+						target.node.avatar.setBackground('rwind','character');
+						target.removeSkill('earth');
+						target.addSkill('wind');
+						target.removeSkill('rearth');
+						target.addSkill('rwind');
+						target.update(); break;
+									case target.storage.glyptic=10:
+						target.storage.glyptic-=7;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic26+=1;
+						target.node.avatar2.setBackground('rblaze','character');
+						target.node.avatar.setBackground('rblaze','character');
+						target.removeSkill('wind');
+						target.addSkill('blaze');
+						target.removeSkill('rwind');
+						target.addSkill('rblaze');
+						target.update(); break;
+									case target.storage.glyptic=3:
+						target.storage.glyptic+=4;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic23+=1;
+						target.node.avatar2.setBackground('rthund','character');
+						target.node.avatar.setBackground('rthund','character');
+						target.removeSkill('blaze');
+						target.addSkill('thund');
+						target.removeSkill('rblaze');
+						target.addSkill('rthund');
+						target.update(); break;
+						
+									case target.storage.glyptic=7:
+						target.storage.glyptic-=6;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic25+=1;
+						target.node.avatar2.setBackground('rearth','character');
+						target.node.avatar.setBackground('rearth','character');
+						target.removeSkill('thund');
+						target.addSkill('earth');
+						target.removeSkill('rthund');
+						target.addSkill('rearth');
+						target.update(); break;	}
+						}
+						if(target.hasSkill('airson')){
+						switch(target.storage.glyptic){
+									case target.storage.glyptic=77:
+						target.storage.glyptic-=70;
+						target.storage.glyptic22+=1;
+						target.node.avatar2.setBackground('awind','character');
+						target.node.avatar.setBackground('awind','character');
+						target.addSkill('wind');
+						target.addSkill('awind');
+						////target.storage.glyptic3-=0.073;
+						target.update(); break;
+									case target.storage.glyptic=7:
+						target.storage.glyptic+=13;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic24+=1;
+						target.node.avatar2.setBackground('alight','character');
+						target.node.avatar.setBackground('alight','character');
+						target.removeSkill('wind');
+						target.addSkill('light');
+						target.removeSkill('awind');
+						target.addSkill('alight');
+						target.update(); break;
+									case target.storage.glyptic=20:
+						target.storage.glyptic-=15;
+						////target.storage.glyptic3-=0.073;
+						target.storage.glyptic21+=1;
+						target.node.avatar2.setBackground('aocean','character');
+						target.node.avatar.setBackground('aocean','character');
+						target.removeSkill('light');
+						target.addSkill('ocean');
+						target.removeSkill('alight');
+						target.addSkill('aocean');
+						
+						target.update(); break;
+									case target.storage.glyptic=5:
+						target.storage.glyptic-=2;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic25+=1;
+						target.node.avatar2.setBackground('aearth','character');
+						target.node.avatar.setBackground('aearth','character');
+						target.removeSkill('ocean');
+						target.addSkill('earth');
+						target.removeSkill('aocean');
+						target.addSkill('aearth');
+						
+						target.update(); break;
+									case target.storage.glyptic=3:
+						target.storage.glyptic+=4;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic22+=1;
+						target.node.avatar2.setBackground('awind','character');
+						target.node.avatar.setBackground('awind','character');
+						target.removeSkill('earth');
+						target.addSkill('wind');
+						target.removeSkill('aearth');
+						target.addSkill('awind');
+						
+						target.update(); break;	}
+						}
+						if(target.hasSkill('goldenage')){
+						switch(target.storage.glyptic){
+									case target.storage.glyptic=77:
+						target.storage.glyptic-=66;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic23+=1;
+						target.node.avatar2.setBackground('gthund','character');
+						target.node.avatar.setBackground('gthund','character');
+						target.addSkill('thund');
+						target.addSkill('gthund');
+						
+						target.update(); break;
+									case target.storage.glyptic=11:
+						target.storage.glyptic-=2;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic27+=1;
+						target.node.avatar2.setBackground('gflora','character');
+						target.node.avatar.setBackground('gflora','character');
+						target.removeSkill('thund');
+						target.addSkill('Eden');
+						target.removeSkill('gthund');
+						target.addSkill('gflora');
+						
+						target.update(); break;
+									case target.storage.glyptic=9:
+						target.storage.glyptic-=2;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic24+=1;
+						target.node.avatar2.setBackground('glight','character');
+						target.node.avatar.setBackground('glight','character');
+						target.removeSkill('Eden');
+						target.addSkill('light');
+						target.removeSkill('gflora');
+						target.addSkill('glight');
+						
+						target.update(); break;
+									case target.storage.glyptic=7:
+						target.storage.glyptic-=7;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic24+=1;
+						target.node.avatar2.setBackground('gocean','character');
+						target.node.avatar.setBackground('gocean','character');
+						target.removeSkill('light');
+						target.addSkill('ocean');
+						target.removeSkill('glight');
+						target.addSkill('gocean');
+												target.update(); break;
+									case target.storage.glyptic=0:
+						target.storage.glyptic+=11;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic23+=1;
+						target.node.avatar2.setBackground('gthund','character');
+						target.node.avatar.setBackground('gthund','character');
+						target.removeSkill('ocean');
+						target.addSkill('thund');
+						target.removeSkill('gocean');
+						target.addSkill('gthund');
+						
+						target.update(); break;	}
+						}
+								if(target.hasSkill('x')){
+						switch(target.storage.glyptic){
+									case target.storage.glyptic=77:
+						target.storage.glyptic-=75;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic21+=1;
+						target.node.avatar2.setBackground('xocean','character');
+						target.node.avatar.setBackground('xocean','character');
+						target.addSkill('ocean');
+						target.addSkill('xocean');
+						
+						target.update(); break;
+									case target.storage.glyptic=2:
+						target.storage.glyptic+=6;
+					
+						target.storage.glyptic26+=1;
+						target.node.avatar2.setBackground('xblaze','character');
+						target.node.avatar.setBackground('xblaze','character');
+						target.removeSkill('ocean');
+						target.addSkill('blaze');
+						target.removeSkill('xocean');
+						target.addSkill('xblaze');					
+						
+						target.update(); break;
+									case target.storage.glyptic=8:
+						target.storage.glyptic-=7;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic27+=1;
+						target.node.avatar2.setBackground('xflora','character');
+						target.node.avatar.setBackground('xflora','character');
+						target.removeSkill('blaze');
+						target.addSkill('Eden');
+						target.removeSkill('xblaze');
+						target.addSkill('xflora');
+						
+						target.update(); break;
+									case target.storage.glyptic=1:
+						target.storage.glyptic+=2;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic25+=1;
+						target.node.avatar2.setBackground('xearth','character');
+						target.node.avatar.setBackground('xearth','character');
+						target.removeSkill('Eden');
+						target.addSkill('earth');
+						target.removeSkill('xflora');
+						target.addSkill('xearth');
+						
+						target.update(); break;
+									case target.storage.glyptic=3:
+						target.storage.glyptic-=1;
+						////target.storage.glyptic3-=0.073;
+						
+						target.storage.glyptic21+=1;
+						target.node.avatar2.setBackground('xocean','character');
+						target.node.avatar.setBackground('xocean','character');
+						target.removeSkill('earth');
+						target.addSkill('ocean');
+						target.removeSkill('xearth');
+						target.addSkill('xocean');
+						
+						target.update(); break;
+						}
+						} 		
+				}
+				if(num>=5){
+
+					if(target.hasSkill('roars')){
+
+						switch(target.storage.glyptic){
+												case target.storage.glyptic=77:
+						target.storage.glyptic-=70;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic23+=1;
+						target.node.avatar2.setBackground('rthund','character');
+						target.node.avatar.setBackground('rthund','character');
+						target.addSkill('thund');
+						target.addSkill('rthund');
+						
+						target.update(); break;
+												case target.storage.glyptic=1:
+						target.storage.glyptic+=6;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic23+=1;
+						target.node.avatar2.setBackground('rthund','character');
+						target.node.avatar.setBackground('rthund','character');
+						target.removeSkill('earth');
+						target.addSkill('thund');
+						target.removeSkill('rearth');
+						target.addSkill('rthund');
+						
+						target.update(); break;
+												case target.storage.glyptic=7:
+						target.storage.glyptic-=4;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic26+=1;
+						target.node.avatar2.setBackground('rblaze','character');
+						target.node.avatar.setBackground('rblaze','character');
+						target.removeSkill('thund');
+						target.addSkill('blaze');
+						target.removeSkill('rthund');
+						target.addSkill('rblaze');
+						
+						
+						target.update(); break;
+												case target.storage.glyptic=3:
+						target.storage.glyptic+=7;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic22+=1;
+						target.node.avatar2.setBackground('rwind','character');
+						target.node.avatar.setBackground('rwind','character');
+						target.removeSkill('blaze');
+						target.addSkill('wind');
+						target.removeSkill('rblaze');
+						target.addSkill('rwind');
+						target.update(); break;
+						
+												case target.storage.glyptic=10:
+						target.storage.glyptic-=9;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic25+=1;
+						target.node.avatar2.setBackground('rearth','character');
+						target.node.avatar.setBackground('rearth','character');
+						target.removeSkill('wind');
+						target.addSkill('earth');
+						target.removeSkill('rwind');
+						target.addSkill('rearth');
+						
+						target.update(); break;	}
+						}
+						
+						
+							if(target.hasSkill('airson')){
+						
+						switch(target.storage.glyptic){
+												case target.storage.glyptic=77:
+						target.storage.glyptic-=74;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic25+=1;
+						target.node.avatar2.setBackground('aearth','character');
+						target.node.avatar.setBackground('aearth','character');
+						target.addSkill('earth');
+						target.addSkill('aearth');
+						
+						target.update(); break;
+												case target.storage.glyptic=7:
+						target.storage.glyptic-=4;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic25+=1;
+						target.node.avatar2.setBackground('aearth','character');
+						target.node.avatar.setBackground('aearth','character');
+						target.removeSkill('wind');
+						target.addSkill('earth');
+						target.removeSkill('awind');
+						target.addSkill('aearth');
+						
+						
+						target.update(); break;
+												case target.storage.glyptic=3:
+						target.storage.glyptic+=2;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic21+=1;
+						target.node.avatar2.setBackground('aocean','character');
+						target.node.avatar.setBackground('aocean','character');
+						target.removeSkill('earth');
+						target.addSkill('ocean');
+						target.removeSkill('aearth');
+						target.addSkill('aocean');
+						
+						target.update(); break;
+												case target.storage.glyptic=5:
+						target.storage.glyptic+=15;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic24+=1;
+						target.node.avatar2.setBackground('alight','character');
+						target.node.avatar.setBackground('alight','character');
+						target.removeSkill('ocean');
+						target.addSkill('light');
+						target.removeSkill('aocean');
+						target.addSkill('alight');
+						
+						target.update(); break;
+						
+												case target.storage.glyptic=20:
+						target.storage.glyptic-=13;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic22+=1;
+						target.node.avatar2.setBackground('awind','character');
+						target.node.avatar.setBackground('awind','character');
+						target.removeSkill('light');
+						target.addSkill('wind');
+						target.removeSkill('alight');
+						target.addSkill('awind');
+						
+						
+						
+						target.update(); break;	}
+						}
+						
+						
+							if(target.hasSkill('goldenage')){
+						
+						switch(target.storage.glyptic){
+												case target.storage.glyptic=77:
+						target.storage.glyptic-=77;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic21+=1;
+						target.node.avatar2.setBackground('gocean','character');
+						target.node.avatar.setBackground('gocean','character');
+						target.addSkill('ocean');
+						target.addSkill('gocean');
+						
+						target.update(); break;
+												case target.storage.glyptic=11:
+						target.storage.glyptic-=11;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic21+=1;
+						target.node.avatar2.setBackground('gocean','character');
+						target.node.avatar.setBackground('gocean','character');
+						target.removeSkill('thund');
+						target.addSkill('ocean');
+						target.removeSkill('gthund');
+						target.addSkill('gocean');
+						
+						target.update(); break;
+												case target.storage.glyptic=0:
+						target.storage.glyptic+=7;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic24+=1;
+						target.node.avatar2.setBackground('glight','character');
+						target.node.avatar.setBackground('glight','character');
+						target.removeSkill('ocean');
+						target.addSkill('light');
+						target.removeSkill('gocean');
+						target.addSkill('glight');
+						
+						target.update(); break;
+												case target.storage.glyptic=7:
+						target.storage.glyptic+=2;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic27+=1;
+						target.node.avatar2.setBackground('gflora','character');
+						target.node.avatar.setBackground('gflora','character');
+						target.removeSkill('light');
+						target.addSkill('Eden');
+						target.removeSkill('glight');
+						target.addSkill('gflora');
+						
+						target.update(); break;
+						
+												case target.storage.glyptic=9:
+						target.storage.glyptic+=2;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic23+=1;
+						target.node.avatar2.setBackground('gthund','character');
+						target.node.avatar.setBackground('gthund','character');
+						target.removeSkill('Eden');
+						target.addSkill('thund');
+						target.removeSkill('gflora');
+						target.addSkill('gthund');
+						
+						target.update(); break;	}
+						}
+						
+											if(target.hasSkill('x')){
+						switch(target.storage.glyptic){
+												case target.storage.glyptic=77:
+						target.storage.glyptic-=74;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic25+=1;
+						target.node.avatar2.setBackground('xearth','character');
+						target.node.avatar.setBackground('xearth','character');
+						target.addSkill('earth');
+						target.addSkill('xearth');
+						
+						target.update(); break;
+												case target.storage.glyptic=2:
+						target.storage.glyptic+=1;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic25+=1;
+						target.node.avatar2.setBackground('xearth','character');
+						target.node.avatar.setBackground('xearth','character');
+						target.removeSkill('xocean');
+						target.addSkill('earth');
+						target.removeSkill('xocean');
+						target.addSkill('xearth');
+						
+						target.update(); break;
+												case target.storage.glyptic=3:
+						target.storage.glyptic-=2;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic27+=1;
+						target.node.avatar2.setBackground('xflora','character');
+						target.node.avatar.setBackground('xflora','character');
+						target.removeSkill('earth');
+						target.addSkill('Eden');
+						target.removeSkill('xearth');
+						target.addSkill('xflora');
+						
+						target.update(); break;
+												case target.storage.glyptic=1:
+						target.storage.glyptic+=7;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic26+=1;
+						target.node.avatar2.setBackground('xblaze','character');
+						target.node.avatar.setBackground('xblaze','character');
+						target.removeSkill('Eden');
+						target.addSkill('blaze');
+						target.removeSkill('xflora');
+						target.addSkill('xblaze');
+						
+						target.update(); break;
+						
+												case target.storage.glyptic=8:
+						target.storage.glyptic-=6;
+						//target.storage.glyptic2+=37;
+						
+						target.storage.glyptic21+=1;
+						target.node.avatar2.setBackground('xocean','character');
+						target.node.avatar.setBackground('xocean','character');
+						target.removeSkill('blaze');
+						target.addSkill('ocean');
+						target.removeSkill('xblaze');
+						target.addSkill('xocean');
+						
+						target.update(); break;
+						}
+									}
+				}
+			'step 2'
+			target.storage.glyptic20-=1;
+			'step 3'
+			var num=get.number(cards[0]);
+			//###TEST
+			if(num==1&&target.storage.glyptic20>=1){
+				target.storage.glyptic4+=37;
+	game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+'1!');
+	 
+			}
+			if(num==2&&target.storage.glyptic20>=1){
+				
+				target.storage.glyptic4+=37;
+game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+'2!');
+	 
+			}
+			if(num==3&&target.storage.glyptic20>=1){
+				target.storage.glyptic2+=37;
+game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+'3!');
+	 
+			}
+			if(num==4&&target.storage.glyptic20>=1){
+				target.storage.glyptic2+=37;
+				game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+'4!');
+	
+			}
+			if(num==5&&target.storage.glyptic20>=1){
+				target.storage.glyptic5-=0.1237;
+				game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+'5!');
+	
+			}
+			if(num==6&&target.storage.glyptic20>=1){
+				target.storage.glyptic5-=0.1237;
+				game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+'6!');
+	
+			}
+			if(num==7&&target.storage.glyptic20>=1){
+				target.storage.glyptic3-=0.1237;
+				game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+'7!');
+	
+			}
+			
+			'step 4'
+			target.update();    
+			'step 5'
+			player.$fullscreenpop('NEW MODE!','metal');
+
+
+
+			},
+		},
+
+
 			glinit:{
 				enable:'phaseUse',
 				prompt:'Carve with a LoreSong, and choose a Members to carve their GLYPTIC',
@@ -13429,9 +14074,6 @@ target.update();
 					
 			filter:function(event,player){
 					if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin>=2) return true;
-					//if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%47==0) return true;
-					//if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%43==0) return true;
-					//if(player.countCards('h')>0&&player.storage.glinit>=1&&lib.config.coin%41==0) return true;
 					return false;
 				},
 				filterCard:function(card){
@@ -13446,7 +14088,7 @@ target.update();
 					target.node.jiu=ui.create.div('.playerglea',target.node.avatar);
 					target.node.jiu2=ui.create.div('.playerglea',target.node.avatar2);
 					game.delay(2);
-					player.storage.glinit-=2;
+				//#	player.storage.glinit-=2;
 			
 				if(target.hasSkill('roars')&&lib.config.coin%47==0){
 			
@@ -13729,13 +14371,22 @@ target.update();
 			'step 2'
 	
 			var num=get.number(cards[0]);
-			if(num==1){target.storage.glyptic2+=0.001;}
- 
-
+			//###TEST
+			if(num==1){target.storage.glyptic4+=37;}
+			if(num==2){target.storage.glyptic4+=37;}
+			if(num==3){target.storage.glyptic2+=37;}
+			if(num==4){target.storage.glyptic2+=37;}
+			if(num==5){target.storage.glyptic5-=0.1237;}
+			if(num==6){target.storage.glyptic5-=0.1237;}
+			if(num==7){target.storage.glyptic3-=0.1237;}
+			//if(num==7){target.storage.glyptic3-=0.8659;}
 			'step 3'
 			target.update();    
 			'step 4'
 			player.$fullscreenpop('NEW MODE!','metal');
+
+
+
 			},
 				},
 
@@ -17521,7 +18172,7 @@ player.storage.glyptic27=0;
 
 
 ocean:{
-	group:['ocean2','ocean3','ocean5','ocean4','ocean6','ocean7','ocean8','ocean9'],
+		group:['ocean2','ocean3','ocean5','ocean4','ocean6','ocean7','ocean8','ocean9','ocean10','ocean11'],
 
 	init:function(player){
 	 player.storage.ocean=1;
@@ -17534,7 +18185,7 @@ ocean2:{
  enable:'chooseToUse',
  filter:function(event,player){
 	 if(!player.countCards('he',function(card){
-			   return get.number(card)=='7'||get.number(card)=='1'||get.number(card)=='2';
+			   return get.number(card)=='1';
 	 })){
 		 return false;
 	 }
@@ -17543,14 +18194,13 @@ ocean2:{
 	 });
  },
  filterCard:function(card){
-	 return get.number(card)=='7'||get.number(card)=='1'||get.number(card)=='1'
+	 return get.number(card)=='1'
  },
  position:'he',
  viewAs:{name:'juedou'},
  viewAsFilter:function(player){
-	 if(player.countCards('he',{number:'7'})) return true;
-	 if(player.countCards('he',{number:'1'})) return true;
-	 if(player.countCards('he',{number:'2'})) return true;
+		 if(player.countCards('he',{number:'1'})) return true;
+
  },
  prompt:'Play a LoreSong as Ocean Skywar',
  check:function(card){return 5-get.value(card)},
@@ -17619,7 +18269,7 @@ if(z==1){
    var z=(x/y);
    if(z==1){
 	   trigger.cancel();
-	   game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+' OCEAN GEM: Immune!');
+	   game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+' OCEAN GEM HARMONY!');
 	   game.delay(3);}
 	   },},
    
@@ -17666,7 +18316,7 @@ if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
 
 
 if(z==1&&trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'GoldenAge Thunder GEM: Electricity Fills the Sea!');
+	game.broadcastAll('createDialog',event.videoId, 'Boss Thunder GEM: Overcomes Water!');
 	game.delay(2);
 	trigger.num*=3;	
 }}
@@ -17694,34 +18344,34 @@ var x=trigger.num;
 var y=Math.floor(x);
 var z=(x/y);
 if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'GoldenAge EDEN GEM: Electricity Fills the Sea!');
+	game.broadcastAll('createDialog',event.videoId, 'GoldenAge EDEN GEM: Flora Takes in the Water!');
 	game.delay(2);
 	var a=2.25+lib.config.lvge*0.0225;
 	trigger.num*=a;	
 }
 if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'Rpars EDEN GEM: Electricity Fills the Sea!');
+	game.broadcastAll('createDialog',event.videoId, 'Roars EDEN GEM: Flora Takes in the Water!');
 	game.delay(2);
 	var a=2.25+lib.config.lvre*0.0225;
 	trigger.num*=a;	
 }
 
 if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'Airson EDEN GEM: Electricity Fills the Sea!');
+	game.broadcastAll('createDialog',event.videoId, 'Airson EDEN GEM: Flora Takes in the Water!');
 	game.delay(2);
 	var a=2.25+lib.config.lvae*0.0225;
 	trigger.num*=a;	
 }
 
 if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'X EDEN GEM: Electricity Fills the Sea!');
+	game.broadcastAll('createDialog',event.videoId, 'X EDEN GEM: Flora Takes in the Water!');
 	game.delay(2);
 	var a=2.25+lib.config.lvxe*0.0225;
 	trigger.num*=a;	
 }
 
 if(z==1&&trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'Boss Eden GEM: Flora Draws Water!');
+	game.broadcastAll('createDialog',event.videoId, 'Boss Eden GEM: Overcomes Water!');
 	game.delay(2);
 	trigger.num*=3;	
 }}
@@ -17738,6 +18388,67 @@ ocean9:{
    content:function(player,event,trigger,source){              
 	 player.storage.ocean+=1;
 	 }},
+
+
+	 
+ocean10:{  
+	enable:'chooseToUse',
+	filter:function(event,player){
+	if(!player.countCards('he',function(card){
+				  return get.number(card)=='7';
+		})){
+			return false;
+		}	 
+		//if (lib.config.coin%41==0||_status.connectMode) 
+		 return true;	
+	},
+	filterCard:function(card){
+		return get.number(card)=='7'
+	},
+	position:'he',
+	viewAs:{name:'djuedou'},
+	viewAsFilter:function(player){
+		if(player.countCards('he',{number:'7'})) return true;
+	   
+	},
+	prompt:'Play a LoreSong as Tidal II',
+	//content:function(player,event,trigger,source){ 
+	   //player.glyptic
+   //},
+	check:function(card){return 5-get.value(card)},
+									   
+   },
+
+
+   
+ocean11:{  
+	enable:'chooseToUse',
+	filter:function(event,player){
+	 	if(!player.countCards('he',function(card){
+				  return get.number(card)=='2';
+		})){
+			return false;
+		}	 
+		//if (lib.config.coin%41==0||_status.connectMode)  
+		return true;	
+	},
+	filterCard:function(card){
+		return get.number(card)=='2'
+	},
+	position:'he',
+	viewAs:{name:'tjuedou'},
+	viewAsFilter:function(player){
+		if(player.countCards('he',{number:'2'})) return true;
+	   
+	},
+	prompt:'Play a LoreSong as Tidal I',
+	//content:function(player,event,trigger,source){ 
+	   //player.glyptic
+   //},
+	check:function(card){return 5-get.value(card)},
+									   
+   },
+
 
 
 
@@ -17762,7 +18473,8 @@ wind2:{
 	 })){
 		 return false;
 	 }	 
-	 if (lib.config.coin%53==0||_status.connectMode)  return true;	
+	 //if (lib.config.coin%53==0||_status.connectMode)  
+	 return true;	
  },
  filterCard:function(card){
 	 return get.number(card)=='2'
@@ -17793,7 +18505,8 @@ wind10:{
 		})){
 			return false;
 		}	 
-		if (lib.config.coin%53==0||_status.connectMode)  return true;	
+		//if (lib.config.coin%53==0||_status.connectMode)  
+		return true;	
 	},
 	filterCard:function(card){
 		return get.number(card)=='1'
@@ -17822,7 +18535,8 @@ wind11:{
 		})){
 			return false;
 		}	 
-		if (lib.config.coin%53==0||_status.connectMode)  return true;	
+		//if (lib.config.coin%53==0||_status.connectMode) 
+		 return true;	
 	},
 	filterCard:function(card){
 		return get.number(card)=='3'
@@ -17928,7 +18642,7 @@ var y=Math.floor(x);
 var z=(x/y);
 if(z==1){
    trigger.cancel();
-   game.broadcastAll('createDialog',event.videoId,' '+ get.translation(player) + ' Gem Harmony: no damage!');
+   game.broadcastAll('createDialog',event.videoId,' '+ get.translation(player) + ' Wind Gem Harmony!');
 	game.delay(2);}
 
    },},
@@ -17951,33 +18665,33 @@ if(z==1){
    var y=Math.floor(x);
    var z=(x/y);
    if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
-	   game.broadcastAll('createDialog',event.videoId, 'GoldenAge Blaze GEM: Electricity Fills the Sea!');
+	   game.broadcastAll('createDialog',event.videoId, 'GoldenAge Blaze GEM: Flames Reduce the Air!');
 	   game.delay(2);
 	   var a=2.25+lib.config.lvgb*0.0225;
 	   trigger.num*=a; 
    }
 
    if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'Roars Blaze GEM: Electricity Fills the Sea!');
+	game.broadcastAll('createDialog',event.videoId, 'Roars Blaze GEM: Flames Reduce the Air!');
 	game.delay(2);
 	var a=2.25+lib.config.lvrb*0.0225;
 	trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'Airson Blaze GEM: Electricity Fills the Sea!');
+	game.broadcastAll('createDialog',event.videoId, 'Airson Blaze GEM: Flames Reduce the Air!');
 	game.delay(2);
 	var a=2.25+lib.config.lvab*0.0225;
 	trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'X Blaze GEM: Electricity Fills the Sea!');
+	game.broadcastAll('createDialog',event.videoId, 'X Blaze GEM: Flames Reduce the Air!');
 	game.delay(2);
 	var a=2.25+lib.config.lvxb*0.0225;
 	trigger.num*=a; 
 }
    
    if(z==1&&trigger.source.hasSkill('enemy')){
-	   game.broadcastAll('createDialog',event.videoId, 'Boss Blaze GEM: Flames Consume the Air!');
+	   game.broadcastAll('createDialog',event.videoId, 'Boss Blaze GEM: Overcomes Air!');
 	   game.delay(2);
 	   trigger.num*=3; 
    }}
@@ -18016,33 +18730,33 @@ var x=trigger.num;
 var y=Math.floor(x);
 var z=(x/y);
 if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'GoldenAge EDEN GEM: Electricity Fills the Sea!');
+	game.broadcastAll('createDialog',event.videoId, 'GoldenAge EDEN GEM: Flora takes in the Air!');
 	game.delay(2);
 	var a=2.25+lib.config.lvge*0.0225;
 	trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Roars EDEN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Roars EDEN GEM: Flora takes in the Air!');
  game.delay(2);
  var a=2.25+lib.config.lvre*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Airson EDEN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Airson EDEN GEM: Flora takes in the Air!');
  game.delay(2);
  var a=2.25+lib.config.lvae*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'X EDEN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'X EDEN GEM: Flora takes in the Air!');
  game.delay(2);
  var a=2.25+lib.config.lvxe*0.0225;
  trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('enemy')){
-   game.broadcastAll('createDialog',event.videoId, 'Boss Eden GEM: Electricity Fills the Sea!');
+   game.broadcastAll('createDialog',event.videoId, 'Boss Eden GEM: Overcomes Air!');
    game.delay(2);
    trigger.num*=3; 
 }}
@@ -18115,7 +18829,7 @@ wind9:{
 
 thund:{
 	group:['thund2','thund3','thund5','thund4','thund6','thund7','thund8','thund10','thund11','thund9'],
-
+	
 	init:function(player){
 	 player.storage.thund=1;
  },
@@ -18134,7 +18848,8 @@ thund10:{
 		})){
 			return false;
 		}	 
-		if (lib.config.coin%43==0||_status.connectMode)  return true;	
+		//if (lib.config.coin%43==0||_status.connectMode)  
+		return true;	
 	},
 	filterCard:function(card){
 		return get.number(card)=='2'
@@ -18163,7 +18878,8 @@ thund11:{
 		})){
 			return false;
 		}	 
-		if (lib.config.coin%43==0||_status.connectMode)  return true;	
+		//if (lib.config.coin%43==0||_status.connectMode)  
+		return true;	
 	},
 	filterCard:function(card){
 		return get.number(card)=='4'
@@ -18288,7 +19004,7 @@ var y=Math.floor(x);
 var z=(x/y);
 if(z==1){
 	trigger.cancel();
-	game.broadcastAll('createDialog',event.videoId,' '+ get.translation(player) + ' Gem Harmony: no damage!');
+	game.broadcastAll('createDialog',event.videoId,' '+ get.translation(player) + ' Thunder Gem Harmony!');
 	game.delay(2);}
 	},},
 
@@ -18333,33 +19049,33 @@ if(z==1){
 	var y=Math.floor(x);
 	var z=(x/y);
 	if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
-		game.broadcastAll('createDialog',event.videoId, 'GoldenAge STAREARTH GEM: Electricity Fills the Sea!');
+		game.broadcastAll('createDialog',event.videoId, 'GoldenAge STAREARTH GEM: The Earth Silences all Lightning!');
 		game.delay(2);
 		var a=2.25+lib.config.lvgs*0.0225;
 		trigger.num*=a; 
 	}
  
 	if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
-	 game.broadcastAll('createDialog',event.videoId, 'Roars STAREARTH GEM: The Land Silences All Lightning!');
+	 game.broadcastAll('createDialog',event.videoId, 'Roars STAREARTH GEM: The Earth Silences All Lightning!');
 	 game.delay(2);
 	 var a=2.25+lib.config.lvrs*0.0225;
 	 trigger.num*=a; 
  }
  if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
-	 game.broadcastAll('createDialog',event.videoId, 'Airson STAREARTH GEM: Electricity Fills the Sea!');
+	 game.broadcastAll('createDialog',event.videoId, 'Airson STAREARTH GEM: The Earth Silences all Lightning!');
 	 game.delay(2);
 	 var a=2.25+lib.config.lvas*0.0225;
 	 trigger.num*=a; 
  }
  if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
-	 game.broadcastAll('createDialog',event.videoId, 'X STAREARTH GEM: Electricity Fills the Sea!');
+	 game.broadcastAll('createDialog',event.videoId, 'X STAREARTH GEM: The Earth Silences all Lightning!');
 	 game.delay(2);
 	 var a=2.25+lib.config.lvxb*0.0225;
 	 trigger.num*=a; 
  }
 	
 	if(z==1&&trigger.source.hasSkill('enemy')){
-		game.broadcastAll('createDialog',event.videoId, 'Boss STAREARTH GEM!');
+		game.broadcastAll('createDialog',event.videoId, 'Boss STAREARTH GEM: Overcomes Lightning!');
 		game.delay(2);
 		trigger.num*=3;
 	}
@@ -18390,7 +19106,7 @@ thund9:{
 
  
 light:{
-	group:['light2','light3','light5','light4','light6','light7','light8','light9'],
+	group:['light2','light3','light5','light4','light6','light7','light8','light9','light10','light11'],
 
 	init:function(player){
 	 player.storage.light=1;
@@ -18399,11 +19115,76 @@ light:{
 
 },  
 
+
+
+
+
+light10:{  
+	enable:'chooseToUse',
+	filter:function(event,player){
+	if(!player.countCards('he',function(card){
+				  return get.number(card)=='3';
+		})){
+			return false;
+		}	 
+	//s	if (lib.config.coin%43==0||_status.connectMode) 
+	 return true;	
+	},
+	filterCard:function(card){
+		return get.number(card)=='3'
+	},
+	position:'he',
+	viewAs:{name:'djuedou'},
+	viewAsFilter:function(player){
+		if(player.countCards('he',{number:'3'})) return true;
+	   
+	},
+	prompt:'Play a LoreSong as Prism II',
+	//content:function(player,event,trigger,source){ 
+	   //player.glyptic
+   //},
+	check:function(card){return 5-get.value(card)},
+									   
+   },
+
+
+   
+light11:{  
+	enable:'chooseToUse',
+	filter:function(event,player){
+	 	if(!player.countCards('he',function(card){
+				  return get.number(card)=='5';
+		})){
+			return false;
+		}	 
+	//	if (lib.config.coin%43==0||_status.connectMode)  
+	return true;	
+	},
+	filterCard:function(card){
+		return get.number(card)=='5'
+	},
+	position:'he',
+	viewAs:{name:'tjuedou'},
+	viewAsFilter:function(player){
+		if(player.countCards('he',{number:'5'})) return true;
+	   
+	},
+	prompt:'Play a LoreSong as Prism I',
+	//content:function(player,event,trigger,source){ 
+	   //player.glyptic
+   //},
+	check:function(card){return 5-get.value(card)},
+									   
+   },
+
+
+
+
 light2:{  
  enable:'chooseToUse',
  filter:function(event,player){
 	 if(!player.countCards('he',function(card){
-			   return get.number(card)=='4'||get.number(card)=='5'||get.number(card)=='3';
+			   return get.number(card)=='4';
 	 })){
 		 return false;
 	 }
@@ -18412,14 +19193,14 @@ light2:{
 	 });
  },
  filterCard:function(card){
-	 return get.number(card)=='3'||get.number(card)=='5'||get.number(card)=='4'
+	 return get.number(card)=='4'
  },
  position:'he',
  viewAs:{name:'juedou'},
  viewAsFilter:function(player){
-	 if(player.countCards('he',{number:'3'})) return true;
+	
 	 if(player.countCards('he',{number:'4'})) return true;
-	 if(player.countCards('he',{number:'5'})) return true;
+	
  },
  prompt:'Play a LoreSong as Light Skywar',
  check:function(card){return 5-get.value(card)},
@@ -18475,7 +19256,7 @@ light3:{
           trigger.source.storage.glyptic11+=0;}
   
           'step 3'
-          game.broadcastAll('createDialog',event.videoId,'Light Soul: The Stars Shine Brilliantly!');
+          game.broadcastAll('createDialog',event.videoId,'Light Soul: The Stars Birth Brilliance!');
   game.delay(3); 
   
    },},
@@ -18531,7 +19312,7 @@ light4:{
           trigger.source.storage.glyptic11+=0;}
   
           'step 3'
-          game.broadcastAll('createDialog',event.videoId,'Light Soul: The Flame Flickers!');
+          game.broadcastAll('createDialog',event.videoId,'Light Soul: The Flames Births Shine!');
   game.delay(3); 
   
    },},
@@ -18589,7 +19370,7 @@ light4:{
           trigger.source.storage.glyptic11+=0;}
   
           'step 3'
-          game.broadcastAll('createDialog',event.videoId,'Light Soul: Lightning Flashes Across the Sky!');
+          game.broadcastAll('createDialog',event.videoId,'Light Soul: Thunder Births Lightning!');
   game.delay(3); 
   
    },},
@@ -18609,7 +19390,7 @@ var y=Math.floor(x);
 var z=(x/y);
 if(z==1){
    trigger.cancel();
-   game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+' LIGHT GEM: Immunes!');
+   game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+' LIGHT GEM HARMONY!');
    game.delay(1);}
    },},
 
@@ -18649,32 +19430,32 @@ var x=trigger.num;
 var y=Math.floor(x);
 var z=(x/y);
 if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
-    game.broadcastAll('createDialog',event.videoId, 'GoldenAge EDEN GEM: Electricity Fills the Sea!');
+    game.broadcastAll('createDialog',event.videoId, 'GoldenAge EDEN GEM: Flora Takes in the Sun!');
     game.delay(2);
     var a=2.25+lib.config.lvge*0.0225;
     trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Roars EDEN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Roars EDEN GEM: Flora Takes in the Sun!');
  game.delay(2);
  var a=2.25+lib.config.lvre*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Airson EDEN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Airson EDEN GEM: Flora Takes in the Sun!');
  game.delay(2);
  var a=2.25+lib.config.lvae*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'X EDEN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'X EDEN GEM: Flora Takes in the Sun!');
  game.delay(2);
  var a=2.25+lib.config.lvxe*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('enemy')){
-   game.broadcastAll('createDialog',event.videoId, 'Boss EDEN GEM: Electricity Fills the Sea!');
+   game.broadcastAll('createDialog',event.videoId, 'Boss EDEN GEM: Overcomes Light!');
    game.delay(2);
    trigger.num*=3; 
 }}
@@ -18736,7 +19517,8 @@ earth10:{
 		})){
 			return false;
 		}	 
-		if (lib.config.coin%47==0||_status.connectMode)  return true;	
+	//	if (lib.config.coin%47==0||_status.connectMode)  
+		return true;	
 	},
 	filterCard:function(card){
 		return get.number(card)=='4'
@@ -18765,7 +19547,8 @@ earth11:{
 		})){
 			return false;
 		}	 
-		if (lib.config.coin%47==0||_status.connectMode)  return true;	
+		//if (lib.config.coin%47==0||_status.connectMode)  
+		return true;	
 	},
 	filterCard:function(card){
 		return get.number(card)=='6'
@@ -18800,7 +19583,8 @@ earth2:{
 	 })){
 		 return false;
 	 }	 
-	 if (lib.config.coin%47==0||_status.connectMode)  return true;	
+	 //if (lib.config.coin%47==0||_status.connectMode) 
+	  return true;	
  },
  filterCard:function(card){
 	 return get.number(card)=='5'
@@ -18891,7 +19675,7 @@ var y=Math.floor(x);
 var z=(x/y);
 if(z==1){
 	trigger.cancel();
-	game.broadcastAll('createDialog',event.videoId,' '+ get.translation(player) + ' Gem Harmony: no damage!');
+	game.broadcastAll('createDialog',event.videoId,' '+ get.translation(player) + ' Gem Harmony!');
 	game.delay(2);}
 	},},
 
@@ -18928,32 +19712,32 @@ var x=trigger.num;
 var y=Math.floor(x);
 var z=(x/y);
 if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
-    game.broadcastAll('createDialog',event.videoId, 'GoldenAge OCEAN GEM: Electricity Fills the Sea!');
+    game.broadcastAll('createDialog',event.videoId, 'GoldenAge OCEAN GEM: The Ocean Overwhelms the Rocks!');
     game.delay(2);
     var a=2.25+lib.config.lvgo*0.0225;
     trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Roars OCEAN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Roars OCEAN GEM: The Ocean Overwhelms the Rocks!');
  game.delay(2);
  var a=2.25+lib.config.lvro*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Airson OCEAN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Airson OCEAN GEM: The Ocean Overwhelms the Rocks!');
  game.delay(2);
  var a=2.25+lib.config.lvao*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'X OCEAN GEM: The Seas break down the Boulders!');
+ game.broadcastAll('createDialog',event.videoId, 'X OCEAN GEM: The Ocean Overwhelms the Rocks!');
  game.delay(2);
  var a=2.25+lib.config.lvxo*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'BOSS OCEAN GEM: The Sea floods over the Earth!');
+	game.broadcastAll('createDialog',event.videoId, 'BOSS OCEAN GEM: Overcomes Earth!');
 	game.delay(2);
  trigger.num*=3;
 
@@ -18992,7 +19776,7 @@ ui.clear();
 }
 
 if(z==1&&trigger.source.hasSkill('enemy')){
-	game.broadcastAll('createDialog',event.videoId, 'Boss WIND GEM!');
+	game.broadcastAll('createDialog',event.videoId, 'Boss WIND GEM: Overcomes Earth!');
 	game.delay(2);
 	trigger.num*=3;
 }
@@ -19023,7 +19807,7 @@ earth9:{
 
  
 blaze:{
-       group:['blaze2','blaze3','blaze5','blaze4','blaze6','blaze7','blaze8','blaze9'],
+       group:['blaze2','blaze3','blaze5','blaze4','blaze6','blaze7','blaze8','blaze9','blaze10','blaze11'],
 	
        init:function(player){
 		player.storage.blaze=1;
@@ -19032,11 +19816,77 @@ blaze:{
     
 },  
  
+
+
+blaze10:{  
+	enable:'chooseToUse',
+	filter:function(event,player){
+	if(!player.countCards('he',function(card){
+				  return get.number(card)=='5';
+		})){
+			return false;
+		}	 
+	//s	if (lib.config.coin%43==0||_status.connectMode) 
+	 return true;	
+	},
+	filterCard:function(card){
+		return get.number(card)=='5'
+	},
+	position:'he',
+	viewAs:{name:'djuedou'},
+	viewAsFilter:function(player){
+		if(player.countCards('he',{number:'5'})) return true;
+	   
+	},
+	prompt:'Play a LoreSong as Flare II',
+	//content:function(player,event,trigger,source){ 
+	   //player.glyptic
+   //},
+	check:function(card){return 5-get.value(card)},
+									   
+   },
+
+
+   
+blaze11:{  
+	enable:'chooseToUse',
+	filter:function(event,player){
+	 	if(!player.countCards('he',function(card){
+				  return get.number(card)=='7';
+		})){
+			return false;
+		}	 
+	//	if (lib.config.coin%43==0||_status.connectMode)  
+	return true;	
+	},
+	filterCard:function(card){
+		return get.number(card)=='7'
+	},
+	position:'he',
+	viewAs:{name:'tjuedou'},
+	viewAsFilter:function(player){
+		if(player.countCards('he',{number:'7'})) return true;
+	   
+	},
+	prompt:'Play a LoreSong as Flare I',
+	//content:function(player,event,trigger,source){ 
+	   //player.glyptic
+   //},
+	check:function(card){return 5-get.value(card)},
+									   
+   },
+
+
+
+
+
+
+
 blaze2:{  
 	enable:'chooseToUse',
     filter:function(event,player){
         if(!player.countCards('he',function(card){
-                  return get.number(card)=='7'||get.number(card)=='5'||get.number(card)=='6';
+                  return get.number(card)=='6';
         })){
             return false;
         }
@@ -19045,13 +19895,12 @@ blaze2:{
         });
     },
     filterCard:function(card){
-        return get.number(card)=='7'||get.number(card)=='5'||get.number(card)=='6'
+        return get.number(card)=='6'
     },
     position:'he',
     viewAs:{name:'juedou'},
     viewAsFilter:function(player){
-        if(player.countCards('he',{number:'7'})) return true;
-        if(player.countCards('he',{number:'5'})) return true;
+        
         if(player.countCards('he',{number:'6'})) return true;
     },
     prompt:'Play a LoreSong as Blaze Skywar',
@@ -19108,7 +19957,7 @@ blaze3:{
           trigger.source.storage.glyptic11+=0;}
   
           'step 3'
-          game.broadcastAll('createDialog',event.videoId,'Blaze Soul: Wood Brings Fire!');
+          game.broadcastAll('createDialog',event.videoId,'Blaze Soul: Wood Births Fire!');
   game.delay(3); 
   
    },},
@@ -19135,7 +19984,7 @@ var y=Math.floor(x);
 var z=(x/y);
 if(z==1){
    trigger.cancel();
-   game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+' BLAZE GEM: Immune!');
+   game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+' BLAZE GEM HARMONY!');
    game.delay(1);}
    },},
 
@@ -19153,33 +20002,33 @@ var x=trigger.num;
 var y=Math.floor(x);
 var z=(x/y);
 if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
-    game.broadcastAll('createDialog',event.videoId, 'GoldenAge STAREARTH GEM: Electricity Fills the Sea!');
+    game.broadcastAll('createDialog',event.videoId, 'GoldenAge STAREARTH GEM: The Rocks Stand in the Flames!');
     game.delay(2);
     var a=2.25+lib.config.lvgs*0.0225;
     trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Roars STAREARTH GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Roars STAREARTH GEM: The Rocks Stand in the Flames!');
  game.delay(2);
  var a=2.25+lib.config.lvrs*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Airson STAREARTH GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Airson STAREARTH GEM: The Rocks Stand in the Flames!');
  game.delay(2);
  var a=2.25+lib.config.lvas*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'X STAREARTH GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'X STAREARTH GEM: The Rocks Stand in the Flames!');
  game.delay(2);
  var a=2.25+lib.config.lvxs*0.0225;
  trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('enemy')){
-   game.broadcastAll('createDialog',event.videoId, 'Boss STAREARTH GEM: The Land Covers the Flames!');
+   game.broadcastAll('createDialog',event.videoId, 'Boss EARTH GEM: Overcomes Fire!');
    game.delay(2);
    trigger.num*=3; 
 }}
@@ -19220,32 +20069,32 @@ var x=trigger.num;
 var y=Math.floor(x);
 var z=(x/y);
 if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
-    game.broadcastAll('createDialog',event.videoId, 'GoldenAge OCEAN GEM: Electricity Fills the Sea!');
+    game.broadcastAll('createDialog',event.videoId, 'GoldenAge OCEAN GEM: The Waves Quiet the Flames!');
     game.delay(2);
     var a=2.25+lib.config.lvgo*0.0225;
     trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Roars OCEAN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Roars OCEAN GEM: The Waves Quiet the Flames!');
  game.delay(2);
  var a=2.25+lib.config.lvro*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Airson OCEAN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Airson OCEAN GEM: The Waves Quiet the Flames!');
  game.delay(2);
  var a=2.25+lib.config.lvao*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'X OCEAN GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'X OCEAN GEM: The Waves Quiet the Flames!');
  game.delay(2);
  var a=2.25+lib.config.lvxo*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('enemy')){
-   game.broadcastAll('createDialog',event.videoId, 'BOSS OCEAN GEM: Electricity Fills the Sea!');
+   game.broadcastAll('createDialog',event.videoId, 'BOSS OCEAN GEM: Overcomes Fire!');
    game.delay(2);
    trigger.num*=3; 
 }}
@@ -19289,7 +20138,7 @@ blaze9:{
 
 
 		Eden:{
-			group:['Eden2','Eden3','Eden4','Eden5','Eden6','Eden7','Eden8','Eden9'],
+			group:['Eden2','Eden3','Eden4','Eden5','Eden6','Eden7','Eden8','Eden9','Eden10','Eden11'],
 		
 			init:function(player){
 			 player.storage.Eden=1;
@@ -19298,11 +20147,87 @@ blaze9:{
 		
 	 },  
 	  
+
+
+
+
+
+
+
+
+
+
+	 Eden10:{  
+		enable:'chooseToUse',
+		filter:function(event,player){
+		if(!player.countCards('he',function(card){
+					  return get.number(card)=='6';
+			})){
+				return false;
+			}	 
+		//s	if (lib.config.coin%43==0||_status.connectMode) 
+		 return true;	
+		},
+		filterCard:function(card){
+			return get.number(card)=='6'
+		},
+		position:'he',
+		viewAs:{name:'djuedou'},
+		viewAsFilter:function(player){
+			if(player.countCards('he',{number:'6'})) return true;
+		   
+		},
+		prompt:'Play a LoreSong as Flora II',
+		//content:function(player,event,trigger,source){ 
+		   //player.glyptic
+	   //},
+		check:function(card){return 5-get.value(card)},
+										   
+	   },
+	
+	
+	   
+	Eden11:{  
+		enable:'chooseToUse',
+		filter:function(event,player){
+			 if(!player.countCards('he',function(card){
+					  return get.number(card)=='1';
+			})){
+				return false;
+			}	 
+		//	if (lib.config.coin%43==0||_status.connectMode)  
+		return true;	
+		},
+		filterCard:function(card){
+			return get.number(card)=='1'
+		},
+		position:'he',
+		viewAs:{name:'tjuedou'},
+		viewAsFilter:function(player){
+			if(player.countCards('he',{number:'1'})) return true;
+		   
+		},
+		prompt:'Play a LoreSong as Flora I',
+		//content:function(player,event,trigger,source){ 
+		   //player.glyptic
+	   //},
+		check:function(card){return 5-get.value(card)},
+										   
+	   },
+	
+
+
+
+
+
+
+
+
 	 Eden2:{  
 		 enable:'chooseToUse',
 		 filter:function(event,player){
 			 if(!player.countCards('he',function(card){
-					   return get.number(card)=='1'||get.number(card)=='7'||get.number(card)=='6';
+					   return get.number(card)=='7';
 			 })){
 				 return false;
 			 }
@@ -19311,14 +20236,14 @@ blaze9:{
 			 });
 		 },
 		 filterCard:function(card){
-			 return get.number(card)=='1'||get.number(card)=='7'||get.number(card)=='6'
+			 return get.number(card)=='7'
 		 },
 		 position:'he',
 		 viewAs:{name:'juedou'},
 		 viewAsFilter:function(player){
-			 if(player.countCards('he',{number:'1'})) return true;
+			
 			 if(player.countCards('he',{number:'7'})) return true;
-			 if(player.countCards('he',{number:'6'})) return true;
+			
 		 },
 		 prompt:'Play a LoreSong as Eden Skywar',
 		 check:function(card){return 5-get.value(card)},
@@ -19374,7 +20299,7 @@ blaze9:{
 			  trigger.source.storage.glyptic11+=0;}
 	  
 			  'step 3'
-			  game.broadcastAll('createDialog',event.videoId,'Eden Soul: The Seas Birth Zephyr!');
+			  game.broadcastAll('createDialog',event.videoId,'Eden Soul: The Land Births Life!');
 	  game.delay(3); 
 	  
 	   },},
@@ -19431,7 +20356,7 @@ blaze9:{
 			  trigger.source.storage.glyptic11+=0;}
 	  
 			  'step 3'
-			  game.broadcastAll('createDialog',event.videoId,'Eden Soul: The Seas Birth Zephyr!');
+			  game.broadcastAll('createDialog',event.videoId,'Eden Soul: The Sun Births Greenery!');
 	  game.delay(3); 
 	  
 	   },},
@@ -19486,7 +20411,7 @@ blaze9:{
 			  trigger.source.storage.glyptic11+=0;}
 	  
 			  'step 3'
-			  game.broadcastAll('createDialog',event.videoId,'Ocean Soul: The Seas Birth Zephyr!');
+			  game.broadcastAll('createDialog',event.videoId,'Eden Soul: The Waters Birth Flora!');
 	  game.delay(3); 
 	  
 	   },},
@@ -19512,7 +20437,7 @@ blaze9:{
 	var z=(x/y);
 	if(z==1){
 	   trigger.cancel();
-	   game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+' Eden GEM: Immune!');
+	   game.broadcastAll('createDialog',event.videoId,''+get.translation(player)+' Eden GEM HARMONY!');
 	   game.delay(1);}
 	   },},
 
@@ -19533,33 +20458,33 @@ var x=trigger.num;
 var y=Math.floor(x);
 var z=(x/y);
 if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
-    game.broadcastAll('createDialog',event.videoId, 'GoldenAge WIND GEM: Electricity Fills the Sea!');
+    game.broadcastAll('createDialog',event.videoId, 'GoldenAge WIND GEM: The Weather Dominates Flora!');
     game.delay(2);
     var a=2.25+lib.config.lvgw*0.0225;
     trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Roars WIND GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Roars WIND GEM: The Weather Dominates Flora!');
  game.delay(2);
  var a=2.25+lib.config.lvrw*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Airson WIND GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Airson WIND GEM: The Weather Dominates Flora!');
  game.delay(2);
  var a=2.25+lib.config.lvaw*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'X WIND GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'X WIND GEM: The Weather Dominates Flora!');
  game.delay(2);
  var a=2.25+lib.config.lvxw*0.0225;
  trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('enemy')){
-   game.broadcastAll('createDialog',event.videoId, 'Boss WIND GEM: Electricity Fills the Sea!');
+   game.broadcastAll('createDialog',event.videoId, 'Boss WIND GEM: Overcomes Flora!');
    game.delay(2);
    trigger.num*=3; 
 }}
@@ -19597,33 +20522,33 @@ var x=trigger.num;
 var y=Math.floor(x);
 var z=(x/y);
 if(z==1&&trigger.source.hasSkill('goldenage')&&!trigger.source.hasSkill('enemy')){
-    game.broadcastAll('createDialog',event.videoId, 'GoldenAge BLAZE GEM: Electricity Fills the Sea!');
+    game.broadcastAll('createDialog',event.videoId, 'GoldenAge BLAZE GEM: Wildfires Reign over Flora!');
     game.delay(2);
     var a=2.25+lib.config.lvgb*0.0225;
     trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('roars')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Roars BLAZE GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Roars BLAZE GEM: Wildfires Reign over Flora!');
  game.delay(2);
  var a=2.25+lib.config.lvrb*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('airson')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'Airson BLAZE GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'Airson BLAZE GEM: Wildfires Reign over Flora!');
  game.delay(2);
  var a=2.25+lib.config.lvab*0.0225;
  trigger.num*=a; 
 }
 if(z==1&&trigger.source.hasSkill('x')&&!trigger.source.hasSkill('enemy')){
- game.broadcastAll('createDialog',event.videoId, 'X BLAZE GEM: Electricity Fills the Sea!');
+ game.broadcastAll('createDialog',event.videoId, 'X BLAZE GEM: Wildfires Reign over Flora!');
  game.delay(2);
  var a=2.25+lib.config.lvxb*0.0225;
  trigger.num*=a; 
 }
 
 if(z==1&&trigger.source.hasSkill('enemy')){
-   game.broadcastAll('createDialog',event.videoId, 'GoldenAge BLAZE GEM: Electricity Fills the Sea!');
+   game.broadcastAll('createDialog',event.videoId, 'BOSS BLAZE GEM: Overcomes Flora!');
    game.delay(2);
    trigger.num*=3; 
 }}
@@ -24568,6 +25493,27 @@ wind11:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;font-f
 wind2:'<span style="text-shadow:0px 0px 7px #3ef0b8, 0px 0px 7px #3ef0b8;font-family:serif;">{Wind:SkyWar}</span>',
 
 
+ocean10:'<span style="text-shadow:0px 0px 7px #1aa7ec, 0px 0px 7px #1aa7ec;font-family:serif;">Tidal 2</span>',
+ocean11:'<span style="text-shadow:0px 0px 7px #1aa7ec, 0px 0px 7px #1aa7ec;font-family:serif;">Tidal 1</span>',
+ocean2:'<span style="text-shadow:0px 0px 7px #1aa7ec, 0px 0px 7px #1aa7ec;font-family:serif;">{Ocean:SkyWar}</span>',
+
+Eden10:'<span style="text-shadow:0px 0px 7px #9966cc, 0px 0px 7px #9966cc;font-family:serif;">Flora 2</span>',
+Eden11:'<span style="text-shadow:0px 0px 7px #9966cc, 0px 0px 7px #9966cc;font-family:serif;">Flora 1</span>',
+Eden2:'<span style="text-shadow:0px 0px 7px #9966cc, 0px 0px 7px #9966cc;font-family:serif;">{Eden:SkyWar}</span>',
+
+
+
+blaze10:'<span style="text-shadow:0px 0px 7px #FF0000, 0px 0px 7px #FF0000;font-family:serif;">Flare 2</span>',
+blaze11:'<span style="text-shadow:0px 0px 7px #FF0000, 0px 0px 7px #FF0000;font-family:serif;">Flare 1</span>',
+blaze2:'<span style="text-shadow:0px 0px 7px #FF0000, 0px 0px 7px #FF0000;font-family:serif;">{Blaze:SkyWar}</span>',
+
+
+light10:'<span style="text-shadow:0px 0px 7px #FFFFFF, 0px 0px 7px #FFFFFF;font-family:serif;">Prism 2</span>',
+light11:'<span style="text-shadow:0px 0px 7px #FFFFFF, 0px 0px 7px #FFFFFF;font-family:serif;">Prism 1</span>',
+light2:'<span style="text-shadow:0px 0px 7px #FFFFFF, 0px 0px 7px #FFFFFF;font-family:serif;">{Light:SkyWar}</span>',
+
+
+
 thund10:'<span style="text-shadow:0px 0px 7px #FFFF00, 0px 0px 7px #FFFF00;font-family:serif;">Bolt 2</span>',
 thund11:'<span style="text-shadow:0px 0px 7px #FFFF00, 0px 0px 7px #FFFF00;font-family:serif;">Bolt 1</span>',
 thund2:'<span style="text-shadow:0px 0px 7px #FFFF00, 0px 0px 7px #FFFF00;font-family:serif;">{Thunder:SkyWar}</span>',
@@ -24581,7 +25527,7 @@ earth2:'<span style="text-shadow:0px 0px 7px #ffffff, 0px 0px 7px #ffffff; font-
 
 ythunder:'Yemog Thunder',
 
-light2:'Light',
+
 
 
 
@@ -24735,7 +25681,8 @@ bak:'<span style="font-family:serif">Exit</span>s',
 	ushone:'<span style="font-family:serif">【Shone!】</span>',
 	uhealon:'<span style="font-family:serif">【Healon!】</span>',
 	
-	xocean:'Healon:Gardener',
+	
+	xocean:'<span style><img src=image/character/markso.png></img></span>',
 
 	nuhour:'ROARS SPIRIT!',
 	nuhour_info:'Do you have a LoreSong for Roars to play? Choose 1 for Roars',
@@ -24751,7 +25698,7 @@ bak:'<span style="font-family:serif">Exit</span>s',
 	nuhoux:'X SPIRIT!',
 	nuhoux_info:'Do you have a LoreSong for X to play? Choose 1 for X',
 	
-Eden2:'Eden SkyWar',
+
 			
 		
 glyptic_turn:'[GL] ReOrient',
@@ -24844,7 +25791,7 @@ rearth2:'Shone:Dedication',
 			glyptic_flora:'3 AmethystCarve',
 			twoearth_info:'Inner Bleed',
 			twoearth2_info:'Inner Bleed Receiver',
-blaze2:'Blaze SkyWar',
+
 blaze3:'Blaze Soul',
 blaze4:'Blaze Gem',
 blaze5:'WEAK',
